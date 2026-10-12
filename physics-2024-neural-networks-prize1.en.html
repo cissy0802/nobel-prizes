@@ -24,8 +24,8 @@ header .date{font-size:0.8rem;color:#6d6656;margin-top:16px;font-family:"SF Mono
 header .pitch{margin-top:18px;font-size:0.98rem;color:#d9825b;font-style:italic}
 .intro{background:rgba(232,194,106,0.06);border-left:3px solid #e8c26a;padding:20px 24px;border-radius:0 10px 10px 0;margin:36px 0;font-size:0.99rem;color:#e2d9c6}
 .intro strong{color:#fff}
-.section{margin:44px 0;background:rgba(255,255,255,0.025);padding:28px 26px;border-radius:14px;border:1px solid rgba(255,255,255,0.06)}
-.section .num{display:inline-block;font-size:0.75rem;color:#e8c26a;font-family:"SF Mono",Menlo,monospace;letter-spacing:2px;margin-bottom:8px}
+.section{margin:46px 0 0}
+.section h2::before{content:"";display:block;width:28px;height:2px;background:#e8c26a;opacity:.75;margin-bottom:16px}
 .section h2{font-size:1.3rem;color:#fff;margin-bottom:16px;font-weight:700;line-height:1.38}
 .section p{margin-bottom:14px;color:#e2d9c6;font-size:0.96rem}
 .section strong{color:#fff}
@@ -72,7 +72,7 @@ figcaption{text-align:center;font-size:0.82rem;color:#a99f8a;margin-top:12px;fon
 .refs a:hover{color:#f3dc9a}
 footer{text-align:center;padding:48px 0 10px;font-size:0.8rem;color:#6d6656;font-family:"SF Mono",Menlo,monospace}
 footer a{color:#e8c26a;text-decoration:none}
-@media(max-width:600px){header h1{font-size:1.6rem}.section{padding:20px 18px}.section h2{font-size:1.14rem}.everyday,.crossx,.offstage,.thinking{padding:18px 18px}}
+@media(max-width:600px){header h1{font-size:1.6rem}.section h2{font-size:1.14rem}.everyday,.crossx,.offstage,.thinking{padding:18px 18px}}
 </style></head><body>
 <div class="container">
 <div class="langbar"><a href="physics-2024-neural-networks-prize1.html">中文 →</a></div>
@@ -93,7 +93,6 @@ footer a{color:#e8c26a;text-decoration:none}
 </div>
 
 <div class="section">
-<span class="num">// 01</span>
 <h2>An idea that had been written off</h2>
 <p>Machines modelled on neurons were not new. In 1943 the neuroscientist Warren McCulloch and the logician Walter Pitts proposed a mathematical model of how neurons cooperate. In 1949 the psychologist Donald Hebb guessed that when two neurons keep firing together, the link between them grows stronger. In 1957 Frank Rosenblatt built the "perceptron" to interpret images.</p>
 <p>Then came the cold shower. In 1969 Marvin Minsky and Seymour Papert published an influential book showing that such simple networks could not even learn "one or the other but not both". The Nobel committee's scientific background is blunt: it led to a <strong>funding hiatus</strong> for neural-network research. Mainstream AI went on writing rules into programs, but recognising images needed more rules than anyone could compute.</p>
@@ -102,7 +101,6 @@ footer a{color:#e8c26a;text-decoration:none}
 </div>
 
 <div class="section">
-<span class="num">// 02</span>
 <h2>Hopfield: memories as hollows in the ground</h2>
 <p>Physicists know magnetic materials well. Each atom acts like a tiny compass needle, its <strong>spin</strong>, and neighbouring needles nudge one another. The whole material settles on its own into an arrangement that keeps most of them content: a state of lower <strong>energy</strong>.</p>
 <p>Hopfield's 1982 paper in PNAS carried this over almost unchanged. Each node is 0 or 1, like a pixel in a black-and-white picture, every node is linked to every other, and the links have strengths. The network as a whole has an "energy", and the committee points out that his two key equations are the very ones textbooks use for magnets.</p>
@@ -127,7 +125,6 @@ footer a{color:#e8c26a;text-decoration:none}
 </div>
 
 <div class="section">
-<span class="num">// 03</span>
 <h2>Hinton: add some heat, and teach the network to dream</h2>
 <p>When Hopfield's paper came out, Hinton was at Carnegie Mellon in Pittsburgh, wondering whether a machine could, like a child, grow its own categories from examples. With Terrence Sejnowski and others he started from the Hopfield network and added two things.</p>
 <p>The first was <strong>noise</strong>. A Hopfield network only ever goes downhill, so once it drops into a shallow dip it is stuck. Hinton let nodes decide with a bit of randomness: firm when the input is strong, a coin toss when it is weak. A "temperature" sets how jittery they are; start hot and cool down, and the network finds deeper hollows. The odds of each arrangement follow the formula of the nineteenth-century physicist Ludwig Boltzmann, so in 1985 the device was named the <strong>Boltzmann machine</strong>.</p>
@@ -155,7 +152,6 @@ footer a{color:#e8c26a;text-decoration:none}
 </div>
 
 <div class="section">
-<span class="num">// 04</span>
 <h2>What grew from it, and "is this physics?"</h2>
 <p>Many people stand between these two papers and the AI in your phone, and the committee's own background lists them: in 1986 Rumelhart, Hinton and Williams showed backpropagation could train networks with hidden layers (they reinvented a scheme others had used, and explained what hidden layers do); Yann LeCun's convolutional networks read handwritten digits on cheques for several American banks from the mid-1990s; neural networks were part of the analysis behind the 2012 Higgs discovery. The popular version offers a contrast: under 500 parameters in Hopfield's network, more than a trillion in today's large language models.</p>
 <p>The Hopfield network itself has not gone stale. A 2020 paper titled "Hopfield Networks is All You Need" showed that a continuous "modern Hopfield network" retrieves a memory in one update, and that this update rule <strong>is equivalent to the attention mechanism in transformers</strong>.</p>
