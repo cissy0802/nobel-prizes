@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>2024 物理学奖 · 让记忆像雨水一样流回低处 — 诺奖精读</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;color:#ece5d6;line-height:1.85;min-height:100vh;
+  background:radial-gradient(1100px 560px at 10% -6%,rgba(232,194,106,0.10),transparent 60%),radial-gradient(900px 640px at 100% 2%,rgba(217,130,91,0.08),transparent 55%),linear-gradient(165deg,#0d0c0a 0%,#14110c 45%,#0a0907 100%);background-attachment:fixed}
+.container{max-width:760px;margin:0 auto;padding:18px 20px 90px}
+.langbar{display:flex;justify-content:flex-end;padding-top:10px;font-family:"SF Mono",Menlo,monospace;font-size:.8rem}
+.langbar a{color:#e8c26a;text-decoration:none;border:1px solid rgba(232,194,106,.3);padding:4px 12px;border-radius:20px}
+.langbar a:hover{border-color:#d9825b;color:#d9825b}
+header{text-align:center;padding:40px 0 22px}
+.prize-tag{display:inline-block;font-size:0.75rem;color:#e8c26a;font-family:"SF Mono",Menlo,monospace;letter-spacing:2px;border:1px solid rgba(232,194,106,0.42);padding:4px 13px;border-radius:20px;margin-bottom:16px;background:rgba(232,194,106,0.06)}
+header h1{font-size:2.1rem;font-weight:800;letter-spacing:.5px;line-height:1.3;background:linear-gradient(110deg,#f3dc9a 0%,#e8c26a 45%,#d9825b 92%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 2px 18px rgba(232,194,106,0.22))}
+header h2{font-size:1rem;color:#a99f8a;margin-top:10px;font-weight:400;letter-spacing:0.4px}
+.laureates{margin-top:18px;font-size:0.9rem;color:#d8cdb4}
+.laureates span{display:inline-block;margin:3px 6px;padding:2px 11px;border-radius:14px;background:rgba(232,194,106,0.07);border:1px solid rgba(232,194,106,0.18)}
+.laureates em{font-style:normal;color:#8f8672;font-size:0.8rem;margin-left:6px;font-family:"SF Mono",Menlo,monospace}
+.motivation{margin:18px auto 0;max-width:620px;font-size:0.88rem;color:#b9ae95;line-height:1.7}
+.motivation q{display:block;font-style:italic;color:#d9cfb8}
+.motivation q::before{content:"“"}.motivation q::after{content:"”"}
+.motivation .zh{display:block;margin-top:4px}
+header .date{font-size:0.8rem;color:#6d6656;margin-top:16px;font-family:"SF Mono",Menlo,monospace}
+header .pitch{margin-top:18px;font-size:0.98rem;color:#d9825b;font-style:italic}
+.intro{background:rgba(232,194,106,0.06);border-left:3px solid #e8c26a;padding:20px 24px;border-radius:0 10px 10px 0;margin:36px 0;font-size:0.99rem;color:#e2d9c6}
+.intro strong{color:#fff}
+.section{margin:44px 0;background:rgba(255,255,255,0.025);padding:28px 26px;border-radius:14px;border:1px solid rgba(255,255,255,0.06)}
+.section .num{display:inline-block;font-size:0.75rem;color:#e8c26a;font-family:"SF Mono",Menlo,monospace;letter-spacing:2px;margin-bottom:8px}
+.section h2{font-size:1.3rem;color:#fff;margin-bottom:16px;font-weight:700;line-height:1.38}
+.section p{margin-bottom:14px;color:#e2d9c6;font-size:0.96rem}
+.section strong{color:#fff}
+.section blockquote{margin:16px 0;padding:10px 18px;border-left:2px solid rgba(217,130,91,0.6);color:#d6c9ae;font-size:0.93rem;background:rgba(217,130,91,0.05);border-radius:0 8px 8px 0}
+.section blockquote cite{display:block;margin-top:6px;font-style:normal;font-size:0.8rem;color:#8f8672;font-family:"SF Mono",Menlo,monospace}
+figure{margin:24px 0}
+figure svg{display:block;width:100%;height:auto;max-width:520px;margin:0 auto}
+figcaption{text-align:center;font-size:0.82rem;color:#a99f8a;margin-top:12px;font-family:"SF Mono",Menlo,monospace}
+.glossary{margin:18px 0;border:1px dashed rgba(232,194,106,0.35);border-radius:10px;padding:14px 18px;font-size:0.9rem;color:#d6ccb4}
+.glossary b{color:#f0d68e}
+.offstage{margin:40px 0;background:rgba(217,130,91,0.06);border:1px solid rgba(217,130,91,0.3);border-radius:14px;padding:20px 24px}
+.offstage h3{color:#d9825b;font-size:0.86rem;letter-spacing:2px;margin-bottom:10px;font-family:"SF Mono",Menlo,monospace}
+.offstage p{color:#e6d6c8;font-size:0.93rem;margin-bottom:10px}
+.offstage p:last-child{margin-bottom:0}
+.everyday{margin:40px 0;background:linear-gradient(135deg,rgba(125,170,214,0.10),rgba(125,170,214,0.04));border:1px solid rgba(125,170,214,0.34);border-radius:14px;padding:22px 26px}
+.everyday h3{color:#8fb8de;font-size:0.88rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.everyday h4{color:#bcd6ee;font-size:0.95rem;margin:16px 0 6px;font-weight:700}
+.everyday h4:first-of-type{margin-top:0}
+.everyday p{color:#dfe7ef;font-size:0.94rem;margin-bottom:8px}
+.everyday b{color:#fff}
+.crossx{margin:40px 0;background:linear-gradient(135deg,rgba(182,156,245,0.10),rgba(232,194,106,0.05));border:1px solid rgba(182,156,245,0.32);border-radius:14px;padding:22px 26px}
+.crossx h3{color:#b69cf5;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.crossx p{color:#e6def5;font-size:0.92rem;line-height:1.8;margin-bottom:14px}
+.crossx b{color:#d4c4fb;font-weight:600}
+.crossx ul{list-style:none;margin:0}
+.crossx li{color:#e6def5;font-size:0.93rem;line-height:1.8;margin-bottom:14px;padding-left:20px;position:relative}
+.crossx li:last-child{margin-bottom:0}
+.crossx li::before{content:"◈";position:absolute;left:0;top:0.35em;color:#e8c26a;font-size:0.72rem}
+.crossx a,.section a,.everyday a,.offstage a{color:#f0d68e;text-decoration:none;border-bottom:1px dotted rgba(240,214,142,0.5)}
+.thinking{background:linear-gradient(135deg,rgba(232,194,106,0.05),rgba(182,156,245,0.05));border:1px solid rgba(232,194,106,0.2);border-radius:12px;padding:24px 26px;margin:40px 0}
+.thinking h3{color:#e8c26a;font-size:0.9rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.thinking details{background:rgba(13,12,10,0.55);border:1px solid rgba(232,194,106,0.16);border-radius:9px;padding:13px 17px;margin:10px 0;transition:all 0.2s}
+.thinking details[open]{background:rgba(232,194,106,0.05);border-color:rgba(232,194,106,0.4)}
+.thinking summary{cursor:pointer;color:#f0d68e;font-weight:600;font-size:0.93rem;list-style:none;outline:none;line-height:1.55}
+.thinking summary::-webkit-details-marker{display:none}
+.thinking summary::before{content:"▸ ";color:#d9825b}
+.thinking details[open] summary::before{content:"▾ "}
+.thinking details>div{margin-top:12px;padding-top:12px;border-top:1px dashed rgba(232,194,106,0.2);color:#e2d9c6;font-size:0.9rem;line-height:1.8}
+.refs{margin-top:34px}
+.refs h3{color:#d9825b;font-size:0.85rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.refs ul{list-style:none}
+.refs li{margin-bottom:9px;font-size:0.88rem;color:#a99f8a}
+.refs a{color:#e8c26a;text-decoration:none;border-bottom:1px dotted rgba(232,194,106,0.4)}
+.refs a:hover{color:#f3dc9a}
+footer{text-align:center;padding:48px 0 10px;font-size:0.8rem;color:#6d6656;font-family:"SF Mono",Menlo,monospace}
+footer a{color:#e8c26a;text-decoration:none}
+@media(max-width:600px){header h1{font-size:1.6rem}.section{padding:20px 18px}.section h2{font-size:1.14rem}.everyday,.crossx,.offstage,.thinking{padding:18px 18px}}
+</style></head><body>
+<div class="container">
+<div class="langbar"><a href="physics-2024-neural-networks-prize1.en.html">English →</a></div>
+<header>
+<span class="prize-tag">PHYSICS · 2024</span>
+<h1>让记忆像雨水一样，自己流回低处</h1>
+<h2>两个想弄懂大脑的人，借磁铁和气体的物理，造出了会回忆、会学习的人工神经网络</h2>
+<div class="laureates"><span>约翰·霍普菲尔德 John J. Hopfield<em>Princeton University · 美国 · 1/2</em></span><span>杰弗里·辛顿 Geoffrey Hinton<em>University of Toronto · 加拿大 · 1/2</em></span></div>
+<div class="motivation"><q>for foundational discoveries and inventions that enable machine learning with artificial neural networks</q><span class="zh">表彰他们为借助人工神经网络实现机器学习所做出的奠基性发现与发明</span></div>
+<div class="date">2026-10-12 · BigCat</div>
+<p class="pitch">一个记忆不存放在任何一个地方，它是一片地形上的一处低洼。</p>
+</header>
+
+<div class="intro">
+<p>你在超市里听到三个音符，整首歌就从脑子里冒出来了，连同第一次听它时窗外的天气。你没有去「查」这首歌，是那三个音符把你<strong>拽</strong>了过去。</p>
+<p>1982 年以前的计算机做不到这件事。它找东西靠的是地址：先知道东西放在第几个抽屉，才能把它拿出来。给它半张模糊的照片，它不知道该去拉哪个抽屉。</p>
+<p>这一年的物理学奖，奖的就是怎样让一堆简单的小开关「被内容拽过去」，然后再让它们自己学会该被什么拽过去。用的工具不是计算机科学，而是一百多年来研究磁铁和气体的物理。</p>
+</div>
+
+<div class="section">
+<span class="num">// 01</span>
+<h2>一个被泼过冷水的想法</h2>
+<p>让机器模仿神经元，这个念头并不新。1943 年，神经科学家麦卡洛克（Warren McCulloch）和逻辑学家皮茨（Walter Pitts）就提出过神经元怎样协作的数学模型；1949 年，心理学家唐纳德·赫布（Donald Hebb）猜测：两个神经元总是一起放电，它们之间的连接就会变强。1957 年，罗森布拉特（Frank Rosenblatt）造出了识别图像的「感知机」。</p>
+<p>然后是一盆冷水。1969 年，明斯基（Marvin Minsky）和派珀特（Seymour Papert）在一本很有影响的书里指出，这类简单网络连「二选一、但不能两个都选」这样的问题都学不会。诺贝尔委员会的科学背景报告写得很直白：这本书让神经网络研究在<strong>经费上停摆</strong>了一段时间。</p>
+<p>主流 AI 则把规则一条条写进程序，可识别图像需要的规则多到算不过来。</p>
+<p>霍普菲尔德是个理论物理学家，1970 年代用物理的眼光研究过生物分子之间的电子转移，还研究过细胞怎样在化学反应里「纠错」。1980 年，他离开普林斯顿，去加州理工当化学和生物学教授，在那里有电脑可以随便用。他心里装着一个问题，后来在诺贝尔演讲的幻灯片上写成一句话：</p>
+<blockquote>How mind emerges from brain is to me the deepest question posed by our humanity.<br/>心智怎样从大脑里浮现出来，在我看来是人之为人所提出的最深的问题。<cite>— John J. Hopfield · Nobel Lecture「Physics is a point of view」· 2024</cite></blockquote>
+</div>
+
+<div class="section">
+<span class="num">// 02</span>
+<h2>霍普菲尔德：把记忆挖成地形里的洼地</h2>
+<p>物理学家熟悉一种东西：磁性材料。每个原子像一根小磁针，叫<strong>自旋（spin）</strong>，相邻的小磁针互相影响，整块材料会自己「找」到一种大家都比较舒服的排列，也就是<strong>能量</strong>较低的状态。</p>
+<p>霍普菲尔德 1982 年在《美国科学院院刊》（PNAS）上发表的论文，把这套东西原样搬了过来：每个节点只有 0 和 1 两种状态，像黑白照片上的一个像素；节点之间两两相连，连接有强有弱。整张网络被赋予一个「能量」，委员会的报告特意指出，他用的两个式子，本来就是物理课本上描述磁性材料的式子。</p>
+<p>存一张照片，就是按赫布的规则调连接的强弱，让这张照片恰好处在能量的低洼处。回忆的时候，喂进去一张残缺或者带噪点的照片，每个节点只看自己的邻居，判断「我翻个面，整体能量会不会更低」，会就翻。<strong>没有任何中央指挥</strong>，一个接一个地翻，直到谁也不想再翻。这时，网络往往停在原来那张照片上。</p>
+<figure><svg viewBox="0 0 520 250" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,'Noto Sans SC',sans-serif">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#d9825b"/></marker></defs>
+<line x1="190" y1="34" x2="190" y2="80" stroke="#8f8672" stroke-width="1.2" stroke-dasharray="4 4"/>
+<line x1="360" y1="30" x2="360" y2="70" stroke="#8f8672" stroke-width="1.2" stroke-dasharray="4 4"/>
+<text x="190" y="26" fill="#a99f8a" font-size="12" text-anchor="middle">分水岭</text>
+<text x="360" y="22" fill="#a99f8a" font-size="12" text-anchor="middle">分水岭</text>
+<path d="M20,60 C60,60 70,190 110,190 S160,80 190,80 S240,210 270,210 S330,70 360,70 S410,170 440,170 S490,60 500,60" fill="none" stroke="#e8c26a" stroke-width="2.5"/>
+<circle cx="215" cy="100" r="7" fill="#f3dc9a"/>
+<text x="230" y="92" fill="#f3dc9a" font-size="12">一张残缺的照片</text>
+<path d="M226,104 Q240,140 258,186" fill="none" stroke="#d9825b" stroke-width="2" marker-end="url(#ah)"/>
+<text x="110" y="214" fill="#ece5d6" font-size="13" text-anchor="middle">记忆 A</text>
+<text x="270" y="234" fill="#ece5d6" font-size="13" text-anchor="middle">记忆 B</text>
+<text x="440" y="194" fill="#ece5d6" font-size="13" text-anchor="middle">记忆 C</text>
+<text x="22" y="34" fill="#8f8672" font-size="11">高处 = 不像任何记忆</text>
+</svg><figcaption>每个记忆是一处洼地；输入落在哪个分水岭里，就流向哪个记忆</figcaption></figure>
+<p>换个画面：一片山地上有几个湖，每个湖是一段记忆。雨点落在哪里，就顺着坡流进哪个湖；一个湖的整片集水区，就是「足够像它、能把它唤起来」的所有输入。论文摘要里说，这样的网络能从「足够大的任何一部分」还原出整个记忆，这就是<strong>内容寻址（content-addressable）</strong>：凭内容找回东西，而不是凭地址。</p>
+<p>当时的规模小得可爱：他用的网络只有 30 个节点、435 条连接，参数不到 500 个；试过 100 个节点，那台电脑就吃不消了。但结构一旦对上了磁性物理，物理工具就能直接用：几年后，研究<strong>自旋玻璃（spin glass）</strong>这种「乱七八糟的磁铁」的理论，被用来从解析上算清这种网络到底能存多少个记忆。</p>
+</div>
+
+<div class="section">
+<span class="num">// 03</span>
+<h2>辛顿：给网络加一点温度，让它学会做梦</h2>
+<p>霍普菲尔德的论文发表时，辛顿在匹兹堡的卡内基梅隆大学。他想知道机器能不能像孩子那样，自己从例子里长出分类。他和特伦斯·谢诺夫斯基（Terrence Sejnowski）等人从霍普菲尔德网络出发，往里加了两样东西。</p>
+<p>第一样是<strong>噪声</strong>。霍普菲尔德网络只往低处走，一旦掉进一个浅坑就再也出不来。辛顿让节点的选择带一点随机：输入很强时几乎总是听话，输入含糊时就像抛硬币。这份随机由一个「温度」控制，温度高就乱跳，温度低就稳重；先热后冷，网络就更容易找到深坑。描述「哪种排列有多大概率出现」的，正是 19 世纪物理学家玻尔兹曼的公式，于是这台机器在 1985 年有了个名字：<strong>玻尔兹曼机（Boltzmann machine）</strong>。</p>
+<p>第二样是<strong>隐藏节点（hidden nodes）</strong>：一部分节点接收图像，另一部分不直接看任何东西，负责给看到的东西找「解释」。辛顿在诺贝尔演讲里讲的学习方法，简单到近乎天真：</p>
+<figure><svg viewBox="0 0 520 210" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,'Noto Sans SC',sans-serif">
+<g stroke="#6d6656" stroke-width="1">
+<line x1="70" y1="60" x2="50" y2="150"/><line x1="70" y1="60" x2="110" y2="150"/><line x1="130" y1="60" x2="110" y2="150"/><line x1="130" y1="60" x2="170" y2="150"/><line x1="190" y1="60" x2="170" y2="150"/><line x1="190" y1="60" x2="230" y2="150"/><line x1="70" y1="60" x2="170" y2="150"/><line x1="190" y1="60" x2="50" y2="150"/>
+<line x1="330" y1="60" x2="310" y2="150"/><line x1="330" y1="60" x2="370" y2="150"/><line x1="390" y1="60" x2="370" y2="150"/><line x1="390" y1="60" x2="430" y2="150"/><line x1="450" y1="60" x2="430" y2="150"/><line x1="450" y1="60" x2="490" y2="150"/><line x1="330" y1="60" x2="430" y2="150"/><line x1="450" y1="60" x2="310" y2="150"/>
+</g>
+<g fill="#3a352b" stroke="#b69cf5" stroke-width="1.5"><circle cx="70" cy="60" r="12"/><circle cx="130" cy="60" r="12"/><circle cx="190" cy="60" r="12"/><circle cx="330" cy="60" r="12"/><circle cx="390" cy="60" r="12"/><circle cx="450" cy="60" r="12"/></g>
+<g fill="#e8c26a"><circle cx="50" cy="150" r="12"/><circle cx="110" cy="150" r="12"/><circle cx="170" cy="150" r="12"/><circle cx="230" cy="150" r="12"/></g>
+<g fill="#0d0c0a" stroke="#e8c26a" stroke-width="1.5"><circle cx="310" cy="150" r="12"/><circle cx="370" cy="150" r="12"/><circle cx="430" cy="150" r="12"/><circle cx="490" cy="150" r="12"/></g>
+<text x="140" y="26" fill="#f3dc9a" font-size="14" text-anchor="middle">醒：看真实的图</text>
+<text x="400" y="26" fill="#f3dc9a" font-size="14" text-anchor="middle">睡：自己做梦</text>
+<text x="140" y="186" fill="#a99f8a" font-size="12" text-anchor="middle">图像钉在可见节点上</text>
+<text x="140" y="204" fill="#d9cfb8" font-size="12" text-anchor="middle">一起亮的连接 +一点</text>
+<text x="400" y="186" fill="#a99f8a" font-size="12" text-anchor="middle">所有节点自由翻动</text>
+<text x="400" y="204" fill="#d9cfb8" font-size="12" text-anchor="middle">一起亮的连接 −一点</text>
+<text x="270" y="64" fill="#b69cf5" font-size="10" text-anchor="middle">隐藏</text>
+<text x="270" y="154" fill="#e8c26a" font-size="10" text-anchor="middle">可见</text>
+</svg><figcaption>玻尔兹曼机的学习：让「梦里的图」越来越像「醒着看到的图」</figcaption></figure>
+<p>醒着的时候，把真实图像钉在可见节点上，让网络晃荡到平衡，凡是同时亮着的两个节点，连接加一点；睡着的时候，什么都不钉，让网络自己「做梦」，同时亮着的连接减一点。日复一日，网络梦见的东西就越来越像它真实见过的东西。用他的话说，学习压低了真实数据的能量，抬高了网络自己幻想的能量。一台能凭空「生成」新样本的机器，这是最早的<strong>生成模型（generative model）</strong>之一。</p>
+<p>代价是慢。1985 年那篇论文自己就承认，当时的学习算法「very slow」（非常慢）。真正派上用场要等到它被瘦身：去掉同一层内部的连接，成了<strong>受限玻尔兹曼机（RBM）</strong>，再加上辛顿 2002 年的一条近似捷径。2006 年，他和合作者把一层层 RBM 叠起来，先在没有标签的数据里学出边角、轮廓这样的结构，再用<strong>反向传播（backpropagation）</strong>微调。又深又密的网络，从此训练得动了。</p>
+<p>辛顿自己在演讲最后的评价很克制：叠起来的 RBM「像一种酶」（like an enzyme），帮研究者跨进深度学习，跨过去之后就不再需要了。</p>
+</div>
+
+<div class="section">
+<span class="num">// 04</span>
+<h2>后来长出了什么，以及「这算物理吗」</h2>
+<p>从这两篇论文到你手机里的 AI，中间隔着很多人。委员会的报告自己列了一串：1986 年辛顿和鲁梅尔哈特（David Rumelhart）、威廉姆斯（Ronald Williams）展示了反向传播能训练带隐藏层的网络（这个算法此前别人用过，他们是「重新发明」并讲清了隐藏层在做什么）；杨立昆（Yann LeCun）的卷积网络从 1990 年代中期起被美国几家银行用来读支票上的手写数字；2012 年发现希格斯粒子的数据分析里也有神经网络。科普版给了一个对比：霍普菲尔德的网络不到 500 个参数，今天的大语言模型超过一万亿个。</p>
+<p>霍普菲尔德网络自己也没有过时。2020 年一篇题为《Hopfield Networks is All You Need》的论文证明：一种连续版本的「现代霍普菲尔德网络」，其回忆一步就完成，而这一步的更新规则<strong>和 Transformer 里的注意力机制（attention）等价</strong>。</p>
+<p>至于「这算物理吗」，<a href="https://lamarr-institute.org/blog/thoughts-physics-nobel-prize-2024/" target="_blank">争议</a>不小：有物理学家觉得奖给了计算机科学家，是物理学的危机；也有计算机科学家觉得，这是物理学在给 AI 认祖归宗。辛顿接到电话那天凌晨的回答很诚实：</p>
+<blockquote>I would say I am someone who doesn't really know what field he's in but would like to understand how the brain works.<br/>我会说，我是一个不太清楚自己属于哪个领域、但想弄懂大脑如何运作的人。<cite>— Geoffrey Hinton · Nobel 电话采访 · 2024 年 10 月</cite></blockquote>
+<p>委员会的理由是：这两项工作的方程本来就是统计物理的方程。与其说「AI 拿了物理奖」，不如说是承认：一堆简单单元的集体行为，本来就是物理学最擅长的题目。</p>
+</div>
+
+<div class="offstage">
+<h3>◐ 奖台之外</h3>
+<p>最尖锐的批评来自 LSTM 的提出者之一于尔根·施密德胡伯（Jürgen Schmidhuber）。他 2024 年 12 月发表、2025 年两次更新的<a href="https://people.idsia.ch/~juergen/physics-nobel-2024-plagiarism.html" target="_blank">技术报告</a>直接题为「A Nobel Prize for Plagiarism」，认为两人重新发表了乌克兰的伊瓦赫年科（Ivakhnenko）、日本的甘利俊一（Shun-ichi Amari）等人在 1960–70 年代的方法却没有引用。委员会的科学背景其实引了甘利 1972 年的论文，也写明反向传播此前已有人用过。</p>
+<p>被点名的甘利本人在<a href="https://www.riken.jp/en/news_pubs/news/2024/20241009_1/index.html" target="_blank">理化学研究所的贺词</a>里很平和，说这项研究的源头「部分可以追溯到日本」，还写了一句：「Physics has crossed boundaries.」（物理学跨越了边界。）</p>
+</div>
+
+<div class="everyday">
+<h3>◎ 对普通人的意义</h3>
+<h4>已经在你身边的</h4>
+<p>手机相册按人脸归类、语音输入、翻译、和聊天机器人对话，背后都是在这条线上长大的深度神经网络。辛顿在演讲里提到，Netflix 曾把 RBM 和别的方法结合起来，预测你会喜欢哪部片。</p>
+<p>更硬的证据来自医院。瑞典的 MASAI 随机对照试验在 2021–2022 年把 <b>105,934</b> 名参加乳腺筛查的女性随机分两组：一组由 AI 先分流、标出可疑处再由医生读片，一组照常由两名医生双读。2025 年发表的结果是，AI 组每千人查出 6.4 例癌症，对照组 5.0 例，假阳性没有显著增加，医生的读片量少了 44.2%。</p>
+<h4>接下来可能改变的</h4>
+<p>已经在临床试验里的：影像筛查这一类「看大量图、找少数异常」的工作，最可能先被改写，但还要看更长时间的随访。还在研究阶段的：委员会报告提到用神经网络替代昂贵的量子力学计算去筛选太阳能电池材料，让气候模型不加算力就看得更细。有成果，但离「AI 直接发明新材料」还远。</p>
+<h4>它不意味着什么</h4>
+<p>不意味着计算机会思考。委员会写给公众的科普里写得明白：「Although computers cannot think」（尽管计算机不会思考），它们只是能模仿记忆和学习的某些功能。也不意味着这两人发明了神经网络（1943 年就有了），更不意味着今天的聊天机器人是一台玻尔兹曼机：辛顿自己说，RBM 预训练后来被别的方法取代了。</p>
+<h4>可以借走的思维方式</h4>
+<p>当问题太模糊、写不出步骤时，试着定义一个「有多糟」的量，再找一种每个局部都能自己判断、往更不糟的方向挪一步的规则。霍普菲尔德网络没有总指挥，靠的就是这个。</p>
+</div>
+
+<div class="crossx">
+<h3>🌀 越界 · 跨学科的联想</h3>
+<ul>
+<li><b>分布式系统 · 无协调者的收敛</b>：霍普菲尔德网络是异步更新的，节点在随机时刻各自翻转，只看邻居。它能保证停下来，是因为连接对称，使得每一步都只会让全局能量下降：这正是分布式算法里用「势函数」证明收敛的套路。只是它收敛到的是<em>某一个</em>稳定态，不保证是你想要的那个。</li>
+<li><b>AI · 注意力就是一次回忆</b>：Transformer 的注意力拿当前的「查询」去和所有存着的「键」比相似度，再按相似度把对应的内容加权取回来。2020 年的现代霍普菲尔德网络证明，这和「把输入一步拉进最近的记忆洼地」是同一个更新。</li>
+<li><b>神经科学 · 双稳态知觉</b>：辛顿演讲里的例子，是用隐藏节点去「解释」一张模棱两可的线条画：同一组二维线条，可以对应两种三维立体。这和内克尔立方体（Necker cube）一样，看久了会在两种看法之间来回跳：两个差不多深的洼地，噪声让你偶尔翻过山脊。</li>
+<li><b>复杂性科学 · 自旋玻璃</b>：自旋玻璃是一种「互相矛盾」的磁铁，无论怎么排都没法让每对小磁针都满意，于是能量地形布满了无数个坑。研究它的理论被拿来计算霍普菲尔德网络的容量；这套理论的奠基人之一帕里西（Giorgio Parisi）拿了 2021 年物理学奖。</li>
+<li><b>佛学 · 熏习</b>：唯识宗讲「熏习」，反复的念头像香气熏进衣服，留下种子，下次遇到相似的境就更容易生起同样的念头。赫布规则做的是同一件事：一起亮的就加深连接，洼地越深，集水区越大，越多的输入被拽进同一个念头。玻尔兹曼机的「睡眠阶段」专门把自己幻想出来的洼地填浅一点，有点像机器版的「不执着于自己的妄想」，只是它求的是更像世界，而不是离开地形。</li>
+</ul>
+</div>
+
+<div class="thinking">
+<h3>// 深入思考</h3>
+<details><summary>如果一项工作用的方程来自物理，但研究对象是信息，它算物理吗？</summary><div>可以换个问法：学科是按「研究对象」划分，还是按「方法和问题的形状」划分？热力学当年也是从蒸汽机这个工程问题里长出来的。另一面的担心也合理：如果什么都能装进物理，诺贝尔物理学奖还在奖什么？</div></details>
+<details><summary>记忆存在网络的连接里，不在任何一个格子里。那「删除一条记忆」意味着什么？</summary><div>在霍普菲尔德网络里，每条连接都同时参与了很多记忆，你没法只拔掉一个格子。这正是今天大模型「遗忘某个人的隐私数据」这么难的原因之一。</div></details>
+<details><summary>噪声为什么有用？</summary><div>没有噪声的网络只往低处走，掉进浅坑就出不来。加一点随机，它才偶尔往上爬、翻过山脊找到更深的坑。组织和个人也一样吗？温度应该什么时候降？</div></details>
+<details><summary>辛顿说 RBM 像酶，用完就不再需要了。这种「脚手架式」的贡献该怎么评价？</summary><div>诺奖奖的是「使之成为可能」，施密德胡伯在意的是「谁最先」。一个看因果链，一个看时间戳，都有道理，也注定冲突。</div></details>
+</div>
+
+<div class="refs">
+<h3>// 出处</h3>
+<ul>
+<li><a href="https://www.nobelprize.org/prizes/physics/2024/popular-information/" target="_blank">Nobel Prize · Popular information: They used physics to find patterns in information</a>：两人经历、30 个节点与 435 条连接、一万亿参数的对比、「计算机不会思考」一句。</li>
+<li><a href="https://www.nobelprize.org/prizes/physics/2024/advanced-information/" target="_blank">Nobel Prize · Scientific background (PDF)</a>：1943–1969 的前史、能量式与磁性物理的对应、RBM 与 2006 年预训练、支票识别与希格斯粒子等应用、对甘利和反向传播前人的引用。</li>
+<li><a href="https://pubmed.ncbi.nlm.nih.gov/6953413/" target="_blank">Hopfield · 1982 · PNAS 79:2554</a>：联想记忆的原始论文，内容寻址、从部分还原整体。</li>
+<li><a href="https://www.cs.toronto.edu/~hinton/absps/cogscibm.pdf" target="_blank">Ackley, Hinton &amp; Sejnowski · 1985 · Cognitive Science 9:147</a>：玻尔兹曼机的学习算法与生成模型，以及「very slow」的自评。</li>
+<li><a href="https://www.nobelprize.org/prizes/physics/2024/hinton/lecture/" target="_blank">Hinton · Nobel Lecture「Boltzmann Machines」· 2024</a>：醒 / 睡两阶段学习、线条画的解释、Netflix、「像一种酶」；另见其<a href="https://www.nobelprize.org/prizes/physics/2024/hinton/interview/" target="_blank">电话采访</a>。</li>
+<li><a href="https://arxiv.org/abs/2008.02217" target="_blank">Ramsauer et al. · 2020 · Hopfield Networks is All You Need</a>：现代霍普菲尔德网络的更新规则等价于 Transformer 注意力。</li>
+<li><a href="https://pubmed.ncbi.nlm.nih.gov/39904652/" target="_blank">Hernström et al. · 2025 · Lancet Digital Health（MASAI 试验）</a>：AI 辅助乳腺筛查的随机对照结果：6.4 对 5.0 每千人、读片量减少 44.2%。</li>
+</ul>
+</div>
+
+<footer>BigCat · 诺奖精读 · 2024 物理学奖 · <a href="index.html">← 目录</a></footer>
+</div>
+</body></html>
