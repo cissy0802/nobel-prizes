@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <!-- TEMPLATE — copy to {slug}-prize{N}.html, fill every {{…}}, delete every TEMPLATE comment.
      English page: copy again to {slug}-prize{N}.en.html with lang="en", English text throughout,
      English labels for the boxes (see the EN: notes), and a langbar link reading 中文 →.
@@ -82,78 +83,70 @@ footer a{color:#e8c26a;text-decoration:none}
 <div class="langbar"><a href="{{slug}}-prize{{N}}.en.html">English →</a></div>
 <header>
 <span class="prize-tag">{{PHYSICS}} · {{2024}}</span>
-<h1>{{钩子标题：一句让人愣一下的话，不是奖项名}}</h1>
-<h2>{{副标题：大白话说这个奖奖了什么}}</h2>
+<h1 data-tts="f24c06f6bc69f1a9">{{钩子标题：一句让人愣一下的话，不是奖项名}}</h1>
+<h2 data-tts="568e32fe333c8d48">{{副标题：大白话说这个奖奖了什么}}</h2>
 <div class="laureates"><span>{{获奖人}}<em>{{机构或国籍 · 份额如 1/2}}</em></span><span>{{获奖人}}<em>{{…}}</em></span></div>
 <div class="motivation"><q>{{授奖词英文原文，逐字取自 API}}</q><span class="zh">{{授奖词中译}}</span></div>
 <!-- EN: the .motivation block keeps only the <q>; drop the .zh line. -->
 <div class="date">{{YYYY-MM-DD}} · BigCat</div>
 <p class="pitch">{{一句反直觉的钩子}}</p>
 </header>
-
 <div class="intro">
 <p>{{从一个人人有过的场景切入，不从「XXXX 年诺贝尔奖授予了……」开头。}}</p>
 </div>
-
 <!-- 3–4 sections. Science: 之前卡在哪 → 他们做了什么 → 为什么是突破 → 后来长出了什么.
      Literature: 这个人和 TA 的世界 → 授奖词拆开读 → 作品里到底发生了什么 → 为什么是 TA. -->
 <div class="section">
 <span class="num">// 01</span>
-<h2>{{小标题：一句有画面的话}}</h2>
+<h2 data-tts="b2ae48cb2b585ee0">{{小标题：一句有画面的话}}</h2>
 <p>{{正文}}</p>
 <!-- Optional diagram, only for things with spatial structure:
 <figure><svg viewBox="0 0 480 220" xmlns="http://www.w3.org/2000/svg">…</svg><figcaption>…</figcaption></figure> -->
 <!-- Optional quote, copied verbatim from text read this run:
 <blockquote>{{原文}}<cite>— {{谁 · 出处 · 年份}}</cite></blockquote> -->
 </div>
-
 <!-- OPTIONAL — only when there is something real and sourced. EN heading: ◐ Off the podium -->
 <div class="offstage">
-<h3>◐ 奖台之外</h3>
+<h3 data-tts="4088eb45252867fd">◐ 奖台之外</h3>
 <p>{{漏掉了谁 / 优先权之争 / 获奖后的争议}}</p>
 </div>
-
 <!-- REQUIRED. EN heading: ◎ What it means for the rest of us; h4s: Already around you / What may change next / What it does not mean / A way of thinking to borrow -->
 <div class="everyday">
-<h3>◎ 对普通人的意义</h3>
-<h4>已经在你身边的</h4>
+<h3 data-tts="2b6af93c1951039a">◎ 对普通人的意义</h3>
+<h4 data-tts="9d320fae7b9751a5">已经在你身边的</h4>
 <p>{{具体产品 / 药物 / 政策，带年份和数字}}</p>
-<h4>接下来可能改变的</h4>
+<h4 data-tts="cfbdef6b88f48b3c">接下来可能改变的</h4>
 <p>{{未来 5–15 年，分清已经在临床或已量产的和还在实验室的}}</p>
-<h4>它不意味着什么</h4>
+<h4 data-tts="20f2567d02b5fb3c">它不意味着什么</h4>
 <p>{{最常见的误读}}</p>
 <!-- optional, only if specific to this discovery: <h4>可以借走的思维方式</h4><p>…</p> -->
 </div>
-
 <!-- REQUIRED, 3–5 items. EN heading: 🌀 Crossing over · interdisciplinary links -->
 <div class="crossx">
-<h3>🌀 越界 · 跨学科的联想</h3>
+<h3 data-tts="2088f7a4170ed991">🌀 越界 · 跨学科的联想</h3>
 <ul>
 <li><b>{{学科 · 概念/人物}}</b>：{{结构上的同构，重心在共通点}}</li>
 </ul>
 </div>
-
 <!-- EN heading: // Think further -->
 <div class="thinking">
-<h3>// 深入思考</h3>
+<h3 data-tts="036af16ed35e5ba1">// 深入思考</h3>
 <details><summary>{{开放问题}}</summary><div>{{一段思路}}</div></details>
 </div>
-
 <!-- EN heading: // Sources -->
 <div class="refs">
-<h3>// 出处</h3>
+<h3 data-tts="3c72cfad5ae2279f">// 出处</h3>
 <ul>
 <li><a href="https://www.nobelprize.org/prizes/{{category}}/{{YYYY}}/popular-information/" target="_blank">Nobel Prize · Popular information</a> — {{支撑了本页哪一处}}</li>
 <li><a href="https://www.nobelprize.org/prizes/{{category}}/{{YYYY}}/advanced-information/" target="_blank">Nobel Prize · Scientific background</a> — {{…}}</li>
 <li><a href="{{论文原文链接}}" target="_blank">{{作者 · 年份 · 期刊}}</a> — {{…}}</li>
 </ul>
 </div>
-
 <footer>BigCat · 诺奖精读 · {{YYYY}} {{奖项}} · <a href="index.html">← 目录</a></footer>
 </div>
-<script src="https://hub.cissychen.com/comments.js" defer></script>
-<script src="https://hub.cissychen.com/search.js" defer></script>
-<script src="https://hub.cissychen.com/index-button.js" defer></script>
-<script src="https://hub.cissychen.com/i18n-tts.js" defer></script>
-<script src="https://hub.cissychen.com/lightbox.js" defer></script>
+<script defer="" src="https://hub.cissychen.com/comments.js"></script>
+<script defer="" src="https://hub.cissychen.com/search.js"></script>
+<script defer="" src="https://hub.cissychen.com/index-button.js"></script>
+<script defer="" src="https://hub.cissychen.com/i18n-tts.js"></script>
+<script defer="" src="https://hub.cissychen.com/lightbox.js"></script>
 </body></html>
