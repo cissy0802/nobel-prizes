@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>诺奖精读</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;background:#0d0c0a;color:#c9bfa9;line-height:1.6}
+.container{max-width:1080px;margin:0 auto;padding:18px 20px 60px}
+.langbar{display:flex;justify-content:flex-end;font-family:"SF Mono",Menlo,monospace;font-size:.8rem}
+.langbar a{color:#e8c26a;text-decoration:none;border:1px solid rgba(232,194,106,.3);padding:4px 12px;border-radius:20px}
+header{text-align:center;padding:44px 0 34px;border-bottom:1px solid rgba(232,194,106,0.16)}
+header h1{font-size:2rem;font-weight:800;background:linear-gradient(110deg,#f3dc9a 0%,#e8c26a 45%,#d9825b 92%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;letter-spacing:1px}
+header p{margin-top:10px;font-size:1rem;color:#a99f8a}
+header .subtitle{font-size:0.84rem;color:#e8c26a;margin-top:8px;font-family:"SF Mono",Menlo,monospace}
+.year{margin-top:30px}
+.year h2{font-family:"SF Mono",Menlo,monospace;font-size:1rem;color:#e8c26a;letter-spacing:2px;margin-bottom:12px}
+.row{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
+.cell{display:flex;flex-direction:column;gap:6px;padding:14px 14px 16px;border-radius:10px;background:rgba(255,255,255,0.035);border:1px solid rgba(232,194,106,0.14);border-top:3px solid #e8c26a;text-decoration:none;color:inherit;transition:all .15s;min-height:128px}
+a.cell:hover{transform:translateY(-2px);background:rgba(255,255,255,0.065);border-top-color:#d9825b}
+.cell .cat{font-family:"SF Mono",Menlo,monospace;font-size:0.72rem;color:#d9825b;letter-spacing:1px}
+.cell .who{font-size:0.86rem;font-weight:700;color:#efe6d2;line-height:1.4}
+.cell .hook{font-size:0.84rem;color:#b3a990;line-height:1.5}
+.cell.todo{background:rgba(255,255,255,0.012);border-color:rgba(232,194,106,0.05);border-top-color:#3a352b;cursor:default}
+.cell.todo .cat{color:#5e584b}.cell.todo .who{color:#7a7262}.cell.todo .hook{color:#5e584b}
+@media(max-width:860px){.row{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:480px){.row{grid-template-columns:minmax(0,1fr)}.cell{min-height:0}}
+</style>
+</head><body>
+<div class="container">
+<div class="langbar"><a href="index.en.html">English →</a></div>
+<header>
+<h1>诺奖精读</h1>
+<p>每期讲透一个诺贝尔奖：它发现了什么、对普通人意味着什么、和别的学科有什么相通之处</p>
+<p class="subtitle">2021–2026 · 物理 化学 医学 经济学 文学 · 每日一期 · 每年 10 月续一届</p>
+</header>
+<div class="grid">
+<section class="year"><h2>2026</h2><div class="row">
+<div class="cell todo" data-slug="physics-2026-icecube-neutrinos"><span class="cat">物理</span><span class="who">Halzen</span><span class="hook">冰立方与宇宙高能中微子</span></div>
+<div class="cell todo" data-slug="chemistry-2026-chiral-amplification"><span class="cat">化学</span><span class="who">Kagan · Soai</span><span class="hook">不对称合成的非线性效应与自催化</span></div>
+<div class="cell todo" data-slug="medicine-2026-optogenetics"><span class="cat">生理学或医学</span><span class="who">Deisseroth · Hegemann · Nagel</span><span class="hook">光控离子通道与光遗传学</span></div>
+<div class="cell todo" data-slug="economics-2026"><span class="cat">经济学</span><span class="who">待公布</span><span class="hook">10 月 12 日公布</span></div>
+<div class="cell todo" data-slug="literature-2026-carson"><span class="cat">文学</span><span class="who">卡森 Anne Carson</span><span class="hook">与古典传统对话的新文体</span></div>
+</div></section>
+<section class="year"><h2>2025</h2><div class="row">
+<div class="cell todo" data-slug="physics-2025-macroscopic-quantum"><span class="cat">物理</span><span class="who">Clarke · Devoret · Martinis</span><span class="hook">电路里的宏观量子隧穿</span></div>
+<div class="cell todo" data-slug="chemistry-2025-mofs"><span class="cat">化学</span><span class="who">Kitagawa · Robson · Yaghi</span><span class="hook">金属有机框架</span></div>
+<div class="cell todo" data-slug="medicine-2025-immune-tolerance"><span class="cat">生理学或医学</span><span class="who">Brunkow · Ramsdell · Sakaguchi</span><span class="hook">外周免疫耐受</span></div>
+<div class="cell todo" data-slug="economics-2025-innovation-growth"><span class="cat">经济学</span><span class="who">Mokyr · Aghion · Howitt</span><span class="hook">创新驱动的持续增长</span></div>
+<div class="cell todo" data-slug="literature-2025-krasznahorkai"><span class="cat">文学</span><span class="who">克拉斯诺霍尔卡伊 László Krasznahorkai</span><span class="hook">末日恐惧中重申艺术</span></div>
+</div></section>
+<section class="year"><h2>2024</h2><div class="row">
+<div class="cell todo" data-slug="physics-2024-neural-networks"><span class="cat">物理</span><span class="who">Hopfield · Hinton</span><span class="hook">人工神经网络</span></div>
+<div class="cell todo" data-slug="chemistry-2024-proteins"><span class="cat">化学</span><span class="who">Baker · Hassabis · Jumper</span><span class="hook">蛋白质设计与结构预测</span></div>
+<div class="cell todo" data-slug="medicine-2024-microrna"><span class="cat">生理学或医学</span><span class="who">Ambros · Ruvkun</span><span class="hook">微小 RNA</span></div>
+<div class="cell todo" data-slug="economics-2024-institutions"><span class="cat">经济学</span><span class="who">Acemoglu · Johnson · Robinson</span><span class="hook">制度与国家兴衰</span></div>
+<div class="cell todo" data-slug="literature-2024-han-kang"><span class="cat">文学</span><span class="who">韩江 Han Kang</span><span class="hook">直面历史创伤的诗意散文</span></div>
+</div></section>
+<section class="year"><h2>2023</h2><div class="row">
+<div class="cell todo" data-slug="physics-2023-attosecond"><span class="cat">物理</span><span class="who">Agostini · Krausz · L'Huillier</span><span class="hook">阿秒光脉冲</span></div>
+<div class="cell todo" data-slug="chemistry-2023-quantum-dots"><span class="cat">化学</span><span class="who">Bawendi · Brus · Yekimov</span><span class="hook">量子点</span></div>
+<div class="cell todo" data-slug="medicine-2023-mrna"><span class="cat">生理学或医学</span><span class="who">Karikó · Weissman</span><span class="hook">mRNA 疫苗的碱基修饰</span></div>
+<div class="cell todo" data-slug="economics-2023-goldin"><span class="cat">经济学</span><span class="who">Goldin</span><span class="hook">女性的劳动力市场</span></div>
+<div class="cell todo" data-slug="literature-2023-fosse"><span class="cat">文学</span><span class="who">福瑟 Jon Fosse</span><span class="hook">为不可言说者发声</span></div>
+</div></section>
+<section class="year"><h2>2022</h2><div class="row">
+<div class="cell todo" data-slug="physics-2022-entanglement"><span class="cat">物理</span><span class="who">Aspect · Clauser · Zeilinger</span><span class="hook">量子纠缠与贝尔不等式</span></div>
+<div class="cell todo" data-slug="chemistry-2022-click-chemistry"><span class="cat">化学</span><span class="who">Bertozzi · Meldal · Sharpless</span><span class="hook">点击化学与生物正交化学</span></div>
+<div class="cell todo" data-slug="medicine-2022-ancient-genomes"><span class="cat">生理学或医学</span><span class="who">Pääbo</span><span class="hook">已灭绝古人类的基因组</span></div>
+<div class="cell todo" data-slug="economics-2022-banks-crises"><span class="cat">经济学</span><span class="who">Bernanke · Diamond · Dybvig</span><span class="hook">银行与金融危机</span></div>
+<div class="cell todo" data-slug="literature-2022-ernaux"><span class="cat">文学</span><span class="who">埃尔诺 Annie Ernaux</span><span class="hook">个人记忆的根与集体约束</span></div>
+</div></section>
+<section class="year"><h2>2021</h2><div class="row">
+<div class="cell todo" data-slug="physics-2021-complex-systems"><span class="cat">物理</span><span class="who">Manabe · Hasselmann · Parisi</span><span class="hook">气候模型与复杂系统</span></div>
+<div class="cell todo" data-slug="chemistry-2021-organocatalysis"><span class="cat">化学</span><span class="who">List · MacMillan</span><span class="hook">不对称有机催化</span></div>
+<div class="cell todo" data-slug="medicine-2021-temperature-touch"><span class="cat">生理学或医学</span><span class="who">Julius · Patapoutian</span><span class="hook">温度与触觉的感受器</span></div>
+<div class="cell todo" data-slug="economics-2021-natural-experiments"><span class="cat">经济学</span><span class="who">Card · Angrist · Imbens</span><span class="hook">自然实验与因果推断</span></div>
+<div class="cell todo" data-slug="literature-2021-gurnah"><span class="cat">文学</span><span class="who">古尔纳 Abdulrazak Gurnah</span><span class="hook">殖民与难民的命运</span></div>
+</div></section>
+</div>
+</div>
+</body></html>
