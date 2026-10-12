@@ -11,6 +11,7 @@ header h1{font-size:2rem;font-weight:800;background:linear-gradient(110deg,#f3dc
 header p{margin-top:10px;font-size:1rem;color:#a99f8a}
 header .subtitle{font-size:0.84rem;color:#e8c26a;margin-top:8px;font-family:"SF Mono",Menlo,monospace}
 .subject{margin-top:34px}
+.subject .subnote{font-size:0.82rem;color:#8f8672;margin:-6px 0 12px}
 .subject h2{font-family:"SF Mono",Menlo,monospace;font-size:1rem;color:#e8c26a;letter-spacing:2px;margin-bottom:12px}
 .row{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
 .cell{display:flex;flex-direction:column;gap:6px;padding:14px 14px 16px;border-radius:10px;background:rgba(255,255,255,0.035);border:1px solid rgba(232,194,106,0.14);border-top:3px solid #e8c26a;text-decoration:none;color:inherit;transition:all .15s;min-height:128px}
@@ -30,7 +31,7 @@ a.cell:hover{transform:translateY(-2px);background:rgba(255,255,255,0.065);borde
 <header>
 <h1>Nobel Prizes, Explained</h1>
 <p>One Nobel Prize per issue: what was discovered, what it means for the rest of us, and what it shares with other fields</p>
-<p class="subtitle">2020–2026 · physics chemistry medicine economics literature · daily · a new year each October</p>
+<p class="subtitle">2020–2026 · physics chemistry medicine economics literature · plus three Turing Awards · daily · a new year each October</p>
 </header>
 <div class="grid">
 <section class="subject" data-cat="physics"><h2>Physics</h2><div class="row">
@@ -77,6 +78,11 @@ a.cell:hover{transform:translateY(-2px);background:rgba(255,255,255,0.065);borde
 <div class="cell todo" data-slug="literature-2022-ernaux"><span class="yr">2022</span><span class="who">Annie Ernaux</span><span class="hook">The roots and restraints of personal memory</span></div>
 <div class="cell todo" data-slug="literature-2021-gurnah"><span class="yr">2021</span><span class="who">Abdulrazak Gurnah</span><span class="hook">Colonialism and the fate of the refugee</span></div>
 <div class="cell todo" data-slug="literature-2020-gluck"><span class="yr">2020</span><span class="who">Louise Glück</span><span class="hook">An austere, unmistakable poetic voice</span></div>
+</div></section>
+<section class="subject" data-cat="turing"><h2>Turing Award · guest entries</h2><p class="subnote">Computing’s highest honour, not a Nobel; three years chosen for where they cross into other fields</p><div class="row">
+<div class="cell todo" data-slug="turing-2025-quantum-information"><span class="yr">2025</span><span class="who">Bennett · Brassard</span><span class="hook">Quantum information and cryptography</span></div>
+<div class="cell todo" data-slug="turing-2024-reinforcement-learning"><span class="yr">2024</span><span class="who">Barto · Sutton</span><span class="hook">Foundations of reinforcement learning</span></div>
+<div class="cell todo" data-slug="turing-2023-randomness"><span class="yr">2023</span><span class="who">Wigderson</span><span class="hook">Randomness and the theory of computation</span></div>
 </div></section>
 </div>
 </div>

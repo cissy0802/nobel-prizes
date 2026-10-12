@@ -1,11 +1,12 @@
 # 诺贝尔奖清单 Nobel Prizes Reading List（2020–2026 · 科学四奖 + 文学奖）
 
-BigCat 人工维护的清单：2020–2026 七年，每年物理、化学、生理学或医学、经济学、文学五个奖，共 35 期，**一个奖一页**（同年同奖拆给两项工作的，在一页里分两条线讲）。和平奖不收。
+BigCat 人工维护的清单：2020–2026 七年，每年物理、化学、生理学或医学、经济学、文学五个奖，共 35 期，另加图灵奖 3 期，**一个奖一页**（同年同奖拆给两项工作的，在一页里分两条线讲）。和平奖不收。
 
 获奖人与授奖词逐字取自官方 API `api.nobelprize.org/2.1/nobelPrizes?nobelPrizeYear=YYYY`（2026-10-11 拉取；2020 年于 2026-10-12 补入）。
 
 > **选题 / 编号规则**
 > - **严格从上往下取第一个未做的 slug**。顺序：**从 2026 年倒着写到 2020 年**（BigCat 定），同一年内按颁奖公布顺序（医学 → 物理 → 化学 → 文学 → 经济学）。**照顺序写，别跳序。**
+> - **最后三条是图灵奖客串**（BigCat 定：只收与兴趣越界的三届，放在全部诺奖之后）。图灵奖是计算机界的最高奖，但不由诺贝尔基金会颁发；获奖人和授奖词核对自维基百科与获奖人所在机构的新闻稿（ACM 官网对爬虫返回 403）。
 > - 文件名 `{slug}-prize{N}.html`，**N = 现有最大 N + 1**（写作顺序，与清单顺序解耦）。
 > - 本清单**人工维护、routine 只读不改**（`publish.sh` 硬卡改动）。全部写完 → PushNotification 告知、本次不发布。每年 10 月颁奖后，本地任务 `nobel-annual-refill` 会把新一届的五条**插到清单最前面**（新一届先写）。
 > - 每条下面的 `线索` 是选题时的提示，**不是结论**，读完官方材料后发现它不对，就按读到的写。
@@ -187,3 +188,18 @@ BigCat 人工维护的清单：2020–2026 七年，每年物理、化学、生�
   - motivation: for improvements to auction theory and inventions of new auction formats
   - 线索：「赢家的诅咒」——拍卖赢了，往往说明你出价最高估得最错。他们设计的频谱拍卖，替政府卖出了几百亿美元的无线电频段。
   - slug: `economics-2020-auctions`
+
+- **2025 图灵奖** — Charles H. Bennett, Gilles Brassard
+  - motivation: For their essential role in igniting and shaping the quantum revolution in computer science and in information and communications technology.
+  - 线索：1984 年的 BB84：用单个光子的偏振传密钥，偷听必然留下痕迹，安全性由物理定律担保，而不是靠数学难题。接上本站 2022 物理（纠缠）和 2025 物理（宏观量子），写时互链。
+  - slug: `turing-2025-quantum-information`
+
+- **2024 图灵奖** — Andrew G. Barto, Richard S. Sutton
+  - motivation: For developing the conceptual and algorithmic foundations of reinforcement learning
+  - 线索：时间差分学习里的「奖励预测误差」，后来在猴子的多巴胺神经元里被直接测到：一个工程算法反过来成了大脑的理论。
+  - slug: `turing-2024-reinforcement-learning`
+
+- **2023 图灵奖** — Avi Wigderson
+  - motivation: For foundational contributions to the theory of computation, including reshaping our understanding of the role of randomness in computation and mathematics, and for his decades of intellectual leadership in theoretical computer science
+  - 线索：抛硬币到底有没有让计算变强？「难度可以换来随机性」：如果有些问题足够难，随机算法就能被确定性算法替代。随机是一种资源，还是一种无知？
+  - slug: `turing-2023-randomness`
