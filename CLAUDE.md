@@ -2,7 +2,7 @@
 
 这是云端 routine 的执行说明。你是引擎本身（Opus），**自主完成、不等任何人确认**。当前工作目录已挂载本仓库。
 
-**定位**：每期讲透**一个诺贝尔奖**（2021–2026 年的物理、化学、生理学或医学、经济学、文学奖），写成**轻科普**：
+**定位**：每期讲透**一个诺贝尔奖**（2020–2026 年的物理、化学、生理学或医学、经济学、文学奖），写成**轻科普**：
 
 1. **讲透这个发现**：它之前卡在哪、他们做了什么、为什么是突破。用故事和画面讲，不用公式。
 2. **对普通人的意义**：它已经怎样进入你的生活、接下来可能改变什么，也要说清它**不**意味着什么。
@@ -138,13 +138,13 @@
 ## 6. 文件约定 / 发布
 
 - 文件放仓库根目录：`{slug}-prize{N}.html` + `{slug}-prize{N}.en.html`。
-- **index 按「年份 × 奖项」排成网格**，每个奖有一个固定格子，**不是按发布时间排序的列表**。发布前把 `index.html` 里本期对应的灰格（`<div class="cell todo" data-slug="{slug}">`）**原地**改成链接：
+- **index 按学科分组**（物理 / 化学 / 生理学或医学 / 经济学 / 文学各一栏，栏内按年份从新到旧），每个奖有一个固定格子，**不是按发布时间排序的列表**。发布前把 `index.html` 里本期对应的灰格（`<div class="cell todo" data-slug="{slug}">`）**原地**改成链接：
 
   ```html
   <!-- 之前 -->
-  <div class="cell todo" data-slug="physics-2024-neural-networks"><span class="cat">物理</span><span class="who">Hopfield · Hinton</span><span class="hook">人工神经网络</span></div>
+  <div class="cell todo" data-slug="physics-2024-neural-networks"><span class="yr">2024</span><span class="who">Hopfield · Hinton</span><span class="hook">人工神经网络</span></div>
   <!-- 之后 -->
-  <a class="cell" data-slug="physics-2024-neural-networks" href="physics-2024-neural-networks-prize1.html" data-updated="2026-10-12"><span class="cat">物理</span><span class="who">Hopfield · Hinton</span><span class="hook">一句钩子（≤ 30 字）</span></a>
+  <a class="cell" data-slug="physics-2024-neural-networks" href="physics-2024-neural-networks-prize1.html" data-updated="2026-10-12"><span class="yr">2024</span><span class="who">Hopfield · Hinton</span><span class="hook">一句钩子（≤ 30 字）</span></a>
   ```
 
   `index.en.html` 同样处理（英文钩子，链 `.en.html`）。**绝不新增格子，也不挪动格子。**`[待公布]` 的格子写的时候，把 `.who` 也改成真实的获奖人。

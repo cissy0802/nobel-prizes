@@ -10,18 +10,19 @@ header{text-align:center;padding:44px 0 34px;border-bottom:1px solid rgba(232,19
 header h1{font-size:2rem;font-weight:800;background:linear-gradient(110deg,#f3dc9a 0%,#e8c26a 45%,#d9825b 92%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;letter-spacing:1px}
 header p{margin-top:10px;font-size:1rem;color:#a99f8a}
 header .subtitle{font-size:0.84rem;color:#e8c26a;margin-top:8px;font-family:"SF Mono",Menlo,monospace}
-.year{margin-top:30px}
-.year h2{font-family:"SF Mono",Menlo,monospace;font-size:1rem;color:#e8c26a;letter-spacing:2px;margin-bottom:12px}
-.row{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
+.subject{margin-top:34px}
+.subject h2{font-family:"SF Mono",Menlo,monospace;font-size:1rem;color:#e8c26a;letter-spacing:2px;margin-bottom:12px}
+.row{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
 .cell{display:flex;flex-direction:column;gap:6px;padding:14px 14px 16px;border-radius:10px;background:rgba(255,255,255,0.035);border:1px solid rgba(232,194,106,0.14);border-top:3px solid #e8c26a;text-decoration:none;color:inherit;transition:all .15s;min-height:128px}
 a.cell:hover{transform:translateY(-2px);background:rgba(255,255,255,0.065);border-top-color:#d9825b}
-.cell .cat{font-family:"SF Mono",Menlo,monospace;font-size:0.72rem;color:#d9825b;letter-spacing:1px}
+.cell .yr{font-family:"SF Mono",Menlo,monospace;font-size:0.72rem;color:#d9825b;letter-spacing:1px}
 .cell .who{font-size:0.86rem;font-weight:700;color:#efe6d2;line-height:1.4}
 .cell .hook{font-size:0.84rem;color:#b3a990;line-height:1.5}
 .cell.todo{background:rgba(255,255,255,0.012);border-color:rgba(232,194,106,0.05);border-top-color:#3a352b;cursor:default}
-.cell.todo .cat{color:#5e584b}.cell.todo .who{color:#7a7262}.cell.todo .hook{color:#5e584b}
-@media(max-width:860px){.row{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:480px){.row{grid-template-columns:minmax(0,1fr)}.cell{min-height:0}}
+.cell.todo .yr{color:#5e584b}.cell.todo .who{color:#7a7262}.cell.todo .hook{color:#5e584b}
+@media(max-width:960px){.row{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:640px){.row{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:480px){.row{gap:8px}.cell{min-height:0;padding:10px 11px 12px}}
 </style>
 </head><body>
 <div class="container">
@@ -29,50 +30,53 @@ a.cell:hover{transform:translateY(-2px);background:rgba(255,255,255,0.065);borde
 <header>
 <h1>Nobel Prizes, Explained</h1>
 <p>One Nobel Prize per issue: what was discovered, what it means for the rest of us, and what it shares with other fields</p>
-<p class="subtitle">2021–2026 · physics chemistry medicine economics literature · daily · a new year each October</p>
+<p class="subtitle">2020–2026 · physics chemistry medicine economics literature · daily · a new year each October</p>
 </header>
 <div class="grid">
-<section class="year"><h2>2026</h2><div class="row">
-<div class="cell todo" data-slug="physics-2026-icecube-neutrinos"><span class="cat">Physics</span><span class="who">Halzen</span><span class="hook">IceCube and cosmic neutrinos</span></div>
-<div class="cell todo" data-slug="chemistry-2026-chiral-amplification"><span class="cat">Chemistry</span><span class="who">Kagan · Soai</span><span class="hook">Non-linear effects and autocatalysis</span></div>
-<div class="cell todo" data-slug="medicine-2026-optogenetics"><span class="cat">Medicine</span><span class="who">Deisseroth · Hegemann · Nagel</span><span class="hook">Light-gated ion channels and optogenetics</span></div>
-<div class="cell todo" data-slug="economics-2026"><span class="cat">Economics</span><span class="who">TBA</span><span class="hook">To be announced</span></div>
-<div class="cell todo" data-slug="literature-2026-carson"><span class="cat">Literature</span><span class="who">Anne Carson</span><span class="hook">New forms in dialogue with the classics</span></div>
+<section class="subject" data-cat="physics"><h2>Physics</h2><div class="row">
+<div class="cell todo" data-slug="physics-2026-icecube-neutrinos"><span class="yr">2026</span><span class="who">Halzen</span><span class="hook">IceCube and cosmic neutrinos</span></div>
+<div class="cell todo" data-slug="physics-2025-macroscopic-quantum"><span class="yr">2025</span><span class="who">Clarke · Devoret · Martinis</span><span class="hook">Macroscopic quantum tunnelling in a circuit</span></div>
+<a class="cell" data-slug="physics-2024-neural-networks" href="physics-2024-neural-networks-prize1.en.html" data-updated="2026-10-12"><span class="yr">2024</span><span class="who">Hopfield · Hinton</span><span class="hook">Memories as hollows in a landscape; learning by waking and dreaming</span></a>
+<div class="cell todo" data-slug="physics-2023-attosecond"><span class="yr">2023</span><span class="who">Agostini · Krausz · L'Huillier</span><span class="hook">Attosecond pulses of light</span></div>
+<div class="cell todo" data-slug="physics-2022-entanglement"><span class="yr">2022</span><span class="who">Aspect · Clauser · Zeilinger</span><span class="hook">Entanglement and Bell inequalities</span></div>
+<div class="cell todo" data-slug="physics-2021-complex-systems"><span class="yr">2021</span><span class="who">Manabe · Hasselmann · Parisi</span><span class="hook">Climate models and complex systems</span></div>
+<div class="cell todo" data-slug="physics-2020-black-holes"><span class="yr">2020</span><span class="who">Penrose · Genzel · Ghez</span><span class="hook">Black holes and the galactic centre</span></div>
 </div></section>
-<section class="year"><h2>2025</h2><div class="row">
-<div class="cell todo" data-slug="physics-2025-macroscopic-quantum"><span class="cat">Physics</span><span class="who">Clarke · Devoret · Martinis</span><span class="hook">Macroscopic quantum tunnelling in a circuit</span></div>
-<div class="cell todo" data-slug="chemistry-2025-mofs"><span class="cat">Chemistry</span><span class="who">Kitagawa · Robson · Yaghi</span><span class="hook">Metal–organic frameworks</span></div>
-<div class="cell todo" data-slug="medicine-2025-immune-tolerance"><span class="cat">Medicine</span><span class="who">Brunkow · Ramsdell · Sakaguchi</span><span class="hook">Peripheral immune tolerance</span></div>
-<div class="cell todo" data-slug="economics-2025-innovation-growth"><span class="cat">Economics</span><span class="who">Mokyr · Aghion · Howitt</span><span class="hook">Innovation-driven sustained growth</span></div>
-<div class="cell todo" data-slug="literature-2025-krasznahorkai"><span class="cat">Literature</span><span class="who">László Krasznahorkai</span><span class="hook">Art amid apocalyptic terror</span></div>
+<section class="subject" data-cat="chemistry"><h2>Chemistry</h2><div class="row">
+<div class="cell todo" data-slug="chemistry-2026-chiral-amplification"><span class="yr">2026</span><span class="who">Kagan · Soai</span><span class="hook">Non-linear effects and autocatalysis</span></div>
+<div class="cell todo" data-slug="chemistry-2025-mofs"><span class="yr">2025</span><span class="who">Kitagawa · Robson · Yaghi</span><span class="hook">Metal–organic frameworks</span></div>
+<div class="cell todo" data-slug="chemistry-2024-proteins"><span class="yr">2024</span><span class="who">Baker · Hassabis · Jumper</span><span class="hook">Protein design and structure prediction</span></div>
+<div class="cell todo" data-slug="chemistry-2023-quantum-dots"><span class="yr">2023</span><span class="who">Bawendi · Brus · Yekimov</span><span class="hook">Quantum dots</span></div>
+<div class="cell todo" data-slug="chemistry-2022-click-chemistry"><span class="yr">2022</span><span class="who">Bertozzi · Meldal · Sharpless</span><span class="hook">Click and bioorthogonal chemistry</span></div>
+<div class="cell todo" data-slug="chemistry-2021-organocatalysis"><span class="yr">2021</span><span class="who">List · MacMillan</span><span class="hook">Asymmetric organocatalysis</span></div>
+<div class="cell todo" data-slug="chemistry-2020-crispr"><span class="yr">2020</span><span class="who">Charpentier · Doudna</span><span class="hook">CRISPR genome editing</span></div>
 </div></section>
-<section class="year"><h2>2024</h2><div class="row">
-<a class="cell" data-slug="physics-2024-neural-networks" href="physics-2024-neural-networks-prize1.en.html" data-updated="2026-10-12"><span class="cat">Physics</span><span class="who">Hopfield · Hinton</span><span class="hook">Memories as hollows in a landscape; learning by waking and dreaming</span></a>
-<div class="cell todo" data-slug="chemistry-2024-proteins"><span class="cat">Chemistry</span><span class="who">Baker · Hassabis · Jumper</span><span class="hook">Protein design and structure prediction</span></div>
-<div class="cell todo" data-slug="medicine-2024-microrna"><span class="cat">Medicine</span><span class="who">Ambros · Ruvkun</span><span class="hook">MicroRNA</span></div>
-<div class="cell todo" data-slug="economics-2024-institutions"><span class="cat">Economics</span><span class="who">Acemoglu · Johnson · Robinson</span><span class="hook">Institutions and prosperity</span></div>
-<div class="cell todo" data-slug="literature-2024-han-kang"><span class="cat">Literature</span><span class="who">Han Kang</span><span class="hook">Poetic prose confronting historical trauma</span></div>
+<section class="subject" data-cat="medicine"><h2>Physiology or Medicine</h2><div class="row">
+<div class="cell todo" data-slug="medicine-2026-optogenetics"><span class="yr">2026</span><span class="who">Deisseroth · Hegemann · Nagel</span><span class="hook">Light-gated ion channels and optogenetics</span></div>
+<div class="cell todo" data-slug="medicine-2025-immune-tolerance"><span class="yr">2025</span><span class="who">Brunkow · Ramsdell · Sakaguchi</span><span class="hook">Peripheral immune tolerance</span></div>
+<div class="cell todo" data-slug="medicine-2024-microrna"><span class="yr">2024</span><span class="who">Ambros · Ruvkun</span><span class="hook">MicroRNA</span></div>
+<div class="cell todo" data-slug="medicine-2023-mrna"><span class="yr">2023</span><span class="who">Karikó · Weissman</span><span class="hook">Base modifications for mRNA vaccines</span></div>
+<div class="cell todo" data-slug="medicine-2022-ancient-genomes"><span class="yr">2022</span><span class="who">Pääbo</span><span class="hook">Genomes of extinct hominins</span></div>
+<div class="cell todo" data-slug="medicine-2021-temperature-touch"><span class="yr">2021</span><span class="who">Julius · Patapoutian</span><span class="hook">Receptors for temperature and touch</span></div>
+<div class="cell todo" data-slug="medicine-2020-hepatitis-c"><span class="yr">2020</span><span class="who">Alter · Houghton · Rice</span><span class="hook">Discovering hepatitis C</span></div>
 </div></section>
-<section class="year"><h2>2023</h2><div class="row">
-<div class="cell todo" data-slug="physics-2023-attosecond"><span class="cat">Physics</span><span class="who">Agostini · Krausz · L'Huillier</span><span class="hook">Attosecond pulses of light</span></div>
-<div class="cell todo" data-slug="chemistry-2023-quantum-dots"><span class="cat">Chemistry</span><span class="who">Bawendi · Brus · Yekimov</span><span class="hook">Quantum dots</span></div>
-<div class="cell todo" data-slug="medicine-2023-mrna"><span class="cat">Medicine</span><span class="who">Karikó · Weissman</span><span class="hook">Base modifications for mRNA vaccines</span></div>
-<div class="cell todo" data-slug="economics-2023-goldin"><span class="cat">Economics</span><span class="who">Goldin</span><span class="hook">Women in the labour market</span></div>
-<div class="cell todo" data-slug="literature-2023-fosse"><span class="cat">Literature</span><span class="who">Jon Fosse</span><span class="hook">Giving voice to the unsayable</span></div>
+<section class="subject" data-cat="economics"><h2>Economic Sciences</h2><div class="row">
+<div class="cell todo" data-slug="economics-2026"><span class="yr">2026</span><span class="who">TBA</span><span class="hook">To be announced</span></div>
+<div class="cell todo" data-slug="economics-2025-innovation-growth"><span class="yr">2025</span><span class="who">Mokyr · Aghion · Howitt</span><span class="hook">Innovation-driven sustained growth</span></div>
+<div class="cell todo" data-slug="economics-2024-institutions"><span class="yr">2024</span><span class="who">Acemoglu · Johnson · Robinson</span><span class="hook">Institutions and prosperity</span></div>
+<div class="cell todo" data-slug="economics-2023-goldin"><span class="yr">2023</span><span class="who">Goldin</span><span class="hook">Women in the labour market</span></div>
+<div class="cell todo" data-slug="economics-2022-banks-crises"><span class="yr">2022</span><span class="who">Bernanke · Diamond · Dybvig</span><span class="hook">Banks and financial crises</span></div>
+<div class="cell todo" data-slug="economics-2021-natural-experiments"><span class="yr">2021</span><span class="who">Card · Angrist · Imbens</span><span class="hook">Natural experiments and causality</span></div>
+<div class="cell todo" data-slug="economics-2020-auctions"><span class="yr">2020</span><span class="who">Milgrom · Wilson</span><span class="hook">Auction theory and new formats</span></div>
 </div></section>
-<section class="year"><h2>2022</h2><div class="row">
-<div class="cell todo" data-slug="physics-2022-entanglement"><span class="cat">Physics</span><span class="who">Aspect · Clauser · Zeilinger</span><span class="hook">Entanglement and Bell inequalities</span></div>
-<div class="cell todo" data-slug="chemistry-2022-click-chemistry"><span class="cat">Chemistry</span><span class="who">Bertozzi · Meldal · Sharpless</span><span class="hook">Click and bioorthogonal chemistry</span></div>
-<div class="cell todo" data-slug="medicine-2022-ancient-genomes"><span class="cat">Medicine</span><span class="who">Pääbo</span><span class="hook">Genomes of extinct hominins</span></div>
-<div class="cell todo" data-slug="economics-2022-banks-crises"><span class="cat">Economics</span><span class="who">Bernanke · Diamond · Dybvig</span><span class="hook">Banks and financial crises</span></div>
-<div class="cell todo" data-slug="literature-2022-ernaux"><span class="cat">Literature</span><span class="who">Annie Ernaux</span><span class="hook">The roots and restraints of personal memory</span></div>
-</div></section>
-<section class="year"><h2>2021</h2><div class="row">
-<div class="cell todo" data-slug="physics-2021-complex-systems"><span class="cat">Physics</span><span class="who">Manabe · Hasselmann · Parisi</span><span class="hook">Climate models and complex systems</span></div>
-<div class="cell todo" data-slug="chemistry-2021-organocatalysis"><span class="cat">Chemistry</span><span class="who">List · MacMillan</span><span class="hook">Asymmetric organocatalysis</span></div>
-<div class="cell todo" data-slug="medicine-2021-temperature-touch"><span class="cat">Medicine</span><span class="who">Julius · Patapoutian</span><span class="hook">Receptors for temperature and touch</span></div>
-<div class="cell todo" data-slug="economics-2021-natural-experiments"><span class="cat">Economics</span><span class="who">Card · Angrist · Imbens</span><span class="hook">Natural experiments and causality</span></div>
-<div class="cell todo" data-slug="literature-2021-gurnah"><span class="cat">Literature</span><span class="who">Abdulrazak Gurnah</span><span class="hook">Colonialism and the fate of the refugee</span></div>
+<section class="subject" data-cat="literature"><h2>Literature</h2><div class="row">
+<div class="cell todo" data-slug="literature-2026-carson"><span class="yr">2026</span><span class="who">Anne Carson</span><span class="hook">New forms in dialogue with the classics</span></div>
+<div class="cell todo" data-slug="literature-2025-krasznahorkai"><span class="yr">2025</span><span class="who">László Krasznahorkai</span><span class="hook">Art amid apocalyptic terror</span></div>
+<div class="cell todo" data-slug="literature-2024-han-kang"><span class="yr">2024</span><span class="who">Han Kang</span><span class="hook">Poetic prose confronting historical trauma</span></div>
+<div class="cell todo" data-slug="literature-2023-fosse"><span class="yr">2023</span><span class="who">Jon Fosse</span><span class="hook">Giving voice to the unsayable</span></div>
+<div class="cell todo" data-slug="literature-2022-ernaux"><span class="yr">2022</span><span class="who">Annie Ernaux</span><span class="hook">The roots and restraints of personal memory</span></div>
+<div class="cell todo" data-slug="literature-2021-gurnah"><span class="yr">2021</span><span class="who">Abdulrazak Gurnah</span><span class="hook">Colonialism and the fate of the refugee</span></div>
+<div class="cell todo" data-slug="literature-2020-gluck"><span class="yr">2020</span><span class="who">Louise Glück</span><span class="hook">An austere, unmistakable poetic voice</span></div>
 </div></section>
 </div>
 </div>
