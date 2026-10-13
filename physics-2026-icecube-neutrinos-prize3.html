@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>2026 物理学奖 · 南极冰下，一只隔着地球看星空的眼睛 — 诺奖精读</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;color:#ece5d6;line-height:1.85;min-height:100vh;
+  background:radial-gradient(1100px 560px at 10% -6%,rgba(232,194,106,0.10),transparent 60%),radial-gradient(900px 640px at 100% 2%,rgba(217,130,91,0.08),transparent 55%),linear-gradient(165deg,#0d0c0a 0%,#14110c 45%,#0a0907 100%);background-attachment:fixed}
+.container{max-width:760px;margin:0 auto;padding:18px 20px 90px}
+.langbar{display:flex;justify-content:flex-end;padding-top:10px;font-family:"SF Mono",Menlo,monospace;font-size:.8rem}
+.langbar a{color:#e8c26a;text-decoration:none;border:1px solid rgba(232,194,106,.3);padding:4px 12px;border-radius:20px}
+.langbar a:hover{border-color:#d9825b;color:#d9825b}
+header{text-align:center;padding:40px 0 22px}
+.prize-tag{display:inline-block;font-size:0.75rem;color:#e8c26a;font-family:"SF Mono",Menlo,monospace;letter-spacing:2px;border:1px solid rgba(232,194,106,0.42);padding:4px 13px;border-radius:20px;margin-bottom:16px;background:rgba(232,194,106,0.06)}
+header h1{font-size:2.1rem;font-weight:800;letter-spacing:.5px;line-height:1.3;background:linear-gradient(110deg,#f3dc9a 0%,#e8c26a 45%,#d9825b 92%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 2px 18px rgba(232,194,106,0.22))}
+header h2{font-size:1rem;color:#a99f8a;margin-top:10px;font-weight:400;letter-spacing:0.4px}
+.laureates{margin-top:18px;font-size:0.9rem;color:#d8cdb4}
+.laureates span{display:inline-block;margin:3px 6px;padding:2px 11px;border-radius:14px;background:rgba(232,194,106,0.07);border:1px solid rgba(232,194,106,0.18)}
+.laureates em{font-style:normal;color:#8f8672;font-size:0.8rem;margin-left:6px;font-family:"SF Mono",Menlo,monospace}
+.motivation{margin:18px auto 0;max-width:620px;font-size:0.88rem;color:#b9ae95;line-height:1.7}
+.motivation q{display:block;font-style:italic;color:#d9cfb8}
+.motivation q::before{content:"“"}.motivation q::after{content:"”"}
+.motivation .zh{display:block;margin-top:4px}
+header .date{font-size:0.8rem;color:#6d6656;margin-top:16px;font-family:"SF Mono",Menlo,monospace}
+header .pitch{margin-top:18px;font-size:0.98rem;color:#d9825b;font-style:italic}
+.intro{background:rgba(232,194,106,0.06);border-left:3px solid #e8c26a;padding:20px 24px;border-radius:0 10px 10px 0;margin:36px 0;font-size:0.99rem;color:#e2d9c6}
+.intro strong{color:#fff}
+.section{margin:46px 0 0}
+.section h2::before{content:"";display:block;width:28px;height:2px;background:#e8c26a;opacity:.75;margin-bottom:16px}
+.section h2{font-size:1.3rem;color:#fff;margin-bottom:16px;font-weight:700;line-height:1.38}
+.section p{margin-bottom:14px;color:#e2d9c6;font-size:0.96rem}
+.section strong{color:#fff}
+.section blockquote{margin:16px 0;padding:10px 18px;border-left:2px solid rgba(217,130,91,0.6);color:#d6c9ae;font-size:0.93rem;background:rgba(217,130,91,0.05);border-radius:0 8px 8px 0}
+.section blockquote cite{display:block;margin-top:6px;font-style:normal;font-size:0.8rem;color:#8f8672;font-family:"SF Mono",Menlo,monospace}
+figure{margin:24px 0}
+figure svg{display:block;width:100%;height:auto;max-width:520px;margin:0 auto}
+figcaption{text-align:center;font-size:0.82rem;color:#a99f8a;margin-top:12px;font-family:"SF Mono",Menlo,monospace}
+.glossary{margin:18px 0;border:1px dashed rgba(232,194,106,0.35);border-radius:10px;padding:14px 18px;font-size:0.9rem;color:#d6ccb4}
+.glossary b{color:#f0d68e}
+.offstage{margin:40px 0;background:rgba(217,130,91,0.06);border:1px solid rgba(217,130,91,0.3);border-radius:14px;padding:20px 24px}
+.offstage h3{color:#d9825b;font-size:0.86rem;letter-spacing:2px;margin-bottom:10px;font-family:"SF Mono",Menlo,monospace}
+.offstage p{color:#e6d6c8;font-size:0.93rem;margin-bottom:10px}
+.offstage p:last-child{margin-bottom:0}
+.everyday{margin:40px 0;background:linear-gradient(135deg,rgba(125,170,214,0.10),rgba(125,170,214,0.04));border:1px solid rgba(125,170,214,0.34);border-radius:14px;padding:22px 26px}
+.everyday h3{color:#8fb8de;font-size:0.88rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.everyday h4{color:#bcd6ee;font-size:0.95rem;margin:16px 0 6px;font-weight:700}
+.everyday h4:first-of-type{margin-top:0}
+.everyday p{color:#dfe7ef;font-size:0.94rem;margin-bottom:8px}
+.everyday b{color:#fff}
+.crossx{margin:40px 0;background:linear-gradient(135deg,rgba(182,156,245,0.10),rgba(232,194,106,0.05));border:1px solid rgba(182,156,245,0.32);border-radius:14px;padding:22px 26px}
+.crossx h3{color:#b69cf5;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.crossx p{color:#e6def5;font-size:0.92rem;line-height:1.8;margin-bottom:14px}
+.crossx b{color:#d4c4fb;font-weight:600}
+.crossx ul{list-style:none;margin:0}
+.crossx li{color:#e6def5;font-size:0.93rem;line-height:1.8;margin-bottom:14px;padding-left:20px;position:relative}
+.crossx li:last-child{margin-bottom:0}
+.crossx li::before{content:"◈";position:absolute;left:0;top:0.35em;color:#e8c26a;font-size:0.72rem}
+.crossx a,.section a,.everyday a,.offstage a{color:#f0d68e;text-decoration:none;border-bottom:1px dotted rgba(240,214,142,0.5)}
+.thinking{background:linear-gradient(135deg,rgba(232,194,106,0.05),rgba(182,156,245,0.05));border:1px solid rgba(232,194,106,0.2);border-radius:12px;padding:24px 26px;margin:40px 0}
+.thinking h3{color:#e8c26a;font-size:0.9rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.thinking details{background:rgba(13,12,10,0.55);border:1px solid rgba(232,194,106,0.16);border-radius:9px;padding:13px 17px;margin:10px 0;transition:all 0.2s}
+.thinking details[open]{background:rgba(232,194,106,0.05);border-color:rgba(232,194,106,0.4)}
+.thinking summary{cursor:pointer;color:#f0d68e;font-weight:600;font-size:0.93rem;list-style:none;outline:none;line-height:1.55}
+.thinking summary::-webkit-details-marker{display:none}
+.thinking summary::before{content:"▸ ";color:#d9825b}
+.thinking details[open] summary::before{content:"▾ "}
+.thinking details>div{margin-top:12px;padding-top:12px;border-top:1px dashed rgba(232,194,106,0.2);color:#e2d9c6;font-size:0.9rem;line-height:1.8}
+.refs{margin-top:34px}
+.refs h3{color:#d9825b;font-size:0.85rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.refs ul{list-style:none}
+.refs li{margin-bottom:9px;font-size:0.88rem;color:#a99f8a}
+.refs a{color:#e8c26a;text-decoration:none;border-bottom:1px dotted rgba(232,194,106,0.4)}
+.refs a:hover{color:#f3dc9a}
+footer{text-align:center;padding:48px 0 10px;font-size:0.8rem;color:#6d6656;font-family:"SF Mono",Menlo,monospace}
+footer a{color:#e8c26a;text-decoration:none}
+@media(max-width:600px){header h1{font-size:1.6rem}.section h2{font-size:1.14rem}.everyday,.crossx,.offstage,.thinking{padding:18px 18px}}
+</style></head><body>
+<div class="container">
+<div class="langbar"><a href="physics-2026-icecube-neutrinos-prize3.en.html">English →</a></div>
+<header>
+<span class="prize-tag">PHYSICS · 2026</span>
+<h1>南极冰下两公里，有一只隔着地球看星空的眼睛</h1>
+<h2>把一立方公里的冰装满光传感器，抓住从宇宙深处飞来、几乎不碰任何东西的中微子</h2>
+<div class="laureates"><span>弗朗西斯·哈尔岑 Francis Halzen<em>University of Wisconsin–Madison · 美国（生于比利时）· 1/1</em></span></div>
+<div class="motivation"><q>for decisive contributions to the IceCube Neutrino Observatory and the discovery of high-energy neutrinos of astrophysical origin</q><span class="zh">表彰他对冰立方中微子天文台的决定性贡献，以及对来自天体的高能中微子的发现</span></div>
+<div class="date">2026-10-13 · BigCat</div>
+<p class="pitch">这台望远镜看北半球的天空时，镜头朝下：让整个地球替它挡掉噪声。</p>
+</header>
+<div class="intro">
+<p>看一眼你的小拇指指甲。就在读这句话的一秒里，大约 <strong>650 亿个</strong>来自太阳的中微子穿过了它。你没有任何感觉，它们也接着穿过你的手、地板和整个地球，从另一面飞出去，好像这一路什么都没有。</p>
+<p>中微子（neutrino）不带电，几乎没有质量，绝大多数时候对物质视而不见。这让它成了宇宙里最诚实的信使：一路不拐弯、不被吸收；也让它成了最难抓的东西。你想记录一个对一切都视而不见的过客，只有一个笨办法：<strong>摆一张大到离谱的网，然后等。</strong></p>
+<p>这一年的物理学奖，奖给了把这张网铺在南极冰盖底下的人。</p>
+</div>
+<div class="section">
+<h2>宇宙在开火，我们找不到枪口</h2>
+<p>1912 年人们就发现，太空里一直有带电粒子砸向地球，叫宇宙射线（cosmic rays），主要是质子，也就是光秃秃的氢原子核。其中最猛的那些，能量最高能到地面最大加速器的百万倍。谁造出了这样的天然加速器？一百多年了，答案一直藏着。</p>
+<p>难处在于质子带电。银河系和星系之间到处是磁场，质子一路被拐来拐去，到地球时早已不指向老家，像在一座满是镜子的大厅里听枪声。高能的伽马射线（gamma rays）倒是走直线，却会在半路被尘埃和背景光吃掉。</p>
+<p>物理学家知道，同样的加速过程一定会顺带造出高能中微子。它不带电、不被吸收，回头一指就是源头。麻烦是它太「懒」：要抓到够多的宇宙中微子，探测器得有<strong>一立方公里</strong>那么大。1960 年就有三位物理学家各自提出：用大量清水当探测器，中微子偶尔撞上原子核，会打出一个带电粒子，它在水里发出一道淡蓝的光，叫切伦科夫光（Cherenkov light）。最先认真去做的是夏威夷外海的 DUMAND：1993 年在 4800 米深处放下第一根传感器串，没多久就出了故障；海里会发光的生物、海水里的放射性又一直添乱。1995 年，项目下马。</p>
+</div>
+<div class="section">
+<h2>一个对冰一无所知的人</h2>
+<p>1987 年秋天，比利时出生、在威斯康星大学做粒子理论的哈尔岑去堪萨斯大学讲课。台下一位冰川学家告诉他，苏联人在计划用无线电天线在南极冰里听中微子。哈尔岑和两位同事算了算，觉得这个办法门槛太高，抓不住他关心的那一档能量。他转念一想：<strong>何不直接在冰里看光？</strong>冰也透明，而南极底下有的是冰。</p>
+<p>他给 DUMAND 的负责人约翰·勒尼德（John Learned）发了一串邮件。1988 年 6 月，两人写出了「在深层极地冰里探测高能中微子」的预印本。多年后哈尔岑回忆：</p>
+<blockquote>“Had I not been completely ignorant of what was then known about the optical properties of natural ice, I would probably have done the same.”<br/>要不是我对当时已知的天然冰的光学性质一无所知，我大概也会像别人那样，想过就放弃了。<cite>— Francis Halzen · “Antarctic Dreams” · 1999，转引自诺贝尔委员会科学背景</cite></blockquote>
+<p>1991 年，团队先把光传感器吊进格陵兰冰盖的现成钻孔，证明冰里确实看得见粒子的光。接着去南极，造了前身 AMANDA。办法借自冰川学：用一种高压热水「花洒」往下融，融出一公里深的井，趁水还没冻住，把挂满传感器的缆线放下去。哈尔岑形容这种传感器是「反过来的灯泡」：不发光，收光，再变成电信号。1993 年平安夜，他坐在餐桌边，笔记本电脑搁在腿上，等南极传来第一根缆线放好的消息。</p>
+<p>结果令人失望。800 到 1000 米深的冰里全是细小气泡，光走不到半米就被打散，看不出粒子往哪儿跑。往下才是转机：1400 米以下的冰纯净得惊人，蓝光能走几百米，比谁预想的都远。哈尔岑获奖后在电话里说，那是五万年前落在南极的雪，事后看完全合理，但当初没有任何保证：</p>
+<blockquote>“…this was what really made the project possible and that was pure luck.”<br/>……真正让这个项目成为可能的是这一点，而那纯属运气。<cite>— Francis Halzen · 诺贝尔官网电话采访 · 2026</cite></blockquote>
+<p>AMANDA 证明了路能走通，但不够大。1999 年，以哈尔岑为首席科学家的冰立方（IceCube）提案交到美国国家科学基金会；2002 年获批，2004 年开工。南极只有 11 月到次年 2 月能干活，2005 到 2010 年共钻下 86 口井，2011 年全部建成：5160 个光传感器，挂在 1450 到 2450 米深处，圈住约十亿吨冰。</p>
+<figure><svg font-family="-apple-system,'Noto Sans SC',sans-serif" viewBox="0 0 520 320" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" markerHeight="10" markerUnits="userSpaceOnUse" markerWidth="10" orient="auto" refX="8" refY="5"><path d="M0,0 L10,5 L0,10 z" fill="#e8c26a"/></marker></defs>
+<rect fill="#1b2430" height="270" width="440" x="60" y="40"/>
+<line stroke="#cfe3f5" stroke-width="2" x1="60" x2="500" y1="40" y2="40"/>
+<text fill="#cfe3f5" font-size="12" x="66" y="32">冰面 · 南极点附近</text>
+<rect fill="#3a4656" height="20" opacity="0.8" width="440" x="60" y="120"/>
+<text fill="#dfe7ef" font-size="11" x="300" y="134">800–1000 米：气泡多，光走不到半米</text>
+<g stroke="#7d8fa3" stroke-dasharray="2 3" stroke-width="1">
+<line x1="140" x2="140" y1="40" y2="285"/><line x1="180" x2="180" y1="40" y2="285"/><line x1="220" x2="220" y1="40" y2="285"/><line x1="260" x2="260" y1="40" y2="285"/><line x1="300" x2="300" y1="40" y2="285"/><line x1="340" x2="340" y1="40" y2="285"/><line x1="380" x2="380" y1="40" y2="285"/><line x1="420" x2="420" y1="40" y2="285"/><line x1="460" x2="460" y1="40" y2="285"/>
+</g>
+<g fill="#8fb8de">
+<circle cx="140" cy="185" r="2.4"/><circle cx="140" cy="205" r="2.4"/><circle cx="140" cy="225" r="2.4"/><circle cx="140" cy="245" r="2.4"/><circle cx="140" cy="265" r="2.4"/><circle cx="140" cy="285" r="2.4"/>
+<circle cx="180" cy="185" r="2.4"/><circle cx="180" cy="205" r="2.4"/><circle cx="180" cy="225" r="2.4"/><circle cx="180" cy="245" r="2.4"/><circle cx="180" cy="265" r="2.4"/><circle cx="180" cy="285" r="2.4"/>
+<circle cx="220" cy="185" r="2.4"/><circle cx="220" cy="205" r="2.4"/><circle cx="220" cy="225" r="2.4"/><circle cx="220" cy="245" r="2.4"/><circle cx="220" cy="265" r="2.4"/><circle cx="220" cy="285" r="2.4"/>
+<circle cx="260" cy="185" r="2.4"/><circle cx="260" cy="205" r="2.4"/><circle cx="260" cy="225" r="2.4"/><circle cx="260" cy="245" r="2.4"/><circle cx="260" cy="265" r="2.4"/><circle cx="260" cy="285" r="2.4"/>
+<circle cx="300" cy="185" r="2.4"/><circle cx="300" cy="205" r="2.4"/><circle cx="300" cy="225" r="2.4"/><circle cx="300" cy="245" r="2.4"/><circle cx="300" cy="265" r="2.4"/><circle cx="300" cy="285" r="2.4"/>
+<circle cx="340" cy="185" r="2.4"/><circle cx="340" cy="205" r="2.4"/><circle cx="340" cy="225" r="2.4"/><circle cx="340" cy="245" r="2.4"/><circle cx="340" cy="265" r="2.4"/><circle cx="340" cy="285" r="2.4"/>
+<circle cx="380" cy="185" r="2.4"/><circle cx="380" cy="205" r="2.4"/><circle cx="380" cy="225" r="2.4"/><circle cx="380" cy="245" r="2.4"/><circle cx="380" cy="265" r="2.4"/><circle cx="380" cy="285" r="2.4"/>
+<circle cx="420" cy="185" r="2.4"/><circle cx="420" cy="205" r="2.4"/><circle cx="420" cy="225" r="2.4"/><circle cx="420" cy="245" r="2.4"/><circle cx="420" cy="265" r="2.4"/><circle cx="420" cy="285" r="2.4"/>
+<circle cx="460" cy="185" r="2.4"/><circle cx="460" cy="205" r="2.4"/><circle cx="460" cy="225" r="2.4"/><circle cx="460" cy="245" r="2.4"/><circle cx="460" cy="265" r="2.4"/><circle cx="460" cy="285" r="2.4"/>
+</g>
+<text fill="#a99f8a" font-size="11" text-anchor="end" x="56" y="189">1450 米</text>
+<text fill="#a99f8a" font-size="11" text-anchor="end" x="56" y="289">2450 米</text>
+<line marker-end="url(#ah)" stroke="#e8c26a" stroke-width="2.5" x1="440" x2="160" y1="306" y2="170"/>
+<g stroke="#8fb8de" stroke-width="1" opacity="0.8"><line x1="380" x2="372" y1="277" y2="252"/><line x1="320" x2="312" y1="248" y2="223"/><line x1="260" x2="252" y1="219" y2="194"/><line x1="380" x2="398" y1="277" y2="262"/><line x1="320" x2="338" y1="248" y2="233"/></g>
+<text fill="#f0d68e" font-size="12" x="70" y="160">穿过地球、自下而上的μ子</text>
+<text fill="#a99f8a" font-size="11" x="70" y="104">86 根缆线 · 5160 个光传感器（示意，未按比例）</text>
+</svg><figcaption>中微子在冰里撞出一个μ子，μ子一路留下蓝光；各传感器收到光的先后，就是它的方向</figcaption></figure>
+</div>
+<div class="section">
+<h2>在一亿个假警报里，认出一百个真的</h2>
+<p>建好只是开始。冰立方每天要记下一亿多个从头顶大气层钻下来的μ子（muon，一种重一些的电子的「表亲」），全是宇宙射线撞上大气的副产品。每年还会抓到约 10 万个中微子，绝大多数同样产自地球大气。按估算，真正来自宇宙深处的，一年大约只有 100 个。</p>
+<p>第一招是<strong>让地球当过滤网</strong>：μ子穿不过整个地球，所以只看从脚下往上走的径迹，大气μ子就几乎全被筛掉了。第二招是<strong>外圈当门卫</strong>：把冰体外层当成警戒带，只收那些在内部才「凭空」亮起来的事件，从外面钻进来的一律不算。</p>
+<p>第三招最妙。单看一个事件，谁也不敢说它来自宇宙；但两类中微子的能量分布不一样，大气的那类越往高能掉得越快，宇宙的那类掉得慢。到了几十 TeV（万亿电子伏）以上，后者就从背景里冒出头来。</p>
+<figure><svg font-family="-apple-system,'Noto Sans SC',sans-serif" viewBox="0 0 520 250" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ax" markerHeight="9" markerUnits="userSpaceOnUse" markerWidth="9" orient="auto" refX="7" refY="4.5"><path d="M0,0 L9,4.5 L0,9 z" fill="#a99f8a"/></marker></defs>
+<line marker-end="url(#ax)" stroke="#a99f8a" stroke-width="1.5" x1="70" x2="490" y1="210" y2="210"/>
+<line marker-end="url(#ax)" stroke="#a99f8a" stroke-width="1.5" x1="70" x2="70" y1="210" y2="20"/>
+<text fill="#a99f8a" font-size="12" text-anchor="end" x="490" y="232">能量越来越高 →</text>
+<text fill="#a99f8a" font-size="12" transform="rotate(-90 52 120)" text-anchor="middle" x="52" y="120">事件数（越往上越多）</text>
+<line stroke="#8fb8de" stroke-width="2.5" x1="80" x2="440" y1="40" y2="205"/>
+<line stroke="#e8c26a" stroke-width="2.5" x1="80" x2="470" y1="110" y2="180"/>
+<text fill="#8fb8de" font-size="12" x="150" y="52">大气中微子：掉得快</text>
+<text fill="#e8c26a" font-size="12" x="385" y="150">宇宙中微子：掉得慢</text>
+<line stroke="#d9825b" stroke-dasharray="4 4" stroke-width="1" x1="331" x2="331" y1="30" y2="210"/>
+<text fill="#d9825b" font-size="11" x="337" y="40">几十 TeV 以上，信号压过背景</text>
+</svg><figcaption>示意图：没法给单个事件贴标签，但两条曲线的斜率不同，高能那一端会露出马脚</figcaption></figure>
+<p>2013 年，团队本来在搜更高一档能量的中微子，却意外撞见两个约 1 PeV（千万亿电子伏）的事件，是当时人类见过能量最高的中微子。论文很克制：「可能是」宇宙来源的初步迹象，把握不够。顺着这条线索重新筛同一批数据，又找到 26 个，2013 年底在《科学》上报告了证据；2014 年加上第三年数据，37 个事件，纯大气来源的解释被以物理学的「发现」标准排除。它们大致均匀地散在整片天空，说明源头大多在银河系之外。</p>
+<p>这就是授奖词里那句「发现了来自天体的高能中微子」：不是找到了某一颗星，而是证明了<strong>宇宙里确实有一股高能中微子流</strong>，一扇新的窗户开了。</p>
+</div>
+<div class="section">
+<h2>窗户开了之后：一个耀变体、一个被裹住的黑洞，和银河系本身</h2>
+<p><strong>2017 年 9 月 22 日</strong>，冰立方抓到一个约 290 TeV 的中微子，不到一分钟，警报发往全世界的望远镜。它的来向离一个叫 TXS 0506+056 的耀变体（blazar，喷流正对地球的活跃星系）不到 0.06 度，而这个天体当时正在「发作」，伽马射线亮了七倍。回头翻旧数据，2014 到 2015 年间那个方向还有过一阵中微子爆发。</p>
+<p><strong>2022 年</strong>，在 110 个候选位置里，冰立方看到 79 个中微子来自 4600 万光年外的星系 NGC 1068。它的中心黑洞裹着厚厚的气体和尘埃，伽马射线微弱，中微子却很多。哈尔岑在获奖电话里说，这意味着中微子是在离黑洞很近、连光都逃不出来的地方产生的。</p>
+<p>2023 年，团队又看到来自银河系本身的高能中微子；到 2026 年，十二年数据让银河系成为第一个统计上越过「发现」门槛的高能中微子源，但仍认不出具体是哪几个点。今年 3 月，冰立方公布了自己迄今能量最高的一个：约 11 PeV。</p>
+<p>要实打实地说：NGC 1068 和 TXS 0506+056 的证据<strong>都还没到「发现」级</strong>。伽马射线暴被认为是候选源，一千多次联合搜寻却一个对应的中微子都没找到。窗户是开了，窗外是什么，大部分还看不清。</p>
+</div>
+<div class="offstage">
+<h3>◐ 奖台之外</h3>
+<p>想法不是一个人的。1960 年，马尔科夫（M. A. Markov）、莱因斯（F. Reines）和格赖森（K. Greisen）分别提出用水做中微子探测器；1988 年那篇冰里的预印本，署名还有勒尼德，只是他后来留在 DUMAND，没再回到南极。DUMAND 失败了，但委员会写明，它的技术遗产是后来那些水下望远镜的关键。</p>
+<p>冰立方本身是约 450 人、58 个机构、14 个国家的合作。哈尔岑获奖后说，最让人惊讶的其实是这个项目当年居然拿到了经费，「国家科学基金会应该得到很大的功劳」，还提到威斯康星大学保留着一间能自己造设备的实验室，热水钻就是在那里设计制造的。</p>
+</div>
+<div class="everyday">
+<h3>◎ 对普通人的意义</h3>
+<h4>已经在你身边的</h4>
+<p>老实说：<b>几乎没有直接进入生活的产品</b>，这是一项纯粹的基础研究。真正已经发生的是三件事。其一，人类第一次有了「用中微子看高能宇宙」的观测手段，2017 年以后，冰立方一抓到可疑事件，一分钟内就会通知世界各地的望远镜一起看。其二，副产品：为了读懂信号，团队把南极深层冰的光学性质测了个透，这些数据成了冰川研究的材料。其三，热水钻冰、在南极让五千多个传感器连续运转（建成后正常运行时间超过 99%），这套工程能力本身就是可复用的。</p>
+<h4>接下来可能改变的</h4>
+<p>下一代已经在路上。地中海的 KM3NeT 在只建成约十分之一时，于 2023 年 2 月抓到一个约 220 PeV 的中微子，是迄今能量最高的一个，2025 年在《自然》发表。冰立方计划扩建成 8 立方公里的 IceCube-Gen2，2023 年已获美国粒子物理规划小组（P5）建议资助，但建设经费尚未见公开落定。贝加尔湖、加拿大西海岸、中国南海也各有项目。十年内最现实的期待，是第一次以「发现」级的把握点名某一类宇宙加速器。</p>
+<p>还卡着的地方也很具体：KM3NeT 那个创纪录事件，按冰立方更长的观测时间和更大的面积，它本该也看到几个同档的，却一个没有。这处「对不上」的张力目前算在 2 到 3.5 个标准差之间，有人提出了新物理的解释，也可能只是运气。</p>
+<h4>它不意味着什么</h4>
+<p>「幽灵粒子」不是危险的辐射，每秒穿过你的那几百亿个，对你毫无影响。它也不是比光更快的东西。更常见的误读是「冰立方找到了宇宙射线的源头」：它证明了宇宙中微子存在，也给出了几个有希望的嫌疑人，但一百多年的老问题还没结案。</p>
+<h4>可以借走的思维方式</h4>
+<p><b>单个样本说不清，就看分布的尾巴。</b>冰立方从没能指着某一个事件说「这个一定来自宇宙」，它靠的是整批数据在高能端的形状。再加一条：<b>找一个噪声到不了的方向去看</b>，比如让地球挡在中间。</p>
+</div>
+<div class="crossx">
+<h3>🌀 越界 · 跨学科的联想</h3>
+<ul>
+<li><b>神经科学 · 双耳时间差</b>：你闭着眼也知道声音从左边来，因为大脑在比较声波到两只耳朵的先后，差的只是极短的一瞬。冰立方定方向是同一件事，只是把两只耳朵换成了五千多个传感器，比较的是蓝光到达各处的先后。区别只在规模，原理都是「用到达时间差反推来向」。</li>
+<li><b>分布式系统 · 可观测性的三根支柱</b>：日志、指标、调用链各自都有盲区，合起来才能定位故障。天文学现在叫「多信使」：宇宙射线能量足但方向被磁场搅乱，伽马射线方向准却会被吸收，中微子方向准、不被吸收，可数量少到一年一百个。三路信号互相补洞，TXS 0506+056 就是靠中微子报警、光学和伽马望远镜跟进才被盯上的。</li>
+<li><b>AI · 异常检测与类别不平衡</b>：每年约十万个中微子里只有约一百个是要找的，正负样本比约一比一千，还没有带标签的正样本。冰立方的做法和风控里抓欺诈很像：先用强规则砍掉绝大多数背景（只看上行径迹、外圈否决），再在剩下的人群上比较分布，而不是给每一笔交易下判决。</li>
+<li><b>佛学 · 缘起</b>：一个几乎不和任何东西发生关系的粒子，对我们来说就近乎不存在；我们认识它，只能通过那一次罕见的碰撞留下的光。「诸法因缘生」说的是事物的显现依赖关系，中微子把这句话变成了一个工程问题：关系越稀薄，你要准备的「缘」就得越多，多到一立方公里的冰。</li>
+</ul>
+</div>
+<div class="thinking">
+<h3>// 深入思考</h3>
+<details><summary>委员会把奖只给了哈尔岑一个人，可冰立方是 450 人的合作。大科学时代，「谁做出了发现」该怎么算？</summary><div>诺奖的规则最多三人，天然偏向「提出构想并扛住十几年的人」。授奖词用了「决定性贡献」而不是「发现」本身，措辞上已经在给合作留位置。值得想的是：当一项发现需要几百人、几十年，奖给「构想者兼领路人」和奖给「整个合作」，各自会让后来的年轻人学到什么？</div></details>
+<details><summary>哈尔岑说冰的透明「纯属运气」。如果冰在深处同样混浊，这个项目该在哪一步止损？</summary><div>格陵兰钻孔试验和 AMANDA 的第一批缆线，本质上都是低成本的「探针」：用小代价换关于冰的关键信息。真正的判断点是浅层气泡让人失望之后，是否值得再往下钻。你可以想想自己领域里，有哪些项目也该先花小钱买一条关键信息，再决定要不要下大注。</div></details>
+<details><summary>没法给单个事件贴「宇宙来源」的标签，那「发现」到底是在发现什么？</summary><div>发现的是一个总体：一股无法用大气来源解释的额外通量。这和流行病学说「某因素提高患病率」很像，你说不出是哪一个病人被它害了。值得想的是：基于总体的知识，在什么时候足以指导对个体的判断？</div></details>
+<details><summary>KM3NeT 的 220 PeV 事件与冰立方的沉默，你更倾向于新物理，还是一次统计上的巧合？</summary><div>2 到 3.5 个标准差，正处于物理学界最容易「看走眼」的区间，历史上这类张力多数随数据增加而消失，但也有少数最后成了新发现。判断的办法不是争论，而是等两台探测器各自积累更多数据，这也是为什么下一代探测器都强调要组网。</div></details>
+</div>
+<div class="refs">
+<h3>// 出处</h3>
+<ul>
+<li><a href="https://www.nobelprize.org/prizes/physics/2026/popular-information/" target="_blank">Nobel Prize · Popular information</a> — 指甲上的 650 亿个中微子、1993 年平安夜、气泡与 1400 米以下的清冰、Gen2 的 8 立方公里。</li>
+<li><a href="https://www.nobelprize.org/prizes/physics/2026/advanced-information/" target="_blank">Nobel Prize · Scientific background</a> — 1960 年的三份提议、DUMAND、1987 年堪萨斯那次讲座、冰立方的建造时间线、背景筛选、银河系与 NGC 1068 的统计显著性，以及哈尔岑 1999 年的那段回忆。</li>
+<li><a href="https://www.nobelprize.org/prizes/physics/2026/halzen/interview/" target="_blank">Francis Halzen · 获奖电话采访 · 2026</a> — 「纯属运气」、五万年前的雪、NSF 与威斯康星的实验室、NGC 1068 黑洞附近。</li>
+<li><a href="https://arxiv.org/abs/1311.5238" target="_blank">IceCube Collaboration · Science 342 (2013)</a> — 首批 28 个高能宇宙中微子的证据；两个 PeV 事件见 <a href="https://arxiv.org/abs/1304.5356" target="_blank">PRL 111 (2013)</a>。</li>
+<li><a href="https://arxiv.org/abs/2211.09972" target="_blank">IceCube Collaboration · Science 378 (2022)</a> — NGC 1068 的 79 个中微子与 4.2σ 的证据。</li>
+<li><a href="https://www.km3net.org/km3net-detects-the-highest-energy-neutrino-ever-observed/" target="_blank">KM3NeT 新闻稿 · 2025-02-12</a> — 地中海约 220 PeV 的创纪录事件，探测器仅建成约十分之一（独立于获奖人的后续进展）。</li>
+<li><a href="https://arxiv.org/abs/2502.21299" target="_blank">Does the 220 PeV Event at KM3NeT Point to New Physics? · arXiv 2025/2026</a> — KM3NeT 与冰立方之间 2–3.5σ 的张力。</li>
+</ul>
+</div>
+<footer>BigCat · 诺奖精读 · 2026 物理学奖 · <a href="index.html">← 目录</a></footer>
+</div>
+</body></html>
