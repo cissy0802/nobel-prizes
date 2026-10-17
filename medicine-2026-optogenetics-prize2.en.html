@@ -73,6 +73,12 @@ figcaption{text-align:center;font-size:0.82rem;color:#a99f8a;margin-top:12px;fon
 footer{text-align:center;padding:48px 0 10px;font-size:0.8rem;color:#6d6656;font-family:"SF Mono",Menlo,monospace}
 footer a{color:#e8c26a;text-decoration:none}
 @media(max-width:600px){header h1{font-size:1.6rem}.section h2{font-size:1.14rem}.everyday,.crossx,.offstage,.thinking{padding:18px 18px}}
+.ten{margin:40px 0}
+.ten h3{color:#e8c26a;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(232,194,106,.3);border-radius:12px;background:rgba(232,194,106,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(232,194,106,.12);font-size:.94rem;line-height:1.75;color:#e2d9c6}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#e8c26a}
 </style></head><body>
 <div class="container">
 <div class="langbar"><a href="medicine-2026-optogenetics-prize2.html">中文 →</a></div>
@@ -173,6 +179,21 @@ footer a{color:#e8c26a;text-decoration:none}
 <li><b>Neuroscience · attractors and memory</b>: as the <a href="physics-2024-neural-networks-prize1.en.html">2024 physics prize</a> page explains, give a Hopfield network part of a cue and the whole memory gets pulled back. The 2012 experiment is almost its biological version: light up only the original cells and the whole fear returns, as if the memory were a hollow in a landscape that you roll into once you touch its edge.</li>
 <li><b>Buddhism · the five aggregates</b>: Buddhist thought holds that the "self" is a bundle of five components (form, feeling, perception, mental formations, consciousness) that looks like one thing but can be taken apart. Optogenetics' dissection of anxiety, parenting and aggression has the same shape: a state that feels whole turns out to be several separately switchable pathways. The difference is the purpose: Buddhism takes it apart in order to stop clinging to it, science in order to repair it.</li>
 </ul>
+</div>
+<div class="ten">
+<h3>◆ Ten takeaways</h3>
+<ol class="takeaways">
+<li>Twentieth-century neuroscience could mostly only watch which areas lit up, unable to move one cell type on a millisecond scale, so causes were hard to pin down.</li>
+<li>Francis Crick imagined in 1979 activating or silencing just one type of neuron, and guessed that light would be the ideal signal.</li>
+<li>The alga's eyespot produces current half a millisecond after light arrives, which led Peter Hegemann to propose that one protein both senses light and opens the gate.</li>
+<li>Georg Nagel injected algal genes into frog eggs and in 2003 showed channelrhodopsin-2 opening within 0.2 milliseconds of blue light.</li>
+<li>In 2005 Karl Deisseroth put channelrhodopsin-2 into rat neurons, and each flash of blue light made a neuron fire once.</li>
+<li>Optogenetics, named in 2006, uses light for timing precision and genes to fit switches only into one type of cell.</li>
+<li>In 2012, lighting up the hippocampal cells that had been active during a fright made mice freeze even in a safe cage.</li>
+<li>Optogenetics splits seemingly unified states such as anxiety or caring for young into several pathways that can be switched separately.</li>
+<li>So far the clinical payoff is mostly in the eye: in 2021 a blind patient saw objects on a table again with a light-sensitive protein and special goggles.</li>
+<li>Optogenetics resembles fault injection in distributed systems: switch off one class of cells precisely and see whether the whole system holds up.</li>
+</ol>
 </div>
 <div class="thinking">
 <h3>// Think further</h3>

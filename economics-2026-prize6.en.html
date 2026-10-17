@@ -73,6 +73,12 @@ figcaption{text-align:center;font-size:0.82rem;color:#a99f8a;margin-top:12px;fon
 footer{text-align:center;padding:48px 0 10px;font-size:0.8rem;color:#6d6656;font-family:"SF Mono",Menlo,monospace}
 footer a{color:#e8c26a;text-decoration:none}
 @media(max-width:600px){header h1{font-size:1.6rem}.section h2{font-size:1.14rem}.everyday,.crossx,.offstage,.thinking{padding:18px 18px}}
+.ten{margin:40px 0}
+.ten h3{color:#e8c26a;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(232,194,106,.3);border-radius:12px;background:rgba(232,194,106,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(232,194,106,.12);font-size:.94rem;line-height:1.75;color:#e2d9c6}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#e8c26a}
 </style></head><body>
 </head><body>
 <div class="container">
@@ -188,6 +194,21 @@ footer a{color:#e8c26a;text-decoration:none}
 </ul>
 </div>
 
+<div class="ten">
+<h3>◆ Ten takeaways</h3>
+<ol class="takeaways">
+<li>Older macro models assumed people spend according to this month's income, and the stagflation of the 1970s broke that Keynesian recipe.</li>
+<li>The Lucas critique: statistical relationships are shadows of millions of decisions, so when policy changes, behavior and the relationships change with it.</li>
+<li>Robert Hall's 1978 implication: if people look ahead, nothing visible today should predict how their consumption changes.</li>
+<li>Hall and Mishkin estimated that about 80% of households look ahead as the theory says, while about 20% live hand to mouth.</li>
+<li>Michael Woodford added sticky prices to the perfect-market model, which made demand matter again and gave Keynes's intuition a micro derivation.</li>
+<li>The simplest New Keynesian model has just three relationships: household spending, firms' price setting and the central bank's interest-rate rule.</li>
+<li>The output gap is actual output minus output with fully flexible prices; after an energy price spike, raising rates may be right even as output falls.</li>
+<li>Aggregate demand depends on expectations of a long string of future short-term rates, so what a central bank says matters as much as what it does.</li>
+<li>In 2012 the Fed gave forward guidance in the form Woodford advocated: conditions for raising rates rather than a specific date.</li>
+<li>Hall's test has the same structure as the innovation test for a Kalman filter: if prediction errors still show a pattern, information went unused.</li>
+</ol>
+</div>
 <div class="thinking">
 <h3>// Think further</h3>
 <details><summary>When is "we can't predict it" evidence for a theory, and when is it just ignorance?</summary><div>Hall's test carries weight because the theory made a sharp prediction in advance that could have failed: no old information should have predictive power. A theory that merely said "consumption is complicated" would prove nothing. The difference is whether the test could have failed. Compare the efficient-markets hypothesis: both treat unpredictability as evidence, but stock markets have arbitrageurs erasing patterns and consumption has none.</div></details>

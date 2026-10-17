@@ -74,6 +74,12 @@ figcaption{text-align:center;font-size:0.82rem;color:#a99f8a;margin-top:12px;fon
 footer{text-align:center;padding:48px 0 10px;font-size:0.8rem;color:#6d6656;font-family:"SF Mono",Menlo,monospace}
 footer a{color:#e8c26a;text-decoration:none}
 @media(max-width:600px){header h1{font-size:1.6rem}.section h2{font-size:1.14rem}.everyday,.crossx,.offstage,.thinking{padding:18px 18px}}
+.ten{margin:40px 0}
+.ten h3{color:#e8c26a;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(232,194,106,.3);border-radius:12px;background:rgba(232,194,106,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(232,194,106,.12);font-size:.94rem;line-height:1.75;color:#e2d9c6}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#e8c26a}
 </style></head><body>
 <body>
 <div class="container">
@@ -180,6 +186,21 @@ footer a{color:#e8c26a;text-decoration:none}
 <li><b>物理 · 热力学与统计力学</b>：凯恩斯的消费函数像从宏观测量里直接拟合的状态方程，微观基础则像从分子运动推出压强。类比失效的地方是：分子不读央行公告，家庭会读。</li>
 <li><b>哲学 · 尤利西斯与塞壬</b>：Kydland 和 Prescott 1977 年指出，今天最好的计划，到明天总有动机违约。尤利西斯让水手把自己绑在桅杆上，是为了防明天的自己。伍德福德主张央行公开一条「看条件、不看日期」的规则，用的是同一个办法：先把明天的手脚绑住，今天的承诺才有人信。</li>
 </ul>
+</div>
+<div class="ten">
+<h3>◆ 十条要点</h3>
+<ol class="takeaways">
+<li>老一代宏观模型假定人们花多少看的是这个月挣多少，1970 年代的滞胀让这张凯恩斯式配方失灵。</li>
+<li>卢卡斯批判：统计关系只是千百万人决策的影子，政策一变，人的行为和这些关系都会跟着变。</li>
+<li>Robert Hall 1978 年的推论：如果人在往前看，用今天能看到的任何信息都预测不出消费的变化。</li>
+<li>Hall 和 Mishkin 估计约 80% 的家庭按理论往前看，约 20% 是挣多少花多少的月光族。</li>
+<li>Michael Woodford 在完美市场模型里加进黏性价格，让需求重新变得要紧，给了凯恩斯的直觉微观推导。</li>
+<li>新凯恩斯模型的最简版本只有三条关系：家庭消费、企业定价和央行的利率规则。</li>
+<li>产出缺口是实际产出减去价格能自由调整时的产出；能源价格暴涨时，产出下滑也可能需要加息。</li>
+<li>决定总需求的是人们对一长串未来利率的预期，所以央行怎么说和怎么做一样要紧。</li>
+<li>美联储 2012 年按 Woodford 主张的写法给出前瞻指引：只讲加息的判断标准，不讲具体日期。</li>
+<li>Hall 的检验和卡尔曼滤波的新息检验同构：预测误差里还能看出规律，就说明信息没用尽。</li>
+</ol>
 </div>
 <div class="thinking">
 <h3 data-tts="e1c46c176cda6c34">// 深入思考</h3>
