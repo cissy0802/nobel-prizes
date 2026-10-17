@@ -59,6 +59,12 @@ figcaption{text-align:center;font-size:0.82rem;color:#a99f8a;margin-top:12px;fon
 .crossx li{color:#e6def5;font-size:0.93rem;line-height:1.8;margin-bottom:14px;padding-left:20px;position:relative}
 .crossx li:last-child{margin-bottom:0}
 .crossx li::before{content:"◈";position:absolute;left:0;top:0.35em;color:#e8c26a;font-size:0.72rem}
+.ten{margin:40px 0}
+.ten h3{color:#e8c26a;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(232,194,106,.3);border-radius:12px;background:rgba(232,194,106,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(232,194,106,.12);font-size:.94rem;line-height:1.75;color:#e2d9c6}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#e8c26a}
 .crossx a,.section a,.everyday a,.offstage a{color:#f0d68e;text-decoration:none;border-bottom:1px dotted rgba(240,214,142,0.5)}
 .thinking{background:linear-gradient(135deg,rgba(232,194,106,0.05),rgba(182,156,245,0.05));border:1px solid rgba(232,194,106,0.2);border-radius:12px;padding:24px 26px;margin:40px 0}
 .thinking h3{color:#e8c26a;font-size:0.9rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
@@ -126,6 +132,17 @@ footer a{color:#e8c26a;text-decoration:none}
 <ul>
 <li><b>{{学科 · 概念/人物}}</b>：{{结构上的同构，重心在共通点}}</li>
 </ul>
+</div>
+<!-- REQUIRED, exactly 10 items (2026-10-16). EN heading: ◆ Ten takeaways
+     Each item one complete sentence (~20–45 字) that still makes sense copied into notes on its own:
+     name the laureate and the concept, no 「他」「这个蛋白」. Cover the story, mechanism, what it means
+     for the rest of us, plus one or two crossovers; follow the page order. Only what the page already
+     says: no new facts, no quotes. -->
+<div class="ten">
+<h3>◆ 十条要点</h3>
+<ol class="takeaways">
+<li>{{要点}}</li>
+</ol>
 </div>
 <!-- EN heading: // Think further -->
 <div class="thinking">
