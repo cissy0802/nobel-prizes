@@ -73,6 +73,12 @@ figcaption{text-align:center;font-size:0.82rem;color:#a99f8a;margin-top:12px;fon
 footer{text-align:center;padding:48px 0 10px;font-size:0.8rem;color:#6d6656;font-family:"SF Mono",Menlo,monospace}
 footer a{color:#e8c26a;text-decoration:none}
 @media(max-width:600px){header h1{font-size:1.6rem}.section h2{font-size:1.14rem}.everyday,.crossx,.offstage,.thinking{padding:18px 18px}}
+.ten{margin:40px 0}
+.ten h3{color:#e8c26a;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(232,194,106,.3);border-radius:12px;background:rgba(232,194,106,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(232,194,106,.12);font-size:.94rem;line-height:1.75;color:#e2d9c6}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#e8c26a}
 </style></head><body>
 <div class="container">
 <div class="langbar"><a href="physics-2024-neural-networks-prize1.html">中文 →</a></div>
@@ -190,6 +196,21 @@ footer a{color:#e8c26a;text-decoration:none}
 </ul>
 </div>
 
+<div class="ten">
+<h3>◆ Ten takeaways</h3>
+<ol class="takeaways">
+<li>Before 1982, computers found things by address; given half a blurry photo, they had no idea which drawer to open.</li>
+<li>In 1969 Minsky and Papert showed that simple networks cannot learn exclusive-or, and neural network funding stalled for a while.</li>
+<li>In 1982 John Hopfield carried the physics equations for magnetic materials into a network, making each memory a valley in an energy landscape.</li>
+<li>A Hopfield network has no central controller: each node looks only at its neighbors and flips toward lower energy, pulling a damaged photo back to the full memory.</li>
+<li>Geoffrey Hinton added temperature-controlled randomness and hidden nodes, and in 1985 the result was named the Boltzmann machine.</li>
+<li>A Boltzmann machine strengthens connections that fire together on real images while awake and weakens them while dreaming, so its dreams come to resemble the world.</li>
+<li>Stacking restricted Boltzmann machines for pretraining made deep, dense networks trainable for the first time in 2006.</li>
+<li>The modern Hopfield network of 2020 showed that attention in Transformers is the same update as one step of recall into the nearest memory valley.</li>
+<li>In Sweden's MASAI trial, breast screening triaged first by AI found more cancers and cut doctors' reading workload by 44.2%.</li>
+<li>Hebb's rule resembles the Yogacara idea of perfuming: connections that fire together deepen, so more inputs get pulled into the same thought.</li>
+</ol>
+</div>
 <div class="thinking">
 <h3>// Think further</h3>
 <details><summary>If a piece of work uses physics' equations but studies information, is it physics?</summary><div>Ask it another way: are disciplines defined by their objects, or by the shape of their methods and questions? Thermodynamics grew out of the steam engine, an engineering problem. The worry on the other side is fair too: if anything fits inside physics, what is the physics prize rewarding?</div></details>

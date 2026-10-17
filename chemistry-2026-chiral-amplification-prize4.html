@@ -74,6 +74,12 @@ figcaption{text-align:center;font-size:0.82rem;color:#a99f8a;margin-top:12px;fon
 footer{text-align:center;padding:48px 0 10px;font-size:0.8rem;color:#6d6656;font-family:"SF Mono",Menlo,monospace}
 footer a{color:#e8c26a;text-decoration:none}
 @media(max-width:600px){header h1{font-size:1.6rem}.section h2{font-size:1.14rem}.everyday,.crossx,.offstage,.thinking{padding:18px 18px}}
+.ten{margin:40px 0}
+.ten h3{color:#e8c26a;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(232,194,106,.3);border-radius:12px;background:rgba(232,194,106,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(232,194,106,.12);font-size:.94rem;line-height:1.75;color:#e2d9c6}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#e8c26a}
 </style></head>
 <body>
 <div class="container">
@@ -176,6 +182,21 @@ footer a{color:#e8c26a;text-decoration:none}
 <li><b>分布式系统 · 打破对称的选主</b>：一圈完全相同、跑着相同确定性程序的节点，在经典结果里无法选出唯一的领导者，因为谁都没理由比别人特殊；常用的解法是引入随机数。硤合反应把热运动当作免费的随机源，再用自催化把「谁先领先一点」锁定成全局共识。辛格尔顿踩到的坑在这里也成立：随机源一旦被污染，公平选举早就被操纵了。</li>
 <li><b>经济 · 收益递增与锁定</b>：录像带格式、键盘布局之争里，早期偶然多卖出一点的那方会吸引更多配套和用户，最后占领全部市场。经济学把这叫作收益递增导致的锁定。只有正反馈还不够，硤合 1990 年的反应就证明了「会复制但不压制对手」只会越印越淡；赢家通吃需要竞争对手被主动挤出。</li>
 </ul>
+</div>
+<div class="ten">
+<h3>◆ 十条要点</h3>
+<ol class="takeaways">
+<li>身体里的氨基酸全是「左手」，实验室不刻意引导却总造出左右各半的外消旋体，这是生命起源的一道谜题。</li>
+<li>弗兰克 1953 年提出放大单手性的三个条件：反应有偏向、两只手互相压制、产物能催化自身生成。</li>
+<li>卡冈 1986 年发现非线性效应：手性纯度不高的催化剂，能做出比自己更纯的产物。</li>
+<li>原因是少数那只手的配体被拉去和多数派组成干活很慢的左右混搭组合，等于被拖下场。</li>
+<li>只会复制自己、不压制对手的自催化会越印越淡，要放大必须同时有互相压制。</li>
+<li>硤合憲三 1995 年的硤合反应让产物催化自身生成，纯度 5% 的催化剂几轮后放大到约 90%。</li>
+<li>什么手性的东西都不加，硤合反应也会把分子数的随机偏差放大成单手产物，37 次里 18 比 19。</li>
+<li>辛格尔顿发现放大器灵敏到连试剂里的微量手性杂质都会放大，改进实验后才支持真正的偶然破缺。</li>
+<li>硤合反应用的是有机锌试剂，委员会明说它是原理验证，不是水环境里生命单手性起源的答案。</li>
+<li>硤合反应和铁磁体的自发对称性破缺同构：规则完全对称，结局却必须不对称，而且每次随机。</li>
+</ol>
 </div>
 <div class="thinking">
 <h3 data-tts="51401748b9b9a5ea">// 深入思考</h3>

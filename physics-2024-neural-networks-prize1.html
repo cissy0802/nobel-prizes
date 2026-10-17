@@ -74,6 +74,12 @@ figcaption{text-align:center;font-size:0.82rem;color:#a99f8a;margin-top:12px;fon
 footer{text-align:center;padding:48px 0 10px;font-size:0.8rem;color:#6d6656;font-family:"SF Mono",Menlo,monospace}
 footer a{color:#e8c26a;text-decoration:none}
 @media(max-width:600px){header h1{font-size:1.6rem}.section h2{font-size:1.14rem}.everyday,.crossx,.offstage,.thinking{padding:18px 18px}}
+.ten{margin:40px 0}
+.ten h3{color:#e8c26a;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(232,194,106,.3);border-radius:12px;background:rgba(232,194,106,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(232,194,106,.12);font-size:.94rem;line-height:1.75;color:#e2d9c6}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#e8c26a}
 </style></head><body>
 <div class="container">
 <div class="langbar"><a href="physics-2024-neural-networks-prize1.en.html">English →</a></div>
@@ -182,6 +188,21 @@ footer a{color:#e8c26a;text-decoration:none}
 <li><b>复杂性科学 · 自旋玻璃</b>：自旋玻璃是一种「互相矛盾」的磁铁，无论怎么排都没法让每对小磁针都满意，于是能量地形布满了无数个坑。研究它的理论被拿来计算霍普菲尔德网络的容量；这套理论的奠基人之一帕里西（Giorgio Parisi）拿了 2021 年物理学奖。</li>
 <li><b>佛学 · 熏习</b>：唯识宗讲「熏习」，反复的念头像香气熏进衣服，留下种子，下次遇到相似的境就更容易生起同样的念头。赫布规则做的是同一件事：一起亮的就加深连接，洼地越深，集水区越大，越多的输入被拽进同一个念头。玻尔兹曼机的「睡眠阶段」专门把自己幻想出来的洼地填浅一点，有点像机器版的「不执着于自己的妄想」，只是它求的是更像世界，而不是离开地形。</li>
 </ul>
+</div>
+<div class="ten">
+<h3>◆ 十条要点</h3>
+<ol class="takeaways">
+<li>1982 年以前的计算机靠地址找东西，给它半张模糊的照片，它不知道该去拉哪个抽屉。</li>
+<li>1969 年 明斯基和派珀特 指出简单网络学不会「二选一」，神经网络研究一度在经费上停摆。</li>
+<li>霍普菲尔德 1982 年把描述磁性材料的物理式子搬进网络，每段记忆是能量地形里的一处洼地。</li>
+<li>霍普菲尔德网络没有中央指挥，每个节点只看邻居、往能量更低处翻转，残缺的照片就被拽回完整记忆。</li>
+<li>辛顿给网络加入由温度控制的随机性和隐藏节点，1985 年得名玻尔兹曼机。</li>
+<li>玻尔兹曼机醒着时加强真实图像里一起亮的连接，做梦时减弱，让梦里的图越来越像真实的图。</li>
+<li>受限玻尔兹曼机一层层叠起来预训练，2006 年让又深又密的网络第一次训练得动。</li>
+<li>2020 年的现代霍普菲尔德网络证明，Transformer 的注意力和一步回忆进最近的记忆洼地是同一个更新。</li>
+<li>瑞典 MASAI 试验里，AI 先分流的乳腺筛查多查出癌症，医生的读片量少了 44.2%。</li>
+<li>赫布规则像唯识宗的熏习：一起亮的连接越加越深，洼地越大，越多的输入被拽进同一个念头。</li>
+</ol>
 </div>
 <div class="thinking">
 <h3 data-tts="602273cb2970d2f3">// 深入思考</h3>

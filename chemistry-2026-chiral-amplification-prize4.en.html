@@ -73,6 +73,12 @@ figcaption{text-align:center;font-size:0.82rem;color:#a99f8a;margin-top:12px;fon
 footer{text-align:center;padding:48px 0 10px;font-size:0.8rem;color:#6d6656;font-family:"SF Mono",Menlo,monospace}
 footer a{color:#e8c26a;text-decoration:none}
 @media(max-width:600px){header h1{font-size:1.6rem}.section h2{font-size:1.14rem}.everyday,.crossx,.offstage,.thinking{padding:18px 18px}}
+.ten{margin:40px 0}
+.ten h3{color:#e8c26a;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(232,194,106,.3);border-radius:12px;background:rgba(232,194,106,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(232,194,106,.12);font-size:.94rem;line-height:1.75;color:#e2d9c6}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#e8c26a}
 </style></head>
 <body>
 <div class="container">
@@ -175,6 +181,21 @@ footer a{color:#e8c26a;text-decoration:none}
 <li><b>Distributed systems · symmetry-breaking leader election</b>: a ring of identical nodes running the same deterministic program cannot, in the classic result, elect a unique leader, since none has a reason to be special; the standard fix is randomness. The Soai reaction uses thermal noise as a free random source, then autocatalysis turns "who's slightly ahead" into global consensus. Singleton's trap applies too: if your random source is contaminated, the fair election was rigged from the start.</li>
 <li><b>Economics · increasing returns and lock-in</b>: in format wars over video tapes or keyboard layouts, whoever sells a little more early attracts more complements and users and ends up owning the market. Positive feedback alone is not enough, though; Soai's 1990 reaction showed that copying without suppressing the rival just fades. Winner-take-all needs the competitor actively squeezed out.</li>
 </ul>
+</div>
+<div class="ten">
+<h3>◆ Ten takeaways</h3>
+<ol class="takeaways">
+<li>Every amino acid in the body is left-handed, yet unguided lab chemistry always gives a 50-50 racemate, which makes life's handedness a puzzle.</li>
+<li>In 1953 Frederick Frank set out three conditions for amplifying one hand: a biased reaction, mutual suppression of the two hands, and a product that catalyzes its own formation.</li>
+<li>In 1986 Henri Kagan discovered the non-linear effect: a catalyst of modest chiral purity can make a product purer than itself.</li>
+<li>The reason is that minority-hand ligands get pulled into slow mixed left-right pairs with the majority, effectively taking them out of play.</li>
+<li>Autocatalysis that copies itself without suppressing the rival fades with each copy; amplification also needs mutual suppression.</li>
+<li>In 1995 Kenso Soai's reaction had the product catalyze its own formation, lifting a 5% pure catalyst to about 90% within a few rounds.</li>
+<li>With nothing chiral added at all, the Soai reaction amplifies chance imbalances in molecule counts into one hand, 18 to 19 across 37 runs.</li>
+<li>Daniel Singleton found the amplifier sensitive enough to magnify trace chiral impurities in reagents; refined experiments then supported genuinely random symmetry breaking.</li>
+<li>The Soai reaction uses organozinc reagents, and the committee says plainly it is a proof of principle, not the answer to how life's handedness arose in water.</li>
+<li>The Soai reaction shares a structure with spontaneous symmetry breaking in a ferromagnet: perfectly symmetric rules, an outcome that must be asymmetric, chosen at random each time.</li>
+</ol>
 </div>
 <div class="thinking">
 <h3>// Think further</h3>
