@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>2025 Physics · A whole circuit that walks through walls — Nobel Prizes, Explained</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;color:#ece5d6;line-height:1.85;min-height:100vh;
+  background:radial-gradient(1100px 560px at 10% -6%,rgba(232,194,106,0.10),transparent 60%),radial-gradient(900px 640px at 100% 2%,rgba(217,130,91,0.08),transparent 55%),linear-gradient(165deg,#0d0c0a 0%,#14110c 45%,#0a0907 100%);background-attachment:fixed}
+.container{max-width:760px;margin:0 auto;padding:18px 20px 90px}
+.langbar{display:flex;justify-content:flex-end;padding-top:10px;font-family:"SF Mono",Menlo,monospace;font-size:.8rem}
+.langbar a{color:#e8c26a;text-decoration:none;border:1px solid rgba(232,194,106,.3);padding:4px 12px;border-radius:20px}
+.langbar a:hover{border-color:#d9825b;color:#d9825b}
+header{text-align:center;padding:40px 0 22px}
+.prize-tag{display:inline-block;font-size:0.75rem;color:#e8c26a;font-family:"SF Mono",Menlo,monospace;letter-spacing:2px;border:1px solid rgba(232,194,106,0.42);padding:4px 13px;border-radius:20px;margin-bottom:16px;background:rgba(232,194,106,0.06)}
+header h1{font-size:2.1rem;font-weight:800;letter-spacing:.5px;line-height:1.3;background:linear-gradient(110deg,#f3dc9a 0%,#e8c26a 45%,#d9825b 92%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 2px 18px rgba(232,194,106,0.22))}
+header h2{font-size:1rem;color:#a99f8a;margin-top:10px;font-weight:400;letter-spacing:0.4px}
+.laureates{margin-top:18px;font-size:0.9rem;color:#d8cdb4}
+.laureates span{display:inline-block;margin:3px 6px;padding:2px 11px;border-radius:14px;background:rgba(232,194,106,0.07);border:1px solid rgba(232,194,106,0.18)}
+.laureates em{font-style:normal;color:#8f8672;font-size:0.8rem;margin-left:6px;font-family:"SF Mono",Menlo,monospace}
+.motivation{margin:18px auto 0;max-width:620px;font-size:0.88rem;color:#b9ae95;line-height:1.7}
+.motivation q{display:block;font-style:italic;color:#d9cfb8}
+.motivation q::before{content:"“"}.motivation q::after{content:"”"}
+.motivation .zh{display:block;margin-top:4px}
+header .date{font-size:0.8rem;color:#6d6656;margin-top:16px;font-family:"SF Mono",Menlo,monospace}
+header .pitch{margin-top:18px;font-size:0.98rem;color:#d9825b;font-style:italic}
+.intro{background:rgba(232,194,106,0.06);border-left:3px solid #e8c26a;padding:20px 24px;border-radius:0 10px 10px 0;margin:36px 0;font-size:0.99rem;color:#e2d9c6}
+.intro strong{color:#fff}
+.section{margin:46px 0 0}
+.section h2::before{content:"";display:block;width:28px;height:2px;background:#e8c26a;opacity:.75;margin-bottom:16px}
+.section h2{font-size:1.3rem;color:#fff;margin-bottom:16px;font-weight:700;line-height:1.38}
+.section p{margin-bottom:14px;color:#e2d9c6;font-size:0.96rem}
+.section strong{color:#fff}
+.section blockquote{margin:16px 0;padding:10px 18px;border-left:2px solid rgba(217,130,91,0.6);color:#d6c9ae;font-size:0.93rem;background:rgba(217,130,91,0.05);border-radius:0 8px 8px 0}
+.section blockquote cite{display:block;margin-top:6px;font-style:normal;font-size:0.8rem;color:#8f8672;font-family:"SF Mono",Menlo,monospace}
+figure{margin:24px 0}
+figure svg{display:block;width:100%;height:auto;max-width:520px;margin:0 auto}
+figcaption{text-align:center;font-size:0.82rem;color:#a99f8a;margin-top:12px;font-family:"SF Mono",Menlo,monospace}
+.glossary{margin:18px 0;border:1px dashed rgba(232,194,106,0.35);border-radius:10px;padding:14px 18px;font-size:0.9rem;color:#d6ccb4}
+.glossary b{color:#f0d68e}
+.offstage{margin:40px 0;background:rgba(217,130,91,0.06);border:1px solid rgba(217,130,91,0.3);border-radius:14px;padding:20px 24px}
+.offstage h3{color:#d9825b;font-size:0.86rem;letter-spacing:2px;margin-bottom:10px;font-family:"SF Mono",Menlo,monospace}
+.offstage p{color:#e6d6c8;font-size:0.93rem;margin-bottom:10px}
+.offstage p:last-child{margin-bottom:0}
+.everyday{margin:40px 0;background:linear-gradient(135deg,rgba(125,170,214,0.10),rgba(125,170,214,0.04));border:1px solid rgba(125,170,214,0.34);border-radius:14px;padding:22px 26px}
+.everyday h3{color:#8fb8de;font-size:0.88rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.everyday h4{color:#bcd6ee;font-size:0.95rem;margin:16px 0 6px;font-weight:700}
+.everyday h4:first-of-type{margin-top:0}
+.everyday p{color:#dfe7ef;font-size:0.94rem;margin-bottom:8px}
+.everyday b{color:#fff}
+.crossx{margin:40px 0;background:linear-gradient(135deg,rgba(182,156,245,0.10),rgba(232,194,106,0.05));border:1px solid rgba(182,156,245,0.32);border-radius:14px;padding:22px 26px}
+.crossx h3{color:#b69cf5;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.crossx p{color:#e6def5;font-size:0.92rem;line-height:1.8;margin-bottom:14px}
+.crossx b{color:#d4c4fb;font-weight:600}
+.crossx ul{list-style:none;margin:0}
+.crossx li{color:#e6def5;font-size:0.93rem;line-height:1.8;margin-bottom:14px;padding-left:20px;position:relative}
+.crossx li:last-child{margin-bottom:0}
+.crossx li::before{content:"◈";position:absolute;left:0;top:0.35em;color:#e8c26a;font-size:0.72rem}
+.ten{margin:40px 0}
+.ten h3{color:#e8c26a;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(232,194,106,.3);border-radius:12px;background:rgba(232,194,106,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(232,194,106,.12);font-size:.94rem;line-height:1.75;color:#e2d9c6}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#e8c26a}
+.crossx a,.section a,.everyday a,.offstage a{color:#f0d68e;text-decoration:none;border-bottom:1px dotted rgba(240,214,142,0.5)}
+.thinking{background:linear-gradient(135deg,rgba(232,194,106,0.05),rgba(182,156,245,0.05));border:1px solid rgba(232,194,106,0.2);border-radius:12px;padding:24px 26px;margin:40px 0}
+.thinking h3{color:#e8c26a;font-size:0.9rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.thinking details{background:rgba(13,12,10,0.55);border:1px solid rgba(232,194,106,0.16);border-radius:9px;padding:13px 17px;margin:10px 0;transition:all 0.2s}
+.thinking details[open]{background:rgba(232,194,106,0.05);border-color:rgba(232,194,106,0.4)}
+.thinking summary{cursor:pointer;color:#f0d68e;font-weight:600;font-size:0.93rem;list-style:none;outline:none;line-height:1.55}
+.thinking summary::-webkit-details-marker{display:none}
+.thinking summary::before{content:"▸ ";color:#d9825b}
+.thinking details[open] summary::before{content:"▾ "}
+.thinking details>div{margin-top:12px;padding-top:12px;border-top:1px dashed rgba(232,194,106,0.2);color:#e2d9c6;font-size:0.9rem;line-height:1.8}
+.refs{margin-top:34px}
+.refs h3{color:#d9825b;font-size:0.85rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.refs ul{list-style:none}
+.refs li{margin-bottom:9px;font-size:0.88rem;color:#a99f8a}
+.refs a{color:#e8c26a;text-decoration:none;border-bottom:1px dotted rgba(232,194,106,0.4)}
+.refs a:hover{color:#f3dc9a}
+footer{text-align:center;padding:48px 0 10px;font-size:0.8rem;color:#6d6656;font-family:"SF Mono",Menlo,monospace}
+footer a{color:#e8c26a;text-decoration:none}
+@media(max-width:600px){header h1{font-size:1.6rem}.section h2{font-size:1.14rem}.everyday,.crossx,.offstage,.thinking{padding:18px 18px}}
+</style></head><body>
+<div class="container">
+<div class="langbar"><a href="physics-2025-macroscopic-quantum-prize8.html">中文 →</a></div>
+<header>
+<span class="prize-tag">PHYSICS · 2025</span>
+<h1>A whole circuit that walks through walls</h1>
+<h2>Quantum weirdness is not reserved for atoms. In 1985, three physicists in Berkeley made billions of electron pairs on a chip about a centimetre across tunnel and absorb energy in fixed packets, as if they were one particle. Today's superconducting quantum computers stand on that result</h2>
+<div class="laureates"><span>John Clarke<em>UC Berkeley · born in the UK · 1/3</em></span><span>Michel H. Devoret<em>Yale · UC Santa Barbara · Google Quantum AI · born in France · 1/3</em></span><span>John M. Martinis<em>UC Santa Barbara · Qolab · USA · 1/3</em></span></div>
+<div class="motivation"><q>for the discovery of macroscopic quantum mechanical tunnelling and energy quantisation in an electric circuit</q></div>
+<div class="date">Announced 2025-10-07 · 2026-10-18 · BigCat</div>
+<p class="pitch">The line between quantum and classical is not drawn by size. It is drawn by how much something gets disturbed.</p>
+</header>
+
+<div class="intro">
+<p>Put a marble in a bowl. Shake gently and it rolls around the bottom; shake hard enough and it hops over the rim. Don't shake at all and it stays put forever. Nobody needs a physics class to know this.</p>
+<p>Around 1984, inside a refrigerator at the University of California, Berkeley, cooled to about a hundredth of a degree above absolute zero, almost nothing was shaking. Yet the experimenters' "marble" kept turning up outside the bowl, <strong>not over the rim but straight through the side</strong>.</p>
+<p>Tunnelling itself was old news; single electrons and fragments of nuclei had been doing it since the 1920s. What was strange was the marble: <strong>one shared state of all the electron pairs in an entire superconducting circuit.</strong></p>
+</div>
+
+<div class="section">
+<h2>How big is too big for quantum mechanics?</h2>
+<p>Quantum tunnelling means a particle without enough energy to climb a barrier still has some chance of appearing on the far side. In 1928 George Gamow used it to explain a kind of radioactive decay: a chunk of the nucleus is walled in, should never get out, and yet some always do.</p>
+<p>But that is one particle at a time. A tennis ball never passes through a wall. So how far up does quantum mechanics reach? Schrödinger's cat, alive and dead at once, was meant as a jibe: scale quantum rules up to everyday objects and you get nonsense.</p>
+<p>Superconductors offered a place to attack the question. In some materials at very low temperature, electrons bind into <b>Cooper pairs</b>. Electrons insist on keeping their own places; Cooper pairs can all crowd into one and the same state, like a column marching in perfect step, and current flows with zero resistance. Sandwich a very thin insulator between two superconductors and you have a <b>Josephson junction</b>: in 1962 Brian Josephson, then a Cambridge graduate student, predicted Cooper pairs would slip through the insulator without resistance, and Bell Labs confirmed it the following year.</p>
+<p>Here is the key. Each side of the junction is a marching column, and the two columns are out of step by some amount, the <b>phase difference</b>. That number belongs to no single pair; <strong>every pair shares it</strong>. In 1978 the theorist Anthony Leggett asked: does a macroscopic quantity like that obey quantum mechanics itself? Can it tunnel?</p>
+<p>Lasers and superconductivity are quantum effects <strong>added up</strong> from countless particles. Leggett was asking whether <strong>one quantity standing for the whole</strong> is itself a quantum object. In the early 1980s several groups saw junctions stop responding to temperature below a certain point, as if tunnelling had taken over. But stray microwave noise leaking in from some warmer part of the apparatus could produce the same signature. You think nobody is shaking the bowl; somebody is, quietly.</p>
+</div>
+
+<div class="section">
+<h2>A fridge, a lot of copper powder, and a theory with no knobs</h2>
+<p>John Clarke was, like Josephson, a student of Brian Pippard at Cambridge, and moved to Berkeley in 1968. In 1964 his lab had no equipment to deposit thin films, so he could not make a junction; at tea a fellow student suggested putting a blob of solder on a niobium wire, which has a natural oxide skin. The next day Pippard looked at the thing on his desk and said:</p>
+<blockquote>It looks as though a slug crawled through the window last night and expired on your desk!<cite>— Brian Pippard · quoted in Clarke's 2025 Nobel lecture</cite></blockquote>
+<p>The sensitive voltmeter really was named the SLUG. Clarke's style was set: <strong>measure tiny signals, and be ruthless about noise</strong>.</p>
+<p>In 1980 John Martinis, fresh from a Berkeley BA, joined the group as a graduate student; in 1982 Michel Devoret arrived from Saclay, France, as a postdoc. They answered Leggett with the simplest possible setup: push a current through one junction. Below a critical value, the "particle" representing the phase difference sits trapped in a dip and there is <strong>no voltage</strong>; once it escapes, a voltage jumps up. They ramped the current, noted the instant the voltage appeared, and repeated it a thousand to a hundred thousand times per setting to get the average time spent in the dip, much like measuring a half-life.</p>
+<figure><svg viewBox="0 0 520 290" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,'Noto Sans SC',sans-serif">
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,5 L0,10 z" fill="#e8c26a"/></marker><marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,5 L0,10 z" fill="#8fb8de"/></marker></defs>
+<path d="M40,30 C80,170 120,205 170,205 C225,205 255,110 300,110 C345,110 385,175 500,245" fill="none" stroke="#a99f8a" stroke-width="2"/>
+<line x1="127" y1="194" x2="202" y2="194" stroke="#e8c26a" stroke-width="1.6"/>
+<line x1="106" y1="176" x2="222" y2="176" stroke="#e8c26a" stroke-width="1.6"/>
+<line x1="95" y1="162" x2="236" y2="162" stroke="#e8c26a" stroke-width="1.6"/>
+<circle cx="165" cy="188" r="6" fill="#f0a07c"/>
+<path d="M175,150 Q300,25 400,165" fill="none" stroke="#d9825b" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#ar)"/>
+<line x1="238" y1="162" x2="384" y2="162" stroke="#8fb8de" stroke-width="1.8" stroke-dasharray="3 3" marker-end="url(#ar2)"/>
+<text x="300" y="62" fill="#f0a07c" font-size="12" text-anchor="middle">thermal hop: shaken over the top (warmer)</text>
+<text x="312" y="152" fill="#a9cdee" font-size="12" text-anchor="middle">quantum tunnelling</text>
+<text x="30" y="246" fill="#e8c26a" font-size="12">energy levels: only these rungs</text>
+<text x="30" y="263" fill="#8f8672" font-size="11">(closer near the top; tunnelling gets easier)</text>
+<text x="168" y="222" fill="#a99f8a" font-size="11" text-anchor="middle">zero voltage: trapped</text>
+<text x="452" y="205" fill="#a99f8a" font-size="11" text-anchor="middle">voltage appears: escaped</text>
+<text x="260" y="284" fill="#8f8672" font-size="11" text-anchor="middle">across: phase difference of the Cooper pairs · up: potential energy</text>
+</svg><figcaption>The skeleton of the Berkeley experiment (schematic after the Nobel Committee's scientific background and Martinis et al. 1985, not measured data). More current makes the dip shallower and the wall lower</figcaption></figure>
+<p>The hard part was making sure nobody shook the bowl. The chip sat in a dilution refrigerator at 18 millikelvin, and the lines feeding it ran through a chain of newly developed <strong>copper-powder</strong> microwave filters that cut stray signals by more than 200 decibels between 0.1 and 12 gigahertz.</p>
+<p>The cleverer move: <strong>first make the junction classical</strong> (suppress its critical current with a magnetic field so it can only be shaken out by heat) and, in that uncontroversial regime, measure every parameter one by one. By the time they reached the crucial cold regime, the quantum prediction had <strong>no knobs left to turn after the fact</strong>.</p>
+<p>The results came in two parts. First: as the temperature fell, the escape rate tracked it at first, began to flatten below 50 mK, and stopped depending on temperature entirely below 25 mK, levelling off at the value zero-temperature tunnelling theory predicted. A control junction tuned classical kept tracking temperature all the way down, proving the fridge really was that cold. Second: shining 2 GHz microwaves on the junction at 28 mK, the escape rate jumped at three particular currents, exactly where the microwave energy matched the gap between two <b>energy levels</b>. This macroscopic "particle" could only take in energy in fixed packets, like an atom. The paper appeared on 7 October 1985; its abstract opens, "We report the first observation of quantized energy levels for a macroscopic variable." Forty years later to the day, the prize was announced.</p>
+</div>
+
+<div class="section">
+<h2>An artificial atom with wires attached</h2>
+<p>In Berkeley a state that is macroscopic in itself behaved, as a whole, like one quantum particle, and the outcome was a voltage you could read on a meter. Leggett likened it to Schrödinger's cat; the committee honestly adds that it is still many orders of magnitude smaller than a kitten.</p>
+<p>The deeper consequence: an atom's energy levels are fixed by nature, but this circuit's levels <strong>change when you turn the bias current</strong>, and their spacing is set by capacitance and critical current, things you can design. In a 1988 review in <i>Science</i>, the three and their colleagues called it a system "big enough to get one's grubby fingers on" and imagined "macroscopic nuclei with wires". Atoms could now be <strong>designed</strong>, <strong>wired up</strong> and printed on chips.</p>
+</div>
+
+<div class="section">
+<h2>From a physics paper to an industrial race</h2>
+<p>In 1994 Peter Shor showed that a quantum computer could factor large numbers fast, and the hunt began for two-level systems to serve as <b>qubits</b>; the Berkeley results put superconducting circuits on the list. In 1999 Nakamura, Pashkin and Tsai at NEC in Japan saw coherent oscillations between two levels of a superconducting circuit, lasting just 3 nanoseconds. In 2004 "circuit quantum electrodynamics" coupled qubits to microwave resonators and coherence times rose sharply; in 2007 the transmon, with Devoret among its authors, appeared, and many efforts to build large quantum computers use it today.</p>
+<p>In 2019 a Google team led by Martinis used the 53-qubit Sycamore processor on a sampling task that took about 200 seconds; they estimated a top supercomputer would need 10,000 years. IBM promptly replied that an ideal classical simulation of the task would take 2.5 days. In 2024 Google's Willow chip showed error correction getting better as the code grew: each step up in code distance cut the logical error rate by more than half, with the largest code using 101 qubits.</p>
+</div>
+
+<div class="offstage">
+<h3>◐ Off the podium</h3>
+<p>Leggett, who posed the question, is not on this year's list; he already won in 2003 for superfluid theory. The 1981 calculation he did with his student Amir Caldeira, on how friction suppresses tunnelling, is exactly the theory the Berkeley data were checked against. On the last page of his Nobel lecture Clarke lists seven pieces of "competing research" from the period, the earliest by R. F. Voss and R. A. Webb in 1981. And not everyone is convinced: a 2020 arXiv preprint re-examined three comparable experiments from 1981 to 2013 with a new criterion and judged their evidence for a "macroscopic quantum state" negative. It did not sway the committee, but it is a reminder that "cool it down and it turns quantum" is not automatic.</p>
+</div>
+
+<div class="everyday">
+<h3>◎ What it means for the rest of us</h3>
+<h4>Already around you</h4>
+<p>To be blunt: you do not own a superconducting quantum computer; it has to live in a fridge colder than outer space. But since 4 May 2016 anyone can run programs on a real five-qubit superconducting chip through IBM's cloud. Closer to home is encryption. Because a future quantum computer could break today's public-key cryptography, the US National Institute of Standards and Technology (NIST) published its first three post-quantum encryption standards on 13 August 2024 and urged administrators to start integrating them "immediately"; from version 131, Chrome uses one of them, ML-KEM, in the key exchange for web connections. Your browser is already guarding against a machine that does not yet exist, and the threat is not specific to superconducting hardware.</p>
+<h4>What may change next</h4>
+<p>The best result so far is one logical qubit protected by 101 physical qubits that outlives the best single physical qubit by a factor of 2.4; Google's own wording is that this performance, "if scaled", could meet the needs of large fault-tolerant algorithms. The near-term uses are in the lab: using superconducting circuits as artificial atoms to simulate other quantum systems. Claims of "septillions of years" deserve a discount. Fellow laureate Frank Wilczek is blunter: "Willow is — and quantum computation in general, for the foreseeable future, will be — a research project."</p>
+<h4>What it does not mean</h4>
+<p>It does not mean Schrödinger's cat has been confirmed, nor that big things are generally quantum. The experiment was hard precisely because the environment wipes out quantum behaviour in big things almost instantly; it took a hundredth of a degree and twenty orders of magnitude of filtering to see it. What tunnels is not an electron but a variable describing the whole. And the prize is not for quantum computers; the citation never mentions computing. It rewards the answer to a basic question from 40 years ago.</p>
+<h4>A way of thinking to borrow</h4>
+<p>Pin down every parameter where nobody disputes the physics, then make the theory predict the contested regime with <strong>no adjustable knobs</strong>. Earlier groups also saw the flattening; they lost because another explanation could fit it. Berkeley won by closing off the other explanations one by one. When you evaluate a model or an A/B test, "fits afterwards" and "called it beforehand" are different things.</p>
+</div>
+
+<div class="crossx">
+<h3>🌀 Crossing over · interdisciplinary links</h3>
+<ul>
+<li><b>Distributed systems · the price of strong consistency</b>: the committee contrasts two many-particle states. In a "product state" each particle is in its own superposition and measuring one leaves the rest alone, which is robust. In a "cat state" all are "all A or all B" together and measuring one collapses them all, which is fragile. Same shape as independent replicas versus a strongly consistent cluster: the tighter the binding, the more it acts as one thing, and the more it fears any outside disturbance. The difference: Cooper pairs don't reach agreement by passing messages.</li>
+<li><b>AI · energy landscapes and annealing</b>: Berkeley measured how a system leaves a local minimum: when warm, it is shaken over the top; when cold, it tunnels through. The first is how simulated annealing escapes; the second is the shortcut quantum annealing hopes to use. On this site, the <a href="physics-2024-neural-networks-prize1.en.html">2024 physics prize</a> treats Hopfield memories as dips in the same kind of landscape.</li>
+<li><b>Complexity science · order parameters and emergence</b>: the phase difference is a collective coordinate emerging from billions of parts, like a flock's heading. Usually the bigger the collective variable, the more classical it gets, as individual randomness averages out. Here it runs the other way: because every pair is in the same state, the emergent variable stays quantum.</li>
+<li><b>Buddhism · dependent origination</b>: "classical" is not an object's own nature but its relation to its surroundings. The same circuit, constantly "watched" by its environment, is classical; isolated well enough, it shows quantum behaviour. Properties set by relations rather than by an intrinsic essence is the shared structure between Nagarjuna's emptiness and the decoherence picture; in physics, though, the "relation" is a measurable coupling strength.</li>
+</ul>
+</div>
+
+<div class="ten">
+<h3>◆ Ten takeaways</h3>
+<ol class="takeaways">
+<li>Quantum tunnelling used to be a single-particle affair: without enough energy to clear a barrier, a particle can still turn up on the far side.</li>
+<li>The phase difference across a Josephson junction is one macroscopic number shared by billions of Cooper pairs, and in 1978 Leggett asked whether it obeys quantum mechanics.</li>
+<li>Early-1980s experiments saw junctions stop responding to temperature when cold, but stray microwave noise could fake that signature.</li>
+<li>Clarke, Devoret and Martinis cut interference by over 200 decibels with copper-powder filters and cooled their chip to 18 millikelvin.</li>
+<li>The Berkeley group measured every junction parameter in the classical regime first, leaving the quantum prediction no adjustable knobs.</li>
+<li>Below about 25 millikelvin the escape rate from the zero-voltage state stopped depending on temperature and matched the macroscopic tunnelling prediction.</li>
+<li>Under 2 GHz microwaves three resonance peaks appeared, showing the macroscopic variable absorbs energy only in fixed packets.</li>
+<li>Because bias current and circuit parameters set the energy levels, superconducting circuits became artificial atoms you can design and wire up.</li>
+<li>From the first coherent superconducting-qubit oscillations in 1999 to Willow's error correction in 2024, superconducting quantum computing remains a research project for the foreseeable future.</li>
+<li>Being classical is a relation between a system and its environment, not an intrinsic property; isolate a big thing well enough and it can act quantum.</li>
+</ol>
+</div>
+
+<div class="thinking">
+<h3>// Think further</h3>
+<details><summary>Without the quantum-computing sequel, would this experiment still be worth a Nobel?</summary><div>The citation names only tunnelling and energy quantisation. The 1985 paper answered a question from measurement theory: do macroscopic variables obey quantum mechanics? Its weight became clear only after it grew tools. Worth asking: does the Nobel reward the answer, or the doors the answer later opened?</div></details>
+<details><summary>Why is "no adjustable knobs" more convincing than "a great fit"?</summary><div>A theory with enough parameters can fit almost any curve, so a fit proves little. Pinning the parameters in the classical regime left the theory a single prediction in the quantum regime: hit or miss. Held-out test sets in machine learning and preregistration in science close the same loophole.</div></details>
+<details><summary>Where, then, is the boundary between quantum and classical?</summary><div>This experiment says the boundary is not size itself but how strongly a system couples to its environment. Is there an upper limit in principle? A virus, a speck of dust, a cat, if isolated well enough? That frontier is still being pushed, and it is where the interpretations of quantum mechanics part ways.</div></details>
+</div>
+
+<div class="refs">
+<h3>// Sources</h3>
+<ul>
+<li><a href="https://www.nobelprize.org/prizes/physics/2025/popular-information/" target="_blank">Nobel Prize · Popular information</a> — the centimetre chip, billions of Cooper pairs, the Schrödinger's cat comparison, artificial atoms and qubits.</li>
+<li><a href="https://www.nobelprize.org/prizes/physics/2025/advanced-information/" target="_blank">Nobel Prize · Scientific background</a> — Leggett's 1978 question, earlier experiments and the noise problem, the 200 dB copper-powder filters, the later timeline, product versus cat states.</li>
+<li><a href="https://www.physics.umd.edu/courses/Phys798C/AnlageFall25/Martinis-1985-Energy-Level%20Quantization%20in%20the.pdf" target="_blank">Martinis, Devoret &amp; Clarke · 1985 · Phys. Rev. Lett. 55, 1543</a> — the original energy-quantisation paper: 2 GHz, 28 mK, three resonances, parameters measured in the classical regime.</li>
+<li><a href="https://escholarship.org/uc/item/5010046z" target="_blank">Martinis, Devoret, Clarke &amp; Urbina · 1984 · LBL report</a> — early report of the tunnelling experiment: escape temperature flattening at low temperature in agreement with theory.</li>
+<li><a href="https://www.nobelprize.org/uploads/2025/12/lecture-clarke.pdf" target="_blank">John Clarke · 2025 Nobel lecture (PDF)</a> — the SLUG story and Pippard's line, when the team came together, 18 mK, the list of competing research.</li>
+<li><a href="https://www.nature.com/articles/s41586-019-1666-5" target="_blank">Arute et al. · 2019 · Nature</a> and <a href="https://arxiv.org/abs/2408.13687" target="_blank">Google Quantum AI · 2024 · arXiv</a> — Sycamore's 200 seconds versus 10,000 years; Willow's below-threshold error correction.</li>
+<li><a href="https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards" target="_blank">NIST · 2024-08-13</a> and <a href="https://thequantuminsider.com/2025/02/19/nobel-laureate-quantum-computing-wont-overtake-classical-machines-anytime-soon/" target="_blank">The Quantum Insider · 2025</a> — post-quantum encryption standards; Wilczek's cool assessment.</li>
+</ul>
+</div>
+<footer>BigCat · Nobel Prizes, Explained · 2025 Physics · <a href="index.en.html">← Contents</a></footer>
+</div>
+</body></html>

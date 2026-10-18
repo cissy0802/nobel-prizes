@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>2025 物理学奖 · 一整块电路，也会「穿墙」 — 诺奖精读</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;color:#ece5d6;line-height:1.85;min-height:100vh;
+  background:radial-gradient(1100px 560px at 10% -6%,rgba(232,194,106,0.10),transparent 60%),radial-gradient(900px 640px at 100% 2%,rgba(217,130,91,0.08),transparent 55%),linear-gradient(165deg,#0d0c0a 0%,#14110c 45%,#0a0907 100%);background-attachment:fixed}
+.container{max-width:760px;margin:0 auto;padding:18px 20px 90px}
+.langbar{display:flex;justify-content:flex-end;padding-top:10px;font-family:"SF Mono",Menlo,monospace;font-size:.8rem}
+.langbar a{color:#e8c26a;text-decoration:none;border:1px solid rgba(232,194,106,.3);padding:4px 12px;border-radius:20px}
+.langbar a:hover{border-color:#d9825b;color:#d9825b}
+header{text-align:center;padding:40px 0 22px}
+.prize-tag{display:inline-block;font-size:0.75rem;color:#e8c26a;font-family:"SF Mono",Menlo,monospace;letter-spacing:2px;border:1px solid rgba(232,194,106,0.42);padding:4px 13px;border-radius:20px;margin-bottom:16px;background:rgba(232,194,106,0.06)}
+header h1{font-size:2.1rem;font-weight:800;letter-spacing:.5px;line-height:1.3;background:linear-gradient(110deg,#f3dc9a 0%,#e8c26a 45%,#d9825b 92%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 2px 18px rgba(232,194,106,0.22))}
+header h2{font-size:1rem;color:#a99f8a;margin-top:10px;font-weight:400;letter-spacing:0.4px}
+.laureates{margin-top:18px;font-size:0.9rem;color:#d8cdb4}
+.laureates span{display:inline-block;margin:3px 6px;padding:2px 11px;border-radius:14px;background:rgba(232,194,106,0.07);border:1px solid rgba(232,194,106,0.18)}
+.laureates em{font-style:normal;color:#8f8672;font-size:0.8rem;margin-left:6px;font-family:"SF Mono",Menlo,monospace}
+.motivation{margin:18px auto 0;max-width:620px;font-size:0.88rem;color:#b9ae95;line-height:1.7}
+.motivation q{display:block;font-style:italic;color:#d9cfb8}
+.motivation q::before{content:"“"}.motivation q::after{content:"”"}
+.motivation .zh{display:block;margin-top:4px}
+header .date{font-size:0.8rem;color:#6d6656;margin-top:16px;font-family:"SF Mono",Menlo,monospace}
+header .pitch{margin-top:18px;font-size:0.98rem;color:#d9825b;font-style:italic}
+.intro{background:rgba(232,194,106,0.06);border-left:3px solid #e8c26a;padding:20px 24px;border-radius:0 10px 10px 0;margin:36px 0;font-size:0.99rem;color:#e2d9c6}
+.intro strong{color:#fff}
+.section{margin:46px 0 0}
+.section h2::before{content:"";display:block;width:28px;height:2px;background:#e8c26a;opacity:.75;margin-bottom:16px}
+.section h2{font-size:1.3rem;color:#fff;margin-bottom:16px;font-weight:700;line-height:1.38}
+.section p{margin-bottom:14px;color:#e2d9c6;font-size:0.96rem}
+.section strong{color:#fff}
+.section blockquote{margin:16px 0;padding:10px 18px;border-left:2px solid rgba(217,130,91,0.6);color:#d6c9ae;font-size:0.93rem;background:rgba(217,130,91,0.05);border-radius:0 8px 8px 0}
+.section blockquote cite{display:block;margin-top:6px;font-style:normal;font-size:0.8rem;color:#8f8672;font-family:"SF Mono",Menlo,monospace}
+figure{margin:24px 0}
+figure svg{display:block;width:100%;height:auto;max-width:520px;margin:0 auto}
+figcaption{text-align:center;font-size:0.82rem;color:#a99f8a;margin-top:12px;font-family:"SF Mono",Menlo,monospace}
+.glossary{margin:18px 0;border:1px dashed rgba(232,194,106,0.35);border-radius:10px;padding:14px 18px;font-size:0.9rem;color:#d6ccb4}
+.glossary b{color:#f0d68e}
+.offstage{margin:40px 0;background:rgba(217,130,91,0.06);border:1px solid rgba(217,130,91,0.3);border-radius:14px;padding:20px 24px}
+.offstage h3{color:#d9825b;font-size:0.86rem;letter-spacing:2px;margin-bottom:10px;font-family:"SF Mono",Menlo,monospace}
+.offstage p{color:#e6d6c8;font-size:0.93rem;margin-bottom:10px}
+.offstage p:last-child{margin-bottom:0}
+.everyday{margin:40px 0;background:linear-gradient(135deg,rgba(125,170,214,0.10),rgba(125,170,214,0.04));border:1px solid rgba(125,170,214,0.34);border-radius:14px;padding:22px 26px}
+.everyday h3{color:#8fb8de;font-size:0.88rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.everyday h4{color:#bcd6ee;font-size:0.95rem;margin:16px 0 6px;font-weight:700}
+.everyday h4:first-of-type{margin-top:0}
+.everyday p{color:#dfe7ef;font-size:0.94rem;margin-bottom:8px}
+.everyday b{color:#fff}
+.crossx{margin:40px 0;background:linear-gradient(135deg,rgba(182,156,245,0.10),rgba(232,194,106,0.05));border:1px solid rgba(182,156,245,0.32);border-radius:14px;padding:22px 26px}
+.crossx h3{color:#b69cf5;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.crossx p{color:#e6def5;font-size:0.92rem;line-height:1.8;margin-bottom:14px}
+.crossx b{color:#d4c4fb;font-weight:600}
+.crossx ul{list-style:none;margin:0}
+.crossx li{color:#e6def5;font-size:0.93rem;line-height:1.8;margin-bottom:14px;padding-left:20px;position:relative}
+.crossx li:last-child{margin-bottom:0}
+.crossx li::before{content:"◈";position:absolute;left:0;top:0.35em;color:#e8c26a;font-size:0.72rem}
+.ten{margin:40px 0}
+.ten h3{color:#e8c26a;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(232,194,106,.3);border-radius:12px;background:rgba(232,194,106,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(232,194,106,.12);font-size:.94rem;line-height:1.75;color:#e2d9c6}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#e8c26a}
+.crossx a,.section a,.everyday a,.offstage a{color:#f0d68e;text-decoration:none;border-bottom:1px dotted rgba(240,214,142,0.5)}
+.thinking{background:linear-gradient(135deg,rgba(232,194,106,0.05),rgba(182,156,245,0.05));border:1px solid rgba(232,194,106,0.2);border-radius:12px;padding:24px 26px;margin:40px 0}
+.thinking h3{color:#e8c26a;font-size:0.9rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.thinking details{background:rgba(13,12,10,0.55);border:1px solid rgba(232,194,106,0.16);border-radius:9px;padding:13px 17px;margin:10px 0;transition:all 0.2s}
+.thinking details[open]{background:rgba(232,194,106,0.05);border-color:rgba(232,194,106,0.4)}
+.thinking summary{cursor:pointer;color:#f0d68e;font-weight:600;font-size:0.93rem;list-style:none;outline:none;line-height:1.55}
+.thinking summary::-webkit-details-marker{display:none}
+.thinking summary::before{content:"▸ ";color:#d9825b}
+.thinking details[open] summary::before{content:"▾ "}
+.thinking details>div{margin-top:12px;padding-top:12px;border-top:1px dashed rgba(232,194,106,0.2);color:#e2d9c6;font-size:0.9rem;line-height:1.8}
+.refs{margin-top:34px}
+.refs h3{color:#d9825b;font-size:0.85rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.refs ul{list-style:none}
+.refs li{margin-bottom:9px;font-size:0.88rem;color:#a99f8a}
+.refs a{color:#e8c26a;text-decoration:none;border-bottom:1px dotted rgba(232,194,106,0.4)}
+.refs a:hover{color:#f3dc9a}
+footer{text-align:center;padding:48px 0 10px;font-size:0.8rem;color:#6d6656;font-family:"SF Mono",Menlo,monospace}
+footer a{color:#e8c26a;text-decoration:none}
+@media(max-width:600px){header h1{font-size:1.6rem}.section h2{font-size:1.14rem}.everyday,.crossx,.offstage,.thinking{padding:18px 18px}}
+</style></head><body>
+<div class="container">
+<div class="langbar"><a href="physics-2025-macroscopic-quantum-prize8.en.html">English →</a></div>
+<header>
+<span class="prize-tag">PHYSICS · 2025</span>
+<h1>一整块电路，也会「穿墙」</h1>
+<h2>量子力学的怪事不只属于原子。1985 年，伯克利的三个人让一块约一厘米大的芯片上数以十亿计的电子对，像一个粒子那样隧穿、按份吸收能量。今天的超导量子计算机就站在这上面</h2>
+<div class="laureates"><span>约翰·克拉克 John Clarke<em>UC Berkeley · 英国出生 · 1/3</em></span><span>米歇尔·德沃雷 Michel H. Devoret<em>Yale · UC Santa Barbara · Google Quantum AI · 法国出生 · 1/3</em></span><span>约翰·马丁尼斯 John M. Martinis<em>UC Santa Barbara · Qolab · 美国 · 1/3</em></span></div>
+<div class="motivation"><q>for the discovery of macroscopic quantum mechanical tunnelling and energy quantisation in an electric circuit</q><span class="zh">表彰他们发现了电路中的宏观量子隧穿和能量量子化</span></div>
+<div class="date">2025-10-07 公布 · 2026-10-18 · BigCat</div>
+<p class="pitch">量子和经典的分界线不是按大小划的，是按「有没有被打扰」划的。</p>
+</header>
+
+<div class="intro">
+<p>碗里放一颗弹珠。轻轻晃，它在碗底来回滚；晃得够狠，它会翻过碗沿掉出去。不晃，它就永远待在碗底。这是你从小就知道的事，不需要任何物理课。</p>
+<p>1984 年前后，加州大学伯克利分校的一台冰箱里，冷到只比绝对零度高百分之一度，几乎没有东西在「晃」。可他们的那颗「弹珠」还是一次又一次地出现在碗外面，<strong>没有翻过碗沿，是从碗壁里直接穿了过去</strong>。</p>
+<p>怪的不是穿墙本身，单个电子、原子核碎片穿墙，物理学家早在 1920 年代就见怪不怪了。怪的是这颗弹珠是什么：<strong>一整块超导电路里所有电子对共同的一个状态。</strong></p>
+</div>
+
+<div class="section">
+<h2>「多大才算大」：一个拖了半个世纪的问题</h2>
+<p>量子隧穿（quantum tunnelling）：粒子能量不够翻过一道屏障，却有一定概率出现在屏障另一侧。1928 年，伽莫夫（George Gamow）用它解释了一类原子核衰变：核里的一小块被「围墙」关着，按理出不来，却总有一些穿了出去。</p>
+<p>可这些都是单个粒子的事。可网球从来不会穿过墙。量子力学到底能管到多大？薛定谔（Erwin Schrödinger）那只「又死又活的猫」，本意就是嘲讽：把量子怪事放大到日常尺度，结论荒谬。</p>
+<p>超导体给了这个问题一个可以下手的地方。某些材料冷到极低温度时，电子两两结成<b>库珀对</b>（Cooper pair）。电子之间「各占一位」，库珀对却可以全部挤进同一个状态，像一支踩着同一个步点的方阵，电流毫无电阻。把两块超导体中间夹一层极薄的绝缘层，就是<b>约瑟夫森结</b>（Josephson junction）：1962 年剑桥研究生布赖恩·约瑟夫森（Brian Josephson）预言库珀对能无阻地穿过这层绝缘，第二年贝尔实验室就证实了。</p>
+<p>关键在这里：结两边各是一支方阵，两支方阵之间有一个「步点差」，物理上叫<b>相位差</b>（phase difference）。这个数不属于哪一个电子对，而是<strong>所有电子对共享的一个数</strong>。1978 年，理论家莱格特（Anthony Leggett）问：这样一个宏观的量，它本身服不服从量子力学？会不会像单个粒子那样隧穿？</p>
+<p>激光、超导这些宏观量子现象，是无数粒子各自的量子性<strong>加起来</strong>；莱格特问的是，<strong>一个代表整体的量</strong>自己是不是量子对象。1980 年代初，好几个实验组都看到：降温到某个程度以下，结的行为不再随温度变化，像是隧穿接管了。可同样的现象，也可能是装置里某个暖一点的部件漏进来的微波噪声造成的。你以为没人在晃碗，其实有人在偷偷晃。</p>
+</div>
+
+<div class="section">
+<h2>一台冰箱、一堆铜粉，和一个不留旋钮的理论</h2>
+<p>约翰·克拉克在剑桥读研时，和约瑟夫森同是皮帕德（Brian Pippard）的学生，1968 年去了伯克利。1964 年，实验室没有镀膜设备，他做不出约瑟夫森结；茶歇时一位同学提议：往自带氧化膜的铌丝上点一滴焊锡试试。第二天，皮帕德看着桌上那一坨东西说：</p>
+<blockquote>It looks as though a slug crawled through the window last night and expired on your desk!<br/>（看起来像是昨晚有只鼻涕虫从窗户爬进来，死在了你桌上！）<cite>— 布赖恩·皮帕德 · 引自克拉克 2025 年诺贝尔演讲</cite></blockquote>
+<p>这个灵敏的电压计后来真被叫作 SLUG（鼻涕虫）。克拉克的路数从那时就定了：<strong>测极小的信号，对噪声锱铢必较</strong>。</p>
+<p>1980 年，刚从伯克利本科毕业的马丁尼斯加入他的组读博；1982 年，德沃雷从法国萨克雷来做博士后。三人用最简单的装置回答莱格特的问题：给一个约瑟夫森结通电流。电流不太大时，代表相位差的那个「粒子」困在一个坑里，结两端<strong>没有电压</strong>；一旦逃出坑，电压就跳出来。他们把电流慢慢加大，记下电压出现的那一刻，每个条件重复一千到十万次，统计它平均在坑里待多久，就像测半衰期。</p>
+<figure><svg viewBox="0 0 520 290" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,'Noto Sans SC',sans-serif">
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,5 L0,10 z" fill="#e8c26a"/></marker><marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,5 L0,10 z" fill="#8fb8de"/></marker></defs>
+<path d="M40,30 C80,170 120,205 170,205 C225,205 255,110 300,110 C345,110 385,175 500,245" fill="none" stroke="#a99f8a" stroke-width="2"/>
+<line x1="127" y1="194" x2="202" y2="194" stroke="#e8c26a" stroke-width="1.6"/>
+<line x1="106" y1="176" x2="222" y2="176" stroke="#e8c26a" stroke-width="1.6"/>
+<line x1="95" y1="162" x2="236" y2="162" stroke="#e8c26a" stroke-width="1.6"/>
+<circle cx="165" cy="188" r="6" fill="#f0a07c"/>
+<path d="M175,150 Q300,25 400,165" fill="none" stroke="#d9825b" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#ar)"/>
+<line x1="238" y1="162" x2="384" y2="162" stroke="#8fb8de" stroke-width="1.8" stroke-dasharray="3 3" marker-end="url(#ar2)"/>
+<text x="300" y="62" fill="#f0a07c" font-size="12" text-anchor="middle">热跳跃：被「晃」出去（温度较高时）</text>
+<text x="312" y="152" fill="#a9cdee" font-size="12" text-anchor="middle">量子隧穿：穿过去</text>
+<text x="30" y="246" fill="#e8c26a" font-size="12">能级：只能待在这几层</text>
+<text x="30" y="263" fill="#8f8672" font-size="11">（越往上越挤，穿墙越容易）</text>
+<text x="168" y="222" fill="#a99f8a" font-size="11" text-anchor="middle">零电压：困在坑里</text>
+<text x="452" y="205" fill="#a99f8a" font-size="11" text-anchor="middle">出现电压：逃出去了</text>
+<text x="260" y="284" fill="#8f8672" font-size="11" text-anchor="middle">横轴：结两边库珀对的「步点差」（相位差）　纵轴：势能</text>
+</svg><figcaption>伯克利实验的骨架（据委员会学术背景与 Martinis 等 1985 年论文示意，非实测数据）。电流越大，坑越浅、墙越矮</figcaption></figure>
+<p>难的是让碗真的不被晃。他们把芯片放进稀释制冷机，冷到 18 毫开（约零下 273.13 度），在线路上串起一整条用<strong>铜粉</strong>做的微波滤波器，在 0.1 到 12 吉赫的范围内把杂散信号压掉 200 分贝以上。</p>
+<p>更聪明的一步是：<strong>先把结调成「经典」状态</strong>（用磁场压低它能承受的最大电流，让它只会被热晃出去），在没有争议的区间把每个参数逐一量准。这样到了关键的低温区，量子理论的预测<strong>没有任何可以事后调的旋钮</strong>。</p>
+<p>结果分两份交卷。第一份：温度往下降，结逃出坑的速率起初跟着温度走，到 50 毫开以下开始走平，25 毫开以下完全不再随温度变化，停住的值和零温隧穿理论的预测吻合。调回经典状态的对照组则一路跟着温度走，说明冰箱确实够冷。第二份：在 28 毫开下用 2 吉赫的微波照射，逃逸速率在三个特定电流值上突然变高，正是微波能量刚好等于两层<b>能级</b>间距的地方：这个宏观的「粒子」只能一份一份地吸收能量，像一个原子。论文 1985 年 10 月 7 日刊出，摘要第一句是「We report the first observation of quantized energy levels for a macroscopic variable」（我们报告了对一个宏观变量的量子化能级的首次观测）。整整四十年后的同一天，诺奖公布。</p>
+</div>
+
+<div class="section">
+<h2>一个带导线的人造原子</h2>
+<p>伯克利实验里，一个本身就是宏观的状态整体表现得像一个量子粒子，结果是一个看得见的电压。莱格特把它比作薛定谔的猫，委员会也老实补了一句：它仍比一只小猫小很多个数量级。</p>
+<p>更深远的是：原子的能级是大自然给定的；这个电路的能级，<strong>拧一下偏置电流就能改</strong>，能级间距还由电容、结能承受的最大电流这些可以设计的参数决定。1988 年三人和合作者在《科学》上的综述里，把它叫作一个「大到能用脏手指去碰」（big enough to get one's grubby fingers on）的系统，还设想了「带导线的宏观原子核」。原子从此可以<strong>设计</strong>、可以<strong>接线</strong>、可以批量刻在芯片上。</p>
+</div>
+
+<div class="section">
+<h2>从一篇物理论文，到一场工业竞赛</h2>
+<p>1994 年，肖尔（Peter Shor）证明量子计算机能快速分解大数，全世界开始找能当<b>量子比特</b>（qubit）的两层能级系统，伯克利的结果让超导电路成了候选之一。1999 年，日本 NEC 的 Nakamura、Pashkin 和 Tsai 第一次在超导电路里看到两个能级之间的相干振荡，只维持了 3 纳秒。2004 年，「电路量子电动力学」把量子比特和微波谐振腔耦合在一起，相干时间大幅变长；2007 年，德沃雷参与提出的 transmon 设计问世，如今许多造大规模量子计算机的尝试都在用它。</p>
+<p>2019 年，马丁尼斯领导的谷歌团队用 53 个量子比特的 Sycamore 处理器完成了一项采样任务，用时约 200 秒，他们估计最强的超级计算机要算一万年；IBM 随即反驳：同一任务的理想经典模拟 2.5 天就够。2024 年，谷歌的 Willow 芯片做到了「纠错码越大，错误率越低」：码距每增大一档，逻辑错误率降到不到一半，最大的一组用了 101 个量子比特。</p>
+</div>
+
+<div class="offstage">
+<h3>◐ 奖台之外</h3>
+<p>把问题提出来的莱格特，没在这次的名单上，他 2003 年已经因超流理论拿过诺奖；他和学生卡尔代拉（Amir Caldeira）1981 年算出的「摩擦如何压低隧穿率」，正是伯克利实验对照的理论。克拉克在诺贝尔演讲的最后一页，专门列出了七项同时期的「竞争研究」，最早的是沃斯（R. F. Voss）和韦布（R. A. Webb）1981 年的工作。也有人不服：2020 年一篇 arXiv 预印本用新的判据重新检视了 1981–2013 年间三组同类实验的数据，认为其中「宏观量子态」的证据站不住。它没有改变委员会的判断，但提醒人们，「冷下来就进入量子区」并非理所当然。</p>
+</div>
+
+<div class="everyday">
+<h3>◎ 对普通人的意义</h3>
+<h4>已经在你身边的</h4>
+<p>先说实话：你手里没有超导量子计算机，它得泡在比外太空还冷的冰箱里。但 2016 年 5 月 4 日起，任何人都能通过 IBM 的云服务，在一台 5 比特的真超导芯片上跑程序。更贴身的是加密：因为量子计算机将来可能破解今天的公钥加密，美国国家标准与技术研究院（NIST）2024 年 8 月 13 日正式发布了首批三项「抗量子」加密标准，并催系统管理员「立刻」开始迁移；Chrome 浏览器从 131 版起把其中的 ML-KEM 用进了网页连接的密钥交换。你的浏览器已经在提防一台还不存在的机器，这份威胁也不专属于超导路线。</p>
+<h4>接下来可能改变的</h4>
+<p>今天最好的成绩，是一个由 101 个物理比特保护的逻辑比特，寿命比其中最好的单个物理比特长 2.4 倍；谷歌自己的措辞是，这样的性能「如果能放大」，才可能满足大规模容错算法的要求。近期确定的用处在实验室里：把超导电路当人造原子，去模拟别的量子系统。对「多少亿亿年才能算完」的宣传要打折扣。另一位诺奖得主维尔切克（Frank Wilczek）说得更直白：「Willow is — and quantum computation in general, for the foreseeable future, will be — a research project.」（Willow 是，而且可预见的将来整个量子计算都将是，一个研究项目。）</p>
+<h4>它不意味着什么</h4>
+<p>它不意味着「薛定谔的猫被证实了」，也不意味着大东西都有量子性。这个实验之所以难，正因为大东西的量子性会被环境瞬间抹掉，要冷到百分之一度、把干扰压掉二十个数量级才能看见。穿过去的也不是哪个电子，而是一个描述整体的量。这个奖也不是颁给量子计算机的，授奖词没提计算，奖的是 40 年前那个基础问题的答案。</p>
+<h4>可以借走的思维方式</h4>
+<p>先在没人争议的区间把每个参数单独量准，再让理论在有争议的区间<strong>不带任何可调旋钮</strong>去预测。前人的数据也走平了，输在可以被别的解释讲通；伯克利赢在把别的解释一条条堵死。评估一个模型、一项 A/B 实验时，「事后能拟合上」和「事前就说中」是两回事。</p>
+</div>
+
+<div class="crossx">
+<h3>🌀 越界 · 跨学科的联想</h3>
+<ul>
+<li><b>分布式系统 · 强一致性的代价</b>：委员会区分了两种多粒子状态：各自叠加的「乘积态」，测一个不影响其余，很皮实；「全 A 或全 B」的「猫态」，测一个全体塌缩，极其脆弱。这和独立副本与强一致集群同构：绑得越紧，越能当成一个整体用，也越怕一点外部扰动。区别是库珀对不靠传消息达成一致。</li>
+<li><b>AI · 能量地形与退火</b>：伯克利实验测的是系统怎么离开局部最低点：热了被「晃」过墙顶，冷了直接隧穿。前者是模拟退火的跳坑方式，后者是「量子退火」想借的捷径。本站 <a href="physics-2024-neural-networks-prize1.html">2024 物理奖</a>里 Hopfield 网络的记忆也是地形里的坑，同一种图景的另一种用法。</li>
+<li><b>复杂性科学 · 序参量与涌现</b>：相位差是一个从亿万个体里涌现出来的集体坐标，就像鸟群的航向。通常集体变量越大越「经典」，个体的随机性被平均掉；这里反着来，因为所有库珀对处在同一个状态，涌现出的那个量本身还是量子的。</li>
+<li><b>佛学 · 缘起</b>：「经典」不是物体的自性，而是它与环境的关系：同一块电路，被环境不停地「看」就是经典的，隔离得够好就显出量子性。性质由关系而非本体决定，这是龙树「缘起性空」和退相干图景的共通结构；只是物理的「关系」是可测的耦合强度。</li>
+</ul>
+</div>
+
+<div class="ten">
+<h3>◆ 十条要点</h3>
+<ol class="takeaways">
+<li>量子隧穿本是单个粒子的事：能量不够翻过屏障，却有一定概率出现在屏障另一侧。</li>
+<li>约瑟夫森结两侧库珀对的相位差，是亿万电子对共享的一个宏观量，莱格特 1978 年问它是否服从量子力学。</li>
+<li>1980 年代初多个小组看到低温下结的行为不再随温度变化，但杂散微波噪声也能造成同样的现象。</li>
+<li>克拉克、德沃雷和马丁尼斯用铜粉滤波器把干扰压掉 200 分贝以上，并把芯片冷到 18 毫开。</li>
+<li>伯克利组先在经典区量准结的全部参数，让低温区的量子预测不留任何可调旋钮。</li>
+<li>低于约 25 毫开时，零电压态的逃逸速率不再随温度变化，数值和宏观量子隧穿的理论预测吻合。</li>
+<li>2 吉赫微波照射下出现三个共振峰，说明这个宏观变量只能一份一份地吸收能量，即能量量子化。</li>
+<li>能级可以靠偏置电流和电路参数来调，超导电路因此成了可设计、可接线的人造原子。</li>
+<li>从 1999 年首次看到超导比特的相干振荡，到 2024 年 Willow 的纠错，超导量子计算在可预见的将来仍是研究项目。</li>
+<li>「经典」是系统与环境的关系而非物体的本性，隔离得够好，宏观的东西也能显出量子性。</li>
+</ol>
+</div>
+
+<div class="thinking">
+<h3>// 深入思考</h3>
+<details><summary>如果没有量子计算机这条后续，这个实验还值一个诺奖吗？</summary><div>授奖词只讲了隧穿和能量量子化。1985 年的论文回答的是测量理论里「宏观变量服不服从量子力学」的问题；它的分量，是长出工具之后才被看清的。值得想的是：诺奖到底在奖「答案」，还是在奖「答案后来打开的门」？</div></details>
+<details><summary>「没有可调旋钮」为什么比「拟合得很好」更有说服力？</summary><div>一个带很多参数的理论几乎能拟合任何曲线，所以拟合上了说明不了什么。伯克利组把参数在经典区先量死，理论在量子区就只剩一个预测，要么中要么不中。机器学习的留出测试集、科学里的预注册，堵的是同一个漏洞。</div></details>
+<details><summary>量子与经典的边界，到底在哪里？</summary><div>这个实验说明边界不是尺寸本身，而是和环境耦合的强弱。那么原则上有没有上限？一个病毒、一粒灰尘、一只猫，是不是只要隔离得足够好就都行？这是至今仍在推进的实验前沿，也是解释量子力学的各个流派分歧所在。</div></details>
+</div>
+
+<div class="refs">
+<h3>// 出处</h3>
+<ul>
+<li><a href="https://www.nobelprize.org/prizes/physics/2025/popular-information/" target="_blank">Nobel Prize · Popular information</a> — 芯片约一厘米、数十亿库珀对、与薛定谔之猫的比较、人造原子与量子比特。</li>
+<li><a href="https://www.nobelprize.org/prizes/physics/2025/advanced-information/" target="_blank">Nobel Prize · Scientific background</a> — 莱格特 1978 年的问题、早期竞争实验与噪声难题、铜粉滤波器 200 分贝、后续时间线、「乘积态」与「猫态」。</li>
+<li><a href="https://www.physics.umd.edu/courses/Phys798C/AnlageFall25/Martinis-1985-Energy-Level%20Quantization%20in%20the.pdf" target="_blank">Martinis, Devoret &amp; Clarke · 1985 · Phys. Rev. Lett. 55, 1543</a> — 能级量子化的原始论文：2 吉赫、28 毫开、三个共振峰、参数在经典区测得。</li>
+<li><a href="https://escholarship.org/uc/item/5010046z" target="_blank">Martinis, Devoret, Clarke &amp; Urbina · 1984 · LBL 报告</a> — 宏观量子隧穿实验的早期报告：逃逸温度在低温走平并与理论吻合。</li>
+<li><a href="https://www.nobelprize.org/uploads/2025/12/lecture-clarke.pdf" target="_blank">John Clarke · 2025 诺贝尔演讲（PDF）</a> — SLUG 故事与皮帕德的话、组员加入年份、18 毫开、竞争研究名单。</li>
+<li><a href="https://www.nature.com/articles/s41586-019-1666-5" target="_blank">Arute et al. · 2019 · Nature</a> 与 <a href="https://arxiv.org/abs/2408.13687" target="_blank">Google Quantum AI · 2024 · arXiv</a> — Sycamore 的 200 秒与一万年；Willow 低于阈值的纠错数据。</li>
+<li><a href="https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards" target="_blank">NIST · 2024-08-13</a> 与 <a href="https://thequantuminsider.com/2025/02/19/nobel-laureate-quantum-computing-wont-overtake-classical-machines-anytime-soon/" target="_blank">The Quantum Insider · 2025</a> — 抗量子加密标准；维尔切克对量子计算的冷评。</li>
+</ul>
+</div>
+<footer>BigCat · 诺奖精读 · 2025 物理学奖 · <a href="index.html">← 目录</a></footer>
+</div>
+</body></html>
