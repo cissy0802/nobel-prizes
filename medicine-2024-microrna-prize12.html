@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>2024 生理学或医学奖 · 基因的「音量旋钮」，只有 22 个字母长 — 诺奖精读</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;color:#ece5d6;line-height:1.85;min-height:100vh;
+  background:radial-gradient(1100px 560px at 10% -6%,rgba(232,194,106,0.10),transparent 60%),radial-gradient(900px 640px at 100% 2%,rgba(217,130,91,0.08),transparent 55%),linear-gradient(165deg,#0d0c0a 0%,#14110c 45%,#0a0907 100%);background-attachment:fixed}
+.container{max-width:760px;margin:0 auto;padding:18px 20px 90px}
+.langbar{display:flex;justify-content:flex-end;padding-top:10px;font-family:"SF Mono",Menlo,monospace;font-size:.8rem}
+.langbar a{color:#e8c26a;text-decoration:none;border:1px solid rgba(232,194,106,.3);padding:4px 12px;border-radius:20px}
+.langbar a:hover{border-color:#d9825b;color:#d9825b}
+header{text-align:center;padding:40px 0 22px}
+.prize-tag{display:inline-block;font-size:0.75rem;color:#e8c26a;font-family:"SF Mono",Menlo,monospace;letter-spacing:2px;border:1px solid rgba(232,194,106,0.42);padding:4px 13px;border-radius:20px;margin-bottom:16px;background:rgba(232,194,106,0.06)}
+header h1{font-size:2.1rem;font-weight:800;letter-spacing:.5px;line-height:1.3;background:linear-gradient(110deg,#f3dc9a 0%,#e8c26a 45%,#d9825b 92%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 2px 18px rgba(232,194,106,0.22))}
+header h2{font-size:1rem;color:#a99f8a;margin-top:10px;font-weight:400;letter-spacing:0.4px}
+.laureates{margin-top:18px;font-size:0.9rem;color:#d8cdb4}
+.laureates span{display:inline-block;margin:3px 6px;padding:2px 11px;border-radius:14px;background:rgba(232,194,106,0.07);border:1px solid rgba(232,194,106,0.18)}
+.laureates em{font-style:normal;color:#8f8672;font-size:0.8rem;margin-left:6px;font-family:"SF Mono",Menlo,monospace}
+.motivation{margin:18px auto 0;max-width:620px;font-size:0.88rem;color:#b9ae95;line-height:1.7}
+.motivation q{display:block;font-style:italic;color:#d9cfb8}
+.motivation q::before{content:"“"}.motivation q::after{content:"”"}
+.motivation .zh{display:block;margin-top:4px}
+header .date{font-size:0.8rem;color:#6d6656;margin-top:16px;font-family:"SF Mono",Menlo,monospace}
+header .pitch{margin-top:18px;font-size:0.98rem;color:#d9825b;font-style:italic}
+.intro{background:rgba(232,194,106,0.06);border-left:3px solid #e8c26a;padding:20px 24px;border-radius:0 10px 10px 0;margin:36px 0;font-size:0.99rem;color:#e2d9c6}
+.intro strong{color:#fff}
+.section{margin:46px 0 0}
+.section h2::before{content:"";display:block;width:28px;height:2px;background:#e8c26a;opacity:.75;margin-bottom:16px}
+.section h2{font-size:1.3rem;color:#fff;margin-bottom:16px;font-weight:700;line-height:1.38}
+.section p{margin-bottom:14px;color:#e2d9c6;font-size:0.96rem}
+.section strong{color:#fff}
+.section blockquote{margin:16px 0;padding:10px 18px;border-left:2px solid rgba(217,130,91,0.6);color:#d6c9ae;font-size:0.93rem;background:rgba(217,130,91,0.05);border-radius:0 8px 8px 0}
+.section blockquote cite{display:block;margin-top:6px;font-style:normal;font-size:0.8rem;color:#8f8672;font-family:"SF Mono",Menlo,monospace}
+figure{margin:24px 0}
+figure svg{display:block;width:100%;height:auto;max-width:520px;margin:0 auto}
+figcaption{text-align:center;font-size:0.82rem;color:#a99f8a;margin-top:12px;font-family:"SF Mono",Menlo,monospace}
+.glossary{margin:18px 0;border:1px dashed rgba(232,194,106,0.35);border-radius:10px;padding:14px 18px;font-size:0.9rem;color:#d6ccb4}
+.glossary b{color:#f0d68e}
+.offstage{margin:40px 0;background:rgba(217,130,91,0.06);border:1px solid rgba(217,130,91,0.3);border-radius:14px;padding:20px 24px}
+.offstage h3{color:#d9825b;font-size:0.86rem;letter-spacing:2px;margin-bottom:10px;font-family:"SF Mono",Menlo,monospace}
+.offstage p{color:#e6d6c8;font-size:0.93rem;margin-bottom:10px}
+.offstage p:last-child{margin-bottom:0}
+.everyday{margin:40px 0;background:linear-gradient(135deg,rgba(125,170,214,0.10),rgba(125,170,214,0.04));border:1px solid rgba(125,170,214,0.34);border-radius:14px;padding:22px 26px}
+.everyday h3{color:#8fb8de;font-size:0.88rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.everyday h4{color:#bcd6ee;font-size:0.95rem;margin:16px 0 6px;font-weight:700}
+.everyday h4:first-of-type{margin-top:0}
+.everyday p{color:#dfe7ef;font-size:0.94rem;margin-bottom:8px}
+.everyday b{color:#fff}
+.crossx{margin:40px 0;background:linear-gradient(135deg,rgba(182,156,245,0.10),rgba(232,194,106,0.05));border:1px solid rgba(182,156,245,0.32);border-radius:14px;padding:22px 26px}
+.crossx h3{color:#b69cf5;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.crossx p{color:#e6def5;font-size:0.92rem;line-height:1.8;margin-bottom:14px}
+.crossx b{color:#d4c4fb;font-weight:600}
+.crossx ul{list-style:none;margin:0}
+.crossx li{color:#e6def5;font-size:0.93rem;line-height:1.8;margin-bottom:14px;padding-left:20px;position:relative}
+.crossx li:last-child{margin-bottom:0}
+.crossx li::before{content:"◈";position:absolute;left:0;top:0.35em;color:#e8c26a;font-size:0.72rem}
+.ten{margin:40px 0}
+.ten h3{color:#e8c26a;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(232,194,106,.3);border-radius:12px;background:rgba(232,194,106,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(232,194,106,.12);font-size:.94rem;line-height:1.75;color:#e2d9c6}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#e8c26a}
+.crossx a,.section a,.everyday a,.offstage a{color:#f0d68e;text-decoration:none;border-bottom:1px dotted rgba(240,214,142,0.5)}
+.thinking{background:linear-gradient(135deg,rgba(232,194,106,0.05),rgba(182,156,245,0.05));border:1px solid rgba(232,194,106,0.2);border-radius:12px;padding:24px 26px;margin:40px 0}
+.thinking h3{color:#e8c26a;font-size:0.9rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.thinking details{background:rgba(13,12,10,0.55);border:1px solid rgba(232,194,106,0.16);border-radius:9px;padding:13px 17px;margin:10px 0;transition:all 0.2s}
+.thinking details[open]{background:rgba(232,194,106,0.05);border-color:rgba(232,194,106,0.4)}
+.thinking summary{cursor:pointer;color:#f0d68e;font-weight:600;font-size:0.93rem;list-style:none;outline:none;line-height:1.55}
+.thinking summary::-webkit-details-marker{display:none}
+.thinking summary::before{content:"▸ ";color:#d9825b}
+.thinking details[open] summary::before{content:"▾ "}
+.thinking details>div{margin-top:12px;padding-top:12px;border-top:1px dashed rgba(232,194,106,0.2);color:#e2d9c6;font-size:0.9rem;line-height:1.8}
+.refs{margin-top:34px}
+.refs h3{color:#d9825b;font-size:0.85rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.refs ul{list-style:none}
+.refs li{margin-bottom:9px;font-size:0.88rem;color:#a99f8a}
+.refs a{color:#e8c26a;text-decoration:none;border-bottom:1px dotted rgba(232,194,106,0.4)}
+.refs a:hover{color:#f3dc9a}
+footer{text-align:center;padding:48px 0 10px;font-size:0.8rem;color:#6d6656;font-family:"SF Mono",Menlo,monospace}
+footer a{color:#e8c26a;text-decoration:none}
+@media(max-width:600px){header h1{font-size:1.6rem}.section h2{font-size:1.14rem}.everyday,.crossx,.offstage,.thinking{padding:18px 18px}}
+</style></head><body>
+<div class="container">
+<div class="langbar"><a href="medicine-2024-microrna-prize12.en.html">English →</a></div>
+<header>
+<span class="prize-tag">MEDICINE · 2024</span>
+<h1>基因的「音量旋钮」，只有 22 个字母长</h1>
+<h2>一条一毫米的线虫身上，两个实验室各拿着半张答案，对上之后发现：细胞里有一类极短的 RNA，专门让别的基因「小声点」</h2>
+<div class="laureates"><span>维克托·安布罗斯 Victor Ambros<em>UMass Chan Medical School · 美国 · 1/2</em></span><span>加里·鲁夫昆 Gary Ruvkun<em>麻省总医院 / 哈佛医学院 · 美国 · 1/2</em></span></div>
+<div class="motivation"><q>for the discovery of microRNA and its role in post-transcriptional gene regulation</q><span class="zh">表彰他们发现微小 RNA 及其在转录后基因调控中的作用</span></div>
+<div class="date">2024-10-07 公布 · 2026-10-24 · BigCat</div>
+<p class="pitch">这个奖不是奖励一个「开关」，而是奖励一种减法：生命复杂起来，靠的不只是多说，还有让别人少说。</p>
+</header>
+<div class="intro">
+<p>这句话不算标点，正好二十二个字，和本期主角一样长。</p>
+<p>你的神经细胞和肠道细胞，带着<strong>一模一样</strong>的基因，大约两万个。一个去传信号，一个去吸收养分，差别全在于：各自只念说明书里的某几页。而且要在<strong>对的时候</strong>翻页：童年该做的事，长大后不能再做一遍。</p>
+<p>1993 年以前，大家以为翻页这件事已经搞清楚了。然后，一条线虫身上冒出来一个只有 22 个字母（核苷酸）的小 RNA。它不做蛋白，什么都不「做」，它唯一的本事是让另一个基因<strong>闭嘴</strong>。</p>
+</div>
+<div class="section">
+<h2>一条虫子，困在了自己的童年里</h2>
+<p>说明书怎么挑页，1960 年代有过一次大突破：雅各布（François Jacob）和莫诺（Jacques Monod）发现，有一类叫<b>转录因子</b>（transcription factor）的蛋白，会贴在 DNA 上决定哪些基因被抄写出来，二人因此拿了 1965 年的诺奖。之后几千种转录因子陆续被找到，委员会的说法是，很长一段时间里，人们相信基因调控的主要原理<strong>已经解决了</strong>。</p>
+<p>答案的裂缝出现在秀丽隐杆线虫（<i>C. elegans</i>）身上。这种线虫只有一毫米长、身体透明、繁殖快，五十多年前由布伦纳（Sydney Brenner）引进实验室，成了遗传学家的宠物。1970 年代布伦纳实验室的筛查里找到一只怪虫，基因叫 <b>lin-4</b>：它一遍遍重复幼虫阶段的发育程序，长不出产卵用的结构，卵全憋在肚子里。另一个突变 <b>lin-14</b> 恰好相反：直接跳过幼年，成了一只小小的「成虫」。一个停不下童年，一个没有童年。</p>
+<p>1980 年代，安布罗斯和鲁夫昆都在麻省理工霍维茨（Robert Horvitz）的实验室做博士后，都被这对虫子迷住了。安布罗斯后来证明，lin-4 是压住 lin-14 的那一方。可它<strong>怎么</strong>压？那时要从一个突变找到对应的那段 DNA，是好几年的苦功，两人光是把 lin-14 克隆出来就熬了很多年。</p>
+</div>
+<div class="section">
+<h2>1992 年 6 月 11 日晚上，两半答案对上了</h2>
+<p>后来两人各自在哈佛立了门户，一个追 lin-4，一个追 lin-14。</p>
+<p>安布罗斯实验室沿着染色体一步步「走」，最后把 lin-4 锁定在一段 693 个碱基的 DNA 里。怪事来了：这里面找不出像样的蛋白配方。他们故意在里面制造读码错位，lin-4 照样好用。结论只能是：<strong>这个基因根本不做蛋白</strong>。1991 年他们抓到了它的产物，两条极短的 RNA，一条 61 个字母，一条 <strong>22</strong> 个。为了再确认，他们筛了两万多条诱变过的染色体，才找到第二只 lin-4 突变虫，坏的只有一个字母。</p>
+<p>鲁夫昆那边看的是 lin-14 的信使 RNA（mRNA，基因被抄出来、拿去造蛋白的那份副本）。有些突变虫的 lin-14 尾巴上缺了一截，这截叫 <b>3′ 非翻译区</b>（3′UTR），相当于说明书末尾的附注，读完不做成蛋白。缺了它，LIN-14 蛋白多了 4 到 7 倍，mRNA 的量却<strong>一点没变</strong>。所以刹车不在「抄不抄」，而在「抄出来之后造不造」。他把这截尾巴接到别的基因上，那个基因也跟着被管住了。</p>
+<p>1992 年 6 月 11 日晚上，两人交换了各自的序列。两边都一眼看见：lin-4 那 22 个字母，和 lin-14 尾巴上反复出现的几段，<strong>大半能像拉链一样咬合</strong>。1993 年 12 月，两篇论文在《细胞》（Cell）上背靠背发表：一种新的 RNA，靠碱基配对贴到另一个基因的 mRNA 尾巴上，让它少造蛋白。</p>
+<figure><svg font-family="-apple-system,'Noto Sans SC',sans-serif" viewBox="0 0 520 232" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ar" markerHeight="9" markerUnits="userSpaceOnUse" markerWidth="9" orient="auto" refX="9" refY="5" viewBox="0 0 10 10"><path d="M0,0 L10,5 L0,10 z" fill="#e8c26a"/></marker></defs>
+<text fill="#a9cdee" font-size="13" text-anchor="middle" x="372" y="52">lin-4：22 个字母的小 RNA</text>
+<rect fill="#8fb8de" height="8" rx="2" width="20" x="294" y="66"/>
+<rect fill="#8fb8de" height="8" rx="2" width="20" x="358" y="66"/>
+<rect fill="#8fb8de" height="8" rx="2" width="20" x="422" y="66"/>
+<line stroke="#8fb8de" stroke-dasharray="3 3" stroke-width="1.2" x1="304" x2="304" y1="76" y2="103"/>
+<line stroke="#8fb8de" stroke-dasharray="3 3" stroke-width="1.2" x1="368" x2="368" y1="76" y2="103"/>
+<line stroke="#8fb8de" stroke-dasharray="3 3" stroke-width="1.2" x1="432" x2="432" y1="76" y2="103"/>
+<rect fill="rgba(232,194,106,0.10)" height="28" rx="6" stroke="#e8c26a" stroke-width="1.2" width="210" x="30" y="96"/>
+<text fill="#ece5d6" font-size="13" text-anchor="middle" x="135" y="115">编码区 → LIN-14 蛋白</text>
+<line stroke="#d9825b" stroke-width="3" x1="240" x2="492" y1="110" y2="110"/>
+<rect fill="#d9825b" height="10" width="20" x="262" y="105"/>
+<rect fill="#d9825b" height="10" width="20" x="294" y="105"/>
+<rect fill="#d9825b" height="10" width="20" x="326" y="105"/>
+<rect fill="#d9825b" height="10" width="20" x="358" y="105"/>
+<rect fill="#d9825b" height="10" width="20" x="390" y="105"/>
+<rect fill="#d9825b" height="10" width="20" x="422" y="105"/>
+<rect fill="#d9825b" height="10" width="20" x="454" y="105"/>
+<text fill="#a99f8a" font-size="12" text-anchor="middle" x="366" y="142">3′ 非翻译区：读完不做成蛋白</text>
+<line marker-end="url(#ar)" stroke="#e8c26a" stroke-width="1.5" x1="135" x2="135" y1="126" y2="170"/>
+<text fill="#f0a07c" font-size="13" font-weight="700" text-anchor="middle" x="135" y="190">造出的蛋白变少</text>
+<text fill="#a99f8a" font-size="12" text-anchor="middle" x="366" y="190">mRNA 的量几乎不变</text>
+<text fill="#8f8672" font-size="11" text-anchor="middle" x="260" y="222">尾巴上七处与 lin-4 部分互补的位点，图中画出三处结合</text>
+</svg><figcaption>lin-4 怎样管住 lin-14（据 Wightman, Ha &amp; Ruvkun 1993 与 Lee, Feinbaum &amp; Ambros 1993 摘要绘制）</figcaption></figure>
+<blockquote>at that moment it was just the quirky, what we were working on, it was really interesting.<br/>（那一刻它只是我们手上一件古怪的事，非常有意思而已。）<cite>— 鲁夫昆 · 获奖当天接受 nobelprize.org 电话采访，被问到当时是否想过这值得诺奖</cite></blockquote>
+</div>
+<div class="section">
+<h2>七年冷场，然后一个字母都没变的 let-7</h2>
+<p>委员会形容论文发表后的反应：「几乎震耳欲聋的沉默」。原因很实在：把 lin-4 拿去和当时所有物种的序列库比对，只在别的线虫里找到了它。大家的判断是，这是<strong>线虫的怪癖</strong>，跟人没关系。鲁夫昆后来对《哈佛公报》说，那时候他俩「还行，不算差」，但绝没有人觉得这两个人能在水上走路。</p>
+<p>转机等了七年。2000 年，鲁夫昆实验室找到第二个这样的小 RNA，<b>let-7</b>，21 个字母。这一次，序列库里跳出了果蝇和人。他们接着在脊椎动物、海鞘、软体动物、环节动物、节肢动物身上都测到了 let-7，而且它也总在发育的较晚阶段才出现。安布罗斯在诺奖演讲里把鱼、果蝇和线虫的 let-7 排在一起：22 个字母里，鱼和线虫只差一个。</p>
+<p>这下谁也不能说是怪癖了。2001 年，图施尔（Thomas Tuschl）、巴特尔（David Bartel）和安布罗斯三个实验室在同一期《科学》上，各自从人、果蝇和线虫里捞出一大批同类小 RNA。<b>微小 RNA</b>（microRNA）不再是两个孤例，而是一大类分子。几乎同时，另一条线也接上了：1998 年法尔（Andrew Fire）和梅洛（Craig Mello）发现双链 RNA 能让基因沉默（2006 年诺奖），1999 年鲍尔科姆（David Baulcombe）在植物里看到了长度相近的小 RNA。原来它们共用同一套细胞机器。</p>
+<p>区别在于用法。外来的小干扰 RNA（siRNA）往往和目标<strong>严丝合缝</strong>，一贴上就把 mRNA 剪断；微小 RNA 往往只有一小段（叫「种子区」，seed region）配得上，剩下的半配不配。委员会的说法是，这种「部分互补」是演化刻意留下的，用来<strong>调音量</strong>，而不是一刀切断。也因为只认一小段，<strong>一个微小 RNA 能管很多基因，一个基因也能被很多微小 RNA 一起管</strong>。</p>
+</div>
+<div class="section">
+<h2>从两条线虫到一千多个旋钮</h2>
+<p>今天，人类基因组里已知的微小 RNA 基因超过一千个。数据库 miRBase 收录了 271 种生物的四万八千多条成熟微小 RNA 序列，连病毒都有自己的。</p>
+<p>它有多要紧，看拿掉它会怎样就知道。细胞里切出成熟微小 RNA 要靠一把叫 Dicer 的「剪刀」：小鼠和斑马鱼没了 Dicer，胚胎就活不下来。在人身上，一个微小 RNA 的「种子区」发生突变，就可能导致渐进性听力丧失（miR-96）；<b>DICER1 综合征</b>患者天生少一份好用的 Dicer 基因，常在童年就在肾、肺、甲状腺等处长肿瘤。</p>
+<p>回头看演化，委员会的背景材料画出一条线：动物的微小 RNA 大约在六亿年前、细胞刚开始组织成复杂身体时出现，此后随着细胞类型越来越多，数量一路扩张。越古老的微小 RNA 越在胚胎早期起作用，越新的越多在成体细胞里干活。这个奖说的，是<strong>多细胞生命自己搭出来的一层调控</strong>，不是线虫的偏方。</p>
+</div>
+<div class="offstage">
+<h3>◐ 奖台之外</h3>
+<p>安布罗斯那篇论文的第一作者罗莎琳德·李（Rosalind Lee）是他的同事，也是他的妻子；她和雷达·费恩鲍姆（Rhonda Feinbaum）并列第一作者，lin-4 是她们动手克隆出来的。诺奖官方账号公布当天发了夫妇俩的合影并点了这层身份，据 El País 报道，帖子浏览量超过 220 万，许多人问她为什么没获奖。该报采访的微小 RNA 研究者认为，通讯作者才是设计研究的人；报道还指出，两篇论文本身就有六位做实验的作者，早已超过诺奖三人的上限；另一篇的第一作者怀特曼（Bruce Wightman）也提醒，这项发现建立在查尔菲、霍维茨、萨尔斯顿等人更早的工作之上。</p>
+<p>安布罗斯自己则根本没料到会获奖：他一直觉得 2006 年给 RNA 干扰的那次奖已经「encompassed microRNAs」（涵盖了微小 RNA），而那次的得主梅洛，正是他带过的博士生。</p>
+</div>
+<div class="everyday">
+<h3>◎ 对普通人的意义</h3>
+<h4>已经在你身边的</h4>
+<p>老实说，<b>以微小 RNA 本身为药、正式获批的疗法，本页没有找到</b>：2017 年《自然综述·药物发现》的综述里，走得最远的也只到二期临床。真正进了药房的是它的「近亲」：2018 年，美国批准了第一款 RNA 干扰药物帕替西兰（patisiran），用于一种遗传性淀粉样变性。它用的正是微小 RNA 那套细胞机器，而且瞄准的位置恰好也是目标 mRNA 的 3′ 尾巴。鲁夫昆说，做这类药的 Alnylam 公司二十年前还不存在，如今已是麻省最大的十家公司之一。另一个看不见的变化在诊断室：miR-96 致聋、DICER1 综合征这些病，家庭终于有了一个可以查的基因。</p>
+<h4>接下来可能改变的</h4>
+<p>临床上有过两次值得记住的尝试。2013 年，阻断肝脏里 miR-122 的 miravirsen 在 36 名丙肝患者的二期试验里让病毒量按剂量下降，7 毫克组有 4 人一度测不到病毒。另一次是教训：模拟抑癌微小 RNA miR-34a 的 MRX34 在 85 名晚期实体瘤患者身上试用，3 人肿瘤部分缩小，但出现严重的免疫不良反应、4 人死亡，试验提前关闭（2020 年发表）。2022 年一篇综述点出了难处：微小 RNA 的长处是一次管一大片基因，这也正是它的短处，脱靶几乎躲不开。按《哈佛公报》2025 年的说法，心脏病、癌症、克罗恩病、阿尔茨海默病方向都有试验在进行，但都还在临床阶段。</p>
+<h4>它不意味着什么</h4>
+<p>它不是基因编辑：微小 RNA 不改 DNA 一个字，只调「造多少」。它也不是 2023 年 mRNA 疫苗那个奖：名字里都有 RNA，但一个是送进去的蛋白配方，一个是身体自带的音量旋钮。大多数微小 RNA 也不是「开关」：对多数目标，它只是把产量往下拧一点，而不是一键关机。至于「验血测微小 RNA 就能早筛癌症」，委员会只写到诊断「正在取得进展」，离常规体检还远。</p>
+<h4>可以借走的思维方式</h4>
+<p>判断一个反常是怪癖还是规律，lin-4 和 let-7 给了一个具体的办法：去别的物种里找它。只在一个物种里出现的，可能是偏方；在鱼、果蝇和人身上几乎一字不差的，几亿年都没被演化改掉，就一定在干重要的活。</p>
+</div>
+<div class="crossx">
+<h3>🌀 越界 · 跨学科的联想</h3>
+<ul>
+<li><b>AI · 按内容寻址</b>：微小 RNA 找目标不靠「地址」，靠一小段序列的部分匹配，有几处配得上就压几分，lin-14 尾巴上七个位点就是七份叠加的权重。这和本站 <a href="physics-2024-neural-networks-prize1.html">2024 物理奖</a>里 Hopfield 网络的「内容寻址记忆」同构：给出一部分内容，就能找回整条记录。也像注意力机制里查询与键的软匹配。区别是细胞里只有「减」，没有「加」。</li>
+<li><b>分布式系统 · 发布/订阅与限流</b>：一个微小 RNA 像在某个主题上广播「降速」，所有在 3′ 尾巴上订阅了这段序列的 mRNA 都被限流，没有中央调度。冗余也一样：几个微小 RNA 共用一个种子区，像多个副本，坏掉一个系统照样跑。委员会也说，这种冗余让病毒难以劫持它。</li>
+<li><b>软件工程 · 协议僵化</b>：let-7 在鱼和线虫之间只差一个字母，几亿年几乎没变。原因和老协议改不动是同一个：一个种子区同时被许多下游 mRNA「调用」，改一个字母等于同时打破所有接口。用的人越多，越不能动。</li>
+<li><b>复杂性科学 · 减法式调控</b>：委员会说微小 RNA 数量随细胞类型增多而扩张。复杂系统往往不是靠加更多「执行者」变复杂的，而是靠加更多细粒度的抑制。这和本站 <a href="medicine-2025-immune-tolerance-prize7.html">2025 医学奖</a>的调节性 T 细胞是同一种结构：少数专门「压住」的角色，让一个高增益系统不失控。</li>
+<li><b>科学哲学 · 反常与样本量</b>：lin-4 被冷落七年，不是因为它错了，而是 N=1 的反常可以被归为局部怪癖，不必动摇理论。库恩说反常要积累才逼出范式转换；这里只多了一个例子 let-7，再加上它跨物种的保守，天平就翻了。</li>
+</ul>
+</div>
+<div class="ten">
+<h3>◆ 十条要点</h3>
+<ol class="takeaways">
+<li>人体所有细胞带着同样的基因，细胞分工靠的是基因调控：只在对的细胞、对的时间念对的那几页。</li>
+<li>线虫 lin-4 突变体反复重复幼虫发育，lin-14 突变体跳过幼年，安布罗斯发现 lin-4 负责压住 lin-14。</li>
+<li>安布罗斯实验室发现 lin-4 不编码蛋白，而是产生一条只有 22 个核苷酸的小 RNA。</li>
+<li>鲁夫昆发现 lin-14 受控于 mRNA 尾部的 3′ 非翻译区：蛋白减少而 mRNA 的量不变。</li>
+<li>1992 年 6 月 11 日两人交换序列，看到 lin-4 与 lin-14 尾部多处部分互补，1993 年在《细胞》背靠背发表。</li>
+<li>微小 RNA 起初被当作线虫的怪癖冷落七年，直到 2000 年鲁夫昆发现在人和多种动物中高度保守的 let-7。</li>
+<li>微小 RNA 靠种子区部分配对来调低产量而非切断，因此一个微小 RNA 能同时调控许多基因。</li>
+<li>人类有一千多个微小 RNA 基因；Dicer 缺失使小鼠胚胎致死，DICER1 综合征患者童年易发肿瘤。</li>
+<li>以微小 RNA 本身为药的疗法仍在临床阶段，MRX34 因严重免疫反应提前终止，获批的是近亲 RNA 干扰药。</li>
+<li>let-7 几亿年几乎不变，与被大量调用的老协议难以修改是同一种结构：用的越多越不能动。</li>
+</ol>
+</div>
+<div class="thinking">
+<h3>// 深入思考</h3>
+<details><summary>如果 1992 年那个晚上两人没有交换序列，微小 RNA 会晚多少年被发现？</summary><div>两边各自都只有半张图：安布罗斯知道 lin-4 是个小 RNA，却不知道它贴哪儿；鲁夫昆知道 lin-14 尾巴上有调控位点，却不知道谁来贴。这种「拼起来才看得见」的发现，取决于数据在没发表之前能不能流动。可以想想：今天竞争更激烈、预印本更快，两个年轻实验室还会愿意在发表前交出各自的底牌吗？</div></details>
+<details><summary>一个药同时影响几百个基因，是缺点还是优点？</summary><div>传统药讲究一个靶点，越专一越好；微小 RNA 天生是「一调一片」，MRX34 的失败部分就来自这一点。但很多病本身就是一整片网络失调，比如肿瘤。也许问题不在多靶点本身，而在我们还不会预测这一片会往哪边倒。这和改一个底层库的版本号很像：你永远说不全它会影响到谁。</div></details>
+<details><summary>lin-4 只在线虫里有，let-7 却遍布动物界。我们怎么知道下一个「怪癖」是怪癖还是规律？</summary><div>比对序列是一个办法，但它有盲区：功能相同、序列不同的东西，比对是找不到的；而且结果取决于库里有什么。鲁夫昆在晚宴演讲里说，过去 30 年大型测序中心测了三万个物种的基因组，1993 年能拿来比的要少得多。冷落一个结果之前，值得先问：我们是证明了它不普遍，还是只是还没找到它的同类？</div></details>
+</div>
+<div class="refs">
+<h3>// 出处</h3>
+<ul>
+<li><a href="https://www.nobelprize.org/prizes/medicine/2024/press-release/" target="_blank">Nobel Prize · Press release（本届的科普版）</a>：转录因子与 1960 年代、两种突变虫、「震耳欲聋的沉默」、let-7、一千多个微小 RNA、DICER1 综合征。</li>
+<li><a href="https://www.nobelprize.org/prizes/medicine/2024/advanced-information/" target="_blank">Nobel Prize · Scientific background</a>：693 个碱基、22 与 61 个字母、两万多条染色体、4 到 7 倍、1992 年 6 月 11 日、部分互补与「调音量」、miRBase 数字、Dicer 敲除、六亿年与演化格局。</li>
+<li><a href="https://pubmed.ncbi.nlm.nih.gov/8252621/" target="_blank">Lee, Feinbaum &amp; Ambros 1993 · Cell</a>、<a href="https://pubmed.ncbi.nlm.nih.gov/8252622/" target="_blank">Wightman, Ha &amp; Ruvkun 1993 · Cell</a>、<a href="https://pubmed.ncbi.nlm.nih.gov/11081512/" target="_blank">Pasquinelli et al. 2000 · Nature</a>：三篇突破性论文的摘要，支撑不编码蛋白、七个互补位点、let-7 在各门动物中的分布。</li>
+<li>nobelprize.org：<a href="https://www.nobelprize.org/prizes/medicine/2024/ruvkun/interview/" target="_blank">鲁夫昆电话采访</a>（本页引语）、<a href="https://www.nobelprize.org/prizes/medicine/2024/ambros/interview/" target="_blank">安布罗斯电话采访</a>（RNA 干扰奖、罗莎琳德·李的身份）、<a href="https://www.nobelprize.org/uploads/2024/12/ambros-lecture.pdf" target="_blank">安布罗斯诺奖演讲 PDF</a>（鱼、果蝇、线虫的 let-7 序列）。</li>
+<li><a href="https://news.harvard.edu/gazette/story/2025/04/long-trail-from-1992-discovery-to-2024-nobel/" target="_blank">Harvard Gazette · 2025-04</a>（「不算差」、Alnylam、临床试验方向）；<a href="https://english.elpais.com/science-tech/2024-10-08/why-researcher-rosalind-lee-the-wife-of-the-nobel-prize-winner-in-medicine-didnt-receive-the-award-as-well.html" target="_blank">El País · 2024-10-08</a>（罗莎琳德·李的署名争论）。</li>
+<li><a href="https://pubmed.ncbi.nlm.nih.gov/23534542/" target="_blank">Janssen et al. 2013 · NEJM</a>、<a href="https://pubmed.ncbi.nlm.nih.gov/32238921/" target="_blank">Hong et al. 2020 · Br J Cancer</a>、<a href="https://pubmed.ncbi.nlm.nih.gov/28209991/" target="_blank">Rupaimoole &amp; Slack 2017</a>、<a href="https://pubmed.ncbi.nlm.nih.gov/35303998/" target="_blank">Diener et al. 2022</a>、<a href="https://pubmed.ncbi.nlm.nih.gov/30251172/" target="_blank">Hoy 2018 · Drugs</a>：独立于获奖人的临床证据，一正一反加一款获批的近亲药。</li>
+</ul>
+</div>
+<footer>BigCat · 诺奖精读 · 2024 生理学或医学奖 · <a href="index.html">← 目录</a></footer>
+</div>
+</body></html>
