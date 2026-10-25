@@ -85,8 +85,8 @@ footer a{color:#e8c26a;text-decoration:none}
 <div class="langbar"><a href="chemistry-2024-proteins-prize13.en.html">English →</a></div>
 <header>
 <span class="prize-tag">CHEMISTRY · 2024</span>
-<h1>一串字母会自己折成机器：一边正着猜，一边反着写</h1>
-<h2>半个奖给从氨基酸序列算出蛋白形状的 AlphaFold，半个奖给反过来先画形状、再写出序列，造出自然界没有的蛋白</h2>
+<h1 data-tts="6666432f2eecf6e2">一串字母会自己折成机器：一边正着猜，一边反着写</h1>
+<h2 data-tts="9bb10292af2c532f">半个奖给从氨基酸序列算出蛋白形状的 AlphaFold，半个奖给反过来先画形状、再写出序列，造出自然界没有的蛋白</h2>
 <div class="laureates"><span>大卫·贝克 David Baker<em>华盛顿大学 · 霍华德·休斯医学研究所 · 美国 · 1/2</em></span><span>戴密斯·哈萨比斯 Demis Hassabis<em>Google DeepMind · 伦敦 · 1/4</em></span><span>约翰·江珀 John Jumper<em>Google DeepMind · 伦敦 · 1/4</em></span></div>
 <div class="motivation"><q>for computational protein design</q><span class="zh">贝克：表彰他在计算蛋白质设计上的贡献</span><q>for protein structure prediction</q><span class="zh">哈萨比斯、江珀：表彰他们在蛋白质结构预测上的贡献</span></div>
 <div class="date">2024-10-09 公布 · 2026-10-25 · BigCat</div>
@@ -98,64 +98,64 @@ footer a{color:#e8c26a;text-decoration:none}
 <p>答案就在字母串里，那照着字母串算出形状，应该不难吧？这道题，人类算了五十多年。</p>
 </div>
 <div class="section">
-<h2>一串一百个字母，有 1 后面跟 47 个零种折法</h2>
+<h2 data-tts="513702bd46afa986">一串一百个字母，有 1 后面跟 47 个零种折法</h2>
 <p>蛋白质是细胞里干活的机器：抗体、激素、催化反应的酶，都是它。它们用的「字母表」只有大约 20 种氨基酸，按 DNA 的指令一个接一个串成长链，长链再<strong>自己</strong>扭转、折叠成一个立体的形状。形状决定功能：钥匙齿的形状不对，就开不了锁。</p>
 <p>要看清这个形状，传统办法是 X 射线晶体学（X-ray crystallography）：先把蛋白养成晶体，再用 X 射线照出原子的位置。1950 年代末剑桥的肯德鲁（John Kendrew）和佩鲁茨（Max Perutz）用它第一次看到了蛋白的三维模型，拿了 1962 年的化学奖。之后几十年，全世界一个一个地解，常常一个结构就要几个月到几年，攒下了大约 <strong>20 万</strong>个结构。可已知的蛋白序列，已经超过 <strong>2 亿</strong>条。</p>
 <p>直接算为什么不行？1969 年，列文塔尔（Cyrus Levinthal）算了一笔账：一条只有 100 个氨基酸的链，理论上至少有 1 后面跟 47 个零那么多种折法。要是一种种试，试到宇宙年龄都试不完。细胞里，它几毫秒就折好了。</p>
 <p>1994 年，穆尔特（John Moult）和菲德利斯（Krzysztof Fidelis）发起了一场比赛 <b>CASP</b>，每两年一届：实验室刚解出、还没公开的结构先压着，只把序列发给参赛者去猜，猜完再揭晓。打分用 GDT，大意是预测的骨架有百分之多少落在真结构附近，满分 100。最难的那类题（库里找不到相似结构可抄），最好成绩一直到 2016 年都<strong>不到 40 分</strong>。</p>
 </div>
 <div class="section">
-<h2>贝克的捷径：不猜别人的题，自己出题</h2>
+<h2 data-tts="ec92158dc07d2398">贝克的捷径：不猜别人的题，自己出题</h2>
 <p>贝克（David Baker）在哈佛本来读哲学和社会科学，一本《细胞的分子生物学》让他转了行。1993 年他在西雅图的华盛顿大学开了实验室。1990 年代末，他的团队写出了软件 <b>Rosetta</b>。它的招数是「借零件」：从已知结构的库里，找和目标局部长得像的短片段，拼成一个整体，再反复微调，让能量尽量低。能量低，大白话就是：原子之间不挤、该拉手的氢键拉上了、怕水的部分藏进了里面。</p>
 <p>1998 年，Rosetta 在 CASP 首次亮相，成绩相当好。团队接着想：<strong>能不能把它倒过来用？</strong>不输入序列求形状，而是先画一个想要的形状，让它求出能折成这个形状的序列。</p>
 <p>在他之前，蛋白设计已经起步：1988 年德格拉多（DeGrado）等人按「怕水的朝里、亲水的朝外」设计出一束四根螺旋；1997 年梅奥（Mayo）等人第一次全靠计算，给一个 28 个氨基酸的小结构换了新序列。但大家都还在<strong>模仿</strong>自然界已有的形状。</p>
 <blockquote>If you want to build an airplane, you don't start by modifying a bird; instead, you understand the first principles of aerodynamics and build flying machines from those principles.<br/>（想造飞机，你不会从改造一只鸟开始；你会弄懂空气动力学的基本原理，再照着原理造会飞的机器。）<cite>— 贝克 · 诺贝尔委员会科普材料引述</cite></blockquote>
 <p>2003 年，贝克团队画了一个蛋白库里从没出现过的折叠方式：两根螺旋，加上五条并排的片层。Rosetta 在「设计序列」和「预测结构」之间来回迭代，给出一串 93 个氨基酸的序列，和任何天然蛋白都不像。他们把这段基因放进细菌，让细菌造出蛋白，再用 X 射线去照。照出来的结构和设计图的偏差只有 1.2 埃（埃是一亿分之一厘米），连侧链的朝向都对得上，而且极其稳定。它叫 <b>Top7</b>，是第一个形状和序列都不来自自然的蛋白。</p>
-<figure><svg font-family="-apple-system,'Noto Sans SC',sans-serif" viewBox="0 0 520 230" xmlns="http://www.w3.org/2000/svg">
+<figure><svg font-family="-apple-system,'Noto Sans SC',sans-serif" viewbox="0 0 520 230" xmlns="http://www.w3.org/2000/svg">
 <defs>
-<marker id="ag" markerHeight="9" markerUnits="userSpaceOnUse" markerWidth="9" orient="auto" refX="9" refY="5" viewBox="0 0 10 10"><path d="M0,0 L10,5 L0,10 z" fill="#e8c26a"/></marker>
-<marker id="ac" markerHeight="9" markerUnits="userSpaceOnUse" markerWidth="9" orient="auto" refX="9" refY="5" viewBox="0 0 10 10"><path d="M0,0 L10,5 L0,10 z" fill="#d9825b"/></marker>
+<marker id="ag" markerheight="9" markerunits="userSpaceOnUse" markerwidth="9" orient="auto" refx="9" refy="5" viewbox="0 0 10 10"><path d="M0,0 L10,5 L0,10 z" fill="#e8c26a"></path></marker>
+<marker id="ac" markerheight="9" markerunits="userSpaceOnUse" markerwidth="9" orient="auto" refx="9" refy="5" viewbox="0 0 10 10"><path d="M0,0 L10,5 L0,10 z" fill="#d9825b"></path></marker>
 </defs>
 <text fill="#a99f8a" font-size="12" text-anchor="middle" x="105" y="40">氨基酸序列（一维）</text>
-<circle cx="35" cy="115" fill="#e8c26a" r="8"/><circle cx="55" cy="115" fill="#8fb8de" r="8"/><circle cx="75" cy="115" fill="#d9825b" r="8"/><circle cx="95" cy="115" fill="#e8c26a" r="8"/><circle cx="115" cy="115" fill="#b69cf5" r="8"/><circle cx="135" cy="115" fill="#8fb8de" r="8"/><circle cx="155" cy="115" fill="#d9825b" r="8"/><circle cx="175" cy="115" fill="#e8c26a" r="8"/>
+<circle cx="35" cy="115" fill="#e8c26a" r="8"></circle><circle cx="55" cy="115" fill="#8fb8de" r="8"></circle><circle cx="75" cy="115" fill="#d9825b" r="8"></circle><circle cx="95" cy="115" fill="#e8c26a" r="8"></circle><circle cx="115" cy="115" fill="#b69cf5" r="8"></circle><circle cx="135" cy="115" fill="#8fb8de" r="8"></circle><circle cx="155" cy="115" fill="#d9825b" r="8"></circle><circle cx="175" cy="115" fill="#e8c26a" r="8"></circle>
 <text fill="#a99f8a" font-size="12" text-anchor="middle" x="425" y="40">三维形状</text>
-<path d="M380,150 C350,120 370,80 405,85 C440,90 455,60 470,90 C485,120 450,140 425,130 C400,120 395,160 430,165 C455,168 470,150 475,140" fill="none" stroke="#e8c26a" stroke-linecap="round" stroke-width="5"/>
-<line marker-end="url(#ag)" stroke="#e8c26a" stroke-width="1.6" x1="200" x2="345" y1="85" y2="85"/>
+<path d="M380,150 C350,120 370,80 405,85 C440,90 455,60 470,90 C485,120 450,140 425,130 C400,120 395,160 430,165 C455,168 470,150 475,140" fill="none" stroke="#e8c26a" stroke-linecap="round" stroke-width="5"></path>
+<line marker-end="url(#ag)" stroke="#e8c26a" stroke-width="1.6" x1="200" x2="345" y1="85" y2="85"></line>
 <text fill="#f0d68e" font-size="13" font-weight="700" text-anchor="middle" x="272" y="72">结构预测 →</text>
 <text fill="#a99f8a" font-size="11" text-anchor="middle" x="272" y="102">AlphaFold · 哈萨比斯、江珀</text>
-<line marker-end="url(#ac)" stroke="#d9825b" stroke-width="1.6" x1="345" x2="200" y1="150" y2="150"/>
+<line marker-end="url(#ac)" stroke="#d9825b" stroke-width="1.6" x1="345" x2="200" y1="150" y2="150"></line>
 <text fill="#f0a07c" font-size="13" font-weight="700" text-anchor="middle" x="272" y="140">← 蛋白设计</text>
 <text fill="#a99f8a" font-size="11" text-anchor="middle" x="272" y="168">Rosetta · 贝克</text>
 <text fill="#8f8672" font-size="11" text-anchor="middle" x="260" y="214">同一张地图，两个方向：从序列求形状，从形状求序列</text>
 </svg><figcaption>2024 化学奖的两半（据诺贝尔委员会科学背景绘制，示意）</figcaption></figure>
 </div>
 <div class="section">
-<h2>江珀的改造：让网络自己去读演化留下的笔记</h2>
+<h2 data-tts="48fdf0e119399d8d">江珀的改造：让网络自己去读演化留下的笔记</h2>
 <p>预测这条线的转机，藏在演化里。两个氨基酸如果在立体结构里贴在一起，一个变了，另一个往往得跟着变，否则就贴不住。把同一个蛋白在成百上千个物种里的版本排在一起，看哪两个位置<strong>总是一起变</strong>，就能猜出谁和谁挨着。难处在于「一起变」不一定是直接接触：A 贴 B、B 贴 C，A 和 C 也会显得相关。2016 年，研究者学会把直接关联和间接关联分开，接触预测的准确度一下子跳了上去。</p>
 <p>2018 年，DeepMind 带着 <b>AlphaFold</b> 第一次参赛。哈萨比斯（Demis Hassabis）13 岁就是国际象棋大师，做过游戏、研究过神经科学，2010 年和人合办 DeepMind，2016 年用程序在围棋上赢了顶尖棋手。AlphaFold 一上来就把成绩从 40 分左右提到约 60 分，拿了第一，但离「和实验一样准」的约 90 分还远。团队随后卡住了。</p>
 <p>转机是一个新人。江珀（John Jumper）学物理出身，2008 年进了一家用超级计算机模拟蛋白运动的公司，委员会引用的 2010 年那篇蛋白折叠模拟论文，作者名单里就有他。2017 年他刚拿到博士，听说 DeepMind 在秘密做蛋白，投了简历。他和哈萨比斯一起，把模型几乎推倒重来，成了 <b>AlphaFold2</b>。</p>
 <p>新模型用上了 Transformer，就是今天大语言模型那套「注意力」机制。它一边读多物种的序列比对，一边维护一张「每两个氨基酸之间什么关系」的表，两边反复互相修正。然后每个氨基酸被当成一个自由漂浮的小三角形，网络推着它们转动、平移，拼出整条骨架，再喂回去重算几遍。</p>
 <p>2020 年 CASP14 放榜，最难的题，AlphaFold2 拿到了约 90 分。它的骨架位置中位误差 0.96 埃，第二名是 2.8 埃，而一个碳原子的宽度大约 1.4 埃。12 月 4 日，穆尔特在闭幕时问：接下来呢？</p>
-<figure><svg font-family="-apple-system,'Noto Sans SC',sans-serif" viewBox="0 0 520 230" xmlns="http://www.w3.org/2000/svg">
-<line stroke="#6d6656" stroke-width="1" x1="70" x2="480" y1="190" y2="190"/>
-<line stroke="#6d6656" stroke-width="1" x1="70" x2="70" y1="30" y2="190"/>
-<line stroke="#8fb8de" stroke-dasharray="5 4" stroke-width="1.2" x1="70" x2="480" y1="46" y2="46"/>
+<figure><svg font-family="-apple-system,'Noto Sans SC',sans-serif" viewbox="0 0 520 230" xmlns="http://www.w3.org/2000/svg">
+<line stroke="#6d6656" stroke-width="1" x1="70" x2="480" y1="190" y2="190"></line>
+<line stroke="#6d6656" stroke-width="1" x1="70" x2="70" y1="30" y2="190"></line>
+<line stroke="#8fb8de" stroke-dasharray="5 4" stroke-width="1.2" x1="70" x2="480" y1="46" y2="46"></line>
 <text fill="#8fb8de" font-size="11" text-anchor="end" x="478" y="38">约 90 分 ≈ 实验精度</text>
 <text fill="#a99f8a" font-size="11" text-anchor="end" x="62" y="194">0</text>
 <text fill="#a99f8a" font-size="11" text-anchor="end" x="62" y="50">90</text>
-<rect fill="rgba(232,194,106,0.35)" height="64" stroke="#e8c26a" width="90" x="100" y="126"/>
+<rect fill="rgba(232,194,106,0.35)" height="64" stroke="#e8c26a" width="90" x="100" y="126"></rect>
 <text fill="#ece5d6" font-size="12" text-anchor="middle" x="145" y="116">不到 40</text>
 <text fill="#a99f8a" font-size="12" text-anchor="middle" x="145" y="210">1994–2016</text>
-<rect fill="rgba(232,194,106,0.55)" height="96" stroke="#e8c26a" width="90" x="230" y="94"/>
+<rect fill="rgba(232,194,106,0.55)" height="96" stroke="#e8c26a" width="90" x="230" y="94"></rect>
 <text fill="#ece5d6" font-size="12" text-anchor="middle" x="275" y="84">约 60</text>
 <text fill="#a99f8a" font-size="12" text-anchor="middle" x="275" y="210">2018 · AlphaFold</text>
-<rect fill="rgba(217,130,91,0.75)" height="144" stroke="#d9825b" width="90" x="360" y="46"/>
+<rect fill="rgba(217,130,91,0.75)" height="144" stroke="#d9825b" width="90" x="360" y="46"></rect>
 <text fill="#ece5d6" font-size="12" text-anchor="middle" x="405" y="68">约 90</text>
 <text fill="#a99f8a" font-size="12" text-anchor="middle" x="405" y="210">2020 · AlphaFold2</text>
 </svg><figcaption>CASP 最难一类题的最好成绩（GDT，满分 100；据委员会科学背景中的数字示意）</figcaption></figure>
 </div>
 <div class="section">
-<h2>一张地图的两个方向，为什么放进同一个奖</h2>
+<h2 data-tts="0c2a3a790244251b">一张地图的两个方向，为什么放进同一个奖</h2>
 <p>委员会的说法很直接：预测是「从序列求结构」，设计是「从结构求序列」，同一个问题的两面。贝克在获奖电话里也这么讲：蛋白折叠问题一直有两面，很高兴它们放在一起领奖。</p>
 <p>设计为什么早成功了十七年？委员会的解释是：设计的目标形状是你自己挑的，往往规整、理想；序列一旦优化好，它多半就会照图折叠。预测却得面对大自然随手写下、常常并不规整的任何一道题。</p>
 <p>两条线随后汇合了。看到 AlphaFold2 之后，贝克把类似的深度学习架构装进自家工具，2021 年发表了 RoseTTAFold；贝克说，那是一记「叫醒」。2023 年，他的团队把这个预测网络改造成「去噪」的生成模型 <b>RFdiffusion</b>，和那些从噪点里生成图片的 AI 是同一个思路：给它一个想要的功能，它画出一副全新的蛋白骨架。</p>
@@ -163,23 +163,23 @@ footer a{color:#e8c26a;text-decoration:none}
 <blockquote>we need computation to solve the problems of biology. And I just love that it's starting to work<br/>（我们需要计算去解决生物学的问题。我太喜欢它开始管用了。）<cite>— 江珀 · nobelprize.org 获奖当天电话采访 · 2024</cite></blockquote>
 </div>
 <div class="offstage">
-<h3>◐ 奖台之外</h3>
+<h3 data-tts="ead2b326e7ea7507">◐ 奖台之外</h3>
 <p>贝克在获奖电话里说：要是蛋白设计得诺奖，他一直以为会和梅奥、德格拉多一起分，「有点遗憾」。诺奖最多三人，而这两位正是委员会自己在背景材料里点名的设计先驱。委员会也写明：没有几十年来结构生物学家一个个解出、存进库里的实验结构，这两项突破都不可能。</p>
 <p>2024 年 5 月，AlphaFold 3 在《自然》发表时没附代码，一封抗议信到 5 月底收集了 1000 多个签名，批评期刊没有执行自己的规则。DeepMind 随即改口，半年内放出了可供非商业使用的代码，训练好的权重只对学术研究者按申请开放。</p>
 </div>
 <div class="everyday">
-<h3>◎ 对普通人的意义</h3>
-<h4>已经在你身边的</h4>
+<h3 data-tts="2b6af93c1951039a">◎ 对普通人的意义</h3>
+<h4 data-tts="413a4cd31ce3b2d7">已经在你身边的</h4>
 <p>最直接的一样是疫苗。2022 年 6 月，韩国批准了 SK bioscience 的新冠疫苗 <b>SKYCovione</b>，用于 18 岁以上人群。它的骨架是华盛顿大学蛋白设计研究所设计的一种会自己组装的纳米颗粒，表面挂上新冠病毒的蛋白片段。华盛顿大学称它是该所第一个获准用于人体的疗法，贝克则说这是第一款真正「从零设计」的获批药物。4037 名成人参加的三期试验里，它诱导的中和抗体约为阿斯利康疫苗的三倍；韩国政府订购了 1000 万剂。AlphaFold 的影响更间接：它帮研究者看清病为什么发生、细菌怎么耐药。但它本身不是药，本页也没查到由它直接设计并已上市的药。</p>
-<h4>接下来可能改变的</h4>
+<h4 data-tts="7a4e3c858f498a2f">接下来可能改变的</h4>
 <p>贝克在电话里列过三个方向：只在身体对的位置、对的时间起作用的药；能分解污染物和塑料的新酶；更绿色的化工路线。分清阶段：疫苗已经获批；设计出的病毒抑制剂、传感器、开关蛋白多还在实验室；2008 年第一批从零设计的酶，速度远不如天然酶，要靠「定向进化」一轮轮改良。「AI 几年内消灭所有疾病」是炒作，看清靶点的形状只是造药的第一步。</p>
-<h4>它不意味着什么</h4>
+<h4 data-tts="e549e783eb03356f">它不意味着什么</h4>
 <p>它不等于「蛋白折叠问题解决了」。委员会特意区分：折叠的<strong>过程</strong>是另一门大学问，AlphaFold2 答的是<strong>最终形状</strong>。欧洲生物信息研究所的使用指南列了它做不好的事：天生没有固定形状的区域、一种蛋白的多种形态、单个字母的突变带来的变化；没有其他分子在场时，它也不知道蛋白会怎么变形。同族亲戚太少的蛋白，它就猜不准：论文自己写，比对里的序列少到 30 条左右，准确度就明显下滑。它也不是实验的替代品：它就是靠那 20 万个实验结构训练出来的。</p>
-<h4>可以借走的思维方式</h4>
+<h4 data-tts="b8c55aa868949e51">可以借走的思维方式</h4>
 <p>正面打不下来的问题，先做它的逆问题。贝克没等预测被解决，先去解那道「自己挑题」的反向题，在那里攒下的工具和直觉，后来又回流到正向。</p>
 </div>
 <div class="crossx">
-<h3>🌀 越界 · 跨学科的联想</h3>
+<h3 data-tts="86d3171adaf78bcf">🌀 越界 · 跨学科的联想</h3>
 <ul>
 <li><b>AI · 判别模型变生成模型</b>：RFdiffusion 是把一个「看结构」的预测网络微调成「去噪」网络，于是会画了。这和图像领域的路径同构：一个足够懂数据分布的模型，倒着跑就能生成。委员会还说 AlphaFold2 不只是在比对图案，它很可能学到了一张「能量地形」，这正是本站 <a href="physics-2024-neural-networks-prize1.html">2024 物理奖</a> Hopfield 网络往低处滚的那张地形；Rosetta 的蒙特卡洛找低能量，也是同一件事。</li>
 <li><b>分布式系统 · 从相关性还原拓扑</b>：从多物种序列里「谁和谁一起变」推出谁和谁接触，就像从一堆服务的指标曲线里推调用关系。卡了二十年的坑也一样：A 调 B、B 调 C，A 和 C 的曲线也会联动。2016 年的跃升，靠的正是把直接依赖和传递出来的相关拆开。</li>
@@ -189,7 +189,7 @@ footer a{color:#e8c26a;text-decoration:none}
 </ul>
 </div>
 <div class="ten">
-<h3>◆ 十条要点</h3>
+<h3 data-tts="f2dd5be034e77550">◆ 十条要点</h3>
 <ol class="takeaways">
 <li>安芬森发现蛋白拆开后会折回同一形状，说明蛋白的三维结构全写在氨基酸序列里。</li>
 <li>列文塔尔估算百个氨基酸的链有天文数字种折法，细胞却几毫秒折好，所以不能靠逐一试算。</li>
@@ -204,13 +204,13 @@ footer a{color:#e8c26a;text-decoration:none}
 </ol>
 </div>
 <div class="thinking">
-<h3>// 深入思考</h3>
+<h3 data-tts="1a00bc8d19404655">// 深入思考</h3>
 <details><summary>AlphaFold2 给出了答案，却没告诉我们蛋白「为什么」这样折。这算不算解决了问题？</summary><div>看你要的是什么。要一个结构去设计实验、找药物靶点，答案本身就够用，贝克也这么看。要理解折叠过程、预测一个突变会让蛋白怎样坏掉，答案不够，模型对单点突变本来就不敏感。就像一个从没出过错的黑盒服务：你敢不敢在它没见过的输入上依赖它？它自带的置信度分数又改变了多少？</div></details>
 <details><summary>化学奖颁给一家科技公司的 CEO 和研究员，这对科学意味着什么？</summary><div>AlphaFold2 的代码公开后，被全世界反复检验，委员会把这一点算进它的影响里。AlphaFold 3 不附代码发表，引来上千名科学家联名抗议。同一家公司前后两种做法，正好是一个对照：当最强的工具在公司手里，「可复现」这条科学的底线由谁来守？</div></details>
 <details><summary>如果没有那 20 万个辛苦解出的实验结构，还会有 AlphaFold 吗？</summary><div>几乎不会，委员会自己也这么写。这引出一个问题：今天的 AI 突破，有多少是站在几十年「不性感」的数据积累上？一个靠公共数据库训练出来的模型，它的收益又该怎么回流给攒数据的人？可以拿开源软件和大模型训练数据的争论来对照着想。</div></details>
 </div>
 <div class="refs">
-<h3>// 出处</h3>
+<h3 data-tts="d09d9d8efc734714">// 出处</h3>
 <ul>
 <li><a href="https://www.nobelprize.org/prizes/chemistry/2024/popular-information/" target="_blank">Nobel Prize · Popular information</a>：肯德鲁与佩鲁茨、安芬森、列文塔尔、CASP 的 40 / 60 / 90、哈萨比斯与江珀的经历、贝克的转行与「飞机和鸟」、Top7、200 多万用户。</li>
 <li><a href="https://www.nobelprize.org/prizes/chemistry/2024/advanced-information/" target="_blank">Nobel Prize · Scientific background</a>：里根与德格拉多、达希亚特与梅奥、Rosetta 的原理、2016 年接触预测的跃升、AlphaFold2 的架构、「第一个真正的科学突破」、设计为何先成功、实验数据的作用。</li>
