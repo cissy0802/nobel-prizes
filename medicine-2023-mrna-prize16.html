@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>2023 生理学或医学奖 · 换掉一个字母，免疫系统就不再拉警报 — 诺奖精读</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;color:#ece5d6;line-height:1.85;min-height:100vh;
+  background:radial-gradient(1100px 560px at 10% -6%,rgba(232,194,106,0.10),transparent 60%),radial-gradient(900px 640px at 100% 2%,rgba(217,130,91,0.08),transparent 55%),linear-gradient(165deg,#0d0c0a 0%,#14110c 45%,#0a0907 100%);background-attachment:fixed}
+.container{max-width:760px;margin:0 auto;padding:18px 20px 90px}
+.langbar{display:flex;justify-content:flex-end;padding-top:10px;font-family:"SF Mono",Menlo,monospace;font-size:.8rem}
+.langbar a{color:#e8c26a;text-decoration:none;border:1px solid rgba(232,194,106,.3);padding:4px 12px;border-radius:20px}
+.langbar a:hover{border-color:#d9825b;color:#d9825b}
+header{text-align:center;padding:40px 0 22px}
+.prize-tag{display:inline-block;font-size:0.75rem;color:#e8c26a;font-family:"SF Mono",Menlo,monospace;letter-spacing:2px;border:1px solid rgba(232,194,106,0.42);padding:4px 13px;border-radius:20px;margin-bottom:16px;background:rgba(232,194,106,0.06)}
+header h1{font-size:2.1rem;font-weight:800;letter-spacing:.5px;line-height:1.3;background:linear-gradient(110deg,#f3dc9a 0%,#e8c26a 45%,#d9825b 92%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 2px 18px rgba(232,194,106,0.22))}
+header h2{font-size:1rem;color:#a99f8a;margin-top:10px;font-weight:400;letter-spacing:0.4px}
+.laureates{margin-top:18px;font-size:0.9rem;color:#d8cdb4}
+.laureates span{display:inline-block;margin:3px 6px;padding:2px 11px;border-radius:14px;background:rgba(232,194,106,0.07);border:1px solid rgba(232,194,106,0.18)}
+.laureates em{font-style:normal;color:#8f8672;font-size:0.8rem;margin-left:6px;font-family:"SF Mono",Menlo,monospace}
+.motivation{margin:18px auto 0;max-width:620px;font-size:0.88rem;color:#b9ae95;line-height:1.7}
+.motivation q{display:block;font-style:italic;color:#d9cfb8}
+.motivation q::before{content:"“"}.motivation q::after{content:"”"}
+.motivation .zh{display:block;margin-top:4px}
+header .date{font-size:0.8rem;color:#6d6656;margin-top:16px;font-family:"SF Mono",Menlo,monospace}
+header .pitch{margin-top:18px;font-size:0.98rem;color:#d9825b;font-style:italic}
+.intro{background:rgba(232,194,106,0.06);border-left:3px solid #e8c26a;padding:20px 24px;border-radius:0 10px 10px 0;margin:36px 0;font-size:0.99rem;color:#e2d9c6}
+.intro strong{color:#fff}
+.section{margin:46px 0 0}
+.section h2::before{content:"";display:block;width:28px;height:2px;background:#e8c26a;opacity:.75;margin-bottom:16px}
+.section h2{font-size:1.3rem;color:#fff;margin-bottom:16px;font-weight:700;line-height:1.38}
+.section p{margin-bottom:14px;color:#e2d9c6;font-size:0.96rem}
+.section strong{color:#fff}
+.section blockquote{margin:16px 0;padding:10px 18px;border-left:2px solid rgba(217,130,91,0.6);color:#d6c9ae;font-size:0.93rem;background:rgba(217,130,91,0.05);border-radius:0 8px 8px 0}
+.section blockquote cite{display:block;margin-top:6px;font-style:normal;font-size:0.8rem;color:#8f8672;font-family:"SF Mono",Menlo,monospace}
+figure{margin:24px 0}
+figure svg{display:block;width:100%;height:auto;max-width:520px;margin:0 auto}
+figcaption{text-align:center;font-size:0.82rem;color:#a99f8a;margin-top:12px;font-family:"SF Mono",Menlo,monospace}
+.glossary{margin:18px 0;border:1px dashed rgba(232,194,106,0.35);border-radius:10px;padding:14px 18px;font-size:0.9rem;color:#d6ccb4}
+.glossary b{color:#f0d68e}
+.offstage{margin:40px 0;background:rgba(217,130,91,0.06);border:1px solid rgba(217,130,91,0.3);border-radius:14px;padding:20px 24px}
+.offstage h3{color:#d9825b;font-size:0.86rem;letter-spacing:2px;margin-bottom:10px;font-family:"SF Mono",Menlo,monospace}
+.offstage p{color:#e6d6c8;font-size:0.93rem;margin-bottom:10px}
+.offstage p:last-child{margin-bottom:0}
+.everyday{margin:40px 0;background:linear-gradient(135deg,rgba(125,170,214,0.10),rgba(125,170,214,0.04));border:1px solid rgba(125,170,214,0.34);border-radius:14px;padding:22px 26px}
+.everyday h3{color:#8fb8de;font-size:0.88rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.everyday h4{color:#bcd6ee;font-size:0.95rem;margin:16px 0 6px;font-weight:700}
+.everyday h4:first-of-type{margin-top:0}
+.everyday p{color:#dfe7ef;font-size:0.94rem;margin-bottom:8px}
+.everyday b{color:#fff}
+.crossx{margin:40px 0;background:linear-gradient(135deg,rgba(182,156,245,0.10),rgba(232,194,106,0.05));border:1px solid rgba(182,156,245,0.32);border-radius:14px;padding:22px 26px}
+.crossx h3{color:#b69cf5;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.crossx p{color:#e6def5;font-size:0.92rem;line-height:1.8;margin-bottom:14px}
+.crossx b{color:#d4c4fb;font-weight:600}
+.crossx ul{list-style:none;margin:0}
+.crossx li{color:#e6def5;font-size:0.93rem;line-height:1.8;margin-bottom:14px;padding-left:20px;position:relative}
+.crossx li:last-child{margin-bottom:0}
+.crossx li::before{content:"◈";position:absolute;left:0;top:0.35em;color:#e8c26a;font-size:0.72rem}
+.ten{margin:40px 0}
+.ten h3{color:#e8c26a;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(232,194,106,.3);border-radius:12px;background:rgba(232,194,106,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(232,194,106,.12);font-size:.94rem;line-height:1.75;color:#e2d9c6}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#e8c26a}
+.crossx a,.section a,.everyday a,.offstage a{color:#f0d68e;text-decoration:none;border-bottom:1px dotted rgba(240,214,142,0.5)}
+.thinking{background:linear-gradient(135deg,rgba(232,194,106,0.05),rgba(182,156,245,0.05));border:1px solid rgba(232,194,106,0.2);border-radius:12px;padding:24px 26px;margin:40px 0}
+.thinking h3{color:#e8c26a;font-size:0.9rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.thinking details{background:rgba(13,12,10,0.55);border:1px solid rgba(232,194,106,0.16);border-radius:9px;padding:13px 17px;margin:10px 0;transition:all 0.2s}
+.thinking details[open]{background:rgba(232,194,106,0.05);border-color:rgba(232,194,106,0.4)}
+.thinking summary{cursor:pointer;color:#f0d68e;font-weight:600;font-size:0.93rem;list-style:none;outline:none;line-height:1.55}
+.thinking summary::-webkit-details-marker{display:none}
+.thinking summary::before{content:"▸ ";color:#d9825b}
+.thinking details[open] summary::before{content:"▾ "}
+.thinking details>div{margin-top:12px;padding-top:12px;border-top:1px dashed rgba(232,194,106,0.2);color:#e2d9c6;font-size:0.9rem;line-height:1.8}
+.refs{margin-top:34px}
+.refs h3{color:#d9825b;font-size:0.85rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.refs ul{list-style:none}
+.refs li{margin-bottom:9px;font-size:0.88rem;color:#a99f8a}
+.refs a{color:#e8c26a;text-decoration:none;border-bottom:1px dotted rgba(232,194,106,0.4)}
+.refs a:hover{color:#f3dc9a}
+footer{text-align:center;padding:48px 0 10px;font-size:0.8rem;color:#6d6656;font-family:"SF Mono",Menlo,monospace}
+footer a{color:#e8c26a;text-decoration:none}
+@media(max-width:600px){header h1{font-size:1.6rem}.section h2{font-size:1.14rem}.everyday,.crossx,.offstage,.thinking{padding:18px 18px}}
+</style></head><body>
+</head><body>
+<div class="container">
+<div class="langbar"><a href="medicine-2023-mrna-prize16.en.html">English →</a></div>
+<header>
+<span class="prize-tag">MEDICINE · 2023</span>
+<h1>换掉一个字母，免疫系统就不再拉警报</h1>
+<h2>他们发现人造 mRNA 被身体当成入侵者，是因为它缺了天然 RNA 身上的化学「记号」；补上记号，它就不再引发炎症，还能造出多得多的蛋白</h2>
+<div class="laureates"><span>卡塔琳·考里科 Katalin Karikó<em>匈牙利 · 塞格德大学 / 宾夕法尼亚大学 · 1/2</em></span><span>德鲁·魏斯曼 Drew Weissman<em>美国 · 宾夕法尼亚大学 · 1/2</em></span></div>
+<div class="motivation"><q>for their discoveries concerning nucleoside base modifications that enabled the development of effective mRNA vaccines against COVID-19</q><span class="zh">表彰他们关于核苷碱基修饰的发现，这些发现使有效的新冠 mRNA 疫苗得以研发</span></div>
+<div class="date">2026-10-28 · BigCat</div>
+<p class="pitch">让 mRNA 疫苗起作用的关键一步，是先让免疫系统别注意到它。</p>
+</header>
+<div class="intro">
+<p>打完新冠 mRNA 疫苗，胳膊酸一两天，有人还会低烧。你大概觉得这是「疫苗在起作用」。</p>
+<p>其实那一针已经是被「驯服」过的版本。疫苗里的 mRNA 是在试管里合成的，按它最初的样子，身体里负责站岗的免疫细胞一碰到它就会拉响警报，把它当成病毒的遗传物质。考里科和魏斯曼在 2005 年发现了警报为什么会响，以及怎样让它安静下来：<strong>把 mRNA 四个字母里的一个，换成它的一个天然变体。</strong></p>
+<p>没有这一步，就很难在一针里放进足够多的 mRNA，也就没有 2020 年 12 月那两支有效率九成以上的疫苗。</p>
+</div>
+<div class="section">
+<h2>一份会被身体当成入侵者的说明书</h2>
+<p>先说 mRNA 是什么。细胞的 DNA 是锁在细胞核里的总设计图，要造某个蛋白时，细胞先抄一份临时的「施工单」送到细胞质，那里的核糖体照单造蛋白，这份施工单就是<strong>信使 RNA</strong>（messenger RNA, mRNA）。它在 1961 年被发现，用完很快就被降解。</p>
+<p>思路很早就有：既然 mRNA 能让细胞造蛋白，那直接把一段写好的 mRNA 送进人体，让人自己的细胞去造病毒蛋白（当疫苗）或缺失的蛋白（当药），岂不是省掉了工厂？1984 年，哈佛的科学家用噬菌体的酶在试管里合成了 mRNA，这叫<strong>体外转录</strong>（in vitro transcription）。1990 年，有团队把 mRNA 打进小鼠肌肉，肌肉真的造出了蛋白。</p>
+<p>但接下来的十年，大多数团队悄悄离开了这个方向。考里科在诺奖演讲里给了原因：mRNA 不稳定，造出的蛋白又少又短命。委员会的学术版材料补了第三条：试管里造的 mRNA 会引发炎症反应。当时更多人押注 DNA 疫苗，因为 DNA 更稳定。</p>
+<p>考里科是少数留下来的人。她在匈牙利塞格德读博士时就在 RNA 实验室，第一份工作却断在资助上：</p>
+<blockquote>I lost my job in 1985 when the pharmaceutical company stopped sponsoring the project. I was 30 years old.<br/>（1985 年，药企停止资助这个项目，我丢了工作。那年我 30 岁。）<cite>— Katalin Karikó · Nobel Lecture · 2023</cite></blockquote>
+<p>她去了费城，1989 年进入宾夕法尼亚大学，后来在神经外科一间小实验室里一待就是 17 年，想用 mRNA 治中风。偏偏中风病人最怕的就是炎症，炎症会加重脑损伤。</p>
+</div>
+<div class="section">
+<h2>复印机旁的相遇，和一个关于 tRNA 的疑问</h2>
+<p>1997 年，考里科在宾大医学院走廊的复印机旁认识了刚从美国国立卫生研究院（NIH）过来的免疫学家魏斯曼。两人都爱读文献、都复印很多论文。魏斯曼想做 HIV 疫苗，对 mRNA 很感兴趣，合作就这样开始。</p>
+<p>魏斯曼擅长培养<strong>树突状细胞</strong>（dendritic cell），这是免疫系统的哨兵，负责发现入侵者、再去叫醒其他免疫细胞。他们把 mRNA 喂给树突状细胞，细胞确实能拿它造出 HIV 的蛋白，但同时分泌出大量炎症因子。起初这被当成好事，被激活的哨兵更会练兵；对想治中风的考里科来说，这却是坏消息。</p>
+<p>他们问了一个关键问题：<strong>细胞里本来就到处是 RNA，为什么身体不会对自己的 RNA 发炎？</strong>于是把各种天然 RNA 逐一喂给树突状细胞。试管里合成的 mRNA 引发的炎症最强，哺乳动物细胞的 RNA 弱得多，而<strong>转运 RNA</strong>（tRNA）完全不引发炎症。tRNA 有个出了名的特点：身上带着大量化学修饰过的碱基。</p>
+<p>天然 RNA 的字母 A、U、G、C 常常被细胞的酶加工过，已知的修饰有一百多种；试管里合成的 mRNA 却是「素颜」的。哪一种修饰才是关键，没人知道。他们把修饰过的原料直接放进合成反应，赌合成酶会照单全收。结果，凡是把 U 换成修饰版的 mRNA，树突状细胞几乎不再分泌炎症因子，其中就有<strong>假尿苷</strong>（pseudouridine, Ψ），一种 1951 年就被发现的天然 U 变体。负责识别的，是树突状细胞里两个叫 TLR7 和 TLR8 的「警报器」。</p>
+<figure><svg viewBox="0 0 520 230" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#e8c26a"/></marker>
+<marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#8fb8de"/></marker></defs>
+<g font-size="13" fill="#ece5d6">
+<text x="20" y="34">未修饰 mRNA</text><text x="20" y="144">含假尿苷的 mRNA</text></g>
+<g font-family="SF Mono,Menlo,monospace" font-size="15" fill="#d9825b"><text x="20" y="62">A U G C U U A G U C</text></g>
+<g font-family="SF Mono,Menlo,monospace" font-size="15" fill="#8fb8de"><text x="20" y="172">A Ψ G C Ψ Ψ A G Ψ C</text></g>
+<g stroke-width="1.6"><line x1="200" y1="56" x2="262" y2="56" stroke="#e8c26a" marker-end="url(#ar)"/><line x1="200" y1="166" x2="262" y2="166" stroke="#8fb8de" marker-end="url(#ar2)"/></g>
+<g fill="none" stroke-width="1.4"><circle cx="300" cy="56" r="30" stroke="#e8c26a"/><circle cx="300" cy="166" r="30" stroke="#8fb8de"/></g>
+<g font-size="11.5" fill="#ece5d6" text-anchor="middle"><text x="300" y="52">树突状</text><text x="300" y="67">细胞</text><text x="300" y="162">树突状</text><text x="300" y="177">细胞</text></g>
+<g stroke-width="1.6"><line x1="334" y1="56" x2="372" y2="56" stroke="#e8c26a" marker-end="url(#ar)"/><line x1="334" y1="166" x2="372" y2="166" stroke="#8fb8de" marker-end="url(#ar2)"/></g>
+<g font-size="12.5" fill="#ece5d6"><text x="380" y="50">警报：分泌</text><text x="380" y="68">大量炎症因子</text><text x="380" y="160">安静：几乎无炎症</text><text x="380" y="178">蛋白产量高得多</text></g>
+<line x1="20" y1="110" x2="500" y2="110" stroke="#6d6656" stroke-width="1" stroke-dasharray="4 4"/>
+</svg><figcaption>同一段遗传信息，只把 U 换成天然变体 Ψ，哨兵细胞的反应就从拉警报变成放行</figcaption></figure>
+<p>2005 年，他们把结果发表在《免疫》（Immunity）期刊上。论文还提出一个演化上的解释：细菌 RNA 和线粒体 RNA 会强烈激活警报，哺乳动物的总 RNA 却不会，所以免疫系统可能正是靠「有没有修饰」来分辨细菌或坏死组织。委员会说，这篇论文当时几乎没人注意。魏斯曼后来回忆，那时「没人愿意发表」。</p>
+</div>
+<div class="section">
+<h2>为什么一个字母能改变整个局面</h2>
+<p>修饰的好处不止让炎症消失。2008 和 2010 年的后续研究发现，含假尿苷的 mRNA 造出的蛋白大约多 10 倍。原因是未修饰的 mRNA 会激活细胞里一个叫 PKR 的抗病毒开关，它一开，细胞就全面踩刹车，什么蛋白都少造；修饰过的 mRNA 不触发这个开关，而且更不容易被切碎。再加上一步纯化，去掉合成时混进去的双链 RNA 杂质，在人的树突状细胞里，蛋白产量最高可达上千倍。</p>
+<p>但别把它想成一把万能钥匙。委员会列了让 mRNA 疫苗成真的几块拼图：修饰碱基、把 mRNA 包进<strong>脂质纳米颗粒</strong>（lipid nanoparticle, LNP）安全送进细胞的递送系统、把新冠刺突蛋白稳定在「融合前」形状的设计，以及政府和产业前所未有的投入。诺奖只颁给了第一块。</p>
+<p>这一块为什么关键，委员会给了一个对照。新冠两支获批的 mRNA 疫苗把 U 全部换成了改良版的 N1-甲基假尿苷；德国 CureVac 公司的疫苗没用修饰碱基，剂量低得多，诱导出的中和抗体也更低。委员会的判断是：<strong>修饰让每一针能放进足够多的 mRNA，而不至于让人烧起来。</strong></p>
+</div>
+<div class="section">
+<h2>从没人注意的论文，到疫情里的那一针</h2>
+<p>修饰碱基的论文发表后，产业慢慢跟上。CureVac 成立于 2000 年，BioNTech 成立于 2008 年，Moderna 成立于 2010 年。2013 年，考里科被宾大逼退，去了德国的 BioNTech。</p>
+<p>2020 年疫情暴发，BioNTech 与辉瑞、Moderna 与美国 NIH 各自用修饰碱基的 mRNA 做出疫苗。三期试验的保护率分别是 95% 和 94%，两支都在 2020 年 12 月获批。委员会写道，全球各类新冠疫苗合计接种超过 130 亿剂，挽救了数以百万计的生命。</p>
+<p>之后，路分了岔。2024 年 5 月，Moderna 的呼吸道合胞病毒（RSV）疫苗 mRESVIA 在美国获批，是第一支用于新冠之外疾病的 mRNA 疫苗。2025 年 8 月，美国卫生部终止了 22 个、总额近 5 亿美元的 mRNA 疫苗研发项目。2026 年 10 月，Merck 和 Moderna 公布了个体化 mRNA 黑色素瘤疗法的三期数据：和标准免疫药联用，复发或死亡风险降低 42%。</p>
+</div>
+<div class="offstage">
+<h3>◐ 奖台之外</h3>
+<p>诺奖最多三人。魏斯曼在 2024 年的一次访谈里说，他们曾向诺奖方面提过其他该得奖的人：<q>The person that I thought should have been recognized along with us was Pieter Cullis, who invented the lipid nanoparticle.</q>（我认为应该和我们一起得到认可的人，是发明了脂质纳米颗粒的彼得·库利斯。）对方的回答是：1961 年就有两篇论文同时描述了 mRNA，之后还有一长串工作，值得的人太多了。</p>
+<p>考里科在获奖当天<a href="https://www.nobelprize.org/prizes/medicine/2023/kariko/interview/" target="_blank">对诺奖官网说</a>，十年前的十月，她正被宾大赶走、被迫退休。之后九年她往返德国上班，58 岁时还在亲手培养质粒、喂细胞。</p>
+</div>
+<div class="everyday">
+<h3>◎ 对普通人的意义</h3>
+<h4>已经在你身边的</h4>
+<p><b>新冠疫苗</b>：2020 年 12 月获批的辉瑞/BioNTech 和 Moderna 两支，都把 U 换成了修饰碱基。<b>RSV 疫苗</b>：2024 年 5 月<a href="https://www.drugtopics.com/view/breaking-fda-approves-moderna-s-mrna-rsv-vaccine-mresvia" target="_blank">获批</a>的 mRESVIA 面向 60 岁以上人群，三期试验约 3.7 万人、22 个国家，对有两种以上症状的下呼吸道疾病，有效率 83.7%。另一个看不见的变化是速度：委员会写道，病毒出新变种时，mRNA 平台更新疫苗的速度目前没有别的平台能比。</p>
+<h4>接下来可能改变的</h4>
+<p><b>个体化癌症疫苗</b>最接近落地：先测出你肿瘤特有的突变，再写一段 mRNA 让免疫系统去认它们。黑色素瘤的三期试验 INTerpath-001 入组 1137 人，结果是阳性，但它是和标准免疫药联用，总生存期数据还没出，也还没获批。<b>用 mRNA 让病人自己造药</b>（替代昂贵的蛋白药）还在动物实验和早期临床阶段。另一个变量是政策：2025 年美国卫生部砍掉了一批 mRNA 疫苗项目，未来几年的进展未必只由科学决定。</p>
+<h4>它不意味着什么</h4>
+<p><b>不意味着 mRNA 会改你的基因</b>：它只在细胞质里工作，进不了细胞核，委员会明确写了它不能整合进基因组。<b>不意味着修饰之后就没有反应</b>：胳膊酸、乏力仍然常见，心肌炎和心包炎也有报告，美国疾控中心说发生率低。<b>不意味着考里科一个人发明了 mRNA 疫苗</b>：她在诺奖演讲里专门感谢了几十年来为此打地基的众多科学家，这个奖奖的是其中关键的一块。<b>也不意味着每种 mRNA 疗法都离不开修饰</b>：委员会提到，一些癌症疫苗试验用的就是未修饰的 mRNA。</p>
+<h4>可以借走的思维方式</h4>
+<p>当你造的东西总被系统拒绝，别只盯着自己的版本调参，去找<b>系统从来不拒绝的那个天然样本</b>，问它多了什么。考里科和魏斯曼的转折点，就是注意到 tRNA 为什么安静。</p>
+</div>
+<div class="crossx">
+<h3>🌀 越界 · 跨学科的联想</h3>
+<ul>
+<li><b>信息安全 · 签名与伪装</b>：天然免疫识别 RNA 的方式，很像一套只检查「有没有签名」的鉴权：带修饰的算自己人，素颜的当外来者。考里科和魏斯曼做的，相当于给外来的消息盖上了自家的章，于是它被当成内部指令执行。2005 年的论文还提出这套规则的来历：细菌和线粒体的 RNA 修饰少，所以「没签名」恰好是「来自细菌」的廉价代理。和伪造攻击不同的是，这里没有破解任何东西，用的就是天然存在的那枚章。</li>
+<li><b>AI · 捷径特征</b>：分类器常学会用一个便宜的表面特征代替真正的判断，比如认出「草地」就判为「牛」。TLR7 和 TLR8 用「U 有没有被修饰」判断「是不是病毒」，也是一个在演化环境里足够准的捷径。只要知道它看的是哪个特征，就能让输入绕过去。好在这次绕过去的是我们自己。</li>
+<li><b>分布式系统 · 把计算推到边缘</b>：传统疫苗和蛋白药是在中心工厂的细胞培养罐里造好成品再运出去；mRNA 是只下发一段「指令」，让每个人的细胞在本地把蛋白造出来。考里科在演讲里说的正是这笔账：蛋白药很贵，而 mRNA 好造、便宜。代价也和边缘计算一样：你控制不了每台终端的运行环境，剂量和反应的个体差异更大。</li>
+<li><b>免疫学 · 两道「别打自己」的关</b>：本站 <a href="medicine-2025-immune-tolerance-prize7.html">2025 医学奖</a>讲的是适应性免疫里的刹车（调节性 T 细胞）；这一期讲的是更古老的天然免疫怎样靠化学记号分辨自己和外来。同一个问题在两层各有一套解法。RNA 本身的另一面见 <a href="medicine-2024-microrna-prize12.html">2024 医学奖</a>：细胞里还有一类小 RNA 专门调低基因的「音量」。</li>
+</ul>
+</div>
+<div class="ten">
+<h3>◆ 十条要点</h3>
+<ol class="takeaways">
+<li>mRNA 是细胞从 DNA 抄出来的临时施工单，用 mRNA 当疫苗，就是让人自己的细胞造出病毒蛋白。</li>
+<li>试管合成的 mRNA 早年有三个毛病：不稳定、造蛋白少、会引发炎症，大多数团队因此离开。</li>
+<li>考里科 1985 年因项目断了资助而失业，后来在宾大一间小实验室里坚持研究 mRNA 治疗。</li>
+<li>考里科和魏斯曼 1997 年在宾大的复印机旁相识，开始用树突状细胞测试 mRNA 疫苗。</li>
+<li>关键线索是 tRNA：这种带大量修饰碱基的天然 RNA，喂给树突状细胞完全不引发炎症。</li>
+<li>把 mRNA 里的 U 换成假尿苷等修饰版本，TLR7 和 TLR8 警报几乎不再响，成果 2005 年发表。</li>
+<li>修饰碱基还能避开 PKR 刹车，让同一段 mRNA 造出约 10 倍的蛋白，并且更不容易被降解。</li>
+<li>新冠 mRNA 疫苗还靠脂质纳米颗粒递送、刺突蛋白稳定设计和巨额投入，诺奖只奖了修饰碱基这一块。</li>
+<li>mRNA 进不了细胞核、不会整合进基因组，修饰之后注射部位酸痛等反应仍然存在。</li>
+<li>天然免疫靠「有没有化学修饰」区分自己和外来，像只检查签名的鉴权，也像 AI 学到的捷径特征。</li>
+</ol>
+</div>
+<div class="thinking">
+<h3>// 深入思考</h3>
+<details><summary>2005 年的论文几乎没人注意，十五年后却成了疫情的关键。科研资助该怎样对待这类「暂时看不出用处」的发现？</summary><div>可以把基础研究看成买期权：单个期权多半作废，少数一个的回报覆盖全部成本。难点在于期权要有人持有到行权那天。考里科丢过两次职位，这条线差点断掉。值得想的是，评审制度里有没有一种办法，专门给「方向冷门但证据扎实」的小课题留一点长期、低额的资助。</div></details>
+<details><summary>委员会只奖了修饰碱基，没奖脂质纳米颗粒。诺奖「最多三人」的规则，在今天的大科学里还合理吗？</summary><div>mRNA 疫苗是一条多环节的链：mRNA 的发现、体外转录、递送、抗原设计、临床试验，缺一环都不行。三人上限迫使委员会挑一个「最关键的突破」来讲故事，代价是把其他环节变成背景。魏斯曼本人也说库利斯应该一起得奖。可以想一想：如果是你，会把哪一环当成那个「没有它就不行」的节点？</div></details>
+<details><summary>免疫系统靠「有没有修饰」分辨敌我，这个规则被人类利用了。病毒有没有可能也学会同样的伪装？</summary><div>这是演化上的军备竞赛问题。如果某种化学标记是「自己人」的凭证，那么能模仿它的病毒就会有优势。2005 年的论文本身只讨论了细菌和线粒体 RNA 为什么会被识别，没有回答病毒那一面。值得追问的是，一个只检查单一特征的识别系统，在长期对抗中能稳定多久。</div></details>
+</div>
+<div class="refs">
+<h3>// 出处</h3>
+<ul>
+<li><a href="https://www.nobelprize.org/prizes/medicine/2023/press-release/" target="_blank">Nobel Prize · Press release（医学奖的科普版）</a> — 疫苗平台的来历、树突状细胞实验、2005/2008/2010 年的论文、95% 保护率、130 亿剂。</li>
+<li><a href="https://www.nobelprize.org/prizes/medicine/2023/advanced-information/" target="_blank">Nobel Prize · Scientific background</a> — 1984 体外转录与 1990 小鼠实验、TLR7/8、PKR、LNP 与刺突稳定、CureVac 对照、三家公司的成立年份、不能整合进基因组。</li>
+<li><a href="https://pubmed.ncbi.nlm.nih.gov/16111635/" target="_blank">Karikó, Buckstein, Ni &amp; Weissman · Immunity 23:165（2005）</a> — 突破性论文：五种修饰碱基消除免疫激活，细菌与线粒体 RNA 的演化解释。</li>
+<li><a href="https://www.nobelprize.org/uploads/2026/09/kariko-lecture.pdf" target="_blank">Katalin Karikó · Nobel Lecture（2023-12-07）</a> — 1985 年失业、神经外科的 17 年、复印机、tRNA 线索、约 10 倍与上千倍的蛋白产量、EPO 小鼠实验。</li>
+<li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11107418/" target="_blank">Interview with Drew Weissman · Pathogens and Immunity（2024）</a> — 库利斯与诺奖名额、「没人愿意发表」。</li>
+<li><a href="https://www.merck.com/news/merck-and-moderna-will-present-results-from-landmark-phase-3-interpath-001-trial-for-intismeran-autogene-plus-keytruda-pembrolizumab-at-esmo-2026-presidential-symposium/" target="_blank">Merck &amp; Moderna · INTerpath-001 三期结果（2026-10-22）</a> — 个体化 mRNA 黑色素瘤疗法降低 42% 复发或死亡风险。</li>
+<li><a href="https://www.healio.com/news/rheumatology/20250912/us-abandons-mrna-vaccine-development-despite-triumphs" target="_blank">Healio（2025）</a> — 独立报道：美国卫生部终止 22 个、近 5 亿美元的 mRNA 项目，以及心肌炎发生率低的说明。</li>
+</ul>
+</div>
+<footer>BigCat · 诺奖精读 · 2023 生理学或医学奖 · <a href="index.html">← 目录</a></footer>
+</div>
+</body></html>
