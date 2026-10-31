@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>2023 文学奖 · 他剧本里用得最多的词，是「停顿」 — 诺奖精读</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;color:#ece5d6;line-height:1.85;min-height:100vh;
+  background:radial-gradient(1100px 560px at 10% -6%,rgba(232,194,106,0.10),transparent 60%),radial-gradient(900px 640px at 100% 2%,rgba(217,130,91,0.08),transparent 55%),linear-gradient(165deg,#0d0c0a 0%,#14110c 45%,#0a0907 100%);background-attachment:fixed}
+.container{max-width:760px;margin:0 auto;padding:18px 20px 90px}
+.langbar{display:flex;justify-content:flex-end;padding-top:10px;font-family:"SF Mono",Menlo,monospace;font-size:.8rem}
+.langbar a{color:#e8c26a;text-decoration:none;border:1px solid rgba(232,194,106,.3);padding:4px 12px;border-radius:20px}
+.langbar a:hover{border-color:#d9825b;color:#d9825b}
+header{text-align:center;padding:40px 0 22px}
+.prize-tag{display:inline-block;font-size:0.75rem;color:#e8c26a;font-family:"SF Mono",Menlo,monospace;letter-spacing:2px;border:1px solid rgba(232,194,106,0.42);padding:4px 13px;border-radius:20px;margin-bottom:16px;background:rgba(232,194,106,0.06)}
+header h1{font-size:2.1rem;font-weight:800;letter-spacing:.5px;line-height:1.3;background:linear-gradient(110deg,#f3dc9a 0%,#e8c26a 45%,#d9825b 92%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 2px 18px rgba(232,194,106,0.22))}
+header h2{font-size:1rem;color:#a99f8a;margin-top:10px;font-weight:400;letter-spacing:0.4px}
+.laureates{margin-top:18px;font-size:0.9rem;color:#d8cdb4}
+.laureates span{display:inline-block;margin:3px 6px;padding:2px 11px;border-radius:14px;background:rgba(232,194,106,0.07);border:1px solid rgba(232,194,106,0.18)}
+.laureates em{font-style:normal;color:#8f8672;font-size:0.8rem;margin-left:6px;font-family:"SF Mono",Menlo,monospace}
+.motivation{margin:18px auto 0;max-width:620px;font-size:0.88rem;color:#b9ae95;line-height:1.7}
+.motivation q{display:block;font-style:italic;color:#d9cfb8}
+.motivation q::before{content:"“"}.motivation q::after{content:"”"}
+.motivation .zh{display:block;margin-top:4px}
+header .date{font-size:0.8rem;color:#6d6656;margin-top:16px;font-family:"SF Mono",Menlo,monospace}
+header .pitch{margin-top:18px;font-size:0.98rem;color:#d9825b;font-style:italic}
+.intro{background:rgba(232,194,106,0.06);border-left:3px solid #e8c26a;padding:20px 24px;border-radius:0 10px 10px 0;margin:36px 0;font-size:0.99rem;color:#e2d9c6}
+.intro strong{color:#fff}
+.section{margin:46px 0 0}
+.section h2::before{content:"";display:block;width:28px;height:2px;background:#e8c26a;opacity:.75;margin-bottom:16px}
+.section h2{font-size:1.3rem;color:#fff;margin-bottom:16px;font-weight:700;line-height:1.38}
+.section p{margin-bottom:14px;color:#e2d9c6;font-size:0.96rem}
+.section strong{color:#fff}
+.section blockquote{margin:16px 0;padding:10px 18px;border-left:2px solid rgba(217,130,91,0.6);color:#d6c9ae;font-size:0.93rem;background:rgba(217,130,91,0.05);border-radius:0 8px 8px 0}
+.section blockquote cite{display:block;margin-top:6px;font-style:normal;font-size:0.8rem;color:#8f8672;font-family:"SF Mono",Menlo,monospace}
+figure{margin:24px 0}
+figure svg{display:block;width:100%;height:auto;max-width:520px;margin:0 auto}
+figcaption{text-align:center;font-size:0.82rem;color:#a99f8a;margin-top:12px;font-family:"SF Mono",Menlo,monospace}
+.glossary{margin:18px 0;border:1px dashed rgba(232,194,106,0.35);border-radius:10px;padding:14px 18px;font-size:0.9rem;color:#d6ccb4}
+.glossary b{color:#f0d68e}
+.offstage{margin:40px 0;background:rgba(217,130,91,0.06);border:1px solid rgba(217,130,91,0.3);border-radius:14px;padding:20px 24px}
+.offstage h3{color:#d9825b;font-size:0.86rem;letter-spacing:2px;margin-bottom:10px;font-family:"SF Mono",Menlo,monospace}
+.offstage p{color:#e6d6c8;font-size:0.93rem;margin-bottom:10px}
+.offstage p:last-child{margin-bottom:0}
+.everyday{margin:40px 0;background:linear-gradient(135deg,rgba(125,170,214,0.10),rgba(125,170,214,0.04));border:1px solid rgba(125,170,214,0.34);border-radius:14px;padding:22px 26px}
+.everyday h3{color:#8fb8de;font-size:0.88rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.everyday h4{color:#bcd6ee;font-size:0.95rem;margin:16px 0 6px;font-weight:700}
+.everyday h4:first-of-type{margin-top:0}
+.everyday p{color:#dfe7ef;font-size:0.94rem;margin-bottom:8px}
+.everyday b{color:#fff}
+.crossx{margin:40px 0;background:linear-gradient(135deg,rgba(182,156,245,0.10),rgba(232,194,106,0.05));border:1px solid rgba(182,156,245,0.32);border-radius:14px;padding:22px 26px}
+.crossx h3{color:#b69cf5;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.crossx p{color:#e6def5;font-size:0.92rem;line-height:1.8;margin-bottom:14px}
+.crossx b{color:#d4c4fb;font-weight:600}
+.crossx ul{list-style:none;margin:0}
+.crossx li{color:#e6def5;font-size:0.93rem;line-height:1.8;margin-bottom:14px;padding-left:20px;position:relative}
+.crossx li:last-child{margin-bottom:0}
+.crossx li::before{content:"◈";position:absolute;left:0;top:0.35em;color:#e8c26a;font-size:0.72rem}
+.ten{margin:40px 0}
+.ten h3{color:#e8c26a;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(232,194,106,.3);border-radius:12px;background:rgba(232,194,106,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(232,194,106,.12);font-size:.94rem;line-height:1.75;color:#e2d9c6}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#e8c26a}
+.crossx a,.section a,.everyday a,.offstage a{color:#f0d68e;text-decoration:none;border-bottom:1px dotted rgba(240,214,142,0.5)}
+.thinking{background:linear-gradient(135deg,rgba(232,194,106,0.05),rgba(182,156,245,0.05));border:1px solid rgba(232,194,106,0.2);border-radius:12px;padding:24px 26px;margin:40px 0}
+.thinking h3{color:#e8c26a;font-size:0.9rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.thinking details{background:rgba(13,12,10,0.55);border:1px solid rgba(232,194,106,0.16);border-radius:9px;padding:13px 17px;margin:10px 0;transition:all 0.2s}
+.thinking details[open]{background:rgba(232,194,106,0.05);border-color:rgba(232,194,106,0.4)}
+.thinking summary{cursor:pointer;color:#f0d68e;font-weight:600;font-size:0.93rem;list-style:none;outline:none;line-height:1.55}
+.thinking summary::-webkit-details-marker{display:none}
+.thinking summary::before{content:"▸ ";color:#d9825b}
+.thinking details[open] summary::before{content:"▾ "}
+.thinking details>div{margin-top:12px;padding-top:12px;border-top:1px dashed rgba(232,194,106,0.2);color:#e2d9c6;font-size:0.9rem;line-height:1.8}
+.refs{margin-top:34px}
+.refs h3{color:#d9825b;font-size:0.85rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.refs ul{list-style:none}
+.refs li{margin-bottom:9px;font-size:0.88rem;color:#a99f8a}
+.refs a{color:#e8c26a;text-decoration:none;border-bottom:1px dotted rgba(232,194,106,0.4)}
+.refs a:hover{color:#f3dc9a}
+footer{text-align:center;padding:48px 0 10px;font-size:0.8rem;color:#6d6656;font-family:"SF Mono",Menlo,monospace}
+footer a{color:#e8c26a;text-decoration:none}
+@media(max-width:600px){header h1{font-size:1.6rem}.section h2{font-size:1.14rem}.everyday,.crossx,.offstage,.thinking{padding:18px 18px}}
+</style></head><body>
+</head><body>
+<div class="container">
+<div class="langbar"><a href="literature-2023-fosse-prize19.en.html">English →</a></div>
+<header>
+<span class="prize-tag">LITERATURE · 2023</span>
+<h1>他剧本里用得最多的词，是「停顿」</h1>
+<h2>一位用挪威少数书面语写作的剧作家和小说家：他把人说不出口的东西放进停顿、重复和没有句号的长句里</h2>
+<div class="laureates"><span>约恩·福瑟 Jon Fosse<em>挪威 · 1/1</em></span></div>
+<div class="motivation"><q>for his innovative plays and prose which give voice to the unsayable</q><span class="zh">表彰他以创新的戏剧和散文，为不可言说之物发声</span></div>
+<div class="date">2026-10-31 · BigCat</div>
+<p class="pitch">他说自己从来不是为了表达自己而写作，恰恰相反，是为了离开自己。</p>
+</header>
+
+<div class="intro">
+<p>老师点你的名，让你站起来朗读课文。全班的目光一下子落到你身上，嗓子发紧，字在纸上晃。这种时刻你大概有过。</p>
+<p>挪威西海岸一个初中男生遇到的是更极端的版本。2023 年 12 月 7 日，他在瑞典学院的诺贝尔演讲里回忆：恐惧毫无预兆地涌上来，「我好像消失在恐惧里，我就只剩下恐惧」。他站起来，跑出了教室，事后谎称要去厕所，看得出没人信。</p>
+<p>这个男生叫约恩·福瑟（Jon Fosse）。他说，那场恐惧像是把他的语言夺走了，他得把它拿回来，而且只能按自己的条件拿。于是他开始写短诗、短故事，发现写作给了他恐惧的反面：安全。五十年后，他说自己仍然从心里那个「秘密的地方」写作，而他对那个地方的了解，也只限于知道它存在。</p>
+</div>
+
+<div class="section">
+<h2>一个吉他手，一种只有一成人写的语言</h2>
+<p>福瑟 1959 年生于挪威西海岸的海于格松（Haugesund）。少年时他迷的是音乐：弹电吉他，十四岁就跟乐队去乡村舞会演出，虽然按规定十六岁才能进场；也学古典吉他，能弹几首巴赫的小曲。后来，用他的话说，「说不清的原因」，他不再弹琴，连音乐也不听了，坐到一台旧打字机前，想造出弹琴时的那种气氛。他说，那些让他「出名或者说臭名昭著」的重复，大概就是从弹琴来的。</p>
+<p>他写的是<b>新挪威语（Nynorsk）</b>。挪威有两种书面语，另一种是更通行的书面挪威语（Bokmål）。新挪威语最接近西挪威方言，据他估计只有约一成挪威人用它写字。他说，祖母的声音只能用新挪威语听见，换成书面挪威语，「听起来像另一个人」。学生时代他在采访里说过，有人攻击你的语言，没法辩论，就像为自己的存在辩护：「Fight or leave.」（要么打，要么走。）他是第一位用新挪威语写作的诺贝尔文学奖得主。</p>
+<p>1983 年，他以长篇《红，黑》（Raudt, svart）出道，写的是自杀，书评很差。他在演讲里说，如果那时听了批评家的话，他出完第一本书就不写了。</p>
+</div>
+
+<div class="section">
+<h2>授奖词拆开读：创新的戏剧、散文、不可言说</h2>
+<p><b>「创新的戏剧」</b>：他本来不想写戏。挪威有个公共资助项目鼓励写新剧本，给了他这个「穷作家」一笔不小的钱，只要求写一部戏的开场，结果他写完了一整部：《有人将至》（Nokon kjem til å komme，1996）。至今这仍是他上演最多的戏。1999 年它在巴黎上演，成了他在欧洲的突破。他自己说，第一次写剧本是他写作生涯里最大的意外：在小说和诗里，他一直在写日常口语说不出的东西；到了戏里，<b>只要写下「停顿」这个词，沉默的言语就在那儿了</b>。长停顿、短停顿，或者就是停顿，这是他剧本里用得最多的词。</p>
+<p><b>「散文」</b>：剧本里是停顿，小说里是重复。他觉得两者作用相似，在写出来的语言背后还有一种沉默的语言。委员会说他用的是最简单的词，靠重复和变奏获得深度。</p>
+<p><b>「不可言说」</b>：福瑟说这个授奖词「完全说得通」：能用简单的话说清的事，何必写诗写小说？他喜欢把德里达（Jacques Derrida）的一句话改一改：人生最重要的东西说不出，只能写。委员会主席安德斯·奥尔松（Anders Olsson）在颁奖词里举了一个早期短篇《我没法对你说》（1991）：一个老人一辈子忘不了心爱的人独坐在学校食堂里的眼神，到她临终，那句话也没说出口。奥尔松还补了一句：他回避一切定论式的措辞，<b>几乎没法引用</b>。</p>
+<p>奥尔松的传记介绍里有一段剧本《影子》（Skuggar，2007）的台词，可以看出这种语言：</p>
+<blockquote>「No, of course / That's just what you say when you meet someone」<br/>（不，当然／人们碰面时就是这么说的。）<cite>— 《影子》· 诺奖官网 Biobibliography 所引英译 · 本页自译</cite></blockquote>
+<p>同一句客套话反复出现，越来越可疑：它是客套，还是心里话？</p>
+</div>
+
+<div class="section">
+<h2>作品里到底发生了什么：两道交叉的线，一个没有句号的长句</h2>
+<p>《关上的吉他》（Stengd gitar，1985）是最好懂的入口：一个年轻母亲出门倒垃圾，把自己锁在了门外，婴儿还在屋里。她得去找人帮忙，又没法丢下孩子。奥尔松说，福瑟写的总是这种我们立刻认得出的日常处境，一个悬而未决的关键时刻。</p>
+<p>他的散文巨著是《七部曲》（Septology，2019–2021），委员会说它长达 1250 页。叙述者阿斯勒（Asle）是一个上了年纪的画家，妻子早逝，独居在西海岸。小说开头，他站在画架前看一幅画不完、却最珍爱的画：</p>
+<figure><svg font-family="-apple-system,'Noto Sans SC',sans-serif" viewBox="0 0 520 300" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#100e0b" height="300" rx="10" width="520" x="0" y="0"/>
+<rect fill="none" height="200" stroke="#6d6656" stroke-width="1.2" width="320" x="100" y="40"/>
+<line stroke="#a374d8" stroke-linecap="round" stroke-width="12" x1="125" x2="395" y1="65" y2="215"/>
+<line stroke="#9a6a3e" stroke-linecap="round" stroke-width="12" x1="395" x2="125" y1="65" y2="215"/>
+<circle cx="260" cy="140" fill="none" r="16" stroke="#e8c26a" stroke-dasharray="3 3" stroke-width="1.2"/>
+<text fill="#c9a6f0" font-size="12" text-anchor="end" x="92" y="64">紫：画家阿斯勒</text>
+<text fill="#c9a6f0" font-size="11" text-anchor="end" x="92" y="80">戒了酒，信了神</text>
+<text fill="#c79a6e" font-size="12" text-anchor="start" x="428" y="64">棕：另一个</text>
+<text fill="#c79a6e" font-size="12" text-anchor="start" x="428" y="80">阿斯勒</text>
+<text fill="#c79a6e" font-size="11" text-anchor="start" x="428" y="96">酗酒，倒在雪里</text>
+<text fill="#e8c26a" font-size="12" text-anchor="middle" x="260" y="266">交叉处：颜色混成一种没有名字的颜色</text>
+<text fill="#a99f8a" font-size="11" text-anchor="middle" x="260" y="286">奥尔松：两人的命运在死亡的时刻交叉</text>
+</svg><figcaption>阿斯勒那幅画：一道紫、一道棕交叉成斜十字。据诺奖官网 Biobibliography 与《七部曲》选段绘制</figcaption></figure>
+<p>诺奖官网刊出的选段里，他关了灯，站在黑暗中继续看那幅画：</p>
+<blockquote>「I see that there's a soft light in the painting, yes, a soft invisible light, well then yes so it probably is a good painting, maybe, I think」<br/>（我看见画里有一种柔和的光，是的，一种柔和的、看不见的光，那好吧，是的，那它大概是幅好画，也许吧，我想）<cite>— 《七部曲 I–II：别的名字》· Damion Searls 英译 · 诺奖官网选段 · 本页自译</cite></blockquote>
+<p>注意这个句子没有结束。整部小说<b>一个句号也没有</b>，靠重复、复现的主题和固定的七天撑起结构；每一部用同一句话开头，用同一段祷告结尾。城里还住着另一个阿斯勒，同名、也画画，是个酒鬼。第一部里，画家阿斯勒在城里四处找他，最后在雪堆里发现了他，救了他一命。福瑟说，写这一段是他作为作家最幸福的时刻之一。他在演讲里也点破了：这沉默的语言在说，第一个阿斯勒和另一个阿斯勒<b>也许是同一个人</b>，整部长篇也许只是「一个被抽出来的此刻」。</p>
+<p>他说句号不是设计出来的，「我就这样写了，一股流、一个动作，不需要句号。」他写作从不计划，靠倾听；写到某一刻，总觉得文本已经写好、就在外面某处，他只要赶在它消失前抄下来。《七部曲》是在维也纳附近的奥地利小镇海恩堡（Hainburg）写的，他每天早上五点写到九点，前后约四年。</p>
+</div>
+
+<div class="section">
+<h2>为什么是他，为什么是这一年</h2>
+<p>他等了很久。他的中译者李澍波接受新京报采访时说，据他挪威出版社总编的说法，他从 2001 年起就进了候选名单。福瑟自己在获奖电话里说，他早已习惯在博彩榜上名列前茅，「进入猜测的第十年」没想到会是自己。爱尔兰时报的记者提到，博彩公司立博（Ladbrokes）有一阵干脆暂停了对他的下注。</p>
+<p>2020 年 1 月，英文版《七部曲》第一卷刚出，爱尔兰时报书评人约翰·塞尔夫（John Self）就写道，福瑟身上有瑞典学院近来重新有了胃口的那种欧洲现代主义气质，「看着吧」。消息来时，他正一个人沿峡湾开车。他对爱尔兰时报说，时机刚好：要是早十年得奖，就很难写出《七部曲》这样一本他以为人人都会讨厌的书。</p>
+</div>
+
+<div class="offstage">
+<h3>◐ 奖台之外</h3>
+<p>他对爱尔兰时报讲得很直白：他爱喝酒，尤其是贝克特也爱的尊美醇威士忌；他生性害羞，为了应付这一切就喝，「I covered myself in whiskey」（我把自己裹在威士忌里）。后来早上也喝，不再吃饭，有一天倒下被送进医院。他说再这样下去「肯定会要了我的命」。大约十年前他戒了酒，皈依了天主教；在那之前，他去过卑尔根的贵格会（Quaker）聚会，认同那里的想法：神在寂静里离你最近。</p>
+</div>
+
+<div class="everyday">
+<h3>◎ 对普通人的意义</h3>
+<h4>读他会给你带来什么</h4>
+<p><b>允许自己说不出。</b>我们习惯以为，说不清就是没想清楚。福瑟的戏证明，一段停顿里可以装下很多：说不出、不想说，或者不说才是最好的说法。读过他，你在一次冷场、一句「没事」里，会听见更多东西。</p>
+<p><b>一种近乎冥想的阅读。</b>奥尔松说，福瑟不是难懂的作家，难的是我们愿不愿意向存在的不确定敞开。他的长句不难，难的是慢下来。</p>
+<p><b>关于自杀的一个提醒。</b>他的作品里有很多自杀。他在演讲里说，他一直怕自己因此让自杀显得正当；获奖后最打动他的，是有读者写信说他的作品救了自己的命。一位希腊女读者告诉他，她还活着，是因为剧本《死亡变奏曲》。如果你正处在低谷，请直接找人谈谈，书不能代替求助。</p>
+<h4>从哪一本开始</h4>
+<p>福瑟本人在获奖电话里推荐的入门书是<b>《晨与夜》</b>（Morgon og kveld，2000）：篇幅很短：老人约翰内斯一天早上醒来，现实开始奇怪地溶解，读者渐渐明白他要死了，全书却是和解的调子。中译本由邹鲁路译，译林出版社 2025 年出版，156 页，难度最低。想看戏，可以读同一位译者的<b>《有人将至：约恩·福瑟戏剧选》</b>（译林，2024），收九部剧，没有人名的「男人」和「女人」，读起来很快。<b>《三部曲》</b>（李澍波译，上海人民出版社·世纪文景，2024）写一对西挪威的穷苦年轻人，情节性最强。<b>《七部曲》</b>中文版译林已预告，英文可读 Damion Searls 译本。</p>
+<h4>它不意味着什么</h4>
+<p><b>极简不等于空。</b>克瑙斯高甚至说他「一点都不极简主义」，而是本质主义。<b>他也不是在布道。</b>他的信仰渗透作品，但他在演讲里说，好的写作和一切布道，无论宗教的还是政治的，都是相反的。<b>他也不写自传</b>：《七部曲》里的画家戒酒、皈依，和他本人很像，他却坚持自己写作是为了离开自己；当年他还对克瑙斯高说，不能直接写自己的生活。</p>
+</div>
+
+<div class="crossx">
+<h3>🌀 越界 · 跨学科的联想</h3>
+<ul>
+<li><b>分布式系统 · 分不清「慢」和「挂了」</b>：剧本《名字》（1995）里，怀孕的女孩在等孩子的父亲，他迟迟没来：是耽搁了，还是抛下了她？这正是异步系统里最根本的难题：收不到心跳时，你永远无法确定对方是网络慢，还是已经宕机。《有人将至》整部戏就悬在这个超时上。工程师用超时阈值硬做决定，福瑟的人物没有阈值，只能一直悬着。</li>
+<li><b>AI · 陈词滥调就是高概率的下一个词</b>：福瑟教写作课时，给学生、后来以自传体小说出名的卡尔·奥韦·克瑙斯高（Karl Ove Knausgård）改诗，一行行划掉，说第一行是陈词滥调，第二行也是，最后只留下「宽银幕天空」一个词。陈词滥调就是语言模型最容易预测出的那个续写；福瑟说，「爱」这个词在英语里几乎什么也没说。他追的「不可言说」，是不能被压缩成常见搭配的那部分意思。不同在于，低概率不等于有意义，随机词也很罕见。</li>
+<li><b>神秘主义 · 否定神学与「道可道」</b>：奥尔松说，《七部曲》的阿斯勒像中世纪神秘主义者埃克哈特大师（Meister Eckhart）那样，向一个超出一切概念的神祷告。只能说神「不是什么」的否定神学，和「道可道，非常道」、禅宗的不立文字是同一个结构：最重要的东西只能绕着说。福瑟的语言里充满停顿、打断和否定，《是阿莱斯》（2004）七十页里有两百个问句。</li>
+<li><b>神经科学 · 节律同步</b>：书评人说他的重复像咒语一样让人着迷；爱尔兰作家罗南·赫西翁（Rónán Hession）说，他的文字里编进了稳定的节拍，读者和人物的思绪会在同一个时刻同步。福瑟说重复来自弹琴。这和音乐里的节律同步（entrainment）是同一种机制：重复的节拍让听者的内部节奏跟着对齐。</li>
+<li><b>文学 · 没有尽头的句子</b>：两年后得奖的<a href="literature-2025-krasznahorkai-prize10.html">克拉斯诺霍尔卡伊</a>也以一句话写好几页出名。区别在用途：克拉斯诺霍尔卡伊的长句像被末日追赶，福瑟的长句像祷告，越写越慢。</li>
+</ul>
+</div>
+
+<div class="ten">
+<h3>◆ 十条要点</h3>
+<ol class="takeaways">
+<li>福瑟初中时害怕当众朗读，跑出教室，从此靠写作把被恐惧夺走的语言拿回来。</li>
+<li>新挪威语是最接近西挪威方言的书面语，只有约一成挪威人用它写字。</li>
+<li>2023 年文学奖第一次颁给用新挪威语写作的作家，由福瑟独得全奖。</li>
+<li>小说里那些著名的重复来自少年时弹吉他，停下音乐后，打字机成了找回那种气氛的工具。</li>
+<li>为一笔资助写戏的开场，结果写成整部《有人将至》，至今仍是上演最多的一部。</li>
+<li>「停顿」是剧本里用得最多的词，一段停顿里可以装下说不出、不想说和不必说。</li>
+<li>《七部曲》全书没有一个句号，画家阿斯勒和酗酒的另一个阿斯勒也许是同一个人。</li>
+<li>委员会认为这不是难懂的写作，难的是读者愿不愿意向存在的不确定敞开。</li>
+<li>入门可读福瑟本人推荐的短小说《晨与夜》，中译本由邹鲁路翻译，译林 2025 年出版。</li>
+<li>等人没来却分不清是耽搁还是抛弃，和异步系统里分不清网络慢还是节点宕机是同一个难题。</li>
+</ol>
+</div>
+
+<div class="thinking">
+<h3>// 深入思考</h3>
+<details><summary>一个「几乎没法引用」的作家，凭什么拿诺奖？</summary><div>我们习惯用金句来记住作家。奥尔松却说福瑟回避定论式的措辞，福瑟也说意义来自作品的整体，而不是部分。也许他的价值本来就不在单句，而在单句之间的节奏。那么，评价这样的作品，靠的是什么？你记得一首歌，记住的是歌词还是旋律？</div></details>
+<details><summary>他说写作是为了离开自己，可《七部曲》的画家又那么像他。矛盾吗？</summary><div>福瑟说，直接写自己经历过的东西「什么也不是」，需要一种转化。另一个阿斯勒像一个反事实：如果没有戒酒、没有信仰，他可能会变成什么样。写一个可能的自己，是靠近自己还是离开自己？你有没有过借一个「假如」看清自己的经验？</div></details>
+<details><summary>少数语言是护城河还是围墙？</summary><div>只有约一成挪威人用新挪威语写字，他说这让人和语言绑得更紧，没法辩论，只能要么打、要么走。可他走向世界，又全靠译者把「音乐」搬进别的语言。一个人坚守方言，和被全世界读到，冲突在哪里，又在哪里不冲突？</div></details>
+<details><summary>作品里写了很多自杀，作家该负责吗？</summary><div>福瑟自己担心过会让自杀显得正当，读者却说他的剧本救了命。同一个文本，对不同的人可能指向相反的方向。描写和鼓励的界线在哪里？你会怎么判断一本书对某个具体的人是危险还是庇护？</div></details>
+</div>
+
+<div class="refs">
+<h3>// 出处</h3>
+<ul>
+<li><a href="https://api.nobelprize.org/2.1/nobelPrizes?nobelPrizeYear=2023&amp;nobelPrizeCategory=lit" target="_blank">Nobel Prize API · 2023 Literature</a> 与 <a href="https://www.nobelprize.org/prizes/literature/2023/fosse/facts/" target="_blank">Facts</a> — 授奖词原文、公布日期、奖金份额、生日与出生地、写作语言。</li>
+<li><a href="https://www.nobelprize.org/prizes/literature/2023/bio-bibliography/" target="_blank">Biobibliography（Anders Olsson）</a> 与 <a href="https://www.nobelprize.org/prizes/literature/2023/ceremony-speech/" target="_blank">颁奖词</a> — 处女作、巴黎首演、《关上的吉他》《影子》《七部曲》的结构与那幅画、两百个问句；《我没法对你说》、埃克哈特、不难懂、几乎没法引用、首位新挪威语得主。</li>
+<li><a href="https://www.nobelprize.org/prizes/literature/2023/fosse/lecture/" target="_blank">诺贝尔演讲《沉默的语言》（2023-12-07）</a> — 跑出教室、秘密的地方、「停顿」、改写德里达、文本已经写好、没有句号、离开自己、读者来信与自杀。</li>
+<li><a href="https://www.nobelprize.org/prizes/literature/2023/fosse/prose/" target="_blank">Prose 选段</a> 与 <a href="https://www.nobelprize.org/prizes/literature/2023/fosse/interview/" target="_blank">访谈与获奖电话</a> — 《七部曲》开篇英译；吉他与重复、新挪威语与祖母的声音、「Fight or leave」、推荐《晨与夜》、希腊读者。</li>
+<li><a href="https://www.irishtimes.com/culture/books/2023/11/12/nobel-prize-winning-author-jon-fosse-on-giving-up-alcohol-and-converting-to-catholicism" target="_blank">Rónán Hession · 爱尔兰时报专访（2023-11-12）</a> 与 <a href="https://www.irishtimes.com/culture/books/the-other-name-hypnotic-repetition-and-no-full-stops-1.4118199" target="_blank">John Self · 爱尔兰时报书评（2020-01-04）</a> — 独立来源：戒酒与皈依、贵格会、海恩堡、立博停注、时机；划诗留一词、咒语般的重复、现代主义气质。</li>
+<li><a href="https://www.bjnews.com.cn/detail/1696523551169341.html" target="_blank">新京报 · 专访译者李澍波（2023）</a>、<a href="https://www.chinawriter.com.cn/n1/2024/0711/c404092-40275525.html" target="_blank">中国作家网（2024-07-11）</a> 与 <a href="https://book.douban.com/subject/37348603/" target="_blank">豆瓣 ·《晨与夜》</a> — 2001 年起入候选、《三部曲》；戏剧选篇目、克瑙斯高的「本质主义」、《七部曲》预告；中译本信息。</li>
+</ul>
+</div>
+<footer>BigCat · 诺奖精读 · 2023 文学奖 · <a href="index.html">← 目录</a></footer>
+</div>
+</body></html>
