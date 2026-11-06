@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>2022 经济学奖 · 一家没有做错任何事的银行，也会被一个谣言挤垮 — 诺奖精读</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;color:#ece5d6;line-height:1.85;min-height:100vh;
+  background:radial-gradient(1100px 560px at 10% -6%,rgba(232,194,106,0.10),transparent 60%),radial-gradient(900px 640px at 100% 2%,rgba(217,130,91,0.08),transparent 55%),linear-gradient(165deg,#0d0c0a 0%,#14110c 45%,#0a0907 100%);background-attachment:fixed}
+.container{max-width:760px;margin:0 auto;padding:18px 20px 90px}
+.langbar{display:flex;justify-content:flex-end;padding-top:10px;font-family:"SF Mono",Menlo,monospace;font-size:.8rem}
+.langbar a{color:#e8c26a;text-decoration:none;border:1px solid rgba(232,194,106,.3);padding:4px 12px;border-radius:20px}
+.langbar a:hover{border-color:#d9825b;color:#d9825b}
+header{text-align:center;padding:40px 0 22px}
+.prize-tag{display:inline-block;font-size:0.75rem;color:#e8c26a;font-family:"SF Mono",Menlo,monospace;letter-spacing:2px;border:1px solid rgba(232,194,106,0.42);padding:4px 13px;border-radius:20px;margin-bottom:16px;background:rgba(232,194,106,0.06)}
+header h1{font-size:2.1rem;font-weight:800;letter-spacing:.5px;line-height:1.3;background:linear-gradient(110deg,#f3dc9a 0%,#e8c26a 45%,#d9825b 92%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 2px 18px rgba(232,194,106,0.22))}
+header h2{font-size:1rem;color:#a99f8a;margin-top:10px;font-weight:400;letter-spacing:0.4px}
+.laureates{margin-top:18px;font-size:0.9rem;color:#d8cdb4}
+.laureates span{display:inline-block;margin:3px 6px;padding:2px 11px;border-radius:14px;background:rgba(232,194,106,0.07);border:1px solid rgba(232,194,106,0.18)}
+.laureates em{font-style:normal;color:#8f8672;font-size:0.8rem;margin-left:6px;font-family:"SF Mono",Menlo,monospace}
+.motivation{margin:18px auto 0;max-width:620px;font-size:0.88rem;color:#b9ae95;line-height:1.7}
+.motivation q{display:block;font-style:italic;color:#d9cfb8}
+.motivation q::before{content:"“"}.motivation q::after{content:"”"}
+.motivation .zh{display:block;margin-top:4px}
+header .date{font-size:0.8rem;color:#6d6656;margin-top:16px;font-family:"SF Mono",Menlo,monospace}
+header .pitch{margin-top:18px;font-size:0.98rem;color:#d9825b;font-style:italic}
+.intro{background:rgba(232,194,106,0.06);border-left:3px solid #e8c26a;padding:20px 24px;border-radius:0 10px 10px 0;margin:36px 0;font-size:0.99rem;color:#e2d9c6}
+.intro strong{color:#fff}
+.section{margin:46px 0 0}
+.section h2::before{content:"";display:block;width:28px;height:2px;background:#e8c26a;opacity:.75;margin-bottom:16px}
+.section h2{font-size:1.3rem;color:#fff;margin-bottom:16px;font-weight:700;line-height:1.38}
+.section p{margin-bottom:14px;color:#e2d9c6;font-size:0.96rem}
+.section strong{color:#fff}
+.section blockquote{margin:16px 0;padding:10px 18px;border-left:2px solid rgba(217,130,91,0.6);color:#d6c9ae;font-size:0.93rem;background:rgba(217,130,91,0.05);border-radius:0 8px 8px 0}
+.section blockquote cite{display:block;margin-top:6px;font-style:normal;font-size:0.8rem;color:#8f8672;font-family:"SF Mono",Menlo,monospace}
+figure{margin:24px 0}
+figure svg{display:block;width:100%;height:auto;max-width:520px;margin:0 auto}
+figcaption{text-align:center;font-size:0.82rem;color:#a99f8a;margin-top:12px;font-family:"SF Mono",Menlo,monospace}
+.glossary{margin:18px 0;border:1px dashed rgba(232,194,106,0.35);border-radius:10px;padding:14px 18px;font-size:0.9rem;color:#d6ccb4}
+.glossary b{color:#f0d68e}
+.offstage{margin:40px 0;background:rgba(217,130,91,0.06);border:1px solid rgba(217,130,91,0.3);border-radius:14px;padding:20px 24px}
+.offstage h3{color:#d9825b;font-size:0.86rem;letter-spacing:2px;margin-bottom:10px;font-family:"SF Mono",Menlo,monospace}
+.offstage p{color:#e6d6c8;font-size:0.93rem;margin-bottom:10px}
+.offstage p:last-child{margin-bottom:0}
+.everyday{margin:40px 0;background:linear-gradient(135deg,rgba(125,170,214,0.10),rgba(125,170,214,0.04));border:1px solid rgba(125,170,214,0.34);border-radius:14px;padding:22px 26px}
+.everyday h3{color:#8fb8de;font-size:0.88rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.everyday h4{color:#bcd6ee;font-size:0.95rem;margin:16px 0 6px;font-weight:700}
+.everyday h4:first-of-type{margin-top:0}
+.everyday p{color:#dfe7ef;font-size:0.94rem;margin-bottom:8px}
+.everyday b{color:#fff}
+.crossx{margin:40px 0;background:linear-gradient(135deg,rgba(182,156,245,0.10),rgba(232,194,106,0.05));border:1px solid rgba(182,156,245,0.32);border-radius:14px;padding:22px 26px}
+.crossx h3{color:#b69cf5;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.crossx p{color:#e6def5;font-size:0.92rem;line-height:1.8;margin-bottom:14px}
+.crossx b{color:#d4c4fb;font-weight:600}
+.crossx ul{list-style:none;margin:0}
+.crossx li{color:#e6def5;font-size:0.93rem;line-height:1.8;margin-bottom:14px;padding-left:20px;position:relative}
+.crossx li:last-child{margin-bottom:0}
+.crossx li::before{content:"◈";position:absolute;left:0;top:0.35em;color:#e8c26a;font-size:0.72rem}
+.ten{margin:40px 0}
+.ten h3{color:#e8c26a;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(232,194,106,.3);border-radius:12px;background:rgba(232,194,106,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(232,194,106,.12);font-size:.94rem;line-height:1.75;color:#e2d9c6}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#e8c26a}
+.crossx a,.section a,.everyday a,.offstage a{color:#f0d68e;text-decoration:none;border-bottom:1px dotted rgba(240,214,142,0.5)}
+.thinking{background:linear-gradient(135deg,rgba(232,194,106,0.05),rgba(182,156,245,0.05));border:1px solid rgba(232,194,106,0.2);border-radius:12px;padding:24px 26px;margin:40px 0}
+.thinking h3{color:#e8c26a;font-size:0.9rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.thinking details{background:rgba(13,12,10,0.55);border:1px solid rgba(232,194,106,0.16);border-radius:9px;padding:13px 17px;margin:10px 0;transition:all 0.2s}
+.thinking details[open]{background:rgba(232,194,106,0.05);border-color:rgba(232,194,106,0.4)}
+.thinking summary{cursor:pointer;color:#f0d68e;font-weight:600;font-size:0.93rem;list-style:none;outline:none;line-height:1.55}
+.thinking summary::-webkit-details-marker{display:none}
+.thinking summary::before{content:"▸ ";color:#d9825b}
+.thinking details[open] summary::before{content:"▾ "}
+.thinking details>div{margin-top:12px;padding-top:12px;border-top:1px dashed rgba(232,194,106,0.2);color:#e2d9c6;font-size:0.9rem;line-height:1.8}
+.refs{margin-top:34px}
+.refs h3{color:#d9825b;font-size:0.85rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.refs ul{list-style:none}
+.refs li{margin-bottom:9px;font-size:0.88rem;color:#a99f8a}
+.refs a{color:#e8c26a;text-decoration:none;border-bottom:1px dotted rgba(232,194,106,0.4)}
+.refs a:hover{color:#f3dc9a}
+footer{text-align:center;padding:48px 0 10px;font-size:0.8rem;color:#6d6656;font-family:"SF Mono",Menlo,monospace}
+footer a{color:#e8c26a;text-decoration:none}
+@media(max-width:600px){header h1{font-size:1.6rem}.section h2{font-size:1.14rem}.everyday,.crossx,.offstage,.thinking{padding:18px 18px}}
+</style></head><body>
+<div class="container">
+<div class="langbar"><a href="economics-2022-banks-crises-prize25.en.html">English →</a></div>
+<header>
+<span class="prize-tag">ECONOMIC SCIENCES · 2022</span>
+<h1>一家没有做错任何事的银行，也会被一个谣言挤垮</h1>
+<h2>两位理论家讲清银行为什么存在、为什么天生怕挤兑；一位经济史学家证明大萧条之所以又深又长，是因为银行倒了</h2>
+<div class="laureates"><span>本·伯南克 Ben S. Bernanke<em>布鲁金斯学会 · 1/3</em></span><span>道格拉斯·戴蒙德 Douglas W. Diamond<em>芝加哥大学 · 1/3</em></span><span>菲利普·迪布维格 Philip H. Dybvig<em>圣路易斯华盛顿大学 · 1/3</em></span></div>
+<div class="motivation"><q>for research on banks and financial crises</q><span class="zh">表彰他们对银行与金融危机的研究</span></div>
+<div class="date">2026-11-06 · BigCat</div>
+<p class="pitch">银行之所以有用，和银行之所以会被挤垮，是同一个原因。</p>
+</header>
+<div class="intro">
+<p>工资到账，手机银行里多出一个数字。你默认这笔钱随时能取：明天交房租，下个月看病，哪天想全转走也行。</p>
+<p>同一时刻，银行把这笔钱借给了别人买房，三十年还清。<strong>两件事同时成立</strong>，而且都是真的。它能成立，靠的是一个没人说出口的前提：大家不会在同一个早上一起来取。</p>
+<p>2023 年 3 月 9 日，硅谷银行（Silicon Valley Bank）的储户在一天之内取走了四百多亿美元，管理层预计第二天还要再走一千亿。第二天，它就倒了。这家银行确实有自己的管理问题，但让它在不到 24 小时里倒下的，是那个前提失效了。为什么会这样，四十年前有三篇论文讲清楚了。</p>
+</div>
+<div class="section">
+<h2>银行在经济学里只是一块背景板</h2>
+<p>1930 年 1 月到 1933 年 3 月，美国工业产出跌了 46%，失业率升到 25%。三年里，美国的银行少了将近一半，很多是被挤兑挤垮的。</p>
+<p>可在很长时间里，经济学家并不觉得银行倒闭是大萧条的病根。主流看法是银行倒闭是经济下滑的<strong>结果</strong>，不是原因。影响最大的例外是弗里德曼（Milton Friedman）和施瓦茨（Anna Schwartz）1963 年的货币史：他们认为银行倒闭的害处在于存款没了、货币供给缩水，美联储又没有及时印钱补上。</p>
+<p>金融理论那边，按当时的主流框架，没有摩擦的市场里钱经谁的手转一道都无关紧要，银行可有可无。1970 年代的银行模型直接把银行当成现成的东西写进去，<strong>没人解释它为什么非得长成这个样子</strong>：拿随时可取的存款，去放十年、三十年的贷款。</p>
+</div>
+<div class="section">
+<h2>两个同学坐在导师门外</h2>
+<p>戴蒙德和迪布维格是耶鲁的同学，导师都是罗斯（Stephen Ross）。罗斯不接受预约，学生只能坐在他门外等。戴蒙德后来在诺贝尔官网的电话采访里回忆，两人等得久了，就聊到了一起；助理还会给他们拿饼干。博士读完前后，他们开始合写一个模型，越改越简单。迪布维格对戴蒙德说，这篇得写得比一般论文更清楚，因为要让<strong>不是理论家的银行监管者也读得懂</strong>。</p>
+<p>一群人手里都有一笔钱，有个项目放满两年回报很高，中途拆掉只能拿回本金。每个人都不知道自己明年会不会急用钱，只知道总有一部分人会。各管各的话，急用钱的人只好半路撤出，吃亏。</p>
+<p>银行把大家的钱放进一个池子，承诺：你随时来取，都比自己中途撤出拿得多；不急的人等到最后，拿得更多。因为每年只有一部分人真的急用，银行留一小部分现金就够，其余投进长期项目。这就是<strong>期限转换</strong>（maturity transformation）：把长期、拿不出来的资产，变成随时能取的存款。银行其实是在给「不知道哪天要用钱」这件事上保险，人人都比没有银行时过得好。</p>
+<p>问题也正出在这里。银行分不清谁真急用、谁只是害怕，只能先来先付。假如你相信很多人明天都会来取，银行就得贱卖长期项目，排在后面的人会一分拿不到，那你最好的选择也是明天去取。<strong>同一份合同有两个结果</strong>：大家都等，人人得益；大家都跑，银行倒闭。哪一个出现，取决于你以为别人会怎么做。</p>
+<figure><svg viewBox="0 0 520 250" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#a99f8a"/></marker></defs>
+<line x1="60" y1="200" x2="495" y2="200" stroke="#6d6656" stroke-width="1.2"/>
+<line x1="60" y1="30" x2="60" y2="200" stroke="#6d6656" stroke-width="1.2"/>
+<text x="66" y="24" fill="#a99f8a" font-size="12">等到最后的人能拿回多少</text>
+<text x="490" y="226" fill="#a99f8a" font-size="12" text-anchor="end">明天就来取钱的人占多少 →</text>
+<line x1="60" y1="120" x2="495" y2="120" stroke="#8fb8de" stroke-width="1.6" stroke-dasharray="6 5"/>
+<text x="490" y="112" fill="#8fb8de" font-size="12" text-anchor="end">现在去取能拿回的</text>
+<path d="M95,50 L400,200 L490,200" fill="none" stroke="#e8c26a" stroke-width="2.6"/>
+<line x1="237" y1="120" x2="237" y2="200" stroke="#6d6656" stroke-width="1" stroke-dasharray="3 4"/>
+<text x="237" y="216" fill="#d9825b" font-size="12" text-anchor="middle">临界点</text>
+<circle cx="95" cy="50" r="6" fill="#e8c26a"/>
+<text x="108" y="46" fill="#e8c26a" font-size="12.5">大家都等：只有真缺钱的人来取</text>
+<circle cx="480" cy="200" r="6" fill="#d9825b"/>
+<text x="484" y="186" fill="#d9825b" font-size="12.5" text-anchor="end">挤兑：人人都跑</text>
+<line x1="220" y1="160" x2="130" y2="160" stroke="#a99f8a" stroke-width="1.4" marker-end="url(#ah)"/>
+<line x1="254" y1="160" x2="350" y2="160" stroke="#a99f8a" stroke-width="1.4" marker-end="url(#ah)"/>
+</svg><figcaption>示意：没人跑，等的人拿得最多；跑的人一旦越过临界点，早走才划算</figcaption></figure>
+<p>他们 1983 年的论文专门指出，让大家一起跑的那个信号，可以和银行本身毫无关系：</p>
+<blockquote>This could be a bad earnings report, a commonly observed run at some other bank, a negative government forecast, or even sunspots.<br/>它可能是一份难看的财报、别家银行被挤兑的消息、一则悲观的政府预测，甚至是太阳黑子。<cite>— Diamond &amp; Dybvig · Journal of Political Economy · 1983</cite></blockquote>
+<p>药方也在论文里：由政府担保存款。既然你知道钱无论如何都拿得回来，就没有理由抢在别人前面跑，挤兑在开始之前就消失了。所以存款保险设计得好，<strong>理论上永远用不上</strong>。</p>
+<p>第二年，戴蒙德又回答了另一半问题：银行把钱借出去，谁替成千上万的储户盯着借款人？答案是委托给银行盯。可谁来盯银行？他证明，只要银行同时放出足够多、彼此不相关的贷款，单靠运气坏就倒闭的风险几乎为零；倒了只能说明它没尽责。这份风险本身就逼它认真盯着借款人，储户不必再盯银行。</p>
+</div>
+<div class="section">
+<h2>银行倒下时，带走的不只是存款</h2>
+<p>伯南克同年发表的论文回到大萧条。他同意货币缩水有害，但觉得这不够解释为什么萧条这么深、拖这么久。他的看法是：<strong>一家银行最值钱的，是它对借款人的了解</strong>。哪家农场靠谱、哪家小厂的老板守信用，这些是信贷员一年年攒下来的，写不进账本，也搬不到别家银行去。银行一倒，这些知识就跟着没了。</p>
+<p>他用 1921 到 1941 年的月度数据做统计：只看货币变化，解释得了一部分产出下跌；加进倒闭银行的存款和破产企业的负债，大部分下跌就解释得通了。他还从当年的资料里找到旁证，1932 年一份行业调查写道：</p>
+<blockquote>During 1931 and the first half of 1932 … it unquestionably represented pressure by banks on customers for repayment of loans and refusal by banks to grant new loans.<br/>1931 年到 1932 年上半年……这毫无疑问反映了银行逼客户还贷、拒绝发放新贷款。<cite>— 美国全国工业会议委员会调查 · 1932 · 转引自 Bernanke 1983</cite></blockquote>
+<p>挨打最重的是家庭、农民和小企业，他们只能找银行借钱；能发股票债券的大公司受影响小得多。1933 年 3 月，罗斯福下令全国银行停业一周，恐慌这才止住；同年国会通过法案，建立联邦存款保险。可信贷收缩又拖了好几年，因为断掉的借贷关系要一个个重新搭起来。</p>
+<p>委员会把三人放在一起，是因为两条线互相补全：戴蒙德和迪布维格给出了「为什么」，伯南克给出了「真的发生过，而且代价有多大」。伯南克的论文里还引用了他们 1981 年的工作论文。</p>
+</div>
+<div class="section">
+<h2>挤兑没有消失，只是换了地方</h2>
+<p>1933 年建立联邦存款保险公司（FDIC）之后，美国几十年没再出现大规模的银行挤兑。可到了 2000 年代，一批不叫银行的机构也开始借短贷长：它们靠需要不断续借的短期借款融资，去买长期的房贷证券，却没有存款保险。委员会把它们叫作<strong>影子银行</strong>（shadow banks）。</p>
+<p>2007 年 9 月，英国的北岩银行出现储户排队取钱；2008 年 9 月 15 日雷曼兄弟破产，短期借贷市场几乎冻住。这一次的挤兑大多不在银行柜台，而在机构之间的回购市场和货币基金里，逻辑和 1983 年的模型一模一样。时任美联储主席正是伯南克（任期 2006–2014）。美联储把「最后贷款人」的角色扩展到影子银行，美国财政部向九家最大的银行注资 2500 亿美元。之后各国收紧资本要求，新增了流动性要求，并要求大银行做压力测试。</p>
+<p>2020 年疫情来袭，各国央行用同一套工具保住了信贷。2023 年的硅谷银行又补上一课：美联储复盘报告说，它一天流失的存款超过四百亿美元，加上预计的第二天，约占存款总额的 85%；2008 年瓦乔维亚银行流失约一百亿，用了 8 天。报告写道，社交媒体和技术<strong>可能已经从根本上改变了挤兑的速度</strong>。</p>
+</div>
+<div class="offstage">
+<h3>◐ 奖台之外</h3>
+<p>委员会在学术背景里点名了一位没获奖的前辈：布莱恩特（John Bryant）1980 年的模型已经有挤兑和存款保险，但没有长期投资，挤兑来自坏消息而不是互相猜测，存款保险也就挡不住。</p>
+<p>奖项一公布就招来批评。Reason 基金会 2022 年 10 月的综述收集了几种声音：克鲁格曼认为 2008 年证实了伯南克；胡佛研究所的亨德森认为，正是这套研究让伯南克当主席时偏重救特定机构；塞尔金说他不反对模型本身，反对的是把它当成政府全面干预银行的充分理由。戴蒙德在获奖当天说，危机时伯南克坐在美联储，是世界的幸运。</p>
+</div>
+<div class="everyday">
+<h3>◎ 对普通人的意义</h3>
+<h4>已经在你身边的</h4>
+<p><b>存款保险</b>就是那个「理论上永远用不上」的药方。中国的《存款保险条例》2015 年 5 月 1 日起施行，每人在每家投保机构最高赔付 50 万元。美国 FDIC 每人每家银行至少保 25 万美元，官网写着自 1933 年成立以来，没有一位储户损失过受保存款的一分钱。看不见的还有资本缓冲、流动性要求、压力测试，以及危机时央行出手放贷的承诺。</p>
+<h4>接下来可能改变的</h4>
+<p>挤兑的速度。硅谷银行的储户大多是创投圈里互相认识的公司，存款远超保额，社交媒体上的一阵讨论就能让几百亿同时动起来。美联储在复盘里说要重新评估超额存款有多稳定。监管能不能追上，还没有答案。更一般的规律是：任何承诺「随时兑付」、却把钱放进长期资产的机构，都可能遇到同样的问题，不管它叫不叫银行。</p>
+<h4>它不意味着什么</h4>
+<p><b>不意味着挤兑的人不理性。</b>在模型里，别人都跑时你跟着跑恰恰是理性的，这才可怕。<b>不意味着银行「凭空造钱」是骗局</b>：存款能随时取，背后是真实的长期贷款，这正是银行存在的理由。<b>也不意味着存款保险和救助是免费的</b>：委员会自己承认，保护过头会诱使银行去赌，赢了归自己，输了由纳税人买单。这项研究没有给出最终的监管答案。</p>
+<h4>可以借走的思维方式</h4>
+<p><b>遇到「大家信它就成立、不信它就崩」的局面，别只问传言是不是真的，要问什么能让人不必抢先。</b>辟谣挡不住一个自我实现的预期，一个可信的兜底承诺能挡住。</p>
+</div>
+<div class="crossx">
+<h3>🌀 越界 · 跨学科的联想</h3>
+<ul>
+<li><b>分布式系统 · 超售与重试风暴</b>：云厂商超售 CPU、带宽，赌的就是租户不会同时打满，和银行留一小部分现金是同一笔账。客户端一超时就重试，重试又加重负载，引来更多超时，这就是系统里的挤兑。限流、暂停服务对应银行暂停兑付；让客户端相信请求一定会被处理、不必抢着重试，对应存款保险。区别是重试的程序不会揣测别人。</li>
+<li><b>系统 · 冷缓存</b>：伯南克说的「银行对借款人的了解」像一层热缓存。节点重启，数据都在磁盘上，可缓存空了，系统要慢很久才回到原来的速度。大萧条拖得长，是因为整个经济的信贷缓存被清空了。</li>
+<li><b>复杂性 · 双稳态的能量地形</b>：同一份合同有两个稳定结局，像一个有两个谷的地形，系统落进哪个谷取决于起点和扰动。存款保险的作用是把坏的那个谷填平。本站 <a href="physics-2024-neural-networks-prize1.html">2024 年物理学奖</a>里 Hopfield 网络在能量地形上滚向最低点，是同一种图景。</li>
+<li><b>社会学与佛学 · 自我实现的预言与缘起</b>：戴蒙德借用社会学家默顿（Robert K. Merton）的「自我实现的预言」形容挤兑。账户里那个数字没有独立存在的「自性」，它成立，靠的是所有人此刻都不去取。</li>
+<li><b>经济思想 · 熊彼特</b>：委员会提到，熊彼特 1911 年就主张金融中介对创新和发展必不可少。本站 <a href="economics-2025-innovation-growth-prize11.html">2025 年经济学奖</a>讲的创造性破坏，需要有人肯把钱借给还没成功的新东西。</li>
+</ul>
+</div>
+<div class="ten">
+<h3>◆ 十条要点</h3>
+<ol class="takeaways">
+<li>在 1980 年代以前，主流经济学把银行当背景板，认为银行倒闭是大萧条的结果而不是原因。</li>
+<li>戴蒙德和迪布维格 1983 年证明，用随时可取的存款去投长期项目，是满足储户和借款人双方的最好安排。</li>
+<li>期限转换让银行给「不知道哪天要用钱」上了保险，同时也让银行天生容易被挤兑。</li>
+<li>同一份存款合同有两个结局：大家都等则人人得益，大家都跑则银行倒闭，取决于对别人的预期。</li>
+<li>引发挤兑的信号可以与银行好坏无关，健康的银行也会被自我实现的恐慌挤垮。</li>
+<li>政府担保存款让人不必抢先，挤兑在开始前就消失，设计良好的存款保险理论上永远用不上。</li>
+<li>戴蒙德 1984 年说明，银行靠分散放贷替储户盯住借款人，从而解决了「谁来监督监督者」。</li>
+<li>伯南克 1983 年证明，大萧条又深又长，主要因为银行倒闭毁掉了难以重建的借贷关系和信息。</li>
+<li>2008 年的挤兑发生在没有存款保险的影子银行，2023 年硅谷银行一天就流失四百多亿美元存款。</li>
+<li>存款保险是挤兑这种双稳态地形上的填谷工程，类似云服务给客户端一个不必抢着重试的承诺。</li>
+</ol>
+</div>
+<div class="thinking">
+<h3>// 深入思考</h3>
+<details><summary>迪布维格说，金融危机天生不可预测，因为如果能预测，人们一开始就不会签那些会被挤兑的合同。你同意吗？</summary><div>这句话把「不可预测」从能力不足变成了结构性质：能被看到的危机会被提前绕开，留下来的都是没被看到的。可这也可能是借口。2008 年前确实有人警告过影子银行的风险，问题也许不在能不能预测，而在预测者能不能让别人同时相信。</div></details>
+<details><summary>存款保险越慷慨，挤兑越少，银行冒险的动机却越强。保额该定在哪里？</summary><div>中国 50 万元、美国 25 万美元，都覆盖了绝大多数普通储户，又让大额存款人保留盯着银行的动机。硅谷银行和签名银行的全部存款最终都被兜底，这个分界线是否还可信？一条每次危机都会被打破的规则，可能比没有规则更糟。</div></details>
+<details><summary>你所在的系统里，有没有某种「随时可取」的承诺，背后其实是长期、拿不出来的东西？</summary><div>团队对外承诺的响应时间、公司账上的预收款、开源项目承诺的长期维护，都可能是期限转换。想想：如果所有人同时来兑现，会发生什么？有什么能让他们不必抢先？</div></details>
+</div>
+<div class="refs">
+<h3>// 出处</h3>
+<ul>
+<li><a href="https://www.nobelprize.org/prizes/economic-sciences/2022/popular-information/" target="_blank">Nobel Prize · Popular information</a> — 大萧条的数字、银行的作用、存款保险「永远用不上」的逻辑。</li>
+<li><a href="https://www.nobelprize.org/prizes/economic-sciences/2022/advanced-information/" target="_blank">Nobel Prize · Scientific background</a> — 获奖前的学界看法、两个模型的细节、布莱恩特 1980、2008 年与疫情期间的政策和委员会的保留意见。</li>
+<li><a href="https://www.minneapolisfed.org/-/media/files/research/qr/qr2412.pdf" target="_blank">Diamond &amp; Dybvig · Bank Runs, Deposit Insurance, and Liquidity · JPE 1983（明尼阿波利斯联储 2000 年重印）</a> — 多重均衡、太阳黑子引语、存款保险。</li>
+<li><a href="https://www.nber.org/papers/w1054" target="_blank">Bernanke · Non-Monetary Effects of the Financial Crisis in the Propagation of the Great Depression · NBER w1054（1983），刊于 AER 1983</a> — 信贷中介成本、1932 年调查引语、受害最重的借款人。</li>
+<li><a href="https://www.nobelprize.org/prizes/economic-sciences/2022/diamond/interview/" target="_blank">Douglas Diamond · 获奖电话采访（2022-10-10）</a> — 导师门外的故事、写得简单的理由、对伯南克的评价；迪布维格与伯南克的采访见同站。</li>
+<li><a href="https://www.federalreserve.gov/publications/files/svb-review-20230428.pdf" target="_blank">Federal Reserve · Review of the Supervision and Regulation of Silicon Valley Bank（2023-04）</a> — 独立于获奖人：硅谷银行的流失数字、与 2008 年的对比、社交媒体改变挤兑速度。</li>
+<li><a href="https://reason.org/commentary/three-economists-receive-nobel-for-hotly-debated-work-on-banking-and-financial-crises" target="_blank">Reason Foundation · 2022-10-21 综述</a> — 获奖后的赞成与批评。存款保险额度见 <a href="https://www.fdic.gov/resources/deposit-insurance/understanding-deposit-insurance" target="_blank">FDIC</a> 与 <a href="https://www.gov.cn/zhengce/content/2015-03/31/content_9562.htm" target="_blank">《存款保险条例》</a>。</li>
+</ul>
+</div>
+<footer>BigCat · 诺奖精读 · 2022 经济学奖 · <a href="index.html">← 目录</a></footer>
+</div>
+</body></html>
