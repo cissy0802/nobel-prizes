@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>2021 物理学奖 · 明天下不下雨说不准，五十年后热不热却算得出 — 诺奖精读</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;color:#ece5d6;line-height:1.85;min-height:100vh;
+  background:radial-gradient(1100px 560px at 10% -6%,rgba(232,194,106,0.10),transparent 60%),radial-gradient(900px 640px at 100% 2%,rgba(217,130,91,0.08),transparent 55%),linear-gradient(165deg,#0d0c0a 0%,#14110c 45%,#0a0907 100%);background-attachment:fixed}
+.container{max-width:760px;margin:0 auto;padding:18px 20px 90px}
+.langbar{display:flex;justify-content:flex-end;padding-top:10px;font-family:"SF Mono",Menlo,monospace;font-size:.8rem}
+.langbar a{color:#e8c26a;text-decoration:none;border:1px solid rgba(232,194,106,.3);padding:4px 12px;border-radius:20px}
+.langbar a:hover{border-color:#d9825b;color:#d9825b}
+header{text-align:center;padding:40px 0 22px}
+.prize-tag{display:inline-block;font-size:0.75rem;color:#e8c26a;font-family:"SF Mono",Menlo,monospace;letter-spacing:2px;border:1px solid rgba(232,194,106,0.42);padding:4px 13px;border-radius:20px;margin-bottom:16px;background:rgba(232,194,106,0.06)}
+header h1{font-size:2.1rem;font-weight:800;letter-spacing:.5px;line-height:1.3;background:linear-gradient(110deg,#f3dc9a 0%,#e8c26a 45%,#d9825b 92%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 2px 18px rgba(232,194,106,0.22))}
+header h2{font-size:1rem;color:#a99f8a;margin-top:10px;font-weight:400;letter-spacing:0.4px}
+.laureates{margin-top:18px;font-size:0.9rem;color:#d8cdb4}
+.laureates span{display:inline-block;margin:3px 6px;padding:2px 11px;border-radius:14px;background:rgba(232,194,106,0.07);border:1px solid rgba(232,194,106,0.18)}
+.laureates em{font-style:normal;color:#8f8672;font-size:0.8rem;margin-left:6px;font-family:"SF Mono",Menlo,monospace}
+.motivation{margin:18px auto 0;max-width:620px;font-size:0.88rem;color:#b9ae95;line-height:1.7}
+.motivation q{display:block;font-style:italic;color:#d9cfb8}
+.motivation q::before{content:"“"}.motivation q::after{content:"”"}
+.motivation .zh{display:block;margin-top:4px}
+header .date{font-size:0.8rem;color:#6d6656;margin-top:16px;font-family:"SF Mono",Menlo,monospace}
+header .pitch{margin-top:18px;font-size:0.98rem;color:#d9825b;font-style:italic}
+.intro{background:rgba(232,194,106,0.06);border-left:3px solid #e8c26a;padding:20px 24px;border-radius:0 10px 10px 0;margin:36px 0;font-size:0.99rem;color:#e2d9c6}
+.intro strong{color:#fff}
+.section{margin:46px 0 0}
+.section h2::before{content:"";display:block;width:28px;height:2px;background:#e8c26a;opacity:.75;margin-bottom:16px}
+.section h2{font-size:1.3rem;color:#fff;margin-bottom:16px;font-weight:700;line-height:1.38}
+.section p{margin-bottom:14px;color:#e2d9c6;font-size:0.96rem}
+.section strong{color:#fff}
+.section blockquote{margin:16px 0;padding:10px 18px;border-left:2px solid rgba(217,130,91,0.6);color:#d6c9ae;font-size:0.93rem;background:rgba(217,130,91,0.05);border-radius:0 8px 8px 0}
+.section blockquote cite{display:block;margin-top:6px;font-style:normal;font-size:0.8rem;color:#8f8672;font-family:"SF Mono",Menlo,monospace}
+figure{margin:24px 0}
+figure svg{display:block;width:100%;height:auto;max-width:520px;margin:0 auto}
+figcaption{text-align:center;font-size:0.82rem;color:#a99f8a;margin-top:12px;font-family:"SF Mono",Menlo,monospace}
+.glossary{margin:18px 0;border:1px dashed rgba(232,194,106,0.35);border-radius:10px;padding:14px 18px;font-size:0.9rem;color:#d6ccb4}
+.glossary b{color:#f0d68e}
+.offstage{margin:40px 0;background:rgba(217,130,91,0.06);border:1px solid rgba(217,130,91,0.3);border-radius:14px;padding:20px 24px}
+.offstage h3{color:#d9825b;font-size:0.86rem;letter-spacing:2px;margin-bottom:10px;font-family:"SF Mono",Menlo,monospace}
+.offstage p{color:#e6d6c8;font-size:0.93rem;margin-bottom:10px}
+.offstage p:last-child{margin-bottom:0}
+.everyday{margin:40px 0;background:linear-gradient(135deg,rgba(125,170,214,0.10),rgba(125,170,214,0.04));border:1px solid rgba(125,170,214,0.34);border-radius:14px;padding:22px 26px}
+.everyday h3{color:#8fb8de;font-size:0.88rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.everyday h4{color:#bcd6ee;font-size:0.95rem;margin:16px 0 6px;font-weight:700}
+.everyday h4:first-of-type{margin-top:0}
+.everyday p{color:#dfe7ef;font-size:0.94rem;margin-bottom:8px}
+.everyday b{color:#fff}
+.crossx{margin:40px 0;background:linear-gradient(135deg,rgba(182,156,245,0.10),rgba(232,194,106,0.05));border:1px solid rgba(182,156,245,0.32);border-radius:14px;padding:22px 26px}
+.crossx h3{color:#b69cf5;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.crossx p{color:#e6def5;font-size:0.92rem;line-height:1.8;margin-bottom:14px}
+.crossx b{color:#d4c4fb;font-weight:600}
+.crossx ul{list-style:none;margin:0}
+.crossx li{color:#e6def5;font-size:0.93rem;line-height:1.8;margin-bottom:14px;padding-left:20px;position:relative}
+.crossx li:last-child{margin-bottom:0}
+.crossx li::before{content:"◈";position:absolute;left:0;top:0.35em;color:#e8c26a;font-size:0.72rem}
+.ten{margin:40px 0}
+.ten h3{color:#e8c26a;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(232,194,106,.3);border-radius:12px;background:rgba(232,194,106,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(232,194,106,.12);font-size:.94rem;line-height:1.75;color:#e2d9c6}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#e8c26a}
+.crossx a,.section a,.everyday a,.offstage a{color:#f0d68e;text-decoration:none;border-bottom:1px dotted rgba(240,214,142,0.5)}
+.thinking{background:linear-gradient(135deg,rgba(232,194,106,0.05),rgba(182,156,245,0.05));border:1px solid rgba(232,194,106,0.2);border-radius:12px;padding:24px 26px;margin:40px 0}
+.thinking h3{color:#e8c26a;font-size:0.9rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.thinking details{background:rgba(13,12,10,0.55);border:1px solid rgba(232,194,106,0.16);border-radius:9px;padding:13px 17px;margin:10px 0;transition:all 0.2s}
+.thinking details[open]{background:rgba(232,194,106,0.05);border-color:rgba(232,194,106,0.4)}
+.thinking summary{cursor:pointer;color:#f0d68e;font-weight:600;font-size:0.93rem;list-style:none;outline:none;line-height:1.55}
+.thinking summary::-webkit-details-marker{display:none}
+.thinking summary::before{content:"▸ ";color:#d9825b}
+.thinking details[open] summary::before{content:"▾ "}
+.thinking details>div{margin-top:12px;padding-top:12px;border-top:1px dashed rgba(232,194,106,0.2);color:#e2d9c6;font-size:0.9rem;line-height:1.8}
+.refs{margin-top:34px}
+.refs h3{color:#d9825b;font-size:0.85rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.refs ul{list-style:none}
+.refs li{margin-bottom:9px;font-size:0.88rem;color:#a99f8a}
+.refs a{color:#e8c26a;text-decoration:none;border-bottom:1px dotted rgba(232,194,106,0.4)}
+.refs a:hover{color:#f3dc9a}
+footer{text-align:center;padding:48px 0 10px;font-size:0.8rem;color:#6d6656;font-family:"SF Mono",Menlo,monospace}
+footer a{color:#e8c26a;text-decoration:none}
+@media(max-width:600px){header h1{font-size:1.6rem}.section h2{font-size:1.14rem}.everyday,.crossx,.offstage,.thinking{padding:18px 18px}}
+</style></head><body>
+<body>
+<div class="container">
+<div class="langbar"><a href="physics-2021-complex-systems-prize27.en.html">English →</a></div>
+<header>
+<span class="prize-tag">PHYSICS · 2021</span>
+<h1>明天下不下雨说不准，五十年后热不热却算得出</h1>
+<h2>一半奖给把地球气候装进计算机、又从天气的噪声里认出人类指纹的两个人；一半奖给从一团乱糟糟的磁性合金里找出隐藏秩序的人</h2>
+<div class="laureates"><span>真锅淑郎 Syukuro Manabe<em>普林斯顿大学 · 1/4</em></span><span>克劳斯·哈塞尔曼 Klaus Hasselmann<em>马克斯·普朗克气象研究所 · 1/4</em></span><span>乔治·帕里西 Giorgio Parisi<em>罗马第一大学 · 1/2</em></span></div>
+<div class="motivation"><q>for the physical modelling of Earth’s climate, quantifying variability and reliably predicting global warming</q><span class="zh">真锅与哈塞尔曼：表彰他们对地球气候的物理建模、对气候变率的量化，以及对全球变暖的可靠预测</span>
+<q>for the discovery of the interplay of disorder and fluctuations in physical systems from atomic to planetary scales</q><span class="zh">帕里西：表彰他发现了从原子到行星尺度的物理系统中，无序与涨落之间的相互作用</span></div>
+<div class="date">2026-11-08 · BigCat</div>
+<p class="pitch">噪声不是要扔掉的杂质。读懂了噪声，才看得见信号。</p>
+</header>
+<div class="intro">
+<p>手机上的天气预报，最多给你十天。再往后，它自己也不敢说。可新闻里又说，到本世纪末地球会升温多少度。一个连下周三下不下雨都说不准的学科，凭什么谈一百年？</p>
+<p>再往罐子里倒一罐米。倒两次，米粒卡住的排法每次都不同，可罐子装多少米几乎一样。</p>
+<p>这两件事，2021 年的物理学奖放在了一起。它们的共同点是：<strong>单个细节乱得没法预测，但乱本身有规律</strong>。三个人分别找到了让这种乱变得可以计算的办法。</p>
+</div>
+<div class="section">
+<h2>一根 40 公里高的空气柱，和一台只有半兆内存的计算机</h2>
+<p>二氧化碳会保温，这件事并不新。1861 年，廷德尔（John Tyndall）系统测量了各种气体吸收红外线的本领。1896 年，瑞典的阿伦尼乌斯（Svante Arrhenius）算出二氧化碳加倍会让地表升温约 6°C，但他的大气只是一块均匀的板子。</p>
+<p>真正的大气会动。地面被晒热，热空气往上走，水汽在高处凝结、放出热量。只算辐射、不算对流，算出的气温会随高度掉得太快：每升高一公里降约 15°C，而实际只有约 6°C。</p>
+<p>1959 年，从战后东京来到美国的真锅，被招进后来设在普林斯顿的地球物理流体动力学实验室（GFDL）。他做了一个大胆的简化：<b>把整个大气压成一根空气柱</b>，从地面一直到 40 公里高。一旦柱子里温度随高度掉得太快，就让空气「对流」一下，把温度拉回来。他还让空气的<b>相对湿度</b>保持不变：天热了水汽自动变多，而水汽是最强的温室气体，「越暖越湿、越湿越暖」的反馈就装进了模型。</p>
+<p>1967 年，他和韦瑟罗尔德（Richard Wetherald）的论文给出答案：二氧化碳加倍，地表升温约 2°C（委员会给的精确值是 2.3°C）。更关键的是升温的<b>形状</b>：下层大气变暖，高层的平流层反而变冷。如果是太阳变强，整根柱子应该一起变热。这个形状后来成了一枚「指纹」。</p>
+<figure><svg viewBox="0 0 520 260" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,'Noto Sans SC',sans-serif">
+<defs><marker id="aw" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,5 L0,10 z" fill="#d9825b"/></marker><marker id="ac" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,5 L0,10 z" fill="#8fb8de"/></marker></defs>
+<text x="130" y="22" text-anchor="middle" fill="#f0d68e" font-size="14" font-weight="700">二氧化碳加倍</text>
+<text x="390" y="22" text-anchor="middle" fill="#f0d68e" font-size="14" font-weight="700">假如是太阳变强</text>
+<rect x="90" y="36" width="80" height="196" rx="6" fill="rgba(232,194,106,0.06)" stroke="#e8c26a"/>
+<rect x="350" y="36" width="80" height="196" rx="6" fill="rgba(232,194,106,0.06)" stroke="#e8c26a"/>
+<line x1="90" y1="110" x2="170" y2="110" stroke="#a99f8a" stroke-dasharray="4 4"/>
+<line x1="350" y1="110" x2="430" y2="110" stroke="#a99f8a" stroke-dasharray="4 4"/>
+<text x="84" y="76" text-anchor="end" fill="#a99f8a" font-size="11">平流层</text>
+<text x="84" y="176" text-anchor="end" fill="#a99f8a" font-size="11">对流层</text>
+<text x="130" y="250" text-anchor="middle" fill="#a99f8a" font-size="11">地面</text>
+<text x="390" y="250" text-anchor="middle" fill="#a99f8a" font-size="11">地面</text>
+<line x1="150" y1="72" x2="110" y2="72" stroke="#8fb8de" stroke-width="2.4" marker-end="url(#ac)"/>
+<text x="178" y="76" fill="#8fb8de" font-size="12">变冷</text>
+<line x1="110" y1="172" x2="150" y2="172" stroke="#d9825b" stroke-width="2.4" marker-end="url(#aw)"/>
+<text x="178" y="176" fill="#d9825b" font-size="12">变暖</text>
+<line x1="370" y1="72" x2="410" y2="72" stroke="#d9825b" stroke-width="2.4" marker-end="url(#aw)"/>
+<text x="438" y="76" fill="#d9825b" font-size="12">变暖</text>
+<line x1="370" y1="172" x2="410" y2="172" stroke="#d9825b" stroke-width="2.4" marker-end="url(#aw)"/>
+<text x="438" y="176" fill="#d9825b" font-size="12">变暖</text>
+</svg><figcaption>真锅的空气柱：温室气体让下层变暖、上层变冷；太阳变强则整柱一起变暖</figcaption></figure>
+<p>1975 年，他们把柱子扩成了覆盖全球的三维模型，用的计算机内存约 0.5 MB，没有洋流，云的分布固定，算出 2.93°C。今天的模型给出 2.5–4°C。委员会特意写道：这么简单的模型这么稳健，说明更复杂不一定更准。</p>
+<blockquote>The prediction of climate change without accompanying understanding of it is no better than prediction of fortune teller.<br/>（预测气候变化却不理解它，和算命先生的预言没什么两样。）<cite>— 真锅淑郎 · nobelprize.org 电话采访 · 2021</cite></blockquote>
+</div>
+<div class="section">
+<h2>把天气当成噪声：一粒花粉怎样被水分子推着走</h2>
+<p>真锅的模型回答了「加倍会怎样」，却留下一个难题。1960 年代，美国气象学家洛伦茨（Edward Lorenz）发现天气是<b>混沌</b>的：起点差一丁点，几周后就面目全非。既然天气算不准，由天气堆成的气候凭什么算得准？</p>
+<p>哈塞尔曼是研究过海浪的汉堡物理学家。1976 年，他在《Tellus》上发表《随机气候模型》，把地球拆成两部分：变得快的「天气」（主要是大气），和变得慢的「气候」（海洋、冰盖、陆地）。大气升温一度只要几周，海洋要上千年。</p>
+<p>他的灵感来自爱因斯坦解释的<b>布朗运动</b>（Brownian motion）：水里的一粒花粉，被无数看不见的水分子随机撞击，慢慢游荡。海洋就是那粒花粉，天气就是水分子。每阵风都是随机的，海洋把它们<b>累加</b>起来，就出现缓慢的长周期起伏，即「红噪声」，与观测相符。从此「气候自己会怎么晃」有了可计算的基准。</p>
+<p>有了基准，就能问更尖锐的问题：观测到的变暖，是自然晃出来的，还是人推出来的？1979 年起，哈塞尔曼发展出<b>指纹法</b>（fingerprinting）。太阳、火山、温室气体，各自在气候里留下一种独特的时空图案；把观测拿来，同时去比对所有图案，看哪一种的分量远超自然噪声。他还指出，信号未必在它最强的地方最容易看清，而是在<b>噪声最弱</b>的地方。</p>
+<p>后来的研究者概括：不是在草堆的一角找针、再换下一角，而是<b>一次搜遍整个草堆</b>。数百项研究沿用了他的框架，2013 年联合国政府间气候变化专门委员会（IPCC）据此判断，人类影响「极有可能」是 20 世纪中叶以来变暖的主要原因。</p>
+</div>
+<div class="section">
+<h2>三块互相较劲的磁铁，藏着一棵无限分叉的树</h2>
+<p>另一半奖，从一种奇怪的合金讲起。往铜里随机掺一点铁，每个铁原子都像一块小磁铁（<b>自旋</b>，spin）。在这种<b>自旋玻璃</b>（spin glass）里，有的一对想同向，有的一对想反向。</p>
+<p>最简单的画面是一个三角形：三个角各放一块磁铁，规定相邻两块必须相反。前两块一上一下，第三块无论朝哪，总有一条边不满意。物理学家管这叫<b>阻挫</b>（frustration）。帕里西自己打过比方：想同时和两个互相憎恨的人做朋友。</p>
+<figure><svg viewBox="0 0 520 240" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,'Noto Sans SC',sans-serif">
+<defs><marker id="as" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,5 L0,10 z" fill="#f0d68e"/></marker></defs>
+<text x="120" y="22" text-anchor="middle" fill="#f0d68e" font-size="14" font-weight="700">阻挫：总有一边不满意</text>
+<text x="380" y="22" text-anchor="middle" fill="#f0d68e" font-size="14" font-weight="700">帕里西：状态排成一棵树</text>
+<line x1="120" y1="60" x2="50" y2="190" stroke="#e8c26a" stroke-width="1.5"/>
+<line x1="120" y1="60" x2="190" y2="190" stroke="#d9825b" stroke-width="1.5" stroke-dasharray="5 4"/>
+<line x1="50" y1="190" x2="190" y2="190" stroke="#e8c26a" stroke-width="1.5"/>
+<circle cx="120" cy="60" r="18" fill="#14110c" stroke="#e8c26a"/>
+<circle cx="50" cy="190" r="18" fill="#14110c" stroke="#e8c26a"/>
+<circle cx="190" cy="190" r="18" fill="#14110c" stroke="#d9825b"/>
+<line x1="120" y1="72" x2="120" y2="48" stroke="#f0d68e" stroke-width="2" marker-end="url(#as)"/>
+<line x1="50" y1="178" x2="50" y2="202" stroke="#f0d68e" stroke-width="2" marker-end="url(#as)"/>
+<text x="190" y="196" text-anchor="middle" fill="#d9825b" font-size="18" font-weight="700">?</text>
+<text x="120" y="222" text-anchor="middle" fill="#a99f8a" font-size="11">规则：相邻两块必须相反</text>
+<line x1="380" y1="50" x2="320" y2="110" stroke="#e8c26a" stroke-width="1.5"/>
+<line x1="380" y1="50" x2="440" y2="110" stroke="#e8c26a" stroke-width="1.5"/>
+<line x1="320" y1="110" x2="295" y2="180" stroke="#e8c26a" stroke-width="1.5"/>
+<line x1="320" y1="110" x2="345" y2="180" stroke="#e8c26a" stroke-width="1.5"/>
+<line x1="440" y1="110" x2="415" y2="180" stroke="#e8c26a" stroke-width="1.5"/>
+<line x1="440" y1="110" x2="465" y2="180" stroke="#e8c26a" stroke-width="1.5"/>
+<circle cx="295" cy="186" r="6" fill="#d9825b"/><circle cx="345" cy="186" r="6" fill="#d9825b"/><circle cx="415" cy="186" r="6" fill="#d9825b"/><circle cx="465" cy="186" r="6" fill="#d9825b"/>
+<text x="380" y="216" text-anchor="middle" fill="#a99f8a" font-size="11">每片叶子是一个稳定状态</text>
+<text x="380" y="232" text-anchor="middle" fill="#a99f8a" font-size="11">越晚分叉，两个状态越像</text>
+</svg><figcaption>左：三块磁铁无法同时满足；右：帕里西发现的稳定状态呈层级结构（示意，实际分叉无穷多层）</figcaption></figure>
+<p>阻挫让自旋玻璃的「能量地形」布满深浅不一的低谷。急冻之后它卡进其中一个谷，下次卡进另一个，就像那罐米。1970 年代，好几位诺奖得主都在算它。1975 年，爱德华兹（Edwards）和安德森（Philip Anderson）用了<b>复本技巧</b>（replica trick）：同时想象系统的许多份拷贝一起算。可谢林顿（Sherrington）和柯克帕特里克（Kirkpatrick）的版本在低温下算出负的熵，物理上不可能。问题出在默认所有拷贝彼此对称。</p>
+<p>1979 年，帕里西给出了解法。他意识到，普通磁铁只有「全朝上」「全朝下」两种稳定状态，自旋玻璃却有<b>无穷多种</b>，而且它们不是一盘散沙：它们排成一棵层级分明的树。随便挑三个状态，其中两对的相似程度必然相等，越晚分叉的两片叶子越像。这个解被数学上严格证明，用了很多年。</p>
+<blockquote>there are very, very simple problems that are very hard to understand<br/>（有些问题非常、非常简单，却非常难懂。）<cite>— 帕里西 · nobelprize.org 电话采访 · 2021</cite></blockquote>
+</div>
+<div class="section">
+<h2>为什么放在一起，以及后来长出了什么</h2>
+<p>气候和合金，尺度差了几十个数量级，委员会却看到同一件事：<b>大量相互作用的部分，加上随机性，产生多个时间尺度和多个可能的状态</b>。哈塞尔曼把天气当噪声，从噪声里提取气候；帕里西从无序里找出了秩序的形状。科学背景的结尾写道：不把无序、噪声和变率考虑进来，决定论只是一种错觉。</p>
+<p>气候这一线，委员会提到的模型由真锅等人开创，后来一直在用。2020 年，豪斯法瑟（Zeke Hausfather）等人回头检验了 1970 年到 2007 年发表的气候模型：大多数对此后全球升温的预测与观测相符，扣除排放假设的偏差后更是如此。</p>
+<p>帕里西这一线，长到了物理学之外。他和合作者证明，霍普菲尔德网络里存储的多段记忆，正对应自旋玻璃的多个低谷（见<a href="physics-2024-neural-networks-prize1.html">2024 物理学奖</a>）。当年为了解谢林顿-柯克帕特里克模型的困难，还催生了<b>模拟退火</b>这种优化算法。2008 年，他参与的团队三维重建了几千只椋鸟的鸟群，发现每只鸟平均只跟固定的六七个邻居互动，不管离多远。2015 年，研究者在随机激光里直接观测到了他预言的「复本对称破缺」。</p>
+</div>
+<div class="offstage">
+<h3>◐ 奖台之外</h3>
+<p>委员会的科学背景里点到了几位没上台的人。到 1960 年，利斯（Cecil Leith）已独立运行了可算作第一个完整大气环流模型的程序。用随机方程描述气候，可以追溯到米切尔（Mitchell）1966 年的设想；哈塞尔曼的贡献是从基本方程推导，并和弗兰基努尔（Frankignoul）用观测验证。真锅的两篇关键论文，合作者都是韦瑟罗尔德。</p>
+<p>真锅接到电话后说，看以前的获奖者，没人因为他这类工作拿物理学奖。哈塞尔曼则说：“I’ll wake up tomorrow morning and find out.”（我明天早上醒来再看看是不是真的。）</p>
+</div>
+<div class="everyday">
+<h3>◎ 对普通人的意义</h3>
+<h4>已经在你身边的</h4>
+<p><b>「这场热浪和气候变化有没有关系」，现在有答案。</b>2021 年 6 月底，北美西北部出现前所未有的高温，加拿大小镇利顿（Lytton）测到 49.6°C，不久后小镇大半毁于山火。几周内，世界天气归因组织（World Weather Attribution）的研究者给出结论：没有人类造成的气候变化，这场热浪几乎不可能发生；它比工业革命初期同样的天气热约 2°C，发生概率至少高了 150 倍。它问的和哈塞尔曼当年一样：观测到的变化里，有多少是人推出来的。</p>
+<h4>接下来可能改变的</h4>
+<p>这里没有「上市」一说，但可以分清两层。<b>已经成熟的</b>：全球平均升温的方向和量级，五十年来的模型都说得对。<b>还没解决的</b>：二氧化碳加倍到底升温多少，范围仍在 2.5–4°C，主要卡在云和水汽的细节，高纬度地区仍是难点。按世界天气归因组织的估算，在升温 2°C 的世界里，2021 年那样的热浪会从千年一遇变成五到十年一遇。</p>
+<h4>它不意味着什么</h4>
+<p><b>不意味着气候模型能告诉你某一天的天气。</b>它能告诉你斯德哥尔摩十二月平均多冷，不能告诉你明年 12 月 10 日。<b>不意味着一个冷冬能否定变暖</b>；反过来，几年偏热也未必是气候变化，哈塞尔曼自己说，十年的变暖可能只是自然变率。<b>也不意味着帕里西研究的是气候</b>：他的自旋玻璃和气候没有直接关系，两半奖共享的是「怎样对待无序和噪声」这个问题。</p>
+<h4>可以借走的思维方式</h4>
+<p><b>先给噪声建模，再找信号。</b>哈塞尔曼没有先去证明「有变暖」，而是先算清楚「什么都不做，气候自己会晃成什么样」。有了这个基准，偏离才有意义。而且，去噪声最小的地方找信号，不一定去信号最大的地方。</p>
+</div>
+<div class="crossx">
+<h3>🌀 越界 · 跨学科的联想</h3>
+<ul>
+<li><b>AI · 能量地形与联想记忆</b>：帕里西的多谷地形，就是霍普菲尔德网络的记忆库：每段记忆是一个低谷，给一个残缺的线索，系统滚进最近的谷就补全了记忆。本站 <a href="physics-2024-neural-networks-prize1.html">2024 物理学奖</a>讲的就是这张地形的另一面。区别在于，自旋玻璃的地形由随机耦合给定，网络的地形是被数据「挖」出来的。</li>
+<li><b>可观测性 · 告警归因</b>：线上延迟突然升高，是新版本发布导致的，还是流量高峰、某个依赖抖动？成熟的做法和指纹法同构：先知道每种原因留下什么样的指标图案，拿观测同时对所有图案回归，并有一个「平时就这么抖」的噪声基线。只盯一个指标，就是在草堆一角找针。</li>
+<li><b>计算复杂性 · 约束满足的相变</b>：三角形里的阻挫，就是一组无法同时满足的约束。2002 年，梅扎尔（Marc Mézard）、帕里西和泽基纳（Riccardo Zecchina）指出，随机布尔约束问题在可满足边界附近会冒出大量亚稳状态，这正是搜索算法突然变慢的原因。「为什么有的优化题容易、有的难」，被翻译成了能量地形长什么样。</li>
+<li><b>分布式系统 · 固定扇出的 gossip</b>：椋鸟群里每只鸟只跟最近的六七个邻居对齐，不管距离多远，论文认为这正是鸟群在被捕食者冲散、密度剧变时还能保持整体的原因。gossip 协议每轮也只联系固定的 k 个节点，而不是「方圆多少毫秒内的所有节点」，规模和密度怎么变，通信量都不会失控。</li>
+</ul>
+</div>
+<div class="ten">
+<h3>◆ 十条要点</h3>
+<ol class="takeaways">
+<li>2021 年物理学奖一半授予气候建模者真锅淑郎和哈塞尔曼，另一半授予研究无序系统的帕里西。</li>
+<li>真锅把整个大气简化成一根 40 公里高的空气柱，并让相对湿度固定，从而装进了水汽反馈。</li>
+<li>1967 年的空气柱模型算出二氧化碳加倍升温约 2°C，与今天 2.5–4°C 的估计相差不远。</li>
+<li>温室气体让下层大气变暖、平流层变冷，太阳变强则整层一起变暖，这个形状成了人类影响的指纹。</li>
+<li>天气是混沌的，但哈塞尔曼把快变的天气当作随机噪声，由慢变的海洋累加成气候的长期起伏。</li>
+<li>指纹法把观测同时与太阳、火山、温室气体的时空图案比对，并在噪声最弱处寻找信号。</li>
+<li>自旋玻璃里的小磁铁互相阻挫，无法同时满足所有约束，能量地形因此布满低谷。</li>
+<li>帕里西在 1979 年解开复本难题：自旋玻璃有无穷多个稳定状态，并排成一棵层级分明的树。</li>
+<li>事件归因研究发现，2021 年北美西北部热浪没有人类造成的气候变化几乎不可能发生。</li>
+<li>先为噪声建立基准再找信号，这一思路与线上告警归因、霍普菲尔德网络的记忆地形一脉相通。</li>
+</ol>
+</div>
+<div class="thinking">
+<h3>// 深入思考</h3>
+<details><summary>真锅用一根空气柱就算出了接近今天的结果。模型越复杂，就越可信吗？</summary><div>委员会认为简单模型的稳健是一种证据：结论不依赖细节，说明抓住的是主导机制。但简单模型也可能是「碰巧对」，阿伦尼乌斯的 6°C 就是两个误差互相抵消。可以想想你见过的系统容量估算：一个粗糙但讲得清每一项来源的估算，和一个精细却说不清为什么的仿真，你更信哪一个？</div></details>
+<details><summary>天气算不准，气候却算得准。还有哪些系统也是「单个不可测，整体可预测」？</summary><div>保险公司不知道谁明年出事，却能定保费；负载均衡器不知道下一个请求多大，却能规划容量。哈塞尔曼的条件是时间尺度分得开：快变量够快，慢变量够慢，慢的那个才能把快的当噪声累加。时间尺度分不开的系统，比如金融市场在恐慌时，这套办法就会失灵。</div></details>
+</div>
+<div class="refs">
+<h3>// 出处</h3>
+<ul>
+<li><a href="https://www.nobelprize.org/prizes/physics/2021/popular-information/" target="_blank">Nobel Prize · Popular information</a> — 三人工作的总体叙述、海洋与大气升温时间尺度、帕里西的莎士比亚比喻。</li>
+<li><a href="https://www.nobelprize.org/prizes/physics/2021/advanced-information/" target="_blank">Nobel Prize · Scientific background</a> — 廷德尔与阿伦尼乌斯、2.3°C 与 2.93°C、0.5 MB 内存、指纹法与 Santer 的概括、复本难题的来龙去脉、利斯与米切尔、霍普菲尔德网络与随机激光。</li>
+<li><a href="https://journals.ametsoc.org/view/journals/atsc/24/3/1520-0469_1967_024_0241_teotaw_2_0_co_2.xml" target="_blank">Manabe &amp; Wetherald · 1967 · J. Atmos. Sci.</a> — 固定相对湿度的空气柱模型，二氧化碳加倍升温约 2°C 的原文摘要。</li>
+<li><a href="https://doi.org/10.3402/tellusa.v28i6.11316" target="_blank">Hasselmann · 1976 · Tellus「Stochastic climate models Part I」</a> — 天气与气候的快慢拆分、布朗运动类比、红噪声谱。</li>
+<li><a href="https://arxiv.org/abs/cond-mat/0205387" target="_blank">Parisi · 2002 · The physical meaning of replica symmetry breaking</a> — 帕里西本人对复本对称破缺物理含义的讲解；1979 年原始论文为 Phys. Rev. Lett. 43, 1754。</li>
+<li><a href="https://www.giss.nasa.gov/pubs/abs/ha08910q.html" target="_blank">Hausfather et al. · 2020 · Geophys. Res. Lett.</a> — 独立回测 1970–2007 年气候模型的预测表现。</li>
+<li><a href="https://www.worldweatherattribution.org/western-north-american-extreme-heat-virtually-impossible-without-human-caused-climate-change/" target="_blank">World Weather Attribution · 2021</a> — 北美西北部热浪的归因：49.6°C、约 2°C、至少 150 倍、未来五到十年一遇。</li>
+</ul>
+</div>
+<footer>BigCat · 诺奖精读 · 2021 物理学奖 · <a href="index.html">← 目录</a></footer>
+</div>
+</body></html>
