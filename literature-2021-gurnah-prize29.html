@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>2021 文学奖 · 历史被写简单之前，他先把它写复杂 — 诺奖精读</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;color:#ece5d6;line-height:1.85;min-height:100vh;
+  background:radial-gradient(1100px 560px at 10% -6%,rgba(232,194,106,0.10),transparent 60%),radial-gradient(900px 640px at 100% 2%,rgba(217,130,91,0.08),transparent 55%),linear-gradient(165deg,#0d0c0a 0%,#14110c 45%,#0a0907 100%);background-attachment:fixed}
+.container{max-width:760px;margin:0 auto;padding:18px 20px 90px}
+.langbar{display:flex;justify-content:flex-end;padding-top:10px;font-family:"SF Mono",Menlo,monospace;font-size:.8rem}
+.langbar a{color:#e8c26a;text-decoration:none;border:1px solid rgba(232,194,106,.3);padding:4px 12px;border-radius:20px}
+.langbar a:hover{border-color:#d9825b;color:#d9825b}
+header{text-align:center;padding:40px 0 22px}
+.prize-tag{display:inline-block;font-size:0.75rem;color:#e8c26a;font-family:"SF Mono",Menlo,monospace;letter-spacing:2px;border:1px solid rgba(232,194,106,0.42);padding:4px 13px;border-radius:20px;margin-bottom:16px;background:rgba(232,194,106,0.06)}
+header h1{font-size:2.1rem;font-weight:800;letter-spacing:.5px;line-height:1.3;background:linear-gradient(110deg,#f3dc9a 0%,#e8c26a 45%,#d9825b 92%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 2px 18px rgba(232,194,106,0.22))}
+header h2{font-size:1rem;color:#a99f8a;margin-top:10px;font-weight:400;letter-spacing:0.4px}
+.laureates{margin-top:18px;font-size:0.9rem;color:#d8cdb4}
+.laureates span{display:inline-block;margin:3px 6px;padding:2px 11px;border-radius:14px;background:rgba(232,194,106,0.07);border:1px solid rgba(232,194,106,0.18)}
+.laureates em{font-style:normal;color:#8f8672;font-size:0.8rem;margin-left:6px;font-family:"SF Mono",Menlo,monospace}
+.motivation{margin:18px auto 0;max-width:620px;font-size:0.88rem;color:#b9ae95;line-height:1.7}
+.motivation q{display:block;font-style:italic;color:#d9cfb8}
+.motivation q::before{content:"“"}.motivation q::after{content:"”"}
+.motivation .zh{display:block;margin-top:4px}
+header .date{font-size:0.8rem;color:#6d6656;margin-top:16px;font-family:"SF Mono",Menlo,monospace}
+header .pitch{margin-top:18px;font-size:0.98rem;color:#d9825b;font-style:italic}
+.intro{background:rgba(232,194,106,0.06);border-left:3px solid #e8c26a;padding:20px 24px;border-radius:0 10px 10px 0;margin:36px 0;font-size:0.99rem;color:#e2d9c6}
+.intro strong{color:#fff}
+.section{margin:46px 0 0}
+.section h2::before{content:"";display:block;width:28px;height:2px;background:#e8c26a;opacity:.75;margin-bottom:16px}
+.section h2{font-size:1.3rem;color:#fff;margin-bottom:16px;font-weight:700;line-height:1.38}
+.section p{margin-bottom:14px;color:#e2d9c6;font-size:0.96rem}
+.section strong{color:#fff}
+.section blockquote{margin:16px 0;padding:10px 18px;border-left:2px solid rgba(217,130,91,0.6);color:#d6c9ae;font-size:0.93rem;background:rgba(217,130,91,0.05);border-radius:0 8px 8px 0}
+.section blockquote cite{display:block;margin-top:6px;font-style:normal;font-size:0.8rem;color:#8f8672;font-family:"SF Mono",Menlo,monospace}
+figure{margin:24px 0}
+figure svg{display:block;width:100%;height:auto;max-width:520px;margin:0 auto}
+figcaption{text-align:center;font-size:0.82rem;color:#a99f8a;margin-top:12px;font-family:"SF Mono",Menlo,monospace}
+.glossary{margin:18px 0;border:1px dashed rgba(232,194,106,0.35);border-radius:10px;padding:14px 18px;font-size:0.9rem;color:#d6ccb4}
+.glossary b{color:#f0d68e}
+.offstage{margin:40px 0;background:rgba(217,130,91,0.06);border:1px solid rgba(217,130,91,0.3);border-radius:14px;padding:20px 24px}
+.offstage h3{color:#d9825b;font-size:0.86rem;letter-spacing:2px;margin-bottom:10px;font-family:"SF Mono",Menlo,monospace}
+.offstage p{color:#e6d6c8;font-size:0.93rem;margin-bottom:10px}
+.offstage p:last-child{margin-bottom:0}
+.everyday{margin:40px 0;background:linear-gradient(135deg,rgba(125,170,214,0.10),rgba(125,170,214,0.04));border:1px solid rgba(125,170,214,0.34);border-radius:14px;padding:22px 26px}
+.everyday h3{color:#8fb8de;font-size:0.88rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.everyday h4{color:#bcd6ee;font-size:0.95rem;margin:16px 0 6px;font-weight:700}
+.everyday h4:first-of-type{margin-top:0}
+.everyday p{color:#dfe7ef;font-size:0.94rem;margin-bottom:8px}
+.everyday b{color:#fff}
+.crossx{margin:40px 0;background:linear-gradient(135deg,rgba(182,156,245,0.10),rgba(232,194,106,0.05));border:1px solid rgba(182,156,245,0.32);border-radius:14px;padding:22px 26px}
+.crossx h3{color:#b69cf5;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.crossx p{color:#e6def5;font-size:0.92rem;line-height:1.8;margin-bottom:14px}
+.crossx b{color:#d4c4fb;font-weight:600}
+.crossx ul{list-style:none;margin:0}
+.crossx li{color:#e6def5;font-size:0.93rem;line-height:1.8;margin-bottom:14px;padding-left:20px;position:relative}
+.crossx li:last-child{margin-bottom:0}
+.crossx li::before{content:"◈";position:absolute;left:0;top:0.35em;color:#e8c26a;font-size:0.72rem}
+.ten{margin:40px 0}
+.ten h3{color:#e8c26a;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(232,194,106,.3);border-radius:12px;background:rgba(232,194,106,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(232,194,106,.12);font-size:.94rem;line-height:1.75;color:#e2d9c6}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#e8c26a}
+.crossx a,.section a,.everyday a,.offstage a{color:#f0d68e;text-decoration:none;border-bottom:1px dotted rgba(240,214,142,0.5)}
+.thinking{background:linear-gradient(135deg,rgba(232,194,106,0.05),rgba(182,156,245,0.05));border:1px solid rgba(232,194,106,0.2);border-radius:12px;padding:24px 26px;margin:40px 0}
+.thinking h3{color:#e8c26a;font-size:0.9rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.thinking details{background:rgba(13,12,10,0.55);border:1px solid rgba(232,194,106,0.16);border-radius:9px;padding:13px 17px;margin:10px 0;transition:all 0.2s}
+.thinking details[open]{background:rgba(232,194,106,0.05);border-color:rgba(232,194,106,0.4)}
+.thinking summary{cursor:pointer;color:#f0d68e;font-weight:600;font-size:0.93rem;list-style:none;outline:none;line-height:1.55}
+.thinking summary::-webkit-details-marker{display:none}
+.thinking summary::before{content:"▸ ";color:#d9825b}
+.thinking details[open] summary::before{content:"▾ "}
+.thinking details>div{margin-top:12px;padding-top:12px;border-top:1px dashed rgba(232,194,106,0.2);color:#e2d9c6;font-size:0.9rem;line-height:1.8}
+.refs{margin-top:34px}
+.refs h3{color:#d9825b;font-size:0.85rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.refs ul{list-style:none}
+.refs li{margin-bottom:9px;font-size:0.88rem;color:#a99f8a}
+.refs a{color:#e8c26a;text-decoration:none;border-bottom:1px dotted rgba(232,194,106,0.4)}
+.refs a:hover{color:#f3dc9a}
+footer{text-align:center;padding:48px 0 10px;font-size:0.8rem;color:#6d6656;font-family:"SF Mono",Menlo,monospace}
+footer a{color:#e8c26a;text-decoration:none}
+@media(max-width:600px){header h1{font-size:1.6rem}.section h2{font-size:1.14rem}.everyday,.crossx,.offstage,.thinking{padding:18px 18px}}
+</style></head><body>
+</head>
+<body>
+<div class="container">
+<div class="langbar"><a href="literature-2021-gurnah-prize29.en.html">English →</a></div>
+<header>
+<span class="prize-tag">LITERATURE · 2021</span>
+<h1>历史被写简单之前，他先把它写复杂</h1>
+<h2>一个十八岁逃离桑给巴尔的难民，用他的第二语言英语写了十部小说：殖民留下的伤，难民的谎言和沉默，还有那些「小人物」怎样从创伤里捡回一段生活</h2>
+<div class="laureates"><span>阿卜杜勒拉扎克·古尔纳 Abdulrazak Gurnah<em>坦桑尼亚 / 英国 · 1/1</em></span></div>
+<div class="motivation"><q>for his uncompromising and compassionate penetration of the effects of colonialism and the fate of the refugee in the gulf between cultures and continents</q><span class="zh">表彰他毫不妥协又满怀同情地洞穿殖民主义的影响，以及在文化与大陆之间的鸿沟中难民的命运</span></div>
+<div class="date">2026-11-10 · BigCat</div>
+<p class="pitch">接到获奖电话时，他以为是推销电话，一声不吭，等着对方挂断。</p>
+</header>
+<div class="intro">
+<p>你大概还记得小时候教室墙上的第一幅世界地图。那时你不会去想：这张图是谁画的，中心放在哪儿，哪些地方画得大、哪些画得小。</p>
+<p>桑给巴尔（Zanzibar），印度洋上的一座岛。一个七岁男孩的班主任那天请假，来代课的老师矮矮胖胖，穿长袍，戴小帽，脸上有天花留下的麻点。他举起一个鸡蛋，问谁能让它立起来，就这样讲起了哥伦布。他一边讲，一边用一支白粉笔在黑板上<b>一笔不断</b>地画：欧洲海岸、伊比利亚、北非、好望角，再沿东非海岸北上，绕过阿拉伯和印度，一直画到中国。然后他在东非海岸中段点了一个点：「我们在这儿，离中国很远。」</p>
+<p>后来他再去偷看，黑板已经擦干净了。几十年后，这个男孩成了一个独自来到英国海边小城、待了七个月的老年寻求庇护者。小说《海边》（By the Sea，2001）就从他这句话开头：</p>
+<blockquote>「I speak to maps. And sometimes they say something back to me.」<br/>（我对着地图说话。有时候，它们也会回我几句。）<cite>— 古尔纳《海边》开篇 · 诺奖官网选段 · 本页自译</cite></blockquote>
+<p>他接着说：是地图让世界变成了可以占有的领土。写下这段话的，是 2021 年诺贝尔文学奖得主阿卜杜勒拉扎克·古尔纳。</p>
+</div>
+<div class="section">
+<h2>港口边的房子，和借来的 400 英镑</h2>
+<p>古尔纳 1948 年生于桑给巴尔。2022 年在瑞典学院接受采访时，他这样描述老家：从楼上能望见港口和仓库，走到海边不到五分钟。季风时节，来自印度洋各处的帆船靠岸，船上的人几乎是直接「涌进」他家门前的广场，身上还带着海和船舱的气味。小孩子觉得热闹极了。可他的姨妈记得另一面：季末风向转北，船队要走，大人就不许孩子出门，因为偶尔会有孩子不见了。</p>
+<figure><svg font-family="-apple-system,'Noto Sans SC',sans-serif" viewBox="0 0 520 270" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<marker id="ag" markerHeight="8" markerUnits="userSpaceOnUse" markerWidth="8" orient="auto" refX="7" refY="4"><path d="M0,0 L8,4 L0,8 z" fill="#e8c26a"/></marker>
+<marker id="ab" markerHeight="8" markerUnits="userSpaceOnUse" markerWidth="8" orient="auto" refX="7" refY="4"><path d="M0,0 L8,4 L0,8 z" fill="#8fb8de"/></marker>
+<marker id="ac" markerHeight="8" markerUnits="userSpaceOnUse" markerWidth="8" orient="auto" refX="7" refY="4"><path d="M0,0 L8,4 L0,8 z" fill="#d9825b"/></marker>
+</defs>
+<rect fill="#100e0b" height="270" rx="10" width="520" x="0" y="0"/>
+<g fill="#ece5d6" font-size="12">
+<circle cx="70" cy="40" r="5" fill="#d9825b"/><text x="82" y="44">英国 · 坎特伯雷</text>
+<circle cx="300" cy="80" r="5" fill="#a99f8a"/><text x="250" y="66">阿拉伯南部 · 海湾</text>
+<circle cx="450" cy="110" r="5" fill="#a99f8a"/><text x="430" y="96">印度</text>
+<circle cx="230" cy="135" r="5" fill="#a99f8a"/><text x="160" y="139">索马里</text>
+<circle cx="200" cy="215" r="6" fill="#e8c26a"/><text x="100" y="240" fill="#f0d68e">桑给巴尔（他家在港口边）</text>
+</g>
+<path d="M440,122 C400,190 300,215 212,214" fill="none" stroke="#e8c26a" stroke-width="1.6" marker-end="url(#ag)"/>
+<text fill="#f0d68e" font-size="11" x="330" y="228">季风时节：帆船靠岸，人涌进广场</text>
+<path d="M210,203 C250,170 280,130 296,90" fill="none" stroke="#8fb8de" stroke-width="1.6" stroke-dasharray="5 3" marker-end="url(#ab)"/>
+<text fill="#bcd6ee" font-size="11" x="262" y="160">季末风向转北：船队离开</text>
+<path d="M192,206 C120,170 80,110 70,52" fill="none" stroke="#d9825b" stroke-width="1.6" marker-end="url(#ac)"/>
+<text fill="#e9a988" font-size="11" x="20" y="150">1960 年代末</text>
+<text fill="#e9a988" font-size="11" x="20" y="166">18 岁 · 逃离</text>
+</svg><figcaption>示意图，非比例地图：港口边那座房子看到的印度洋，和他后来离开的方向（据古尔纳 2022 年诺奖官网访谈与诺奖委员会传记）</figcaption></figure>
+<p>诺奖委员会主席安德斯·奥尔松（Anders Olsson）在官方传记里说，这座岛先后被葡萄牙、阿拉伯、德国和英国统治，有奴隶贸易的历史，也和整个世界做生意，是<b>全球化之前的世界主义社会</b>。1963 年 12 月，桑给巴尔和平脱离英国统治；1964 年的革命之后，阿拉伯裔居民遭到压迫和迫害，发生过屠杀。古尔纳属于受害的族群。中学一毕业，十八岁的他和哥哥离开了家。</p>
+<p>到了伦敦，海关问来干什么，兄弟俩只能说「来旅游」。当时游客大约得证明身上有 400 英镑，这笔钱是向亲戚借的。被带进小屋问了几句话，放行了。他后来才知道，自己赶上的是英国又一轮针对东非亚裔移民的恐慌。直到 1984 年他才能回桑给巴尔，见到父亲时，父亲已时日无多。</p>
+<p>他二十一岁开始写作。母语是斯瓦希里语（Swahili），可他说在岛上几乎读不到斯瓦希里语的文学；早年滋养他的是《一千零一夜》、阿拉伯和波斯诗歌、《古兰经》的章节，然后是从莎士比亚到奈保尔的英语传统。英语就这样成了他的工具。社科院的陆建德拿他和肯尼亚作家恩古吉（Ngũgĩ wa Thiong'o）对比：恩古吉本来也用英语写，上世纪七八十年代为了反思后殖民问题，改回用部落语言写作。古尔纳后来在肯特大学教英语和后殖民文学，直到退休，研究的正是索因卡、恩古吉和拉什迪。</p>
+</div>
+<div class="section">
+<h2>授奖词拆开读：毫不妥协、同情、殖民、难民、鸿沟</h2>
+<p><b>「毫不妥协」</b>：在诺贝尔演讲《写作》里，他说流亡英国几年后，他发现一种<b>新的、更简单的历史</b>正在被建构，把发生过的事改写甚至抹掉。这不只是胜利者的手笔，也合了一些评论家、学者和作家的胃口，他们需要一个熟悉的「种族解放与进步」故事。他拒绝这种历史，也拒绝反方向的简化：奥尔松写道，他一直刻意避开对一个「纯洁的前殖民非洲」的怀旧。南京大学的但汉松说，《天堂》里的商队一边做生意一边靠枪撑腰，受害者和施害者的界线是模糊的。</p>
+<p><b>「同情」</b>：问他这个词是什么意思，他说人有巨大的残忍，也总有善意的可能；这不是原谅，而是理解一个人可能被国家和社会束缚得连善意都表达不出来。</p>
+<p><b>「殖民的影响」</b>：他在演讲里说，他那一代人是「殖民主义的孩子」，在帝国最自信的年代受教育，统治用委婉语伪装自己，「我们同意了这种掩饰」。后来的腐败和失治，某种程度上也是殖民遗产。</p>
+<p><b>「难民的命运」</b>：颁奖词作者、委员艾伦·马特松（Ellen Mattson）说，他的小说一遍遍讲同一个男孩：被拐、被卖、或者逃命，长大后活在不属于他的地方，用反讽、退缩、<b>沉默和谎言</b>应付一切。谎言在这里等于虚构，是盾牌，最后却变成一件脱不下的毒衣。</p>
+<p><b>「鸿沟」</b>：奥尔松写道，他的人物悬在两种文化之间，悬在过去的生活和正在长出来的生活之间，这种状态<b>永远无法化解</b>。古尔纳本人觉得这句授奖词准确，但「不是全部」：一本小说都难以用一句话说清，何况十本。</p>
+</div>
+<div class="section">
+<h2>作品里到底发生了什么：两个叙述者，谁也不可信</h2>
+<p>突破之作《天堂》（Paradise，1994）入围了当年的布克奖短名单。少年优素福被父亲抵押给商人抵债，跟着商队走进东非内陆。奥尔松指出，这是《古兰经》里约瑟（优素福）故事的重写，也明显呼应康拉德的《黑暗的心》；只是《古兰经》里的约瑟因信仰得到回报，古尔纳的优素福却抛下心爱的女人，加入了他曾经鄙视的德国军队。<b>不给你预期中的结局</b>，是他的习惯。</p>
+<p>《海边》把这种写法推到了叙述本身。上半部的叙述者萨利赫·奥马尔，用一个仇人名字的伪造签证来英国申请庇护；下半部的叙述者拉蒂夫，恰好被派来帮他安顿，而他正是那个仇人的儿子。萨利赫拼命记住，拉蒂夫拼命忘记。奥尔松说，两个叙述者让小说既定的方向消散了，叙述者的权威和自我认知也跟着消散。社科院的陆建德说：你以为这位难民叙述者会赢得你的同情，读进去才发现完全不是这样。</p>
+<p>写法上，他的英语里夹着斯瓦希里语、阿拉伯语、印地语和德语。奥尔松形容他的句子清澈、有分寸，也会面无表情地讽刺。2005 年的《遗弃》（Desertion）在第一部末尾忽然打断故事，让叙述者现身，说这个故事不是关于他：</p>
+<blockquote>「It is about how one story contains many and how they belong not to us but are part of the random currents of our time.」<br/>（它讲的是一个故事怎样包含许多故事，而它们并不属于我们，只是我们时代随机洋流的一部分。）<cite>— 古尔纳《遗弃》· 转引自奥尔松《传记与书目》· 本页自译</cite></blockquote>
+<p>获奖前最新的《来世》（Afterlives，2020）接着《天堂》往下写，背景是德属东非。古尔纳自己欣赏的非洲作家马阿扎·门吉斯特（Maaza Mengiste）在《卫报》书评里说，欧洲殖民非洲的讨论长期把德国排除在外，而这本书<b>把那些本该被遗忘的人聚拢起来</b>。书里一个年轻人替德国人辩护，听的人沉默半晌，回他一句：「朋友，他们把你吃掉了。」</p>
+</div>
+<div class="section">
+<h2>为什么是他，为什么是这一年</h2>
+<p>他是真的冷门。《出版人周刊》在公布当天报道：他在美国最畅销的《遗弃》，2005 年至今通过 BookScan 统计的销量不到两千本，很多书已经绝版。中文世界更早没有他：上海译文的编辑冯涛说，获奖前国内只有一本短篇集收过他两篇小说，说他是「近 10 年，甚至 20 年来最冷门的」得主。界面新闻的报道也写道，当年更热门的是恩古吉。</p>
+<p>获奖当天的电话采访里，采访者提到当时正值难民危机。他说欧洲人几百年来一直「涌向世界」，如今却对来的人表现出一种<b>吝啬</b>，好像东西不够分；而很多人来时并非两手空空，他们有才华、有精力。</p>
+</div>
+<div class="offstage">
+<h3>◐ 奖台之外</h3>
+<p>坦桑尼亚总统和桑给巴尔总统都第一时间道贺，可半岛电视台报道，坦桑尼亚网上随即吵起来：<b>他到底算不算「我们的」作家？</b>记者埃里克·卡本德拉（Erick Kabendera）写道，国家迟迟不允许双重国籍，原因之一正是怕当年逃离迫害的阿拉伯裔回来索要被夺走的财产，「我们却在不知羞耻地庆祝他的胜利？」古尔纳自己对法新社说：「我来自那里。在我心里，我住在那里。」</p>
+</div>
+<div class="everyday">
+<h3>◎ 对普通人的意义</h3>
+<h4>读他会给你带来什么</h4>
+<p><b>难民不再是一个面目模糊的「群体」。</b>他的难民会撒谎、会势利、会记仇，也会温柔。这种复杂比同情更难，也更尊重人。</p>
+<p><b>你会认出自己身上的沉默。</b>他在 2024 年访华时说，沉默对没有抵抗能力的人可能是保持尊严的唯一方式，也可以是抵抗，有时也意味着失败。冯涛说，在北上广漂着的人，读他会觉得是「最熟悉的陌生人」。</p>
+<h4>从哪一本开始</h4>
+<p>古尔纳本人建议从<b>《天堂》《来世》</b>读起，也可以从<b>《海边》</b>开始。中文版由上海译文出版：《天堂》刘国枝译、《海边》黄协安译，均于 2022 年 9 月出版；到 2024 年 3 月，十部长篇已全部出齐。《天堂》主线单纯，最容易进入；《海边》开头不知道谁是主角，几代人的恩怨要拼起来读，难度中等。2022 年，SOAS 学者伊达·哈吉瓦亚尼斯（Ida Hadjivayanis）译的斯瓦希里语《天堂》（Peponi）在达累斯萨拉姆出版，她在他得奖前就动笔了。</p>
+<h4>它不意味着什么</h4>
+<p><b>不是控诉文学。</b>他的书不审判，殖民者、商人、被殖民者都有各自的罪。<b>也不是「难民问题」的社会报告。</b>他说他的作品不是要描写移民这种现象，「我写的是我所知道的」。<b>更不是怀旧。</b>他笔下那片海岸有奴隶贸易的历史，他记忆里的港口也有季末被拐走的孩子。</p>
+</div>
+<div class="crossx">
+<h3>🌀 越界 · 跨学科的联想</h3>
+<ul>
+<li><b>分布式系统 · 日志压缩（log compaction）</b>：系统为了省空间，把一长串事件日志压成一张「当前状态」快照，中间那些冲突的、被覆盖的写入就没了。古尔纳说的「更简单的历史」就是这张快照，而且是胜利者在做压缩。他的小说做的是反向操作：把原始日志找回来，让同一套房子在两个家族那里各有一个版本，像多版本并存，不急着合并。</li>
+<li><b>AI · 训练语料里的缺席</b>：门吉斯特问，殖民的后果之一是档案里刻意排除了非洲人的视角，那么连被抹掉了什么都不知道，我们要怎么记得？语言模型也一样：它只能从现有档案里学习，档案里没有的声音，推理能力再强也补不回来。补语料，就是古尔纳一直在做的事。</li>
+<li><b>经济学 · 殖民制度的长尾</b>：<a href="economics-2024-institutions-prize15.html">2024 年经济学奖</a>用数据说明，殖民者在哪里建立了什么制度，决定了几百年后的贫富。古尔纳在演讲里从另一头说了同一件事：后殖民的腐败和失治，部分是殖民遗产。一边是跨国回归，一边是一个家庭的饭桌。</li>
+<li><b>文学 · 向外的移民与「内部的移民」</b>：<a href="literature-2022-ernaux-prize24.html">埃尔诺</a>靠读书离开出身的阶层，称自己是「内部的移民」；古尔纳是跨越大陆的真移民。两人回头写来处时，都得先拒绝一种更体面、更现成的讲法：埃尔诺拒绝「写得好」，古尔纳拒绝「更简单的历史」。</li>
+</ul>
+</div>
+<div class="ten">
+<h3>◆ 十条要点</h3>
+<ol class="takeaways">
+<li>阿卜杜勒拉扎克·古尔纳 1948 年生于桑给巴尔，1964 年革命后阿拉伯裔受迫害，十八岁逃到英国。</li>
+<li>桑给巴尔先后被葡萄牙、阿拉伯、德国、英国统治，是全球化之前就已形成的世界主义港口社会。</li>
+<li>古尔纳的母语是斯瓦希里语，但岛上几乎读不到斯瓦希里语文学，英语成了他的写作工具。</li>
+<li>诺贝尔演讲里，古尔纳拒绝的是一种为迎合「解放与进步」叙事而被建构的、更简单的历史。</li>
+<li>古尔纳也拒绝对「纯洁的前殖民非洲」怀旧，书里的商人、殖民者和被殖民者都有各自的罪。</li>
+<li>古尔纳小说里的难民靠沉默和谎言保护自己，而这层保护日久会变成脱不下的毒衣。</li>
+<li>《天堂》重写《古兰经》的约瑟故事，却把圆满结局翻成了少年加入他曾鄙视的德国军队。</li>
+<li>《海边》用两个互为仇家的叙述者，让任何一方都失去讲述真相的权威。</li>
+<li>中文读者可从上海译文版《天堂》或《海边》读起，十部长篇在 2024 年已全部出齐。</li>
+<li>「更简单的历史」像分布式系统的日志压缩，小说的工作是把被覆盖掉的原始记录找回来。</li>
+</ol>
+</div>
+<div class="thinking">
+<h3>// 深入思考</h3>
+<details><summary>用殖民者的语言写被殖民者的故事，是丰富还是被同化？</summary><div>陆建德在新书发布会上就问过：写出这么好的英文，到底是丰富了你还是奴化了你？恩古吉选择回到母语，古尔纳则说他在岛上几乎读不到斯瓦希里语的文学。也许问题不在语言本身，而在你用它讲谁的故事、对谁说话。你在工作里用的那套术语，是帮你说清了事情，还是替你决定了什么值得说？</div></details>
+<details><summary>谎言为什么会从盾牌变成毒衣？</summary><div>马特松把他人物的谎言比作虚构：先是为了保护自己和家人，给一个更体面的版本；时间一长，这个版本反过来困住了说谎的人。《赞美沉默》里的叙述者同时瞒着英国的家和桑给巴尔的家。想一想：你给不同人群讲的「自己的故事」有几个版本？它们什么时候开始彼此冲突？</div></details>
+<details><summary>一个被迫离开的人，有资格被故乡认领吗？</summary><div>坦桑尼亚网上的争论很尖锐：当年把他们赶走的国家，如今以他为荣。他自己说「在我心里，我住在那里」。归属是由护照决定，由记忆决定，还是由故乡是否愿意承认当年的事决定？这个问题没有标准答案，但它和授奖词里那道「鸿沟」是同一件事。</div></details>
+</div>
+<div class="refs">
+<h3>// 出处</h3>
+<ul>
+<li><a href="https://api.nobelprize.org/2.1/nobelPrizes?nobelPrizeYear=2021&amp;nobelPrizeCategory=lit" target="_blank">Nobel Prize API · 2021 Literature</a> — 授奖词原文与奖金份额。</li>
+<li><a href="https://www.nobelprize.org/prizes/literature/2021/bio-bibliography/" target="_blank">Biobibliography（Anders Olsson）</a> 与 <a href="https://www.nobelprize.org/prizes/literature/2021/ceremony-speech/" target="_blank">颁奖词（Ellen Mattson）</a> — 桑给巴尔的历史、语言与早年阅读、各部小说的情节与写法、《遗弃》引文、沉默与谎言。</li>
+<li><a href="https://www.nobelprize.org/prizes/literature/2021/gurnah/lecture/" target="_blank">诺贝尔演讲《Writing》（2021-12-07）</a> — 「更简单的历史」、殖民主义的孩子、殖民遗产。</li>
+<li><a href="https://www.nobelprize.org/prizes/literature/2021/gurnah/prose/" target="_blank">Prose ·《海边》选段</a>、<a href="https://www.nobelprize.org/prizes/literature/2021/gurnah/interview/" target="_blank">获奖电话</a>、<a href="https://www.nobelprize.org/prizes/literature/2021/gurnah/189897-gurnah-interview-april-2022/" target="_blank">2022 年 4 月访谈</a> 与 <a href="https://www.nobelprize.org/what-to-read-books-by-abdulrazek-gurnah/" target="_blank">三位院士的选书</a> — 地图开篇；港口、季风、400 英镑；「吝啬」；同情的含义；选书建议。</li>
+<li><a href="https://www.theguardian.com/books/2020/sep/30/afterlives-by-abdulrazak-gurnah-review-living-through-colonialism" target="_blank">The Guardian · Maaza Mengiste 评《来世》（2020）</a> 与 <a href="https://www.publishersweekly.com/pw/by-topic/industry-news/awards-and-prizes/article/87565-abdulrazak-gurnah-wins-2021-nobel-prize-in-literature.html" target="_blank">Publishers Weekly（2021-10-07）</a> — 独立书评：德属东非与档案的缺席；美国销量与绝版状况。</li>
+<li><a href="https://m.jiemian.com/article/8097168.html" target="_blank">界面新闻 · 中文版发布会</a>、<a href="https://www.cssn.cn/wx/wx_wgwx/202301/t20230101_5577248.shtml" target="_blank">中国社会科学网 · 南京分享会</a> 与 <a href="https://www.thepaper.cn/newsDetail_forward_26653652" target="_blank">澎湃新闻（2024-03）</a> — 译者、版次、获奖前的中译状况、读法建议、关于沉默的谈话。</li>
+<li><a href="https://www.aljazeera.com/news/2021/10/9/gurnahs-award-stirs-both-celebration-and-contradictions-at-home" target="_blank">Al Jazeera（2021-10-09）</a> 与 <a href="https://brittlepaper.com/2023/01/the-story-behind-peponi-the-swahili-translation-of-abdurazak-gurnahs-novel-paradise/" target="_blank">Brittle Paper ·《Peponi》</a> — 坦桑尼亚的归属之争；斯瓦希里语译本。</li>
+</ul>
+</div>
+<footer>BigCat · 诺奖精读 · 2021 文学奖 · <a href="index.html">← 目录</a></footer>
+</div>
+</body></html>
