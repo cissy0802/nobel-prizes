@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>2020 物理学奖 · 看不见的东西，可以用绕着它狂奔的星星称出重量 — 诺奖精读</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;color:#ece5d6;line-height:1.85;min-height:100vh;
+  background:radial-gradient(1100px 560px at 10% -6%,rgba(232,194,106,0.10),transparent 60%),radial-gradient(900px 640px at 100% 2%,rgba(217,130,91,0.08),transparent 55%),linear-gradient(165deg,#0d0c0a 0%,#14110c 45%,#0a0907 100%);background-attachment:fixed}
+.container{max-width:760px;margin:0 auto;padding:18px 20px 90px}
+.langbar{display:flex;justify-content:flex-end;padding-top:10px;font-family:"SF Mono",Menlo,monospace;font-size:.8rem}
+.langbar a{color:#e8c26a;text-decoration:none;border:1px solid rgba(232,194,106,.3);padding:4px 12px;border-radius:20px}
+.langbar a:hover{border-color:#d9825b;color:#d9825b}
+header{text-align:center;padding:40px 0 22px}
+.prize-tag{display:inline-block;font-size:0.75rem;color:#e8c26a;font-family:"SF Mono",Menlo,monospace;letter-spacing:2px;border:1px solid rgba(232,194,106,0.42);padding:4px 13px;border-radius:20px;margin-bottom:16px;background:rgba(232,194,106,0.06)}
+header h1{font-size:2.1rem;font-weight:800;letter-spacing:.5px;line-height:1.3;background:linear-gradient(110deg,#f3dc9a 0%,#e8c26a 45%,#d9825b 92%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 2px 18px rgba(232,194,106,0.22))}
+header h2{font-size:1rem;color:#a99f8a;margin-top:10px;font-weight:400;letter-spacing:0.4px}
+.laureates{margin-top:18px;font-size:0.9rem;color:#d8cdb4}
+.laureates span{display:inline-block;margin:3px 6px;padding:2px 11px;border-radius:14px;background:rgba(232,194,106,0.07);border:1px solid rgba(232,194,106,0.18)}
+.laureates em{font-style:normal;color:#8f8672;font-size:0.8rem;margin-left:6px;font-family:"SF Mono",Menlo,monospace}
+.motivation{margin:18px auto 0;max-width:620px;font-size:0.88rem;color:#b9ae95;line-height:1.7}
+.motivation q{display:block;font-style:italic;color:#d9cfb8}
+.motivation q::before{content:"“"}.motivation q::after{content:"”"}
+.motivation .zh{display:block;margin-top:4px}
+header .date{font-size:0.8rem;color:#6d6656;margin-top:16px;font-family:"SF Mono",Menlo,monospace}
+header .pitch{margin-top:18px;font-size:0.98rem;color:#d9825b;font-style:italic}
+.intro{background:rgba(232,194,106,0.06);border-left:3px solid #e8c26a;padding:20px 24px;border-radius:0 10px 10px 0;margin:36px 0;font-size:0.99rem;color:#e2d9c6}
+.intro strong{color:#fff}
+.section{margin:46px 0 0}
+.section h2::before{content:"";display:block;width:28px;height:2px;background:#e8c26a;opacity:.75;margin-bottom:16px}
+.section h2{font-size:1.3rem;color:#fff;margin-bottom:16px;font-weight:700;line-height:1.38}
+.section p{margin-bottom:14px;color:#e2d9c6;font-size:0.96rem}
+.section strong{color:#fff}
+.section blockquote{margin:16px 0;padding:10px 18px;border-left:2px solid rgba(217,130,91,0.6);color:#d6c9ae;font-size:0.93rem;background:rgba(217,130,91,0.05);border-radius:0 8px 8px 0}
+.section blockquote cite{display:block;margin-top:6px;font-style:normal;font-size:0.8rem;color:#8f8672;font-family:"SF Mono",Menlo,monospace}
+figure{margin:24px 0}
+figure svg{display:block;width:100%;height:auto;max-width:520px;margin:0 auto}
+figcaption{text-align:center;font-size:0.82rem;color:#a99f8a;margin-top:12px;font-family:"SF Mono",Menlo,monospace}
+.glossary{margin:18px 0;border:1px dashed rgba(232,194,106,0.35);border-radius:10px;padding:14px 18px;font-size:0.9rem;color:#d6ccb4}
+.glossary b{color:#f0d68e}
+.offstage{margin:40px 0;background:rgba(217,130,91,0.06);border:1px solid rgba(217,130,91,0.3);border-radius:14px;padding:20px 24px}
+.offstage h3{color:#d9825b;font-size:0.86rem;letter-spacing:2px;margin-bottom:10px;font-family:"SF Mono",Menlo,monospace}
+.offstage p{color:#e6d6c8;font-size:0.93rem;margin-bottom:10px}
+.offstage p:last-child{margin-bottom:0}
+.everyday{margin:40px 0;background:linear-gradient(135deg,rgba(125,170,214,0.10),rgba(125,170,214,0.04));border:1px solid rgba(125,170,214,0.34);border-radius:14px;padding:22px 26px}
+.everyday h3{color:#8fb8de;font-size:0.88rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.everyday h4{color:#bcd6ee;font-size:0.95rem;margin:16px 0 6px;font-weight:700}
+.everyday h4:first-of-type{margin-top:0}
+.everyday p{color:#dfe7ef;font-size:0.94rem;margin-bottom:8px}
+.everyday b{color:#fff}
+.crossx{margin:40px 0;background:linear-gradient(135deg,rgba(182,156,245,0.10),rgba(232,194,106,0.05));border:1px solid rgba(182,156,245,0.32);border-radius:14px;padding:22px 26px}
+.crossx h3{color:#b69cf5;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.crossx p{color:#e6def5;font-size:0.92rem;line-height:1.8;margin-bottom:14px}
+.crossx b{color:#d4c4fb;font-weight:600}
+.crossx ul{list-style:none;margin:0}
+.crossx li{color:#e6def5;font-size:0.93rem;line-height:1.8;margin-bottom:14px;padding-left:20px;position:relative}
+.crossx li:last-child{margin-bottom:0}
+.crossx li::before{content:"◈";position:absolute;left:0;top:0.35em;color:#e8c26a;font-size:0.72rem}
+.ten{margin:40px 0}
+.ten h3{color:#e8c26a;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(232,194,106,.3);border-radius:12px;background:rgba(232,194,106,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(232,194,106,.12);font-size:.94rem;line-height:1.75;color:#e2d9c6}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#e8c26a}
+.crossx a,.section a,.everyday a,.offstage a{color:#f0d68e;text-decoration:none;border-bottom:1px dotted rgba(240,214,142,0.5)}
+.thinking{background:linear-gradient(135deg,rgba(232,194,106,0.05),rgba(182,156,245,0.05));border:1px solid rgba(232,194,106,0.2);border-radius:12px;padding:24px 26px;margin:40px 0}
+.thinking h3{color:#e8c26a;font-size:0.9rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.thinking details{background:rgba(13,12,10,0.55);border:1px solid rgba(232,194,106,0.16);border-radius:9px;padding:13px 17px;margin:10px 0;transition:all 0.2s}
+.thinking details[open]{background:rgba(232,194,106,0.05);border-color:rgba(232,194,106,0.4)}
+.thinking summary{cursor:pointer;color:#f0d68e;font-weight:600;font-size:0.93rem;list-style:none;outline:none;line-height:1.55}
+.thinking summary::-webkit-details-marker{display:none}
+.thinking summary::before{content:"▸ ";color:#d9825b}
+.thinking details[open] summary::before{content:"▾ "}
+.thinking details>div{margin-top:12px;padding-top:12px;border-top:1px dashed rgba(232,194,106,0.2);color:#e2d9c6;font-size:0.9rem;line-height:1.8}
+.refs{margin-top:34px}
+.refs h3{color:#d9825b;font-size:0.85rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.refs ul{list-style:none}
+.refs li{margin-bottom:9px;font-size:0.88rem;color:#a99f8a}
+.refs a{color:#e8c26a;text-decoration:none;border-bottom:1px dotted rgba(232,194,106,0.4)}
+.refs a:hover{color:#f3dc9a}
+footer{text-align:center;padding:48px 0 10px;font-size:0.8rem;color:#6d6656;font-family:"SF Mono",Menlo,monospace}
+footer a{color:#e8c26a;text-decoration:none}
+@media(max-width:600px){header h1{font-size:1.6rem}.section h2{font-size:1.14rem}.everyday,.crossx,.offstage,.thinking{padding:18px 18px}}
+</style></head><body>
+<div class="container">
+<div class="langbar"><a href="physics-2020-black-holes-prize32.en.html">English →</a></div>
+<header>
+<span class="prize-tag">PHYSICS · 2020</span>
+<h1>看不见的东西，可以用绕着它狂奔的星星称出重量</h1>
+<h2>一半奖给纸笔：证明黑洞在爱因斯坦的理论里躲不掉；一半奖给望远镜：在银河系中心找到一个四百万倍太阳质量、却不发光的东西</h2>
+<div class="laureates"><span>Roger Penrose<em>英国 · 牛津大学 · 1/2</em></span><span>Reinhard Genzel<em>德国 · 马普地外物理所 / 加州伯克利 · 1/4</em></span><span>Andrea Ghez<em>美国 · 加州大学洛杉矶分校 · 1/4</em></span></div>
+<div class="motivation"><q>for the discovery that black hole formation is a robust prediction of the general theory of relativity</q><span class="zh">表彰他发现：黑洞的形成是广义相对论一个稳健的预言（彭罗斯）</span><q>for the discovery of a supermassive compact object at the centre of our galaxy</q><span class="zh">表彰他们在银河系中心发现了一个超大质量的致密天体（根策尔、盖兹）</span></div>
+<div class="date">2026-11-13 · BigCat</div>
+<p class="pitch">掉进一个超大黑洞的那一刻，你什么也感觉不到。真正的不归点，在局部看起来平平无奇。</p>
+</header>
+<div class="intro">
+<p>往上扔一个球，它总会掉回来；扔得越快，飞得越高；快到一定程度，它就能挣脱地球、一去不返。那如果一颗星的引力大到<strong>连光都不够快</strong>呢？</p>
+<p>1783 年，英国牧师兼天文学家约翰·米切尔（John Michell）就这么算过。他还多想了一步：这种星我们看不到，可要是有别的发光天体<strong>绕着它转</strong>，也许能从它们的运动反推出中间那个看不见的东西。</p>
+<p>两百多年后，这件事真有人做成了。委员会的科普稿里有个数字可以感受一下：把整个地球压到只剩直径约 9 毫米，一颗弹珠大小，它就成了黑洞。</p>
+</div>
+<div class="section">
+<h2>方程里早就有它，但几乎没人信它真的存在</h2>
+<p>1915 年 11 月爱因斯坦完成广义相对论。不到两个月，1916 年 1 月 13 日，德国天文学家卡尔·史瓦西（Karl Schwarzschild）就交出了第一个精确解：一个圆滚滚、不转动的质量周围，时空是怎么弯的。那时离他去世不到四个月。这个解里藏着一个怪半径：进去了就出不来。今天我们管它叫<strong>事件视界（event horizon）</strong>，即黑洞的「不归线」。</p>
+<p>可这个解太完美了。1939 年，奥本海默（Robert Oppenheimer）和学生斯奈德算了一团球形尘埃的坍缩，结论是它会把自己与外界隔开，「只剩下引力场还在」。但他们假设了两件理想的事：尘埃没有压力，坍缩完全对称。真实的星星坑坑洼洼、还在自转，物质会不会彼此错过中心，弹回来？同一年，爱因斯坦本人也撰文怀疑视界能否存在。1963 年，苏联物理学家栗弗席兹（Evgeny Lifshitz）和哈拉特尼科夫（Isaak Khalatnikov）更干脆地宣称：一般情况下，广义相对论里根本不会出现奇点。</p>
+<p>就在 1963 年，天文学家发现了<strong>类星体（quasar）</strong>：极远处一个小点，亮度约是整个银河系的一千倍。要在那么小的地方挤出那么多能量，最自然的解释是物质正掉进一个极重的黑洞。理论没打包票，天上却像已经有了。</p>
+</div>
+<div class="section">
+<h2>过马路时想到的「被困住的曲面」</h2>
+<p>1964 年秋天，罗杰·彭罗斯（Roger Penrose）在伦敦伯贝克学院教数学。有一天他和朋友艾弗·罗宾逊（Ivor Robinson）边走边聊，过一个路口时两人停下话头看车。走到对面，话题接上。朋友走后，彭罗斯莫名地兴奋，挨个回想这天的事，连早饭吃了什么都过了一遍，最后才停在过马路那一刻：他在那儿想到了一个判据，说的是坍缩什么时候过了不归点，<strong>完全不需要假设对称</strong>。他把它叫作<strong>被困曲面（trapped surface）</strong>。</p>
+<p>用大白话说：在平常的空间里，从一个球面向外打出一圈闪光，光会越散越开，像吹大的气球。被困曲面是一个闭合的面，从它上面发出的光，哪怕朝外射，也只能越收越紧。彭罗斯证明了：只要这样一个面出现，并且物质的能量是正的（真实物质都满足），坍缩就停不下来，一定会走到一个时间和空间都到头的边界，叫<strong>奇点（singularity）</strong>。1965 年 1 月，这篇只有三页的论文发表在《物理评论快报》上。委员会的学术背景把它称作爱因斯坦之后广义相对论里第一个真正新的结果。</p>
+<figure>
+<svg viewBox="0 0 540 240" xmlns="http://www.w3.org/2000/svg">
+<line x1="330" y1="26" x2="330" y2="196" stroke="#d9825b" stroke-width="1.6" stroke-dasharray="6 5"/>
+<text x="330" y="18" fill="#d9825b" font-size="12" text-anchor="middle">事件视界</text>
+<line x1="506" y1="40" x2="506" y2="196" stroke="#ece5d6" stroke-width="3" stroke-dasharray="2 4"/>
+<text x="500" y="30" fill="#ece5d6" font-size="12" text-anchor="end">奇点</text>
+<polygon points="80,176 38,134 122,134" fill="rgba(232,194,106,0.18)" stroke="#e8c26a" stroke-width="1.6"/>
+<polygon points="200,176 174.6,121.6 254.4,150.6" fill="rgba(232,194,106,0.18)" stroke="#e8c26a" stroke-width="1.6"/>
+<polygon points="330,176 330,116 390,176" fill="rgba(217,130,91,0.2)" stroke="#d9825b" stroke-width="1.6"/>
+<polygon points="430,176 455.4,121.6 484.4,201.4" fill="rgba(217,130,91,0.2)" stroke="#d9825b" stroke-width="1.6"/>
+<circle cx="80" cy="176" r="3" fill="#ece5d6"/><circle cx="200" cy="176" r="3" fill="#ece5d6"/><circle cx="330" cy="176" r="3" fill="#ece5d6"/><circle cx="430" cy="176" r="3" fill="#ece5d6"/>
+<text x="80" y="214" fill="#d8cdb4" font-size="12" text-anchor="middle">远处</text>
+<text x="80" y="230" fill="#a99f8a" font-size="11" text-anchor="middle">光可进可出</text>
+<text x="200" y="214" fill="#d8cdb4" font-size="12" text-anchor="middle">靠近</text>
+<text x="200" y="230" fill="#a99f8a" font-size="11" text-anchor="middle">光锥开始倾斜</text>
+<text x="330" y="214" fill="#d8cdb4" font-size="12" text-anchor="middle">视界上</text>
+<text x="330" y="230" fill="#a99f8a" font-size="11" text-anchor="middle">向外的光原地停住</text>
+<text x="462" y="214" fill="#d8cdb4" font-size="12" text-anchor="middle">视界内</text>
+<text x="462" y="230" fill="#a99f8a" font-size="11" text-anchor="middle">所有未来都朝里</text>
+<text x="20" y="60" fill="#a99f8a" font-size="11">↑ 时间</text>
+<text x="20" y="76" fill="#a99f8a" font-size="11">→ 朝黑洞中心</text>
+</svg>
+<figcaption>每个小扇形是「光锥」：从这一点出发、光在下一刻能到的范围。越往里，光锥越往中心倒，过了视界就连朝外的那条边也指向里面</figcaption>
+</figure>
+<p>还有一个反直觉的细节：被困曲面出现时，物质并不一定很密。科普稿说，掉进一个超大黑洞的视界时你什么也不会感觉到。不归点不是一堵墙，它是一个全局的几何事实。几年后，彭罗斯和霍金（Stephen Hawking）把同样的思路倒过来用在整个宇宙上：在合理的假设下，大爆炸的过去也必然有一个奇点。</p>
+</div>
+<div class="section">
+<h2>隔着尘埃，给银河系中心称重</h2>
+<p>理论说黑洞躲不掉，那我们自家门口有没有？银河系中心有个很强的射电源，叫<strong>人马座 A*（Sagittarius A*）</strong>，但我们和它之间隔着厚厚的尘埃：可见光大约十亿个光子里穿不过来一个。换成近红外线，损失就只剩十来倍。</p>
+<p>另一个麻烦是大气。星星会眨眼，因为头顶冷热不均的空气像一层晃动的透镜，把像抹花了。从 1990 年代起，两支队伍分头去对付它：莱因哈德·根策尔（Reinhard Genzel）带着马普地外物理所的团队，用欧洲南方天文台在智利的望远镜；安德烈娅·盖兹（Andrea Ghez）带着加州大学洛杉矶分校的团队，用夏威夷的凯克望远镜。一开始两边都用笨办法：拍一连串只有十分之一秒多一点的快照，在空气还没来得及乱晃之前把星星「冻住」，再对齐叠加。后来换上<strong>自适应光学（adaptive optics）</strong>：用激光在高空点亮一颗人造「参考星」，测出它被大气扭成什么样，再让一面薄镜子实时变形，把扭曲抵消掉。</p>
+<p>判断的逻辑很干净。如果中心是一大团普通恒星，越往里绕的星不会快得太离谱；如果中心是一个点，越近就要越快，像水星比海王星跑得快。1998 年，盖兹团队测了 90 颗星，最快的每秒约 1400 公里，速度随距离的下降正好符合「中间一个点」，质量约 260 万个太阳。根策尔团队更早的数据也是这个样子。</p>
+<figure>
+<svg viewBox="0 0 520 220" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#e8c26a"/></marker></defs>
+<ellipse cx="300" cy="110" rx="180" ry="85" fill="none" stroke="#e8c26a" stroke-width="1.8"/>
+<path d="M312,25.1 L292,25.1" fill="none" stroke="#e8c26a" stroke-width="1.8" marker-end="url(#ah)"/>
+<circle cx="142" cy="110" r="7" fill="#0d0c0a" stroke="#d9825b" stroke-width="2"/>
+<circle cx="120" cy="110" r="4.5" fill="#f3dc9a"/>
+<circle cx="480" cy="110" r="4.5" fill="#f3dc9a"/>
+<text x="112" y="96" fill="#f3dc9a" font-size="12" text-anchor="end">近心点</text>
+<text x="112" y="130" fill="#a99f8a" font-size="11" text-anchor="end">2002 · 2018</text>
+<text x="472" y="96" fill="#f3dc9a" font-size="12" text-anchor="end">远心点</text>
+<text x="168" y="150" fill="#d9825b" font-size="12">人马座 A*</text>
+<text x="168" y="166" fill="#a99f8a" font-size="11">不发光，约 400 万个太阳</text>
+<text x="300" y="18" fill="#d8cdb4" font-size="12" text-anchor="middle">恒星 S2：一圈不到 16 年</text>
+</svg>
+<figcaption>S2 的轨道是一个很扁的椭圆，看不见的那个东西坐在焦点上。作为对比，太阳绕银河系中心一圈要两亿多年</figcaption>
+</figure>
+<p>决定性的是一颗叫 <strong>S2</strong> 的星（盖兹团队叫它 S0-2）。它绕中心一圈不到 16 年，人一辈子能看它转好几圈。2002 年它飞过近心点，离中心只有 17 光时。两队的数据合起来说明：大约 400 万个太阳的质量，挤在一个比太阳系还小的范围里。在已知的物理里，能做到这一点的只有一样东西。</p>
+<blockquote>There’s nothing like competition to keep you going, to propel you forwards. And to get it right – these measurements are hard.<br/>没有什么比竞争更能让人坚持下去、推着人往前走。而且要做对，这些测量太难了。<cite>— Andrea Ghez · <a href="https://www.nobelprize.org/prizes/physics/2020/ghez/interview/" target="_blank">获奖当天的电话采访</a> · 2020</cite></blockquote>
+</div>
+<div class="section">
+<h2>一支笔和两台望远镜，为什么放在同一个奖里</h2>
+<p>委员会的学术背景开头就引了米切尔 1783 年那句话：我们从光那里得不到消息，但也许能从绕着它转的天体的运动，以某种程度的把握推断出中间那个东西。它接着说，根策尔和盖兹做成的「正是这个推断」；而彭罗斯的定理让黑洞从数学怪胎变成理论的必然，给了天文学家去找它的底气。一半是「它一定会形成」，一半是「这里就有一个」。</p>
+<p>后来的事一年比一年近。2018 年 5 月 S2 再次飞过近心点，速度超过每小时 2500 万公里，约光速的 3%，根策尔是主要负责人之一的 GRAVITY 仪器把欧南台四台 8 米望远镜连成一体，测到了广义相对论预言的引力红移。2020 年，同一个团队又测到 S2 的轨道每圈转动约 12 角分，和爱因斯坦的预言吻合。2022 年 5 月 12 日，事件视界望远镜（Event Horizon Telescope）用 2017 年 4 月的数据，公布了人马座 A* 的第一张照片：一圈发光的气体，中间一个黑影，大小也和理论对得上。</p>
+<p>但委员会措辞很克制，写的是「超大质量致密天体」，而不是「黑洞」。学术背景的结尾说：黑洞视界附近的结构是否完全符合广义相对论，仍是一个开放问题。</p>
+</div>
+<div class="offstage">
+<h3>◐ 奖台之外</h3>
+<p>诺奖不颁给去世的人。霍金 2018 年去世，和彭罗斯合作过奇点定理的他没能分享这个奖。英国天文学家马丁·里斯（Martin Rees）说：「遗憾的是，这个奖来得太晚，霍金没能与彭罗斯分享荣誉」（法新社 2020 年 10 月 6 日报道，phys.org 转载）。</p>
+<p>学术背景的一条脚注更有意思：1921 年以为自己证明了广义相对论「不完整」的人之一，是瑞典光学家、1911 年诺贝尔生理学或医学奖得主古尔斯特兰德（Allvar Gullstrand）。他长期是诺贝尔物理委员会成员，还反对给爱因斯坦颁奖。</p>
+<p>获奖当天，89 岁的彭罗斯在电话里花了很长一段讲自己的循环宇宙学，坦白说这套想法「我正费劲地说服宇宙学家们」。</p>
+</div>
+<div class="everyday">
+<h3>◎ 对普通人的意义</h3>
+<h4>已经在你身边的</h4>
+<p>老实说，这个奖几乎没有直接的产品。离你最近的亲戚是 <b>GPS</b>：委员会的科普稿特意提到，广义相对论在这个最常用的导航工具里有实际用途。但那是弱引力下的小修正，用不到黑洞和奇点。另一样是你多半在新闻里见过的那张<b>人马座 A* 照片</b>（2022 年）。而为了看清银河系中心被逼出来的自适应光学，如今装在 VLT 和凯克这样的大望远镜上。</p>
+<h4>接下来可能改变的</h4>
+<p>欧洲空间局 2024 年 1 月批准了 <b>LISA</b>（<a href="https://www.esa.int/Science_Exploration/Space_Science/Capturing_the_ripples_of_spacetime_LISA_gets_go-ahead" target="_blank">ESA</a>）：三艘飞船在太空里组成边长 250 万公里的三角形，计划 2035 年发射，其中一项任务就是听星系中心的大黑洞相撞时发出的时空涟漪。根策尔在获奖电话里就说过，最终「拍板」的多半是这样一个太空任务。它们改变的是我们对引力和宇宙的认识，不会改变你明年用的手机。黑洞里面到底是什么，需要一个把相对论和量子力学合起来的理论，目前没人能给时间表。</p>
+<h4>它不意味着什么</h4>
+<p><b>不意味着我们离危险很近。</b>根策尔说，按活跃黑洞的标准，人马座 A* 是个「矮子」，不怎么活跃；我们在两万多光年外绕着它慢慢转，一圈两亿多年。<b>不意味着「奇点里密度真的无穷大」。</b>定理说的是广义相对论在那里失效，不是说那里真有一个无穷。<b>也不等于黑洞的每个细节都已证实。</b>获奖的是「致密天体」，视界附近的物理还在检验中。</p>
+<h4>可以借走的思维方式</h4>
+<p>彭罗斯的招数是：<b>别靠理想假设得出结论，找一个只需要最少条件的判据。</b>他没去解一颗不完美星星的方程，只问「有没有被困曲面」，答案就不怕现实的坑坑洼洼。根策尔和盖兹的招数是：<b>看不见的东西，看它对周围的影响</b>，并先想清楚哪个观测量能区分对立的解释。</p>
+</div>
+<div class="crossx">
+<h3>🌀 越界 · 跨学科的联想</h3>
+<ul>
+<li><b>分布式系统 · Lamport 的偏序</b>：Lamport 自述，写《时间、时钟与事件排序》时靠的是对狭义相对论的直觉：时空中没有大家都认的先后，只有「谁能因果影响谁」的偏序（<a href="https://lamport.azurewebsites.net/pubs/pubs.html" target="_blank">他的论文注记</a>）。彭罗斯的证明也只用这种因果结构，用光能到哪里来推理，不去解方程。事件视界就是这张因果图的一条边界：里面发出的消息永远送不到外面。</li>
+<li><b>共识协议 · 提交点</b>：在 Paxos 里，一个值被多数派接受的那一刻就已经「定了」，可没有哪个节点在那一刻感觉到任何变化。被困曲面同理：出现时物质不一定很密，穿过视界的人也毫无知觉，但结局已不可逆。两者的不归点都是全局性质，不是局部事件。区别在于协议的「定了」是关于知识，黑洞的「定了」是物理。</li>
+<li><b>统计推断 · 隐变量与模型比较</b>：中心的质量是一个看不见的隐变量，只能从星的轨道反推。关键是选对能区分假设的观测量：速度随距离怎么降，能区分「一团星」和「一个点」。GRAVITY 的拟合里放了一个参数，0 代表牛顿、1 代表爱因斯坦，测出约 1.1，这就是一次嵌套模型检验。两支独立团队则是最朴素的交叉验证，盖兹说的「别人会找出你的错」。</li>
+<li><b>多信使天文 · 站内互链</b>：光、引力波、中微子是三条看黑洞附近的通道。<a href="physics-2026-icecube-neutrinos-prize3.html">2026 物理奖的冰立方</a>那一期里，来自 NGC 1068 的中微子线索也指向星系中心黑洞附近。同一个看不见的东西，换一种信使去问。</li>
+</ul>
+</div>
+<div class="ten">
+<h3>◆ 十条要点</h3>
+<ol class="takeaways">
+<li>米切尔 1783 年就设想过连光都逃不出的暗星，并提出可以从绕它转的天体反推它的存在。</li>
+<li>史瓦西 1916 年的解里已有事件视界，但奥本海默 1939 年的坍缩模型依赖完美对称，很多人不信黑洞真会形成。</li>
+<li>彭罗斯 1964 年秋过马路时想到「被困曲面」：从这种闭合面上发出的光，连向外的也只会收拢。</li>
+<li>奇点定理表明：一旦出现被困曲面且能量为正，坍缩无法阻止，不需要任何对称假设，这就是「稳健的预言」。</li>
+<li>不归点在局部平平无奇：被困曲面形成时物质不一定很密，穿过超大黑洞的视界不会有感觉。</li>
+<li>根策尔和盖兹两支独立团队用近红外线穿透尘埃，靠短曝光叠加和自适应光学压住大气抖动。</li>
+<li>恒星 S2 绕银河系中心一圈不到 16 年，它的轨道表明约 400 万倍太阳质量挤在比太阳系还小的范围里。</li>
+<li>委员会措辞是「超大质量致密天体」而非「黑洞」，视界附近是否完全符合广义相对论仍在检验。</li>
+<li>这个奖几乎没有直接产品，它的后续是 GRAVITY 的相对论检验、2022 年人马座 A* 照片和计划 2035 年发射的 LISA。</li>
+<li>被困曲面和共识协议的提交点同构：结局已不可逆，却没有哪个局部能感觉到那一刻。</li>
+</ol>
+</div>
+<div class="thinking">
+<h3>// 深入思考</h3>
+<details><summary>彭罗斯证明的是「广义相对论里会出现奇点」。这算证明了黑洞存在，还是证明了广义相对论在那里坏掉了？</summary><div>两种读法都对，取决于你站在哪。对天文学家，它说明黑洞不是对称假设造出来的假象，值得去找；对理论家，它说明这个理论自己预言了自己的失效点。一个好理论能标出自己在哪里不再可信，这本身就是一种力量。</div></details>
+<details><summary>委员会坚持说「致密天体」而不说「黑洞」。这种克制是必要的谨慎，还是过度保守？</summary><div>想想证据链：S2 只能探到离中心约一千多个史瓦西半径的地方，再往里靠的是闪焰和 2022 年的照片。「这里有个极重极小的东西」被测得很死，「它有视界」是推断。把测到的和推出来的分开写，是科学写作值得学的习惯。</div></details>
+<details><summary>两支团队彼此竞争近三十年，而不是合并成一个大项目。什么时候独立重复比合作更有价值？</summary><div>当测量很难、系统误差很难自查的时候。两套望远镜、两套软件、两班人马得出同一条轨道，比一个更大团队的结论更可信。代价是重复投入。分布式系统里的多副本也是这笔账：冗余换可信。</div></details>
+</div>
+<div class="refs">
+<h3>// 出处</h3>
+<ul>
+<li><a href="https://www.nobelprize.org/prizes/physics/2020/popular-information/" target="_blank">Nobel Prize · Popular information</a> — 地球压成 9 毫米、过马路的故事、穿过视界无感、望远镜与 S2 的科普叙述、GPS 一句</li>
+<li><a href="https://www.nobelprize.org/prizes/physics/2020/advanced-information/" target="_blank">Nobel Prize · Scientific background</a> — 米切尔 1783 年原话、史瓦西与奥本海默、栗弗席兹-哈拉特尼科夫、被困曲面定义、尘埃与近红外数字、古尔斯特兰德脚注、结尾的开放问题</li>
+<li><a href="https://arxiv.org/abs/1410.5226" target="_blank">Senovilla &amp; Garfinkle · 2015 · The 1965 Penrose singularity theorem</a> — 对彭罗斯 1965 年《物理评论快报》原文（PRL 14, 57）的回顾：被困曲面的提出与「爱因斯坦之后第一个真正新的结果」</li>
+<li><a href="https://arxiv.org/abs/astro-ph/9807210" target="_blank">Ghez et al. · 1998 · Astrophysical Journal</a> — 90 颗星、每秒 1400 公里、260 万个太阳质量</li>
+<li><a href="https://arxiv.org/abs/astro-ph/0210426" target="_blank">Schödel, Genzel et al. · 2002 · Nature</a> — S2 的 15.2 年轨道与 17 光时的近心距离</li>
+<li><a href="https://arxiv.org/abs/2004.07187" target="_blank">GRAVITY Collaboration · 2020 · Astronomy &amp; Astrophysics</a> — S2 轨道进动每圈约 12 角分，与广义相对论吻合</li>
+<li><a href="https://www.eso.org/public/news/eso2208/" target="_blank">ESO · 2022 · 新闻稿</a> — 人马座 A* 首张照片、2017 年 4 月数据，并提到两队三十年的恒星轨道工作</li>
+</ul>
+</div>
+<footer>BigCat · 诺奖精读 · 2020 物理学奖 · <a href="index.html">← 目录</a></footer>
+</div>
+</body></html>
