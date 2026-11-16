@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>2020 经济学奖 · 赢了拍卖，可能正是坏消息 — 诺奖精读</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;color:#ece5d6;line-height:1.85;min-height:100vh;
+  background:radial-gradient(1100px 560px at 10% -6%,rgba(232,194,106,0.10),transparent 60%),radial-gradient(900px 640px at 100% 2%,rgba(217,130,91,0.08),transparent 55%),linear-gradient(165deg,#0d0c0a 0%,#14110c 45%,#0a0907 100%);background-attachment:fixed}
+.container{max-width:760px;margin:0 auto;padding:18px 20px 90px}
+.langbar{display:flex;justify-content:flex-end;padding-top:10px;font-family:"SF Mono",Menlo,monospace;font-size:.8rem}
+.langbar a{color:#e8c26a;text-decoration:none;border:1px solid rgba(232,194,106,.3);padding:4px 12px;border-radius:20px}
+.langbar a:hover{border-color:#d9825b;color:#d9825b}
+header{text-align:center;padding:40px 0 22px}
+.prize-tag{display:inline-block;font-size:0.75rem;color:#e8c26a;font-family:"SF Mono",Menlo,monospace;letter-spacing:2px;border:1px solid rgba(232,194,106,0.42);padding:4px 13px;border-radius:20px;margin-bottom:16px;background:rgba(232,194,106,0.06)}
+header h1{font-size:2.1rem;font-weight:800;letter-spacing:.5px;line-height:1.3;background:linear-gradient(110deg,#f3dc9a 0%,#e8c26a 45%,#d9825b 92%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 2px 18px rgba(232,194,106,0.22))}
+header h2{font-size:1rem;color:#a99f8a;margin-top:10px;font-weight:400;letter-spacing:0.4px}
+.laureates{margin-top:18px;font-size:0.9rem;color:#d8cdb4}
+.laureates span{display:inline-block;margin:3px 6px;padding:2px 11px;border-radius:14px;background:rgba(232,194,106,0.07);border:1px solid rgba(232,194,106,0.18)}
+.laureates em{font-style:normal;color:#8f8672;font-size:0.8rem;margin-left:6px;font-family:"SF Mono",Menlo,monospace}
+.motivation{margin:18px auto 0;max-width:620px;font-size:0.88rem;color:#b9ae95;line-height:1.7}
+.motivation q{display:block;font-style:italic;color:#d9cfb8}
+.motivation q::before{content:"“"}.motivation q::after{content:"”"}
+.motivation .zh{display:block;margin-top:4px}
+header .date{font-size:0.8rem;color:#6d6656;margin-top:16px;font-family:"SF Mono",Menlo,monospace}
+header .pitch{margin-top:18px;font-size:0.98rem;color:#d9825b;font-style:italic}
+.intro{background:rgba(232,194,106,0.06);border-left:3px solid #e8c26a;padding:20px 24px;border-radius:0 10px 10px 0;margin:36px 0;font-size:0.99rem;color:#e2d9c6}
+.intro strong{color:#fff}
+.section{margin:46px 0 0}
+.section h2::before{content:"";display:block;width:28px;height:2px;background:#e8c26a;opacity:.75;margin-bottom:16px}
+.section h2{font-size:1.3rem;color:#fff;margin-bottom:16px;font-weight:700;line-height:1.38}
+.section p{margin-bottom:14px;color:#e2d9c6;font-size:0.96rem}
+.section strong{color:#fff}
+.section blockquote{margin:16px 0;padding:10px 18px;border-left:2px solid rgba(217,130,91,0.6);color:#d6c9ae;font-size:0.93rem;background:rgba(217,130,91,0.05);border-radius:0 8px 8px 0}
+.section blockquote cite{display:block;margin-top:6px;font-style:normal;font-size:0.8rem;color:#8f8672;font-family:"SF Mono",Menlo,monospace}
+figure{margin:24px 0}
+figure svg{display:block;width:100%;height:auto;max-width:520px;margin:0 auto}
+figcaption{text-align:center;font-size:0.82rem;color:#a99f8a;margin-top:12px;font-family:"SF Mono",Menlo,monospace}
+.glossary{margin:18px 0;border:1px dashed rgba(232,194,106,0.35);border-radius:10px;padding:14px 18px;font-size:0.9rem;color:#d6ccb4}
+.glossary b{color:#f0d68e}
+.offstage{margin:40px 0;background:rgba(217,130,91,0.06);border:1px solid rgba(217,130,91,0.3);border-radius:14px;padding:20px 24px}
+.offstage h3{color:#d9825b;font-size:0.86rem;letter-spacing:2px;margin-bottom:10px;font-family:"SF Mono",Menlo,monospace}
+.offstage p{color:#e6d6c8;font-size:0.93rem;margin-bottom:10px}
+.offstage p:last-child{margin-bottom:0}
+.everyday{margin:40px 0;background:linear-gradient(135deg,rgba(125,170,214,0.10),rgba(125,170,214,0.04));border:1px solid rgba(125,170,214,0.34);border-radius:14px;padding:22px 26px}
+.everyday h3{color:#8fb8de;font-size:0.88rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.everyday h4{color:#bcd6ee;font-size:0.95rem;margin:16px 0 6px;font-weight:700}
+.everyday h4:first-of-type{margin-top:0}
+.everyday p{color:#dfe7ef;font-size:0.94rem;margin-bottom:8px}
+.everyday b{color:#fff}
+.crossx{margin:40px 0;background:linear-gradient(135deg,rgba(182,156,245,0.10),rgba(232,194,106,0.05));border:1px solid rgba(182,156,245,0.32);border-radius:14px;padding:22px 26px}
+.crossx h3{color:#b69cf5;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.crossx p{color:#e6def5;font-size:0.92rem;line-height:1.8;margin-bottom:14px}
+.crossx b{color:#d4c4fb;font-weight:600}
+.crossx ul{list-style:none;margin:0}
+.crossx li{color:#e6def5;font-size:0.93rem;line-height:1.8;margin-bottom:14px;padding-left:20px;position:relative}
+.crossx li:last-child{margin-bottom:0}
+.crossx li::before{content:"◈";position:absolute;left:0;top:0.35em;color:#e8c26a;font-size:0.72rem}
+.ten{margin:40px 0}
+.ten h3{color:#e8c26a;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(232,194,106,.3);border-radius:12px;background:rgba(232,194,106,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(232,194,106,.12);font-size:.94rem;line-height:1.75;color:#e2d9c6}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#e8c26a}
+.crossx a,.section a,.everyday a,.offstage a{color:#f0d68e;text-decoration:none;border-bottom:1px dotted rgba(240,214,142,0.5)}
+.thinking{background:linear-gradient(135deg,rgba(232,194,106,0.05),rgba(182,156,245,0.05));border:1px solid rgba(232,194,106,0.2);border-radius:12px;padding:24px 26px;margin:40px 0}
+.thinking h3{color:#e8c26a;font-size:0.9rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.thinking details{background:rgba(13,12,10,0.55);border:1px solid rgba(232,194,106,0.16);border-radius:9px;padding:13px 17px;margin:10px 0;transition:all 0.2s}
+.thinking details[open]{background:rgba(232,194,106,0.05);border-color:rgba(232,194,106,0.4)}
+.thinking summary{cursor:pointer;color:#f0d68e;font-weight:600;font-size:0.93rem;list-style:none;outline:none;line-height:1.55}
+.thinking summary::-webkit-details-marker{display:none}
+.thinking summary::before{content:"▸ ";color:#d9825b}
+.thinking details[open] summary::before{content:"▾ "}
+.thinking details>div{margin-top:12px;padding-top:12px;border-top:1px dashed rgba(232,194,106,0.2);color:#e2d9c6;font-size:0.9rem;line-height:1.8}
+.refs{margin-top:34px}
+.refs h3{color:#d9825b;font-size:0.85rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.refs ul{list-style:none}
+.refs li{margin-bottom:9px;font-size:0.88rem;color:#a99f8a}
+.refs a{color:#e8c26a;text-decoration:none;border-bottom:1px dotted rgba(232,194,106,0.4)}
+.refs a:hover{color:#f3dc9a}
+footer{text-align:center;padding:48px 0 10px;font-size:0.8rem;color:#6d6656;font-family:"SF Mono",Menlo,monospace}
+footer a{color:#e8c26a;text-decoration:none}
+@media(max-width:600px){header h1{font-size:1.6rem}.section h2{font-size:1.14rem}.everyday,.crossx,.offstage,.thinking{padding:18px 18px}}
+</style></head><body>
+<div class="container">
+<div class="langbar"><a href="economics-2020-auctions-prize35.en.html">English →</a></div>
+<header>
+<span class="prize-tag">ECONOMIC SCIENCES · 2020</span>
+<h1>赢了拍卖，可能正是坏消息</h1>
+<h2>两位住在同一条街上的师生，先讲清楚人在拍卖里为什么会出错，再替美国政府设计了一套前所未有的拍卖，把无线电频段卖了出去</h2>
+<div class="laureates"><span>保罗·米尔格龙 Paul R. Milgrom<em>斯坦福大学 · 1/2</em></span><span>罗伯特·威尔逊 Robert B. Wilson<em>斯坦福大学 · 1/2</em></span></div>
+<div class="motivation"><q>for improvements to auction theory and inventions of new auction formats</q><span class="zh">表彰他们改进了拍卖理论，并发明了新的拍卖形式</span></div>
+<div class="date">2026-11-16 · BigCat</div>
+<p class="pitch">一群聪明人竞价，最后赢的往往是估得最离谱的那一个。</p>
+</header>
+<div class="intro">
+<p>你在网上竞拍一件旧相机，盯着倒计时，最后几秒加了一口价，赢了。高兴不到一分钟，心里冒出一个念头：刚才那几个人，怎么都不肯跟到这个价？他们是不是看出了什么我没看出来的东西？</p>
+<p>这一下的不踏实，很多人都有过，只是很快就忘了。2020 年的经济学奖，奖的就是把这份不踏实想到底的两个人：先算清楚它从哪来、聪明的出价人该怎么应对，再把这些道理装进一台真正的「拍卖机器」，卖掉了几百亿美元的无线电频段。</p>
+</div>
+<div class="section">
+<h2>一块谁也看不透的海底油田</h2>
+<p>拍卖理论的起点是 1961 年。后来获得 1996 年经济学奖的维克里（William Vickrey）分析了一种特殊情形：东西对每个人值多少，纯属各人自己的事，叫<b>私人价值（private value）</b>。比如和名人共进晚餐，你想付多少，不受别人想付多少影响。在这个世界里他证明了，英式拍卖（价格往上喊）、荷式拍卖（价格往下降）和两种密封投标，卖家平均收到的钱是一样多的。</p>
+<p>可很多值钱的东西不是这样。一块海底油田下面到底有多少油，对每家石油公司都一样，只是谁也不知道，叫<b>共同价值（common value）</b>。每家公司都请专家做地震勘探，各得一个有误差的估计。威尔逊读到一份海上油田租约拍卖的案例，意识到麻烦就在这里：出价跟着估计走，估得最乐观的那家出价最高，于是<b>赢家往往就是高估得最多的那家</b>。赢了，等于得知「别人都没你这么乐观」，而这恰恰是坏消息。</p>
+<figure><svg viewBox="0 0 480 230" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="赢家的诅咒示意图">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,5 L0,10 z" fill="#d9825b"/></marker>
+<marker id="ax" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,5 L0,10 z" fill="#a99f8a"/></marker></defs>
+<line x1="30" y1="170" x2="452" y2="170" stroke="#a99f8a" stroke-width="1.5" marker-end="url(#ax)"/>
+<text x="452" y="190" fill="#a99f8a" font-size="12" text-anchor="end">各家公司的估价，越往右越乐观</text>
+<line x1="220" y1="44" x2="220" y2="176" stroke="#e8c26a" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="220" y="34" fill="#e8c26a" font-size="13" text-anchor="middle">油田的真实价值（事先没人知道）</text>
+<circle cx="140" cy="155" r="7" fill="#6d6656"/>
+<circle cx="178" cy="155" r="7" fill="#6d6656"/>
+<circle cx="206" cy="155" r="7" fill="#6d6656"/>
+<circle cx="242" cy="155" r="7" fill="#6d6656"/>
+<circle cx="282" cy="155" r="7" fill="#6d6656"/>
+<circle cx="350" cy="155" r="9" fill="#d9825b"/>
+<text x="350" y="134" fill="#f0d68e" font-size="13" text-anchor="middle">出价最高的赢家</text>
+<line x1="344" y1="100" x2="228" y2="100" stroke="#d9825b" stroke-width="2" marker-end="url(#ah)"/>
+<text x="286" y="90" fill="#d9825b" font-size="12" text-anchor="middle">它高估的那一截</text>
+<text x="240" y="216" fill="#ece5d6" font-size="12" text-anchor="middle">估计有误差、有高有低，最乐观的那个总会赢</text>
+</svg><figcaption>赢家的诅咒：每家的估计都围着真实价值散开，出价最高的那家，恰好是误差往上偏得最多的那家。</figcaption></figure>
+<p>这个现象后来有了名字。1971 年，石油行业的卡彭（E. Capen）等人在《石油技术杂志》上用模拟解释了为什么赢下租约的公司常常赚不到钱，把它叫作<b>赢家的诅咒（winner's curse）</b>。在此之前，威尔逊 1969 年已经在一篇只有几页的短文里，把带着不同信息去密封投标的局面当作一场博弈算了出来。他的结论是：理性的出价人会主动把出价压到自己最好的估计之下；越不确定，压得越狠；消息比别人少的人，要么压得更低，要么干脆不来。</p>
+</div>
+<div class="section">
+<h2>学生补上了中间那一大片</h2>
+<p>现实里的拍卖，大多两种价值都有。你竞买一套房子，既看自己喜不喜欢这个户型（私人价值），也掂量将来能转手卖多少（共同价值）。这种混合情形算起来难得多。啃下它的是米尔格龙，他 1970 年代在斯坦福读博，导师就是威尔逊。</p>
+<p>1982 年，米尔格龙和韦伯（Robert Weber）在《计量经济学》（Econometrica）上发表了一篇长文，给几种常见拍卖排了座次：卖家平均收入最高的是价格往上喊的英式拍卖，其次是密封的第二价格拍卖，荷式和密封的第一价格拍卖垫底。道理归结成一条<b>关联原则（linkage principle）</b>：哪种拍卖的价格吸收了更多出价人的私下信息，哪种就卖得更贵。英式拍卖里，你看着别人在什么价位退出，就知道他们大概估了多少，心里更有底，就敢出得更接近自己的估计。荷式拍卖一路降价，第一个喊停的人直接成交，过程中什么都没学到。</p>
+<p>同一篇论文还给了卖家一条反直觉的建议：<b>主动把自己知道的告诉买家</b>，比如请独立专家估价、公开验房报告。你也许以为藏着信息才能多卖钱，可在这个模型里，信息越公开，诅咒越轻，大家越敢出价。拍卖行附上真品鉴定书，油田出让方公开钻探结果，背后都是这个道理。</p>
+</div>
+<div class="section">
+<h2>一场慈善晚宴，变成一台卖频谱的机器</h2>
+<p>米尔格龙说，1993 年他和威尔逊的兴趣都还在理论上。那一年，美国国会要求联邦通信委员会（FCC）不再靠「选美」（各家公司写材料说明自己为什么该拿执照）或抽签来分配手机频段，改用拍卖。抽签的结果很荒唐：中签的人不必有任何资质，有的转手倒卖，有的拿着执照一放好几年，那片地区就一直没有服务。</p>
+<p>可频段没法像古董那样一件件卖。一家想做全国网络的公司，芝加哥的执照只有在纽约、波士顿也拿得到时才值钱；先卖芝加哥，它根本不知道该出多少。米尔格龙后来在诺贝尔演讲里说，他的灵感来自慈善晚宴上的无声拍卖：所有拍品同时摆在桌上，每件前面一张纸，竞拍人随时写下更高的价，看哪件太贵了就转去投别的。问题是有人「狙击」，等到截止前几秒才出手，让别人来不及还价。</p>
+<p>他和威尔逊提出的<b>同时多轮拍卖（Simultaneous Multiple Round Auction，SMRA）</b>保留了「同时、往上加价」，改了三处：分成一轮一轮进行，每轮结束才公布出价；只要还有任何一张执照收到新出价，整场就不结束，狙击无从下手；再加一条米尔格龙发明的<b>活动规则（activity rule）</b>：你这一轮竞买的频谱总量，不能多于上一轮。想等别人先亮底牌、自己最后再出手，规则不让。为了让 FCC 相信这套东西真能用，米尔格龙找人用 Excel 表格把它跑了一遍。</p>
+<blockquote>“well, I may not know the best way to do it, but I can do better than that”<br/>（嗯，我也许不知道最好的办法，但我能做得比这个好。）<cite>— 米尔格龙回忆 1993 年第一次看到别人提交的方案时的反应 · 获奖当天的电话采访 · 2020</cite></blockquote>
+<p>1994 年 7 月，FCC 第一次用这种拍卖，47 轮卖出 10 张执照，收入 6.17 亿美元。这些频段以前几乎是白送的。</p>
+</div>
+<div class="section">
+<h2>从几亿美元到八百亿美元</h2>
+<p>SMRA 很快成了全世界卖频谱的标准做法，芬兰、印度、加拿大、挪威、波兰、西班牙、英国、瑞典、德国都用过。据委员会的科普材料，单是 FCC 用这种形式，1994 到 2014 年就收入一千二百多亿美元。2000 年英国的 3G 执照拍卖，由经济学家宾默尔（Ken Binmore）和克伦佩雷尔（Paul Klemperer）领衔的学术团队参与设计，卖出 225 亿英镑，被称为「史上最大的拍卖」；紧接着的荷兰拍卖照搬现成方案，没认真吸引新玩家入场，竞争寥寥，价格很低。</p>
+<p>SMRA 也有软肋。它不许打包出价，一家公司可能抢到一半自己需要的执照，另一半被别人买走，剩下的那一半反而成了负担。米尔格龙和同事随后设计了<b>组合时钟拍卖（Combinatorial Clock Auction）</b>，允许按「套餐」出价，2008 年起被英国等十来个国家采用。</p>
+<p>最难的一场是 2017 年的<b>激励拍卖（Incentive Auction）</b>：先从电视台手里把频段买回来，再卖给移动运营商。全美约 2400 家电视台，任何两家离得太近就不能用同一个频道，这在计算机科学里是著名的图着色问题，属于 NP 完全。英属哥伦比亚大学的莱顿-布朗（Kevin Leyton-Brown）团队为此写的专用算法，比当时最好的商用算法快约一千倍。最后，回购 14 个频道花了 101 亿美元，转卖收回 198 亿美元。频谱仍在越卖越贵：2021 年 1 月，FCC 的 C 波段拍卖第一阶段结束，总收入超过 809 亿美元。</p>
+</div>
+<div class="offstage">
+<h3>◐ 奖台之外</h3>
+<p>获奖消息传来时，谁都联系不上米尔格龙，他关了手机睡觉。住在约 40 米外的威尔逊和妻子走过街，按响了他家的门铃。威尔逊说，自己 1959 年读 MBA 时，一份竞标案例分析得了不及格，因为他用了数学，没按要求从「管理的角度」写。2020 年，经济学家韦尔（Glen Weyl）和费尔特里（Stefano Feltri）先后撰文批评 2017 年那场激励拍卖，质疑设计者圈子与替私募基金出谋划策的顾问之间关系太近；米尔格龙撰文反驳，批评者说明他们并未指控任何违法行为。委员会的学术版背景材料也点到了这场争论。</p>
+</div>
+<div class="everyday">
+<h3>◎ 对普通人的意义</h3>
+<h4>已经在你身边的</h4>
+<p>你手机信号用的频段，在很多国家是这样拍出来的。如今各国借钱都会拍卖国债；欧洲不少地方的电价每天由区域电力拍卖决定；欧盟用拍卖发放碳排放配额；搜索引擎用拍卖卖关键词广告位。你买房时卖方附上的验房报告，背后也是「公开信息能卖得更贵」那条结论。</p>
+<h4>接下来可能改变的</h4>
+<p>激励拍卖证明了一件事：已经分出去的公共资源，可以用市场的办法收回来，再分给更会用它的人。频谱之外，米尔格龙在采访里提到环境资源的分配也用得上这类设计。但别期待太多：他获奖当天就说，疫情时最大的难题是疫苗和照顾流离失所的人，拍卖理论帮不上直接的忙。他在诺奖演讲结尾的判断是，往后模拟和计算会越来越重要，但仍要理论来看清问题。</p>
+<h4>它不意味着什么</h4>
+<p>不意味着「拍卖就是价高者得，卖得越贵越好」。美国法律给频谱拍卖定的首要目标是高效使用频谱，财政收入排第二；一味追求收入，可能把执照全卖给一家，造出垄断。也不意味着「赢家的诅咒证明人不理性」：在威尔逊的理论里，理性的人恰恰会主动压价，掉进诅咒的是没想到这一层的人，实验里多是没经验的新手。更不意味着有一套放之四海皆准的完美拍卖，委员会自己写的是「没有万灵药」，宾默尔和克伦佩雷尔的复盘里，荷兰、意大利、瑞士的 3G 拍卖都竞争寥寥、价格低迷。</p>
+<h4>可以借走的思维方式</h4>
+<p>赢了的时候，多问一句：「我赢了，说明别人知道了什么？」录取、中标、抢到热门房源都是同一个结构。把「我赢了」本身当作一条信息，再回头修正自己的估计。</p>
+</div>
+<div class="crossx">
+<h3>🌀 越界 · 跨学科的联想</h3>
+<ul>
+<li><b>机器学习 · 验证集上的「最佳模型」</b>：你跑一百组超参数，挑验证分数最高的那组，它在新数据上几乎总会掉分。结构和油田一样：一堆带噪声的估计里取最大值，最大值天然偏高。威尔逊式的对策是「先打折再相信」，机器学习里的对应做法是留一份从没碰过的测试集。</li>
+<li><b>分布式系统 · 轮次、终止检测与活性</b>：SMRA 是一个按轮同步的协议，每轮收齐出价再广播结果；「全场某一轮没有任何新出价才结束」正是终止检测，要确认整个系统静默，而不是某个局部静默。活动规则则是一条活性约束：不许节点无限等待别人先动，否则协议可能永远收不了尾。</li>
+<li><b>哈耶克 · 价格是信息系统</b>：威尔逊在诺奖演讲里说，拍卖正合哈耶克（Friedrich Hayek）的看法，市场是一套信息系统。关联原则就是这句话的精确版：价格吸收的分散信息越多，每个人的估计越准。英式拍卖里一个个退出的出价人，像集成学习里一个个被平均进去的弱模型。</li>
+<li><b>本站互链</b>：激励拍卖把频段从老旧的无线电视搬到移动数据，是<a href="economics-2025-innovation-growth-prize11.html">2025 年经济学奖</a>讲的创造性破坏的一个具体样子。委员会提到，克伦佩雷尔为应对 2007 年北岩银行挤兑设计了「产品组合拍卖」，英格兰银行至今用它；挤兑本身是<a href="economics-2022-banks-crises-prize25.html">2022 年经济学奖</a>的主题。</li>
+</ul>
+</div>
+<div class="ten">
+<h3>◆ 十条要点</h3>
+<ol class="takeaways">
+<li>维克里 1961 年证明：在纯私人价值下，英式、荷式和两种密封投标给卖家的平均收入相同。</li>
+<li>油田储量这类共同价值，事先谁都估不准，各家估计有高有低，估得最乐观的人出价最高。</li>
+<li>赢家的诅咒：赢下共同价值拍卖，往往意味着你高估了，因为别人都没你这么乐观。</li>
+<li>威尔逊 1969 年算出，理性的出价人会把出价压到自己的估计之下，越不确定压得越狠。</li>
+<li>米尔格龙与韦伯 1982 年证明，英式拍卖平均卖得比密封投标贵，因为出价过程会泄露信息。</li>
+<li>关联原则：价格吸收的私下信息越多，诅咒越轻，所以卖家主动公开鉴定和检验报告能卖得更贵。</li>
+<li>米尔格龙和威尔逊为 FCC 设计同时多轮拍卖，用终止规则防狙击，用活动规则防观望。</li>
+<li>FCC 1994 年 7 月首次频谱拍卖，47 轮卖出 10 张执照，收入 6.17 亿美元。</li>
+<li>2017 年激励拍卖从电视台回购频段再转卖，要解决约 2400 家电视台的图着色难题。</li>
+<li>频谱拍卖的首要目标是高效使用频谱，而不是收入最大化；没有一套拍卖放之四海皆准。</li>
+</ol>
+</div>
+<div class="thinking">
+<h3>// 深入思考</h3>
+<details><summary>招聘时，薪水开得最高的那家公司，算不算赢家的诅咒？</summary><div>看人的价值里有多少是「共同的」。一个候选人的能力对每家公司差不多，各家面试只是噪声很大的测量，开价最高的那家很可能高估了他。但如果他恰好特别适合你的团队（私人价值），出高价就是合理的。区分两者，正是米尔格龙那套混合模型要做的事。</div></details>
+<details><summary>关联原则说公开信息能卖得更贵。为什么现实里很多卖家还是喜欢藏着？</summary><div>定理成立有前提：出价人是对称的、风险中性的，卖家公开的信息必须可信、不能挑着说。如果买家知道你只在消息好的时候才公开，沉默本身就成了坏消息。真实世界的卖家也常常不是在一场拍卖里，而是在长期关系里，短期多卖一点未必划算。</div></details>
+<details><summary>拍卖设计者既懂规则又认识各方顾问，这种关系该怎么管？</summary><div>2017 年那场争论的核心不是有没有违法，而是一个很小的专家圈子同时坐在桌子两边。这和软件里「出题人也参加比赛」的问题类似：可以靠防火墙、披露、轮换来缓解，但完全消除很难。值得想的是，如果不用这些专家，替代方案（行政分配、抽签）会不会更糟。</div></details>
+</div>
+<div class="refs">
+<h3>// 出处</h3>
+<ul>
+<li><a href="https://www.nobelprize.org/prizes/economic-sciences/2020/popular-information/" target="_blank">Nobel Prize · Popular information: The quest for the perfect auction</a> — 委员会的科普版，支撑抽签与「选美」的问题、1994 年首拍的 47 轮与 6.17 亿美元、FCC 二十年一千二百多亿美元、采用 SMRA 的国家名单。</li>
+<li><a href="https://www.nobelprize.org/prizes/economic-sciences/2020/advanced-information/" target="_blank">Nobel Prize · Scientific background（PDF）</a> — 学术版，支撑维克里、威尔逊、米尔格龙三步的理论脉络、关联原则、组合时钟拍卖与激励拍卖的数字、「没有万灵药」和对设计者利益冲突的讨论。</li>
+<li><a href="https://ideas.repec.org/a/inm/ormnsc/v15y1969i7p446-452.html" target="_blank">Wilson · 1969 · Management Science</a> 与 <a href="https://econometricsociety.org/publications/econometrica/1982/09/01/theory-auctions-and-competitive-bidding" target="_blank">Milgrom &amp; Weber · 1982 · Econometrica</a> — 两篇突破性论文原文：不同信息下的密封投标博弈；英式拍卖收入最高与公开鉴定能提价的结论。</li>
+<li><a href="https://www.nobelprize.org/uploads/2024/03/milgrom-lecture.pdf" target="_blank">Milgrom 诺贝尔演讲</a>、<a href="https://www.nobelprize.org/uploads/2024/03/wilson-lecture.pdf" target="_blank">Wilson 诺贝尔演讲</a>与获奖当天的电话采访（<a href="https://www.nobelprize.org/prizes/economic-sciences/2020/milgrom/interview/" target="_blank">米尔格龙</a>、<a href="https://www.nobelprize.org/prizes/economic-sciences/2020/wilson/interview/" target="_blank">威尔逊</a>） — 支撑慈善无声拍卖的灵感、三条规则、Excel 原型、图着色难题、威尔逊的不及格作业与门铃的故事，以及米尔格龙的引语。</li>
+<li><a href="https://www.nuffield.ox.ac.uk/economics/Papers/2002/w4/biggest29nov.pdf" target="_blank">Binmore &amp; Klemperer · 2002 · The Biggest Auction Ever</a> — 英国 3G 拍卖设计者的复盘，支撑 225 亿英镑和荷兰等国拍卖价格低迷的对比。</li>
+<li><a href="https://docs.fcc.gov/public/attachments/DOC-369277A1.pdf" target="_blank">FCC · 2021-01-15 · C 波段拍卖第一阶段结束声明</a> — 支撑 809 亿美元的总收入。</li>
+<li><a href="https://www.promarket.org/2020/06/22/when-scholarship-turns-into-business-stefano-feltri-responds-to-paul-milgrom/" target="_blank">ProMarket · Feltri · 2020</a> — 对 2017 年激励拍卖设计者圈子的批评，以及「并未指控违法」的说明。</li>
+</ul>
+</div>
+<footer>BigCat · 诺奖精读 · 2020 经济学奖 · <a href="index.html">← 目录</a></footer>
+</div>
+</body></html>
