@@ -85,8 +85,8 @@ footer a{color:#e8c26a;text-decoration:none}
 <div class="langbar"><a href="turing-2025-quantum-information-prize36.en.html">English →</a></div>
 <header>
 <span class="prize-tag">TURING AWARD · 2025</span>
-<h1>偷看一眼，就会留下指纹</h1>
-<h2>一位物理学家和一位密码学家，把量子力学里「一测就变」这个麻烦，做成了一把由物理定律看守的锁，又顺手发明了量子隐形传态</h2>
+<h1 data-tts="c14de968fbd35420">偷看一眼，就会留下指纹</h1>
+<h2 data-tts="be7379a490ef7a17">一位物理学家和一位密码学家，把量子力学里「一测就变」这个麻烦，做成了一把由物理定律看守的锁，又顺手发明了量子隐形传态</h2>
 <div class="laureates"><span>查尔斯·贝内特 Charles H. Bennett<em>IBM Research · 共享</em></span><span>吉勒·布拉萨尔 Gilles Brassard<em>蒙特利尔大学 · 共享</em></span></div>
 <div class="motivation"><q>For their essential role in igniting and shaping the quantum revolution in computer science and in information and communications technology.</q><span class="zh">表彰他们在点燃并塑造计算机科学与信息通信技术中的量子革命方面所起的关键作用</span></div>
 <div class="date">2026-11-17 · BigCat</div>
@@ -97,62 +97,62 @@ footer a{color:#e8c26a;text-decoration:none}
 <p>1979 年 10 月底的一个下午，24 岁的布拉萨尔在波多黎各圣胡安一家酒店的海滩游泳，一个陌生人游过来，没头没脑地跟他讲起一种「造不出假钞的钞票」。那人就是贝内特。四十多年后，这次闲聊长出的东西，拿到了计算机界的最高奖：如果信息装在单个光子上，偷看就<b>必然</b>留下指纹。</p>
 </div>
 <div class="section">
-<h2>两种锁，一个难送，一个没人证明过</h2>
+<h2 data-tts="b0d8e7de26ebb670">两种锁，一个难送，一个没人证明过</h2>
 <p>1970 年代的密码学只有两条路。第一条是<b>一次性密码本（one-time pad）</b>：双方事先共有一串和消息一样长的随机数，用一次就扔。信息论证明它绝对安全，麻烦全在怎么把密码本送过去。冷战时华盛顿和莫斯科之间的热线，密钥印在纸带上，由外交官提着手铐锁在腕上的公文包送过大西洋。</p>
 <p>第二条是 1976 年 Diffie 和 Hellman 打开的<b>公钥密码</b>：素不相识的两个人在公开信道上来回几次，就能凑出一个共享秘密，第二年有了 RSA。布拉萨尔当时还在康奈尔读博，导师 John Hopcroft 把那篇论文递给他，他读完觉得太优雅了，几乎丢下手头的一切改做密码学。但公钥体系的安全性建立在一个<b>没人证明过</b>的假设上：某些数学题足够难。BB84 论文开头一句话把这件事说得很不客气：</p>
 <blockquote>Conventional cryptosystems such as ENIGMA, DES, or even RSA, are based on a mixture of guesswork and mathematics.<br/>ENIGMA、DES 乃至 RSA 这样的传统密码系统，都建立在猜测和数学的混合物之上。<cite>— Bennett &amp; Brassard · Bangalore 会议论文 · 1984</cite></blockquote>
 <p>第三条路的种子早就有了，只是没人要。贝内特在布兰迪斯大学的同学 Stephen Wiesner，约 1970 年写出《共轭编码》（Conjugate Coding）：利用量子测量会扰动对象这一点，做一张谁也复制不了的钞票。论文投给《IEEE 信息论汇刊》被拒。贝内特把这个想法揣了近十年，逢人就讲，没人感兴趣。</p>
 </div>
 <div class="section">
-<h2>海滩上的十分钟，和一次「偷看必被发现」的发送</h2>
+<h2 data-tts="8f0b7095e1c7e0eb">海滩上的十分钟，和一次「偷看必被发现」的发送</h2>
 <p>两人都是来开计算机理论会议 FOCS 的。布拉萨尔对 Quanta 说：「我被困住了，只好礼貌地听着。」听着听着他意识到这是严肃的科学，还指出量子钞票的毛病：只有造钞的人能验钞。等两人游回岸边，第一篇合写论文的思路已经定了，那篇 1982 年的论文第一次用了「量子密码学（quantum cryptography）」这个词。</p>
 <p>转折是 1982 年会后的一个念头，用布拉萨尔的话说：光子生来是要跑的，不是要待着的。与其把量子态锁在钞票里，不如让它<b>在两个人之间飞</b>。1983 年他们想通了最省事的用法：量子信道不传消息，只传一串随机密钥。被偷看了就扔掉重来，没被偷看就当一次性密码本用。「发现窃听」由此变成了「防止泄密」，密码本递送这个老问题有了一个物理解。</p>
-<figure><svg viewBox="0 0 520 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="BB84 协议示意图">
-<rect x="126" y="22" width="48" height="226" rx="6" fill="rgba(232,194,106,0.12)"/>
-<rect x="306" y="22" width="48" height="226" rx="6" fill="rgba(232,194,106,0.12)"/>
-<rect x="426" y="22" width="48" height="226" rx="6" fill="rgba(232,194,106,0.12)"/>
-<g font-size="12" fill="#a99f8a"><text x="10" y="45">Alice 的比特</text><text x="10" y="85">Alice 选的基</text><text x="10" y="125">发出的光子</text><text x="10" y="165">Bob 选的基</text><text x="10" y="205">Bob 读到</text><text x="10" y="240">核对后</text></g>
-<g font-size="15" fill="#ece5d6" text-anchor="middle"><text x="150" y="46">0</text><text x="210" y="46">1</text><text x="270" y="46">1</text><text x="330" y="46">0</text><text x="390" y="46">1</text><text x="450" y="46">1</text></g>
-<g font-size="17" fill="#e8c26a" text-anchor="middle"><text x="150" y="86">+</text><text x="210" y="86">×</text><text x="270" y="86">+</text><text x="330" y="86">×</text><text x="390" y="86">×</text><text x="450" y="86">+</text></g>
-<g stroke="#f3dc9a" stroke-width="3" stroke-linecap="round"><line x1="138" y1="120" x2="162" y2="120"/><line x1="201" y1="111" x2="219" y2="129"/><line x1="270" y1="108" x2="270" y2="132"/><line x1="321" y1="129" x2="339" y2="111"/><line x1="381" y1="111" x2="399" y2="129"/><line x1="450" y1="108" x2="450" y2="132"/></g>
-<g font-size="17" fill="#8fb8de" text-anchor="middle"><text x="150" y="166">+</text><text x="210" y="166">+</text><text x="270" y="166">×</text><text x="330" y="166">×</text><text x="390" y="166">+</text><text x="450" y="166">+</text></g>
-<g font-size="15" text-anchor="middle"><text x="150" y="206" fill="#ece5d6">0</text><text x="210" y="206" fill="#6d6656">?</text><text x="270" y="206" fill="#6d6656">?</text><text x="330" y="206" fill="#ece5d6">0</text><text x="390" y="206" fill="#6d6656">?</text><text x="450" y="206" fill="#ece5d6">1</text></g>
-<g font-size="12" text-anchor="middle"><text x="150" y="240" fill="#e8c26a">留</text><text x="210" y="240" fill="#6d6656">扔</text><text x="270" y="240" fill="#6d6656">扔</text><text x="330" y="240" fill="#e8c26a">留</text><text x="390" y="240" fill="#6d6656">扔</text><text x="450" y="240" fill="#e8c26a">留</text></g>
+<figure><svg aria-label="BB84 协议示意图" role="img" viewbox="0 0 520 260" xmlns="http://www.w3.org/2000/svg">
+<rect fill="rgba(232,194,106,0.12)" height="226" rx="6" width="48" x="126" y="22"></rect>
+<rect fill="rgba(232,194,106,0.12)" height="226" rx="6" width="48" x="306" y="22"></rect>
+<rect fill="rgba(232,194,106,0.12)" height="226" rx="6" width="48" x="426" y="22"></rect>
+<g fill="#a99f8a" font-size="12"><text x="10" y="45">Alice 的比特</text><text x="10" y="85">Alice 选的基</text><text x="10" y="125">发出的光子</text><text x="10" y="165">Bob 选的基</text><text x="10" y="205">Bob 读到</text><text x="10" y="240">核对后</text></g>
+<g fill="#ece5d6" font-size="15" text-anchor="middle"><text x="150" y="46">0</text><text x="210" y="46">1</text><text x="270" y="46">1</text><text x="330" y="46">0</text><text x="390" y="46">1</text><text x="450" y="46">1</text></g>
+<g fill="#e8c26a" font-size="17" text-anchor="middle"><text x="150" y="86">+</text><text x="210" y="86">×</text><text x="270" y="86">+</text><text x="330" y="86">×</text><text x="390" y="86">×</text><text x="450" y="86">+</text></g>
+<g stroke="#f3dc9a" stroke-linecap="round" stroke-width="3"><line x1="138" x2="162" y1="120" y2="120"></line><line x1="201" x2="219" y1="111" y2="129"></line><line x1="270" x2="270" y1="108" y2="132"></line><line x1="321" x2="339" y1="129" y2="111"></line><line x1="381" x2="399" y1="111" y2="129"></line><line x1="450" x2="450" y1="108" y2="132"></line></g>
+<g fill="#8fb8de" font-size="17" text-anchor="middle"><text x="150" y="166">+</text><text x="210" y="166">+</text><text x="270" y="166">×</text><text x="330" y="166">×</text><text x="390" y="166">+</text><text x="450" y="166">+</text></g>
+<g font-size="15" text-anchor="middle"><text fill="#ece5d6" x="150" y="206">0</text><text fill="#6d6656" x="210" y="206">?</text><text fill="#6d6656" x="270" y="206">?</text><text fill="#ece5d6" x="330" y="206">0</text><text fill="#6d6656" x="390" y="206">?</text><text fill="#ece5d6" x="450" y="206">1</text></g>
+<g font-size="12" text-anchor="middle"><text fill="#e8c26a" x="150" y="240">留</text><text fill="#6d6656" x="210" y="240">扔</text><text fill="#6d6656" x="270" y="240">扔</text><text fill="#e8c26a" x="330" y="240">留</text><text fill="#6d6656" x="390" y="240">扔</text><text fill="#e8c26a" x="450" y="240">留</text></g>
 </svg><figcaption>BB84：基对上了就留下（金色列），没对上就扔掉；窃听者猜错基，会在留下的位里制造错误</figcaption></figure>
 <p>具体做法像一场盲猜游戏。Alice 每发一个光子，随手选一种「基」：要么用横竖（+）表示 0 和 1，要么用两条斜线（×）。Bob 收的时候也随手选一种基去测。<b>基对上了，读数一定对；没对上，读出来就是抛硬币</b>，而且光子原来的状态被彻底抹掉。发完后两人打电话，只报各自用了什么基、不报读数，基不一致的位全扔掉，剩下的就是双方共有的秘密比特。</p>
 <p>窃听者 Eve 的处境很糟。她不知道每个光子用的是哪种基，也不能先复制一份慢慢研究，因为量子态不可克隆（no-cloning）。论文算过：如果她全用横竖基截下来再重发，能知道一半光子的正确偏振，但会让留下来的比特里出现<b>四分之一的错误</b>。所以两人公开核对随机抽出的一部分（论文建议三分之一），对得上就用剩下的，对不上就整批作废。</p>
 <p>当时几乎没人当回事。他们更早的一篇论文投给 STOC 被拒，一直没发表；BB84 能留下名字，是因为 1984 年 12 月印度班加罗尔一个会议邀请布拉萨尔做报告，没走投稿。</p>
 </div>
 <div class="section">
-<h2>32.5 厘米，和一台「对聋子绝对安全」的机器</h2>
+<h2 data-tts="551faad8ddb16c78">32.5 厘米，和一台「对聋子绝对安全」的机器</h2>
 <p>理论没人信，两人决定造一台给大家看。贝内特和暑期学生 John Smolin 做硬件，布拉萨尔的学生写软件，几乎没有经费。贝内特和 Smolin 去布店买黑丝绒挡杂光，告诉一脸困惑的店员这是做量子密码用的。1989 年 10 月底，恰好是海滩相遇十周年，史上第一次量子秘密传输成功，距离 <b>32.5 厘米</b>。</p>
 <p>布拉萨尔承认这台原型「基本是个笑话」：最大的部件是给普克尔斯盒（用来转动光子偏振）供上千伏电压的电源，不同电压的噪声不一样，0 和 1 的声音听得出来。所以它只对<b>恰好是聋子的</b>窃听者无条件安全。可这台笑话机器让物理学家第一次正眼看这件事。1991 年 Artur Ekert 在《物理评论快报》提出基于纠缠和贝尔不等式的另一套量子密钥分发，物理界的兴趣真正起来了。</p>
 <p>1993 年，贝内特、布拉萨尔和 Crépeau、Jozsa、Peres、Wootters 六人提出<b>量子隐形传态（quantum teleportation）</b>：Alice 和 Bob 事先共享一对纠缠粒子，Alice 对手里那个未知量子态做一次联合测量，用普通电话告诉 Bob 两个比特，Bob 照做一个简单操作，那个态就出现在他手里，原件同时被毁。不可克隆没被打破，也没有超光速，那两个比特得走普通信道。1997 年 Zeilinger 和 De Martini 两个组做成了实验，前者是 <a href="physics-2022-entanglement-prize22.html">2022 年诺贝尔物理奖</a>得主之一。</p>
 <p>这个奖认可的是一种看问题的方向。贝内特 1972 年被 Rolf Landauer 招进 IBM，Landauer 认为信息是受自然定律支配的物理量；1982 年贝内特重新解释麦克斯韦妖，指出它的代价在于<b>擦除</b>信息。当多数人把量子效应当作芯片缩小时要压下去的噪声，他们把它当成<b>资源</b>。1994 年 Shor 证明量子计算机能快速分解大数、威胁 RSA，这条冷门路线一下子从奇谈变成急事。</p>
 </div>
 <div class="section">
-<h2>从桌面到卫星，也从卫星回到桌面</h2>
+<h2 data-tts="872ca94f0f727b50">从桌面到卫星，也从卫星回到桌面</h2>
 <p>此后量子密钥分发走出了实验室。2004 年维也纳完成第一笔用量子密钥保护的银行转账；2006 年 Zeilinger 组用 Ekert 的方案在加那利群岛相距 144 公里的两岛间建立密钥；2007 年洛斯阿拉莫斯和 NIST 用 BB84 跑通了 148.7 公里光纤。</p>
 <p>距离是最硬的墙。诺贝尔委员会的材料写得很直白：光纤里每走 10 公里，平均就丢一半光子；普通网络靠放大器续命，而放大等于复制，量子信号不许复制。一条出路是上天：中国 2016 年发射「墨子号」卫星，潘建伟团队在相距 1203 公里的两个地面站之间分发了纠缠光子，后来又与 Zeilinger 组合作，以卫星作<b>可信中继</b>在北京和维也纳之间分发了密钥。「可信」的意思是卫星本身知道这把密钥。</p>
 <p>攻击者也在进步。2010 年 Lydersen、Makarov 等人用特制强光<b>遥控</b>了两款商用系统的单光子探测器，能不留痕迹地拿到全部密钥：证明对理想设备成立，真实探测器另有漏洞。2022 年三个组借无漏洞贝尔检验做出「设备无关」的密钥分发，即使 Eve 碰得到硬件也安全，目前还是实验演示。</p>
 </div>
 <div class="offstage">
-<h3>◐ 奖台之外</h3>
+<h3 data-tts="497e98264f00a2e9">◐ 奖台之外</h3>
 <p>站在这一切源头的 Stephen Wiesner 没有等到这个奖。《共轭编码》被拒后，他在 1970 年代初离开物理学，进了加州的反主流文化圈，后来移居以色列，做过建筑工人和测量员。论文在贝内特和布拉萨尔 1982 年那篇论文的带动下，才于 1983 年刊登在 <i>SIGACT News</i> 上。2006 年他和两人分享了 Rank 光电子学奖，2019 年又和他们一同获得墨子量子奖。2021 年 8 月 12 日，他在耶路撒冷去世。</p>
 </div>
 <div class="everyday">
-<h3>◎ 对普通人的意义</h3>
-<h4>已经在你身边的</h4>
+<h3 data-tts="2b6af93c1951039a">◎ 对普通人的意义</h3>
+<h4 data-tts="2310ad3113fc4d71">已经在你身边的</h4>
 <p>说实话，<b>你的网银和聊天软件今天并不用 BB84</b>。它需要专用光纤或卫星链路和专门的探测器，目前只用在少数银行、政府和科研网络里，商用设备来自日内瓦的 ID Quantique、东芝等厂商。离你更近的是它的孪生问题：同一个 Shor 算法也逼着整个互联网换锁。2024 年 8 月 13 日，NIST 发布了首批三项后量子密码标准（FIPS 203、204、205），NIST 从 2015 年启动征集，评估了来自 25 个国家的 82 个候选算法，NIST 呼吁系统管理员「尽快」迁移。今后几年你的设备悄悄换掉的锁，多半是这类数学锁，不是量子锁。</p>
-<h4>接下来可能改变的</h4>
+<h4 data-tts="45a2a131fde601b7">接下来可能改变的</h4>
 <p>已经能做的：几百公里级的光纤链路、卫星可信中继。还在实验室的：能把纠缠接力传下去的<b>量子中继器</b>，它需要可靠的量子存储器；设备无关的密钥分发；诺贝尔材料提到正在建造的高轨卫星，目标是直接在一万公里尺度上分发纠缠光子。IBM 计划 2029 年交付大规模容错量子计算机 Starling，这是公司路线图，不是已做到的事。</p>
-<h4>它不意味着什么</h4>
+<h4 data-tts="532d8195ed25a031">它不意味着什么</h4>
 <p><b>「量子加密绝对安全」不对。</b>证明只针对理想设备，2010 年的强光攻击就是反例；它也不提供身份认证，你仍得先确认电话那头是 Bob。英国国家网络安全中心 2025 年 8 月表示不支持在政府和军事系统中使用它，首选后量子密码。<b>「隐形传态能传送人、能超光速」也不对</b>：传的只是量子态，原件被毁，还离不开普通信道的那两个比特。最后，偷看会被发现，但偷看的人仍然可以搅局：布拉萨尔自己说，「窃听者最多能做到的，是让你无法通信。」</p>
-<h4>可以借走的思维方式</h4>
+<h4 data-tts="09c5a391b821aafb">可以借走的思维方式</h4>
 <p>别只想「防止被看」，想想能不能让被看必然留下痕迹，再把被看过的部分扔掉。BB84 不阻止窃听，安全来自<b>检测加重来</b>，而不是一堵墙。</p>
 </div>
 <div class="crossx">
-<h3>🌀 越界 · 跨学科的联想</h3>
+<h3 data-tts="95de345f3be41fa2">🌀 越界 · 跨学科的联想</h3>
 <ul>
 <li><b>分布式系统 · 双花问题</b>：数字货币的根本难题是比特可以复制，同一笔钱能花两次，比特币靠全网维护一本共识账本来防。Wiesner 的量子钞票走另一条路：钞票本身<b>物理上不可复制</b>，不需要账本。同一个问题，一个靠共识，一个靠不可克隆。类比失效的地方正是布拉萨尔在海滩上指出的：量子钞票只有发行方能验，等于把账本藏回了银行。</li>
 <li><b>安全工程 · 金丝雀与抽样审计</b>：BB84 牺牲随机抽出的三分之一比特，来估计信道有没有被碰过。这和在数据库里埋蜜罐记录、随机抽查凭证是同一个结构：用可以牺牲的少量样本换取对全体的置信度。区别是 BB84 的保证来自物理定律，而不是攻击者恰好没注意到。</li>
@@ -161,7 +161,7 @@ footer a{color:#e8c26a;text-decoration:none}
 </ul>
 </div>
 <div class="ten">
-<h3>◆ 十条要点</h3>
+<h3 data-tts="e2ed15be498db4dc">◆ 十条要点</h3>
 <ol class="takeaways">
 <li>1970 年代的密码只有两条路：一次性密码本绝对安全却难以递送，公钥密码方便却依赖没被证明的数学难度。</li>
 <li>Stephen Wiesner 约 1970 年提出用量子测量扰动造不可伪造的钞票，论文被拒，十多年后才发表。</li>
@@ -176,13 +176,13 @@ footer a{color:#e8c26a;text-decoration:none}
 </ol>
 </div>
 <div class="thinking">
-<h3>// 深入思考</h3>
+<h3 data-tts="5c33d2795ff6461a">// 深入思考</h3>
 <details><summary>BB84 的安全性「由物理定律担保」，RSA 的安全性「由没人会解题担保」。这两种担保，哪一种更值得信？</summary><div>物理定律担保的是一个理想模型：完美的光子源、按教科书工作的探测器。2010 年的强光攻击没有违反任何物理定律，只是钻了设备和模型之间的缝。数学锁弱在假设，量子锁弱在实现。更好的问法也许是：攻击者更可能在哪一层下手？</div></details>
 <details><summary>英国国家网络安全中心不支持把量子密钥分发用于政府和军事系统，中国却在建卫星和干线网络。这是技术判断的分歧，还是别的东西？</summary><div>NCSC 的理由很具体：不提供认证、要专用硬件、系统越复杂攻击面越大，而后量子密码能装进现有软件。另一边可能更看重对数学假设的长期不信任和自主技术路线。同一份物理事实，为什么会在不同的成本收益表上得出相反的结论？</div></details>
 <details><summary>隐形传态需要先共享纠缠、再发两个经典比特。纠缠在这里究竟提供了什么？</summary><div>可以把纠缠看成一份事先存好的预付款，两个经典比特只告诉 Bob 怎么兑现。没有纠缠，两个比特远不够描述一个量子态；没有那两个比特，Bob 手里只有噪声。这像分布式系统里预置共享随机数、再用很少的通信完成协调，只是这份预付款不能复制，用一次就没了。</div></details>
 </div>
 <div class="refs">
-<h3>// 出处</h3>
+<h3 data-tts="f3a643b8bf0614be">// 出处</h3>
 <ul>
 <li><a href="https://arxiv.org/abs/2003.06557" target="_blank">Bennett &amp; Brassard · 1984 · Quantum cryptography: Public key distribution and coin tossing</a> — BB84 原文，支撑协议步骤、开篇引语、四分之一错误率与抽查三分之一。</li>
 <li><a href="https://arxiv.org/abs/quant-ph/0604072" target="_blank">Brassard · 2006 · Brief History of Quantum Cryptography: A Personal Perspective</a> — 布拉萨尔的亲笔回忆，支撑海滩相遇、Wiesner 论文的遭遇、拒稿与受邀报告、32.5 厘米原型与 Ekert 1991。</li>
