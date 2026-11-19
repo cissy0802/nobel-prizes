@@ -81,13 +81,13 @@ footer{text-align:center;padding:48px 0 10px;font-size:0.8rem;color:#6d6656;font
 footer a{color:#e8c26a;text-decoration:none}
 @media(max-width:600px){header h1{font-size:1.6rem}.section h2{font-size:1.14rem}.everyday,.crossx,.offstage,.thinking{padding:18px 18px}}
 </style></head><body>
-</head><body>
+<body>
 <div class="container">
 <div class="langbar"><a href="turing-2024-reinforcement-learning-prize37.en.html">English →</a></div>
 <header>
 <span class="prize-tag">TURING AWARD · 2024</span>
-<h1>快乐总是比奖励早到一步</h1>
-<h2>一对师生让机器只凭「好」与「不好」的打分自己学会做事，他们写下的那条学习规则，后来在猴子大脑的多巴胺神经元里被原样测到</h2>
+<h1 data-tts="72b47bb914e29195">快乐总是比奖励早到一步</h1>
+<h2 data-tts="2e951f5090e97c03">一对师生让机器只凭「好」与「不好」的打分自己学会做事，他们写下的那条学习规则，后来在猴子大脑的多巴胺神经元里被原样测到</h2>
 <div class="laureates"><span>安德鲁·巴托 Andrew G. Barto<em>马萨诸塞大学阿默斯特分校 · 共享</em></span><span>理查德·萨顿 Richard S. Sutton<em>阿尔伯塔大学 · Amii · 共享</em></span></div>
 <div class="motivation"><q>For developing the conceptual and algorithmic foundations of reinforcement learning</q><span class="zh">表彰他们为强化学习奠定了概念与算法基础</span></div>
 <div class="date">2026-11-18 · BigCat</div>
@@ -98,7 +98,7 @@ footer a{color:#e8c26a;text-decoration:none}
 <p>这三种感觉，恰好对应 1990 年代瑞士一间实验室里，猴子中脑多巴胺神经元的三种放电方式。更奇的是，同样的形状早几年就出现在马萨诸塞州阿默斯特的一份数学推导里。写下它的两个人，一个是想用计算机理解大脑的数学家，一个是本科读心理学的学生。他们原本想做的，只是一台「想要点什么」的机器。</p>
 </div>
 <div class="section">
-<h2>一台「想要点什么」的机器，被人忘了二十年</h2>
+<h2 data-tts="a1645557d6824044">一台「想要点什么」的机器，被人忘了二十年</h2>
 <p>让机器靠试错学习，是人工智能最早的念头之一。心理学家 Thorndike 在 1911 年写下「效果律」：带来满足的动作会被加强。图灵在 1948 年的一份报告里设计过一套「快乐—痛苦系统」：</p>
 <blockquote>When a pain stimulus occurs all tentative entries are cancelled, and when a pleasure stimulus occurs they are all made permanent.<br/>痛苦刺激一来，所有暂定的条目全部作废；快乐刺激一来，它们全部定下来。<cite>— Alan Turing · 1948 · 转引自 Sutton &amp; Barto 教科书</cite></blockquote>
 <p>但到了六七十年代，这条线几乎断了。按两人在教科书里的回顾，Rosenblatt 和 Widrow 这些神经网络先驱嘴上说着奖励和惩罚，做的其实是<b>监督学习（supervised learning）</b>：每个样本都附带标准答案，机器只管照着改。真正的试错学习没有标准答案，只有一个事后的打分。</p>
@@ -107,19 +107,19 @@ footer a{color:#e8c26a;text-decoration:none}
 <blockquote>We were kind of in the wilderness.<br/>我们有点像在荒野里。<cite>— Andrew Barto · 美联社采访 · 2025</cite></blockquote>
 </div>
 <div class="section">
-<h2>不等到星期六，就知道星期一的预报错了</h2>
+<h2 data-tts="415ed0ba33a2d368">不等到星期六，就知道星期一的预报错了</h2>
 <p>1983 年，巴托、萨顿和 Charles Anderson 给机器出了一道题：小车上竖一根杆子，不许倒。机器得到的唯一反馈，是杆子倒下或小车撞到轨道尽头时的一声「失败」，平时什么也没有。他们的解法分成两个角色：<b>演员（actor）</b>负责推车，<b>评论家（critic）</b>负责一边看一边预测「照这样下去离失败还远不远」。评论家的预测一变差，演员就知道刚才那一下推得不好，不用等杆子真倒。</p>
 <p>评论家的学习方法，萨顿 1988 年在 GTE 实验室工作时单独拎出来写成论文，取名<b>时序差分学习（temporal-difference learning，简称 TD）</b>。论文里的例子很日常：一位天气预报员每天都要预测「这个星期六会不会下雨」。星期一说五成，星期二改口说七成五。老办法要等到星期六看结果，再回头一并修正一周的预报；TD 的办法是星期二一到就修正星期一，因为<b>星期二的预测本身就是对星期一的检验</b>。</p>
 <p>听起来像是拿一个猜测去纠正另一个猜测，但萨顿证明了，在一些重要的特殊情形下，这样做最终会收敛到正确答案，而且比等结局更省内存、学得更快。于是奖励来得再晚也不怕：每一步只需要和下一步对账，功劳就会一格一格地往前传，传回到那个真正关键的早期时刻。萨顿论文里另一句判断后来被反复验证：大多数被当成监督学习来做的问题，其实都是这种预测问题。</p>
 </div>
 <div class="section">
-<h2>一滴苹果汁，和一个提前亮起的灯</h2>
+<h2 data-tts="2653aa64e7632374">一滴苹果汁，和一个提前亮起的灯</h2>
 <p>与此同时，瑞士弗里堡大学的 Wolfram Schultz 在记录猴子中脑的多巴胺神经元。多巴胺神经元退化会导致帕金森病，大家本以为它们管运动，结果它们和动作的关系很弱。在 1992 年的一组实验里，猴子看到灯亮后按下杠杆，就能得到一滴苹果汁。</p>
-<figure><svg viewBox="0 0 520 268" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="多巴胺放电随学习变化示意图">
-<g stroke="#6d6656" stroke-width="1" stroke-dasharray="4 4"><line x1="170" y1="26" x2="170" y2="256"/><line x1="400" y1="26" x2="400" y2="256"/></g>
+<figure><svg aria-label="多巴胺放电随学习变化示意图" role="img" viewbox="0 0 520 268" xmlns="http://www.w3.org/2000/svg">
+<g stroke="#6d6656" stroke-dasharray="4 4" stroke-width="1"><line x1="170" x2="170" y1="26" y2="256"></line><line x1="400" x2="400" y1="26" y2="256"></line></g>
 <g fill="#e8c26a" font-size="12" text-anchor="middle"><text x="170" y="16">灯亮（预示奖励）</text><text x="400" y="16">果汁该到的时刻</text></g>
 <g fill="#a99f8a" font-size="13"><text x="10" y="76">学习之前</text><text x="10" y="156">学会之后</text><text x="10" y="236">果汁没来</text></g>
-<g fill="none" stroke="#f3dc9a" stroke-width="2.5" stroke-linejoin="round"><path d="M90,80 H393 L400,42 L407,80 H510"/><path d="M90,160 H163 L170,122 L177,160 H510"/><path d="M90,240 H163 L170,202 L177,240 H390 L400,258 L410,240 H510"/></g>
+<g fill="none" stroke="#f3dc9a" stroke-linejoin="round" stroke-width="2.5"><path d="M90,80 H393 L400,42 L407,80 H510"></path><path d="M90,160 H163 L170,122 L177,160 H510"></path><path d="M90,240 H163 L170,202 L177,240 H390 L400,258 L410,240 H510"></path></g>
 <g fill="#8fb8de" font-size="11"><text x="414" y="54">意外的果汁：放电</text><text x="184" y="132">放电提前到灯亮</text><text x="414" y="152">果汁照常：几乎不动</text><text x="420" y="232">低于基线</text></g>
 </svg><figcaption>Schultz 组记录到的三种模式，也正是 TD 误差在三种情形下的形状：意外的好事 → 正误差；被预测到的好事 → 零；预测落空 → 负误差</figcaption></figure>
 <p>一开始，很多多巴胺神经元在果汁入口时放电。训练下去，对果汁的反应消失了，放电<b>挪到了灯亮的那一刻</b>。再在前面加一个提前一秒的提示灯，放电又往前挪到那个更早的灯上。最微妙的是猴子按错杠杆、果汁没来的时候：没有任何外部信号提醒「现在本该有果汁」，神经元却恰好在果汁平时该到的时刻，放电跌到基线以下。</p>
@@ -127,28 +127,28 @@ footer a{color:#e8c26a;text-decoration:none}
 <p>这就是这一奖越界的地方。一条为机器设计的工程规则，反过来成了大脑学习理论的核心假说。巴托在马萨诸塞大学是神经科学与行为项目的核心成员，这条从大脑出发又回到大脑的路，不是巧合。</p>
 </div>
 <div class="section">
-<h2>从西洋双陆棋到聊天机器人</h2>
+<h2 data-tts="7db2325f5b5f211d">从西洋双陆棋到聊天机器人</h2>
 <p>1989 年，Chris Watkins 提出 Q 学习，把 TD 和动态规划彻底接上。1992 年，IBM 的 Gerald Tesauro 让一个神经网络用 TD 自己和自己下西洋双陆棋。这个程序起初几乎不懂双陆棋，下了约 30 万局之后，它追平了此前最强的程序，而那个程序是 Tesauro 自己用专家棋谱训练的。后来的版本逼近世界顶尖棋手，顶尖棋手甚至改用它的方式下某些开局。</p>
 <p>2016 年，DeepMind 的 AlphaGo 以 4 比 1 击败李世石，主力之一 David Silver 正是萨顿的博士生。它的后继 AlphaGo Zero 完全不用人类棋谱，自我对弈约 490 万局、用时约三天。2019 年，萨顿写下短文《苦涩的教训》（The Bitter Lesson）：七十年的人工智能研究表明，能利用算力的通用方法最终最有效，而且优势很大。</p>
 <p>离普通人最近的一步在 2022 年。OpenAI 用<b>基于人类反馈的强化学习（RLHF）</b>微调 GPT-3：先让标注员给模型的回答排序，再拿这个排序当打分去训练。结果 13 亿参数的 InstructGPT，回答比 1750 亿参数的 GPT-3 更受人偏爱。2025 年，DeepSeek 在《自然》上报告，只用强化学习、不给人工写的解题过程，就能让大模型自己长出自我检查、换思路这类推理习惯。</p>
 </div>
 <div class="offstage">
-<h3>◐ 奖台之外</h3>
+<h3 data-tts="50d50fab8c81cb4c">◐ 奖台之外</h3>
 <p>两人的教科书两版都题献给 Harry Klopf：是他介绍两人认识，也是他的想法开启了这一切。书里还老实写着，1981 年他们才发现 Ian Witten 1977 年的论文，那似乎是 TD 学习规则最早的发表，最早在 1974 年就已投稿。获奖后两人在美联社的联合采访里也不总是意见一致：萨顿认为对 AI 威胁人类的担忧被夸大了，巴托不同意，说「You have to be cognizant of potential unexpected consequences.」（你必须留意可能出现的意外后果。）</p>
 </div>
 <div class="everyday">
-<h3>◎ 对普通人的意义</h3>
-<h4>已经在你身边的</h4>
+<h3 data-tts="2b6af93c1951039a">◎ 对普通人的意义</h3>
+<h4 data-tts="8f43228c53cc17cc">已经在你身边的</h4>
 <p>你用过的聊天机器人，回答之所以更「像样」，有一部分来自 RLHF。美国国家科学基金会（NSF）在贺文中列出的应用还包括芯片布局、供应链里的货放在哪、Netflix 和 YouTube 的推荐，以及让机器人自己试出复杂动作。更隐蔽的一层在你自己身上：「预测误差驱动学习」已经是神经科学理解习惯和成瘾的常用框架。Redish 2004 年的模型就用它解释一部分成瘾现象：可卡因造成的多巴胺冲高无法被「预测掉」，于是相关行为的价值越学越高。教科书也提醒，这只能解释成瘾的一部分。</p>
-<h4>接下来可能改变的</h4>
+<h4 data-tts="cfc78292f89a1dcf">接下来可能改变的</h4>
 <p>已经量产的是「推理模型」：在数学、编程这类答案能自动核对的任务上，用强化学习继续训练大模型。还在实验室的，是萨顿押注的方向：不靠一次性预训练、能在自己的经历里持续学习的智能体，他和同事为此写了「阿尔伯塔计划」。他对美联社说：「The big choice is, do you try to learn from people's data, or do you try to learn from an (AI) agent's own life and its own experience?」（关键的选择是，你是从人的数据里学，还是从智能体自己的生活和经验里学？）</p>
-<h4>它不意味着什么</h4>
+<h4 data-tts="ce5898632ff279f8">它不意味着什么</h4>
 <p><b>「多巴胺是快乐分子」不对。</b>按 Schultz 的数据，它更像一个「比预想好多少」的意外信号，被完全预测的好事几乎不让它动。而且这个假说本身也有争议：2022 年 Huijeong Jeong 等人在《科学》上提出，多巴胺传递的是因果关联而不是预测误差；哈佛的 Naoshige Uchida 撰文回应，认为新模型目前还替代不了 TD。<b>「强化学习让机器像人一样自己懂事」也不对。</b>它只会把你给的分数最大化：DeepMind 收集了约 60 个「钻规则空子」的例子，其中一个赛艇游戏里，智能体发现原地转圈反复撞同几个加分块，比跑完比赛得分更高。</p>
-<h4>可以借走的思维方式</h4>
+<h4 data-tts="7d6514acbe600426">可以借走的思维方式</h4>
 <p>不必等结局才复盘。每当你对一件事的判断变了，变化本身就是信号：拿今天更新后的估计，去修正昨天的估计。</p>
 </div>
 <div class="crossx">
-<h3>🌀 越界 · 跨学科的联想</h3>
+<h3 data-tts="5884ba22346806cc">🌀 越界 · 跨学科的联想</h3>
 <ul>
 <li><b>分布式系统 · 距离向量路由</b>：每台路由器只问邻居「你到目的地多远」，加上自己到邻居的一跳，就更新自己的估计，没有谁掌握全网地图。这和 TD 用下一步的估计更新这一步的估计，是同一种「借邻居的猜测来自举」的贝尔曼式更新。坏消息在两边都传得慢：路由会「数到无穷」，TD 的价值也要一格一格往回渗。</li>
 <li><b>投资 · 只对意外定价</b>：财报好不好不决定股价，比预期好不好才决定，已被预期的好消息早就「price in」了。这和被完全预测的苹果汁不再让多巴胺神经元放电，是同一个结构：信号只携带「实际减预期」。</li>
@@ -157,7 +157,7 @@ footer a{color:#e8c26a;text-decoration:none}
 </ul>
 </div>
 <div class="ten">
-<h3>◆ 十条要点</h3>
+<h3 data-tts="423343a8e948a4a2">◆ 十条要点</h3>
 <ol class="takeaways">
 <li>强化学习只给机器「好」或「不好」的打分，不给标准答案，这正是它和监督学习的根本区别。</li>
 <li>奖励来得越晚，越难判断功劳该记在哪一步上，这就是 Minsky 1961 年点出的功劳分配问题。</li>
@@ -172,13 +172,13 @@ footer a{color:#e8c26a;text-decoration:none}
 </ol>
 </div>
 <div class="thinking">
-<h3>// 深入思考</h3>
+<h3 data-tts="f4d91601efe2edca">// 深入思考</h3>
 <details><summary>TD 用一个猜测去纠正另一个猜测，凭什么不会越猜越离谱？</summary><div>关键在于链条的尽头是真实的奖励。每一步对账时，下一步的估计里总掺着一点离真相更近的信息，这点信息一格一格往回渗。萨顿只在一些特殊情形下证明了收敛；一旦换成复杂的函数近似，自举确实可能发散，这是后来很多算法要专门处理的问题。可以想想：分布式系统里的哪些协议，也是在没有全局真相的情况下，靠一端锚定的事实保证最终一致？</div></details>
 <details><summary>如果多巴胺只为「比预想的好」放电，持续的幸福在机制上是不是就不可能？</summary><div>预测误差描述的是学习信号，不一定等于主观体验的全部。但这个机制至少说明，为什么同样的好事第二次就没那么激动人心。值得想的是：一个系统如果奖励永远被预测掉，它靠什么继续探索？好奇心和新奇感，在强化学习里要不要单独设计成一种奖励？</div></details>
 <details><summary>萨顿主张智能体要「从自己的经验里学」，而今天的大模型主要「从人的数据里学」。这两条路是对立的，还是先后的？</summary><div>InstructGPT 和 DeepSeek-R1 的做法其实是先用人的数据打底，再用强化学习往前推。萨顿押注的是后者终将吞掉前者，这是《苦涩的教训》的延续。反方的理由是，现实世界里的试错又慢又贵，有些错误一次都犯不起。你会怎样划分：哪些能力适合从数据里学，哪些只能从经验里学？</div></details>
 </div>
 <div class="refs">
-<h3>// 出处</h3>
+<h3 data-tts="1eaa4730ef52e848">// 出处</h3>
 <ul>
 <li><a href="http://incompleteideas.net/book/the-book-2nd.html" target="_blank">Sutton &amp; Barto · Reinforcement Learning: An Introduction（第二版，2018，免费全文）</a> — 支撑早期历史、图灵引语、Klopf 与题献、Witten 1977、推车立杆、Schultz 实验细节、TD-Gammon、AlphaGo Zero 与成瘾模型。</li>
 <li><a href="http://incompleteideas.net/papers/sutton-88-with-erratum.pdf" target="_blank">Sutton · 1988 · Learning to Predict by the Methods of Temporal Differences · Machine Learning</a> — TD 学习原文，支撑天气预报员的例子与收敛、效率的论断。</li>
@@ -191,9 +191,9 @@ footer a{color:#e8c26a;text-decoration:none}
 </div>
 <footer>BigCat · 诺奖精读 · 2024 图灵奖 · <a href="index.html">← 目录</a></footer>
 </div>
-<script src="https://hub.cissychen.com/comments.js" defer></script>
-<script src="https://hub.cissychen.com/search.js" defer></script>
-<script src="https://hub.cissychen.com/index-button.js" defer></script>
-<script src="https://hub.cissychen.com/i18n-tts.js" defer></script>
-<script src="https://hub.cissychen.com/lightbox.js" defer></script>
-</body></html>
+<script defer="" src="https://hub.cissychen.com/comments.js"></script>
+<script defer="" src="https://hub.cissychen.com/search.js"></script>
+<script defer="" src="https://hub.cissychen.com/index-button.js"></script>
+<script defer="" src="https://hub.cissychen.com/i18n-tts.js"></script>
+<script defer="" src="https://hub.cissychen.com/lightbox.js"></script>
+</body></body></html>
