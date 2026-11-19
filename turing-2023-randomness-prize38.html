@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>2023 图灵奖 · 随机不在硬币里，在看硬币的人眼里 — 诺奖精读</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;color:#ece5d6;line-height:1.85;min-height:100vh;
+  background:radial-gradient(1100px 560px at 10% -6%,rgba(232,194,106,0.10),transparent 60%),radial-gradient(900px 640px at 100% 2%,rgba(217,130,91,0.08),transparent 55%),linear-gradient(165deg,#0d0c0a 0%,#14110c 45%,#0a0907 100%);background-attachment:fixed}
+.container{max-width:760px;margin:0 auto;padding:18px 20px 90px}
+.langbar{display:flex;justify-content:flex-end;padding-top:10px;font-family:"SF Mono",Menlo,monospace;font-size:.8rem}
+.langbar a{color:#e8c26a;text-decoration:none;border:1px solid rgba(232,194,106,.3);padding:4px 12px;border-radius:20px}
+.langbar a:hover{border-color:#d9825b;color:#d9825b}
+header{text-align:center;padding:40px 0 22px}
+.prize-tag{display:inline-block;font-size:0.75rem;color:#e8c26a;font-family:"SF Mono",Menlo,monospace;letter-spacing:2px;border:1px solid rgba(232,194,106,0.42);padding:4px 13px;border-radius:20px;margin-bottom:16px;background:rgba(232,194,106,0.06)}
+header h1{font-size:2.1rem;font-weight:800;letter-spacing:.5px;line-height:1.3;background:linear-gradient(110deg,#f3dc9a 0%,#e8c26a 45%,#d9825b 92%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 2px 18px rgba(232,194,106,0.22))}
+header h2{font-size:1rem;color:#a99f8a;margin-top:10px;font-weight:400;letter-spacing:0.4px}
+.laureates{margin-top:18px;font-size:0.9rem;color:#d8cdb4}
+.laureates span{display:inline-block;margin:3px 6px;padding:2px 11px;border-radius:14px;background:rgba(232,194,106,0.07);border:1px solid rgba(232,194,106,0.18)}
+.laureates em{font-style:normal;color:#8f8672;font-size:0.8rem;margin-left:6px;font-family:"SF Mono",Menlo,monospace}
+.motivation{margin:18px auto 0;max-width:620px;font-size:0.88rem;color:#b9ae95;line-height:1.7}
+.motivation q{display:block;font-style:italic;color:#d9cfb8}
+.motivation q::before{content:"“"}.motivation q::after{content:"”"}
+.motivation .zh{display:block;margin-top:4px}
+header .date{font-size:0.8rem;color:#6d6656;margin-top:16px;font-family:"SF Mono",Menlo,monospace}
+header .pitch{margin-top:18px;font-size:0.98rem;color:#d9825b;font-style:italic}
+.intro{background:rgba(232,194,106,0.06);border-left:3px solid #e8c26a;padding:20px 24px;border-radius:0 10px 10px 0;margin:36px 0;font-size:0.99rem;color:#e2d9c6}
+.intro strong{color:#fff}
+.section{margin:46px 0 0}
+.section h2::before{content:"";display:block;width:28px;height:2px;background:#e8c26a;opacity:.75;margin-bottom:16px}
+.section h2{font-size:1.3rem;color:#fff;margin-bottom:16px;font-weight:700;line-height:1.38}
+.section p{margin-bottom:14px;color:#e2d9c6;font-size:0.96rem}
+.section strong{color:#fff}
+.section blockquote{margin:16px 0;padding:10px 18px;border-left:2px solid rgba(217,130,91,0.6);color:#d6c9ae;font-size:0.93rem;background:rgba(217,130,91,0.05);border-radius:0 8px 8px 0}
+.section blockquote cite{display:block;margin-top:6px;font-style:normal;font-size:0.8rem;color:#8f8672;font-family:"SF Mono",Menlo,monospace}
+figure{margin:24px 0}
+figure svg{display:block;width:100%;height:auto;max-width:520px;margin:0 auto}
+figcaption{text-align:center;font-size:0.82rem;color:#a99f8a;margin-top:12px;font-family:"SF Mono",Menlo,monospace}
+.glossary{margin:18px 0;border:1px dashed rgba(232,194,106,0.35);border-radius:10px;padding:14px 18px;font-size:0.9rem;color:#d6ccb4}
+.glossary b{color:#f0d68e}
+.offstage{margin:40px 0;background:rgba(217,130,91,0.06);border:1px solid rgba(217,130,91,0.3);border-radius:14px;padding:20px 24px}
+.offstage h3{color:#d9825b;font-size:0.86rem;letter-spacing:2px;margin-bottom:10px;font-family:"SF Mono",Menlo,monospace}
+.offstage p{color:#e6d6c8;font-size:0.93rem;margin-bottom:10px}
+.offstage p:last-child{margin-bottom:0}
+.everyday{margin:40px 0;background:linear-gradient(135deg,rgba(125,170,214,0.10),rgba(125,170,214,0.04));border:1px solid rgba(125,170,214,0.34);border-radius:14px;padding:22px 26px}
+.everyday h3{color:#8fb8de;font-size:0.88rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.everyday h4{color:#bcd6ee;font-size:0.95rem;margin:16px 0 6px;font-weight:700}
+.everyday h4:first-of-type{margin-top:0}
+.everyday p{color:#dfe7ef;font-size:0.94rem;margin-bottom:8px}
+.everyday b{color:#fff}
+.crossx{margin:40px 0;background:linear-gradient(135deg,rgba(182,156,245,0.10),rgba(232,194,106,0.05));border:1px solid rgba(182,156,245,0.32);border-radius:14px;padding:22px 26px}
+.crossx h3{color:#b69cf5;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.crossx p{color:#e6def5;font-size:0.92rem;line-height:1.8;margin-bottom:14px}
+.crossx b{color:#d4c4fb;font-weight:600}
+.crossx ul{list-style:none;margin:0}
+.crossx li{color:#e6def5;font-size:0.93rem;line-height:1.8;margin-bottom:14px;padding-left:20px;position:relative}
+.crossx li:last-child{margin-bottom:0}
+.crossx li::before{content:"◈";position:absolute;left:0;top:0.35em;color:#e8c26a;font-size:0.72rem}
+.ten{margin:40px 0}
+.ten h3{color:#e8c26a;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(232,194,106,.3);border-radius:12px;background:rgba(232,194,106,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(232,194,106,.12);font-size:.94rem;line-height:1.75;color:#e2d9c6}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#e8c26a}
+.crossx a,.section a,.everyday a,.offstage a{color:#f0d68e;text-decoration:none;border-bottom:1px dotted rgba(240,214,142,0.5)}
+.thinking{background:linear-gradient(135deg,rgba(232,194,106,0.05),rgba(182,156,245,0.05));border:1px solid rgba(232,194,106,0.2);border-radius:12px;padding:24px 26px;margin:40px 0}
+.thinking h3{color:#e8c26a;font-size:0.9rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.thinking details{background:rgba(13,12,10,0.55);border:1px solid rgba(232,194,106,0.16);border-radius:9px;padding:13px 17px;margin:10px 0;transition:all 0.2s}
+.thinking details[open]{background:rgba(232,194,106,0.05);border-color:rgba(232,194,106,0.4)}
+.thinking summary{cursor:pointer;color:#f0d68e;font-weight:600;font-size:0.93rem;list-style:none;outline:none;line-height:1.55}
+.thinking summary::-webkit-details-marker{display:none}
+.thinking summary::before{content:"▸ ";color:#d9825b}
+.thinking details[open] summary::before{content:"▾ "}
+.thinking details>div{margin-top:12px;padding-top:12px;border-top:1px dashed rgba(232,194,106,0.2);color:#e2d9c6;font-size:0.9rem;line-height:1.8}
+.refs{margin-top:34px}
+.refs h3{color:#d9825b;font-size:0.85rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.refs ul{list-style:none}
+.refs li{margin-bottom:9px;font-size:0.88rem;color:#a99f8a}
+.refs a{color:#e8c26a;text-decoration:none;border-bottom:1px dotted rgba(232,194,106,0.4)}
+.refs a:hover{color:#f3dc9a}
+footer{text-align:center;padding:48px 0 10px;font-size:0.8rem;color:#6d6656;font-family:"SF Mono",Menlo,monospace}
+footer a{color:#e8c26a;text-decoration:none}
+@media(max-width:600px){header h1{font-size:1.6rem}.section h2{font-size:1.14rem}.everyday,.crossx,.offstage,.thinking{padding:18px 18px}}
+</style></head><body>
+<div class="container">
+<div class="langbar"><a href="turing-2023-randomness-prize38.en.html">English →</a></div>
+<header>
+<span class="prize-tag">TURING AWARD · 2023</span>
+<h1>随机不在硬币里，在看硬币的人眼里</h1>
+<h2>一位理论计算机科学家证明：只要世上真有足够难的问题，抛硬币就不能让计算真正变强；他还让人可以证明自己知道一个秘密，却一个字也不泄露</h2>
+<div class="laureates"><span>阿维·维格德森 Avi Wigderson<em>普林斯顿高等研究院 · 独享</em></span></div>
+<div class="motivation"><q>For foundational contributions to the theory of computation, including reshaping our understanding of the role of randomness in computation and mathematics, and for his decades of intellectual leadership in theoretical computer science</q><span class="zh">表彰他对计算理论的奠基性贡献，包括重塑了人们对随机性在计算与数学中所扮演角色的理解，以及他数十年来在理论计算机科学中的思想引领</span></div>
+<div class="date">2026-11-19 · BigCat</div>
+<p class="pitch">同一串数字，对算力有限的你是随机的，对算力无限的人则一目了然。随机性是观察者的属性。</p>
+</header>
+<div class="intro">
+<p>球赛开场前，裁判抛一枚硬币决定谁先发球。没人觉得这不公平，因为「没人知道它会落成哪面」。可硬币其实一点也不神秘：出手的力度、转速、离地的高度，全都服从牛顿力学。维格德森在获奖后对《量子》杂志说，只要掌握这个物理系统足够多的信息，结果就完全可以预测。</p>
+<p>那它凭什么算随机？答案藏在一句很容易滑过去的话里：<strong>对你来说</strong>没法预测。你来不及测，也来不及算。这位在以色列海法长大的理论家用了几十年，把这句近乎常识的话变成了严格的数学，然后从中推出了两件反直觉的事：抛硬币多半没有让计算机变强；而你可以让别人相信你手里有一个证明，却不透露它的任何内容。</p>
+</div>
+<div class="section">
+<h2>抛硬币的算法，快得让人起疑</h2>
+<p>1977 年，Robert Solovay 和 Volker Strassen 发表了一个判断大数是不是素数的算法。它靠随机挑选来做检验，比当时最好的确定性算法都快。代价是它可能出错，但错误率可以压得极低：维格德森在他的书《数学与计算》里解释，把一个错误率不超过三分之一的算法独立地跑上若干遍再投票，错误率会随次数呈指数下降。</p>
+<p>另一个例子更直观。有人猜了一个很长的多项式恒等式，想知道它对不对。把式子展开逐项核对，计算量是指数级的。随机的办法是：随手代几个数进去算一算。式子如果不恒等于零，随手代的数几乎不可能恰好让它为零。到今天，这个问题仍然没有已知的亚指数时间确定性算法。</p>
+<p>书里还列了几个这样的问题，比如在 x 和 2x 之间找一个素数、估算高维凸体的体积：随机算法很快，已知的确定性算法却要指数时间。于是一个基本问题摆上了桌面：<b>随机性到底有没有给计算增加真实的能力</b>？术语叫 BPP 是否等于 P，起初的答案看起来是「有」。维格德森对《量子》回忆当时的困惑：</p>
+<blockquote>Initially, it was not clear if this was only our own stupidity, that we cannot remove randomness.<br/>起初并不清楚，去不掉随机性，是否只是因为我们自己笨。<cite>— Avi Wigderson · Quanta Magazine · 2024</cite></blockquote>
+</div>
+<div class="section">
+<h2>把一个难题，熬成一锅随机数</h2>
+<p>线索来自密码学。1980 年代初，Shamir、Blum 与 Micali、姚期智（Andrew Yao）一路接力，证明了一件事：如果存在<b>单向函数（one-way function）</b>，也就是正着算容易、倒着算极难的函数，就能把几个真随机位「拉长」成一长串，任何高效算法都分不出它和真随机的区别。这叫<b>伪随机生成器（pseudorandom generator）</b>。但单向函数是个很强的假设，比 P≠NP 还强。</p>
+<p>维格德森和 Noam Nisan 的论文《难度与随机性》（Hardness vs. Randomness，期刊版 1994 年）换了个角度，那项工作是 Nisan 还在伯克利读书时做的。他们注意到：密码学要求生成器跑得比对手快，因为它要在你的笔记本上抵御政府级算力；可如果目的只是把一个随机算法变成确定性的，这个要求完全多余。生成器慢一点也没关系，只要它的输出能骗过<b>那一个</b>算法。</p>
+<figure><svg viewBox="0 0 520 290" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Nisan–Wigderson 生成器示意图">
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,5 L0,10 z" fill="#e8c26a"/></marker></defs>
+<g fill="#a99f8a" font-size="12"><text x="8" y="48">长输出</text><text x="8" y="130">难函数</text><text x="8" y="218">短种子</text></g>
+<g stroke="#6d6656" stroke-width="1.2"><line x1="145" y1="140" x2="125" y2="200"/><line x1="145" y1="140" x2="165" y2="200"/><line x1="145" y1="140" x2="205" y2="200"/><line x1="225" y1="140" x2="205" y2="200"/><line x1="225" y1="140" x2="245" y2="200"/><line x1="225" y1="140" x2="285" y2="200"/><line x1="305" y1="140" x2="285" y2="200"/><line x1="305" y1="140" x2="325" y2="200"/><line x1="305" y1="140" x2="365" y2="200"/><line x1="385" y1="140" x2="165" y2="200"/><line x1="385" y1="140" x2="245" y2="200"/><line x1="385" y1="140" x2="405" y2="200"/></g>
+<g stroke="#e8c26a" stroke-width="1.5" marker-end="url(#ar)"><line x1="145" y1="110" x2="145" y2="62"/><line x1="225" y1="110" x2="225" y2="62"/><line x1="305" y1="110" x2="305" y2="62"/><line x1="385" y1="110" x2="385" y2="62"/></g>
+<g fill="rgba(232,194,106,0.10)" stroke="#e8c26a" stroke-width="1.2"><rect x="110" y="110" width="70" height="30" rx="5"/><rect x="190" y="110" width="70" height="30" rx="5"/><rect x="270" y="110" width="70" height="30" rx="5"/><rect x="350" y="110" width="70" height="30" rx="5"/></g>
+<g fill="#f3dc9a" font-size="14" text-anchor="middle"><text x="145" y="130">f</text><text x="225" y="130">f</text><text x="305" y="130">f</text><text x="385" y="130">f</text></g>
+<g fill="rgba(143,184,222,0.12)" stroke="#8fb8de" stroke-width="1.2"><rect x="130" y="32" width="30" height="26" rx="3"/><rect x="210" y="32" width="30" height="26" rx="3"/><rect x="290" y="32" width="30" height="26" rx="3"/><rect x="370" y="32" width="30" height="26" rx="3"/></g>
+<g fill="rgba(217,130,91,0.12)" stroke="#d9825b" stroke-width="1.2"><rect x="110" y="200" width="30" height="26" rx="3"/><rect x="150" y="200" width="30" height="26" rx="3"/><rect x="190" y="200" width="30" height="26" rx="3"/><rect x="230" y="200" width="30" height="26" rx="3"/><rect x="270" y="200" width="30" height="26" rx="3"/><rect x="310" y="200" width="30" height="26" rx="3"/><rect x="350" y="200" width="30" height="26" rx="3"/><rect x="390" y="200" width="30" height="26" rx="3"/></g>
+<g fill="#ece5d6" font-size="12" text-anchor="middle"><text x="145" y="50">1</text><text x="225" y="50">0</text><text x="305" y="50">0</text><text x="385" y="50">1</text></g>
+<g fill="#a99f8a" font-size="12" text-anchor="middle"><text x="265" y="254">每个输出位 = 难函数作用在种子的一个子集上，子集之间只略有重叠</text><text x="265" y="276">确定性模拟：把所有种子挨个试一遍，再让结果投票</text></g>
+</svg><figcaption>Nisan–Wigderson 生成器的骨架：难度越高，种子可以越短，挨个试一遍的代价就越小</figcaption></figure>
+<p>他们的构造朴素得出奇：拿一个难函数，把它分别作用在种子的许多个子集上，每个子集取出一个输出位，子集之间只略有重叠。只要这个函数足够难，难到小电路连近似都做不到，这串输出就骗得过任何小电路。种子短到只有对数长度时，所有可能的种子加起来也只是多项式个，挨个试一遍、让结果投票，随机算法就变成了确定性算法。论文摘要直说：这揭示了「证明下界」与「生成好的伪随机序列」是等价的问题。</p>
+<p>1997 年，他和 Russell Impagliazzo 把假设推到了最自然的形式：只要存在某个用指数时间能解、却需要指数规模电路的问题，就有 BPP = P。书里点出这类结果最反直觉的地方：<b>一件事难，推出另一件事容易</b>。两个都很诱人的信念从此互相矛盾，「有些问题真的很难」和「随机性很强大」只能留一个。书里说，多数专家不情愿地放弃了后者。维格德森对《量子》的说法是：「You can always eliminate randomness.」（随机性总可以被消除。）</p>
+</div>
+<div class="section">
+<h2>随机，是观察者的属性</h2>
+<p>这条线真正改写的是「随机」这个词本身。维格德森在书里写道，概率论、统计物理、信息论、混沌理论、柯氏复杂度，过去所有关于随机的理论都把随机当成现象本身的客观属性；而在计算伪随机的理论里，它是主观的，是<b>观察者</b>的属性。同一个分布，算力有限的观察者看来是随机的，算力不受限的观察者则不然。和他合作过的哈佛学者 Madhu Sudan 对《量子》说：</p>
+<blockquote>It's not just randomness but perceptions of randomness. That's the key.<br/>关键不只是随机，而是对随机的感知。<cite>— Madhu Sudan · Quanta Magazine · 2024</cite></blockquote>
+<p>同一个想法的另一面，就是授奖词里没点名、却最广为人知的那项工作。1985 年，Goldwasser、Micali 和 Rackoff 提出<b>零知识证明（zero-knowledge proof）</b>：证明者让验证者相信一件事是真的，却不透露任何别的信息，当时只对少数数论命题做到了。1986 年，Goldreich、Micali 和维格德森证明：只要单向函数存在，<b>所有</b> NP 命题都有零知识证明。</p>
+<p>他们论文里的版本用的是一箱带锁的盒子。证明者手里有一张地图的合法三色涂法，相邻两国颜色不同。每一轮，他先把三种颜色随机互换，再把每国的颜色锁进编了号的盒子，全部交出去。验证者随便挑一条边界，证明者只交出这两个盒子的钥匙，打开一看，两种颜色确实不同。这样重复「边数的平方」那么多轮，作假的人几乎不可能一直蒙混过关；而因为每轮颜色都重新洗过，验证者看到的永远只是「两种不同的颜色」，和他自己闭着眼瞎编的对话没有区别。书里说，用 NP 完全性的归约，连「我证明了黎曼猜想」都可以先翻译成一张地图，再这样证明。</p>
+</div>
+<div class="section">
+<h2>后来长出了什么</h2>
+<p>「先找随机算法，再把随机去掉」成了一种设计算法的套路。最有名的一次发生在 2002 年 8 月：印度理工学院坎普尔分校的 Manindra Agrawal、Neeraj Kayal 和 Nitin Saxena 贴出《素数判定属于 P》（PRIMES is in P），给出第一个无条件的多项式时间确定性素数判定算法。论文写明，它依据的那条素数恒等式，正是 Agrawal 与 Biswas 1999 年一个随机算法的基础；论文 2004 年刊于《数学年刊》。</p>
+<p>零知识证明则一路走出了论文。2025 年 7 月 3 日，谷歌开源了自己的零知识证明库，用于「年龄核验」：在网站上证明自己已满 18 岁，此外什么也不交出。谷歌的公告提到，欧盟将于 2026 年生效的 eIDAS 条例鼓励成员国把这类技术接入欧洲数字身份钱包。</p>
+<p>最出人意料的一条通向量子物理。维格德森在书里讲，物理学家常问他：量子力学本身就能产出完美的随机位，何必折腾这些？他的回答是：「就算我信这个理论，凭什么信这台设备？」2006 年，Roger Colbeck 在博士论文里发现，让两台互不通信的盒子反复玩一个 CHSH 游戏，经典策略最多赢 75%；只要它们稳定地赢得更多，输出里就<b>必然</b>含有真随机性，哪怕盒子是你的对手造的。</p>
+</div>
+<div class="offstage">
+<h3>◐ 奖台之外</h3>
+<p>维格德森的父母都是大屠杀幸存者，父亲是电气工程师，爱给孩子们出谜题。「He's the guy from whom I was infected by this virus.」（我就是从他那儿染上这个病毒的。）他是迄今唯一同时获得阿贝尔奖（2021，与 Lovász 分享）和图灵奖的人。他指导过一百多位博士后。零知识证明的概念属于 Goldwasser、Micali 和 Rackoff，前两位已因此获 2012 年图灵奖；Nisan、Impagliazzo 这些合作者则不在这次的名单上。</p>
+</div>
+<div class="everyday">
+<h3>◎ 对普通人的意义</h3>
+<h4>已经在你身边的</h4>
+<p>你每打开一个 https 网页，两端都要现生成一批密钥用的随机数。电脑本身是确定的，只能慢慢从环境里攒一点不可预测性，再用<b>密码学安全的伪随机生成器</b>把它拉长。Cloudflare 的科普文章写得很具体：取 CPU 温度测量值的最低几位、键盘敲击的精确时刻；它旧金山办公室大厅里还有一面熔岩灯墙，摄像头拍下的画面也被喂进生成器，作为后备随机源。「短种子加计算难度，拉成谁也分不出的长序列」，正是本页这条「难度换随机」理论线的内核。</p>
+<p>零知识证明是第二样。谷歌 2025 年开源的年龄核验库，以及欧盟数字身份钱包的规划，都在把「证明一件事，却不交出数据」做成日常操作。</p>
+<h4>接下来可能改变的</h4>
+<p>零知识证明已经在用，普林斯顿的报道列举了隐私、合规、身份核验和区块链；它能否成为数字身份的默认做法，要看各国 2026 年后的落地。还在实验室阶段的是 Colbeck 那条「可认证的量子随机性」：不必信任设备，只靠统计检验就能确认随机真的存在。</p>
+<h4>它不意味着什么</h4>
+<p><b>「BPP = P 已经被证明」不对。</b>所有结论都是有条件的：前提是某些问题真的很难，而这正是没人能证明的下界。Kabanets 与 Impagliazzo 甚至证明，哪怕只把「随手代数检验多项式恒等式」这一个算法去随机化，也会推出一些至今没人证出的电路下界。<b>「随机算法没用了」也不对。</b>书里举了个例子：最好的随机素数判定用时低于 n 的三次方，最好的确定性算法却至少要 n 的五次方；密码学和分布式计算离开随机性根本无法工作。<b>「用了零知识证明，系统就是私密的」同样不对。</b>它只保证证明这一步不泄露秘密，数据怎么存、谁能看到交易记录，是另外的问题。</p>
+<h4>可以借走的思维方式</h4>
+<p>说一样东西「随机」「安全」「看不出规律」时，先补上半句：对谁，用多少算力去看。</p>
+</div>
+<div class="crossx">
+<h3>🌀 越界 · 跨学科的联想</h3>
+<ul>
+<li><b>AI · 生成对抗网络的判别器</b>：GAN 把「像真的」定义成判别器分不出来，伪随机把「随机」定义成某一类电路分不出来。两者都是用一个算力有界的观察者来定义一种质量，判别器一变强，「像」的标准就跟着变。区别是伪随机要骗过整个电路类，而不是某一个判别器。</li>
+<li><b>分布式系统 · 拜占庭容错</b>：GMW 的「编译器」把一个只在人人守规矩时才安全的协议，自动改造成即使有人恶意作弊也安全的版本。办法是让每个参与者对自己发出的每条消息附一份零知识证明，证明它确实按协议、用自己的秘密算出来。这和 BFT 系统要求消息可验证、而非信任发送者，是同一种思路：把「信任人」换成「检验每一步」。</li>
+<li><b>量子 · 贝尔不等式</b>：<a href="physics-2022-entanglement-prize22.html">2022 物理学奖</a>的实验证明，纠缠粒子在 CHSH 游戏里能赢过任何经典策略；Colbeck 把同一个缺口翻转成了随机性的证书。<a href="turing-2025-quantum-information-prize36.html">2025 图灵奖</a>的量子密钥分发也是一样：安全感不再来自计算难度，而来自物理定律。本页靠「难算」，那两页靠「物理不允许」。</li>
+<li><b>哲学 · 贝叶斯概率与拉普拉斯妖</b>：贝叶斯派认为概率是某个主体的信念程度，不是世界的属性。计算伪随机再往前走了一步：就算拥有全部信息，只要算力有限，世界看上去依然是随机的。</li>
+<li><b>数学 · 素数里的结构与伪随机</b>：书里引用陶哲轩的综述，从 Szemerédi 定理到 Green–Tao 定理（素数中的等差数列），背后都是同一种「结构加伪随机」的分解：任何对象都能拆成一个简单的部分加一个对检验来说像随机的余项。Sudan 说，素数和圆周率的各位数字完全确定，只是在我们看来像随机。</li>
+</ul>
+</div>
+<div class="ten">
+<h3>◆ 十条要点</h3>
+<ol class="takeaways">
+<li>抛硬币的结果服从力学，只要信息足够就能预测，它的随机来自观察者算不过来。</li>
+<li>素数判定、多项式恒等式检验等问题有快速的随机算法，确定性算法长期只能做到指数时间。</li>
+<li>随机算法的错误率可以通过独立重复运行再投票，压到指数级地小。</li>
+<li>伪随机生成器把少量真随机位拉成一长串，任何高效算法都分不出它和真随机的区别。</li>
+<li>Nisan 与维格德森指出，用于去随机化的生成器可以比被骗的算法慢，因此只需要任意一个难函数。</li>
+<li>Impagliazzo 与维格德森 1997 年证明：只要存在需要指数规模电路的难题，就有 BPP 等于 P。</li>
+<li>在计算伪随机的理论里，随机性不是现象的客观属性，而取决于观察者有多少算力。</li>
+<li>Goldreich、Micali 与维格德森证明，单向函数存在时，一切 NP 命题都能做零知识证明。</li>
+<li>去随机化催生了 2002 年的确定性素数判定，零知识证明在 2025 年进入谷歌开源的年龄核验库。</li>
+<li>BPP 等于 P 至今仍是有条件的结论，前提是那些没人能证明的电路下界。</li>
+</ol>
+</div>
+<div class="thinking">
+<h3>// 深入思考</h3>
+<details><summary>如果有一天证明了 P = NP，「难度换随机」这座大厦会怎样？</summary><div>单向函数会随之消失，密码学的伪随机生成器失去地基。但 Nisan–Wigderson 只需要「某个指数时间可解的问题需要指数规模电路」，这个假设远比 P ≠ NP 宽泛，未必一起倒下。可以想想：你的系统里，哪些安全性依赖的是「对手算不动」，哪些依赖的是「物理上做不到」？</div></details>
+<details><summary>随机性既然可以被消除，为什么工程上还处处离不开它？</summary><div>去随机化保证的是「多项式代价内可替代」，不是「一样快、一样简单」：素数判定就是例子。另外，在密码学和分布式协议里，随机性的作用是对付一个会针对你的选择出招的对手，这和「算一个确定的答案」是两种需求。负载均衡里的随机挑选、Raft 里的随机选举超时，属于哪一种？</div></details>
+<details><summary>「随机是观察者的属性」，那 AI 生成的文字、图像「像人做的」，是不是也只是观察者的属性？</summary><div>结构上很像：真伪的判据是某一类检验者能否分辨。差别在于伪随机有清晰定义的检验者类别，而「像人做的」的检验者是一群人，标准会随时间变化。一旦检验者变强，昨天的「像」可能今天就露馅。</div></details>
+</div>
+<div class="refs">
+<h3>// 出处</h3>
+<ul>
+<li><a href="https://www.math.ias.edu/files/mathandcomp.pdf" target="_blank">Wigderson · Mathematics and Computation（书稿全文 PDF）</a> — 第 7、10、11 章，支撑随机算法、去随机化、「随机是观察者的属性」、零知识、Kabanets–Impagliazzo 与 Colbeck 的可认证随机性。</li>
+<li><a href="https://www.cse.iitk.ac.in/users/manindra/CS642/NW.pdf" target="_blank">Nisan &amp; Wigderson · Hardness vs. Randomness</a> — 突破性论文原文，支撑生成器的构造思路与「下界与伪随机等价」的摘要原意。</li>
+<li><a href="http://www.softlab.ece.ntua.gr/~dvitin/zk/GMW91.pdf" target="_blank">Goldreich, Micali &amp; Wigderson · 1991 · Proofs that Yield Nothing But Their Validity · JACM</a> — 零知识论文原文，支撑「一切 NP 命题都有零知识证明」与带锁盒子的三色协议。</li>
+<li><a href="https://www.cs.princeton.edu/node/2752" target="_blank">普林斯顿大学计算机系新闻稿</a> 与 <a href="https://www.technion.ac.il/en/blog/2024/04/prof-avi-wigderson-wins-turing-award/" target="_blank">以色列理工学院新闻稿</a> · 2024-04 — 核对获奖人与机构，支撑阿贝尔奖与图灵奖双得、百余位博士后与零知识的应用领域。授奖词另以维基百科 Turing Award 词条核对。</li>
+<li><a href="https://www.quantamagazine.org/avi-wigderson-complexity-theory-pioneer-wins-turing-award-20240410/" target="_blank">Quanta Magazine · 2024-04-10</a> — 支撑硬币可预测、Solovay–Strassen、家庭背景与维格德森、Sudan 的原话。</li>
+<li><a href="https://www.cse.iitk.ac.in/users/nitin/papers/aug02.pdf" target="_blank">Agrawal, Kayal &amp; Saxena · 2002-08-06 · PRIMES is in P（预印本）</a> 与 <a href="https://annals.math.princeton.edu/2004/160-2/p12" target="_blank">《数学年刊》版</a> — 去随机化的代表性成果，支撑它与 Agrawal–Biswas 随机算法的关系。</li>
+<li><a href="https://blog.google/technology/safety-security/opening-up-zero-knowledge-proof-technology-to-promote-privacy-in-age-assurance/" target="_blank">谷歌 · 2025-07-03 · 开源零知识年龄核验库</a> 与 <a href="https://blog.cloudflare.com/randomness-101-lavarand-in-production/" target="_blank">Cloudflare · Randomness 101: LavaRand in Production</a> — 两份独立于获奖人的应用证据。</li>
+</ul>
+</div>
+<footer>BigCat · 诺奖精读 · 2023 图灵奖 · <a href="index.html">← 目录</a></footer>
+</div>
+</body></html>
